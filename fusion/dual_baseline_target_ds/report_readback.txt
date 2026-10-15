@@ -1,0 +1,64 @@
+双基线约束：空间IoU与D-S验证报告
+结论：{"full": {"full": {"pass_stricter": false, "FP": 0, "FN": 86}, "oof": {"pass_stricter": false, "FP": 6, "FN": 92}}, "augmented": {"full": {"pass_stricter": false, "FP": 0, "FN": 81}, "oof": {"pass_stricter": false, "FP": 6, "FN": 83}}}。主验收为留组OOF同时FP=0、FN≤25；全数据最佳不能替代OOF。本报告仅呈现实际执行结果，不承诺达到不存在的性能。
+1 目标与参考
+当前paper_sample.txt第四列UV参考共1288正例、240负例。目标FPR≤两单模态且FNR严格小于两单模态，即FP=0且FN≤25。全部1528组已反复查看，六组按既有时间间隔规则冻结；OOF仅内部探索，非独立泛化。源SHA256：7fa9997f14d65213063651f8448dc56344f797911185a2d6170147f1960bd483
+2 缺失候选归因
+旧>0.01缓存中IoU≥0.01无法覆盖78正例，具体：{"zero_overlap": 71, "no_RGB": 6, "tiny_overlap": 1}。真实双检测覆盖1282，不可将无重叠与无检测混为一谈。原始尺寸：{"rgb": {"[320, 320]": 1528}, "thermal": {"[256, 192]": 1528}}。七点位于狭窄纵向带，留一RMSE=5.771805像素，不支持全视场或跨场景有效性保证。框均为原图坐标，不把320坐标错误放大。
+3 实际方法与有限替代
+原始YOLO26n best.pt和best-2.pt不变（不是PPYOLOv2），全图3056张真实CUDA前向，conf>0.005，imgsz=320、rect=False，实测输入320×320；端到端检测绕过传统NMS。每帧每模态真实前三框投影至对方原图，以0.5框宽高边距且最小原框32像素形成裁剪，至多6裁剪/帧。裁剪真实模型仍320输入，框仅加原图裁剪偏移，投影本身不是检测证据。所有帧统一触发，不输入UV或图像编号判火。ROI作同模态IoU0.8去重；无ROI控制也同样去重后比较。
+4 配准与质量
+在代表图像上进行两种预定结构方案：梯度幅值ECC和反转强度ECC。估计仅使用图像像素，初始七点仿射；棋盘空间掩膜留出相关性验证，记录收敛、改进和四角位移。少数帧ECC烟测不足认证全场景，因此不擅自推广新矩阵，也不根据UV或火框对齐拟合。详见registration_smoke.json。
+5 BPA及判定
+先按分数筛框，用带dummy匈牙利最大IoU一对一匹配。必须真实双模态且IoU≥0.001/0.005/0.01/0.02之一。0.001仅极弱非零重叠，不能称强一致。mF=rc、mN=0、mΘ=1−rc；RGB r=1，热成像r=0.1/0.3/0.6并可乘clip(IoU/0.3)。D-S为正类简单支持，K=0且mF=1−(1−mRF)(1−mTF)，不是冲突消解或概率校准。缺模态/未匹配保持未知质量且不判火；UV也不能补造空间证据。分数门槛、可靠性和IoU有限格点仅按其余组FP优先、TP次优选择，冻结后评估本组。
+6 可解释性及风险
+修改可靠性或阈值不能弥补真实候选上界。UV乘法仅次要控制，λ=0.5、严格>0.5能利用参考本身清除负例，属于循环一致性，不构成达标证据。当前训练/验证源与测试图像已知存在散列重合，不能证明历史权重训练成员，也不能声称独立测试。0/240误报不保证部署误报为零；双侧95% Clopper–Pearson上界在verification.json记录。未进行盲目训练或替换更强模型以弱化基线。
+7 实测指标
+候选上界先于参数选择确定：降低全图候选阈值及7333次真实ROI前向后，最佳仅覆盖1213/1288正例，仍有75个空间未覆盖（{"zero_overlap": 70, "no_RGB": 5}），故FN理论下限75>25，原定大格点检索被终止，仅执行预先冻结32项诊断配置/候选池，六折各自按训练组选择。不能据此声称达成强目标。
+七点凸包覆盖RGB视场0.01349609375、热视场0.041035970052083336；RGB候选中心仅79/3193位于凸包内，热成像仅63/11941。原图RGB320×320、热成像192×256；显示拼图只补黑边不改变坐标。上述几何跨域风险不能靠拟合误差小来排除。
+人工视觉审阅：60号原热框明显映射在RGB候选上方；490/491号人物遮挡，缺乏清晰RGB火焰；817号RGB有亮火焰样区域但原映射热框偏高。新覆盖491、503、817仅证明新增候选重叠；部分ROI框覆盖人体或工作台，不能认证真实火焰对应。部分热源图已烧录红框及Fire:0.660/0.758文本，构成检测域污染和已有模型标注风险。本次未清除或改写原图，也不把烧录框作为新真值。详见visual_audit.json。
+零误报分支0/240的双侧95% Clopper–Pearson上界=0.015252810401278712，不表示部署零风险。独立复算全部1528行空间匹配、BPA及折选择，同时检查3056图像SHA、原产物和权重不变。
+8 候选逻辑上界与分组
+{"pool": "full", "gate": 0.001, "positive_covered": 1210, "positive_uncovered": 78, "negative_covered": 180}
+{"pool": "full", "gate": 0.005, "positive_covered": 1210, "positive_uncovered": 78, "negative_covered": 180}
+{"pool": "full", "gate": 0.01, "positive_covered": 1210, "positive_uncovered": 78, "negative_covered": 180}
+{"pool": "full", "gate": 0.02, "positive_covered": 1208, "positive_uncovered": 80, "negative_covered": 180}
+{"pool": "augmented", "gate": 0.001, "positive_covered": 1213, "positive_uncovered": 75, "negative_covered": 180}
+{"pool": "augmented", "gate": 0.005, "positive_covered": 1213, "positive_uncovered": 75, "negative_covered": 180}
+{"pool": "augmented", "gate": 0.01, "positive_covered": 1213, "positive_uncovered": 75, "negative_covered": 180}
+{"pool": "augmented", "gate": 0.02, "positive_covered": 1213, "positive_uncovered": 75, "negative_covered": 180}
+full全拟合参数：{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+full组0 {"N": 60, "TP": 0, "FP": 0, "FN": 0, "TN": 60, "accuracy": 1.0, "precision": null, "recall": null, "F1": null, "FPR": 0.0, "FNR": null} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+full组1 {"N": 67, "TP": 0, "FP": 0, "FN": 67, "TN": 0, "accuracy": 0.0, "precision": null, "recall": 0.0, "F1": 0.0, "FPR": null, "FNR": 1.0} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+full组2 {"N": 3, "TP": 0, "FP": 0, "FN": 3, "TN": 0, "accuracy": 0.0, "precision": null, "recall": 0.0, "F1": 0.0, "FPR": null, "FNR": 1.0} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+full组3 {"N": 781, "TP": 759, "FP": 0, "FN": 22, "TN": 0, "accuracy": 0.971830985915493, "precision": 1.0, "recall": 0.971830985915493, "F1": 0.9857142857142858, "FPR": null, "FNR": 0.028169014084507043} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.1, "soft": false, "u0": 0.0, "threshold": 0.5}
+full组4 {"N": 437, "TP": 437, "FP": 0, "FN": 0, "TN": 0, "accuracy": 1.0, "precision": 1.0, "recall": 1.0, "F1": 1.0, "FPR": null, "FNR": 0.0} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+full组5 {"N": 180, "TP": 0, "FP": 6, "FN": 0, "TN": 174, "accuracy": 0.9666666666666667, "precision": 0.0, "recall": null, "F1": 0.0, "FPR": 0.03333333333333333, "FNR": null} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.1, "soft": false, "u0": 0.0, "threshold": 0.4}
+augmented全拟合参数：{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+augmented组0 {"N": 60, "TP": 0, "FP": 0, "FN": 0, "TN": 60, "accuracy": 1.0, "precision": null, "recall": null, "F1": null, "FPR": 0.0, "FNR": null} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+augmented组1 {"N": 67, "TP": 0, "FP": 0, "FN": 67, "TN": 0, "accuracy": 0.0, "precision": null, "recall": 0.0, "F1": 0.0, "FPR": null, "FNR": 1.0} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+augmented组2 {"N": 3, "TP": 0, "FP": 0, "FN": 3, "TN": 0, "accuracy": 0.0, "precision": null, "recall": 0.0, "F1": 0.0, "FPR": null, "FNR": 1.0} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+augmented组3 {"N": 781, "TP": 768, "FP": 0, "FN": 13, "TN": 0, "accuracy": 0.9833546734955185, "precision": 1.0, "recall": 0.9833546734955185, "F1": 0.9916074887023887, "FPR": null, "FNR": 0.016645326504481434} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.1, "soft": false, "u0": 0.0, "threshold": 0.5}
+augmented组4 {"N": 437, "TP": 437, "FP": 0, "FN": 0, "TN": 0, "accuracy": 1.0, "precision": 1.0, "recall": 1.0, "F1": 1.0, "FPR": null, "FNR": 0.0} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.3, "soft": false, "u0": 0.0, "threshold": 0.5}
+augmented组5 {"N": 180, "TP": 0, "FP": 6, "FN": 0, "TN": 174, "accuracy": 0.9666666666666667, "precision": 0.0, "recall": null, "F1": 0.0, "FPR": 0.03333333333333333, "FNR": null} 参数{"gate": 0.001, "tR": 0.3, "tT": 0.005, "rR": 1.0, "rT": 0.1, "soft": false, "u0": 0.0, "threshold": 0.4}
+真实执行回执：{"start_utc": "2026-10-15T01:49:59.772485+00:00", "end_utc": "2026-10-15T01:50:37.967869+00:00", "seconds": 38.1955799004063, "full_images": 3056, "roi_images": 7333, "gpu": "NVIDIA GeForce RTX 5070", "model_sha256": {"rgb": "1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32", "thermal": "c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6"}}
+
+prior_overlay_490.jpg：左RGB，中热成像，右RGB真实框（绿）及仿射热框（红）。仅定性检查，非人工真值。
+
+prior_overlay_491.jpg：左RGB，中热成像，右RGB真实框（绿）及仿射热框（红）。仅定性检查，非人工真值。
+
+prior_overlay_504.jpg：左RGB，中热成像，右RGB真实框（绿）及仿射热框（红）。仅定性检查，非人工真值。
+
+roi_overlay_491.jpg：新增ROI候选重叠，不是独立确认的真实火焰对应。
+
+roi_overlay_503.jpg：新增ROI候选重叠，不是独立确认的真实火焰对应。
+
+roi_overlay_817.jpg：新增ROI候选重叠，不是独立确认的真实火焰对应。
+方法|TP|FP|FN|TN|FPR|FNR|precision|recall|F1|accuracy
+RGB原始320 >0.5|1262|0|26|240|0.0|0.020186335403726708|1.0|0.9798136645962733|0.9898039215686274|0.9829842931937173
+热成像原始320 >0.5|716|180|572|60|0.75|0.4440993788819876|0.7991071428571429|0.5559006211180124|0.6556776556776557|0.5078534031413613
+full 全拟合描述性|1202|0|86|240|0.0|0.06677018633540373|1.0|0.9332298136645962|0.9654618473895582|0.943717277486911
+full 留组OOF|1196|6|92|234|0.025|0.07142857142857142|0.9950083194675541|0.9285714285714286|0.9606425702811245|0.9358638743455497
+full UV循环控制|1202|0|86|240|0.0|0.06677018633540373|1.0|0.9332298136645962|0.9654618473895582|0.943717277486911
+augmented 全拟合描述性|1207|0|81|240|0.0|0.06288819875776397|1.0|0.937111801242236|0.9675350701402805|0.9469895287958116
+augmented 留组OOF|1205|6|83|234|0.025|0.06444099378881987|0.9950454170107349|0.9355590062111802|0.9643857543017207|0.9417539267015707
+augmented UV循环控制|1207|0|81|240|0.0|0.06288819875776397|1.0|0.937111801242236|0.9675350701402805|0.9469895287958116

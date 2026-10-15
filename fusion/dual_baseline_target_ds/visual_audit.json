@@ -1,0 +1,14 @@
+{
+  "scope": "Manual visual inspection by assistant of six real overlays; not new scene labels",
+  "prior": {
+    "60": "RGB burner/stool shows small bright magenta/white spots; mapped thermal boxes lie above RGB candidate. Clear geometry failure, not proof UV-labelled scene is visibly flaming.",
+    "490": "Person occludes central scene; no resolved RGB flame. Thermal bright local region exists. Missing RGB is plausible visibility/model issue, not an error repairable by BPA.",
+    "817": "RGB contains a bright flame-like spot near burner; mapped original thermal detections are higher on workstation. Thermal source visibly contains red detection rectangle and Fire:0.660 text."
+  },
+  "roi": {
+    "491": "Person still occludes region. Added small RGB box and mapped thermal boxes overlap near arm/torso; no visually resolved independent fire confirmation.",
+    "503": "Very dark RGB and person occlusion; thermal source visibly includes Fire:0.758 and red rectangle. New boxes include person/lower body; increased IoU is not demonstrated true-fire localization.",
+    "817": "New ROI boxes include workstation and cross flame-like bright spot; actual geometric recovery exists, but broad/spurious candidates and burned-in thermal annotation prevent treating overlap as verified flame correspondence."
+  },
+  "interpretation": "The three additional covered positives are detector candidate coverage, not validated object-level true consensus. No arbitrary offsets, fake detection boxes, or UV-forced matches used. Original images remain untouched."
+}

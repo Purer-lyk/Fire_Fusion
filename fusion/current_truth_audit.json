@@ -1,0 +1,700 @@
+{
+  "checked_utc": "2026-10-12T03:03:53.626971+00:00",
+  "thermal_exact_verified_images": 89,
+  "thermal_exact_verified_boxes": 162,
+  "rgb_old_audit_gt_covered": 0,
+  "reviewed_scene_records": [
+    {
+      "pair_id": 0,
+      "reviewed": true,
+      "scene_truth": "nofire",
+      "modalities": {
+        "bgr": {
+          "status": "nofire",
+          "boxes": []
+        },
+        "thermal": {
+          "status": "nofire",
+          "boxes": []
+        }
+      },
+      "evidence_exposed": false,
+      "evidence_note": "",
+      "note": "",
+      "updated_at": "2026-10-10T01:42:28.837734+00:00"
+    }
+  ],
+  "annotator_path": "C:\\lyk\\pipline\\fire_annotation\\data\\annotations.json",
+  "annotator_sha256": "827a0f38369b01a73245bd9d500dc3d132eb23a28e74dbbee5b9530167ef07cc",
+  "annotator_mapping_source": "app.py Dataset: zero-based text line index, DEFAULT_SOURCE same paper_sample.txt",
+  "annotator_app_sha256": "b27d83703ec4836348b9e27255bbbe7351c65f95c4c224f63d84a4db0a6a6907",
+  "current_source_annotation_files": [
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_07_47_22_0604_bgr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "nonempty_lines": 0,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_07_47_22_0862_bgr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "nonempty_lines": 0,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_07_47_23_0143_bgr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "nonempty_lines": 0,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_07_47_23_0402_bgr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "nonempty_lines": 0,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_42_0915_bgr.txt",
+      "sha256": "8033ee65eb4209641d919d2e02b5394514c3f48c33f3b6662406e588804a31ff",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_43_0355_bgr.txt",
+      "sha256": "1685721ffdfcdd973181829c4c30c16a6528ba19a1a74c3b0db3786e214e5755",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_43_0594_bgr.txt",
+      "sha256": "789f6eeb81f874c2a6ee271d946b0a4e9f72b51c9c19be749572d1651c6fd486",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_44_0075_bgr.txt",
+      "sha256": "1685721ffdfcdd973181829c4c30c16a6528ba19a1a74c3b0db3786e214e5755",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_44_0314_bgr.txt",
+      "sha256": "1685721ffdfcdd973181829c4c30c16a6528ba19a1a74c3b0db3786e214e5755",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_46_0034_bgr.txt",
+      "sha256": "1685721ffdfcdd973181829c4c30c16a6528ba19a1a74c3b0db3786e214e5755",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_46_0395_bgr.txt",
+      "sha256": "50f82ad46d18a85f2b7244b8554d85a2222b033e98a2868c140722f82ca7e6b5",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_46_0675_bgr.txt",
+      "sha256": "1a5f1babf34654b44dcd0932fb1a7c5426e917b1060d2cb575d864f1d0e7c012",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_47_0035_bgr.txt",
+      "sha256": "b083fb470fdc199e7c5dadcccef9c27db1abba9864181d0c9ebbca85bd5ceac9",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_47_0314_bgr.txt",
+      "sha256": "8033ee65eb4209641d919d2e02b5394514c3f48c33f3b6662406e588804a31ff",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_48_0155_bgr.txt",
+      "sha256": "f8423c4315dc90f323a6b422b769e6e38a6929d660b9e838a0a422c8cb966eed",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_48_0555_bgr.txt",
+      "sha256": "50f82ad46d18a85f2b7244b8554d85a2222b033e98a2868c140722f82ca7e6b5",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_48_0835_bgr.txt",
+      "sha256": "8248e72a25d366b152c8452bdbeb72a1aece510024e2de55b131e8b6d94016f0",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_52_0714_bgr.txt",
+      "sha256": "4db13126194e6d216c049fb8690a9531d6e93aae36708c322a2ef93acbbb270d",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_53_0035_bgr.txt",
+      "sha256": "3a98b77704fd532c7d8066a61333861af815fde34ea70c44ac5aad90cd8594dd",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_53_0314_bgr.txt",
+      "sha256": "b083fb470fdc199e7c5dadcccef9c27db1abba9864181d0c9ebbca85bd5ceac9",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_53_0594_bgr.txt",
+      "sha256": "dcab75436db3db9e678241d445c82d668fc8b866d2aa721b8c260db8018a8bea",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_53_0955_bgr.txt",
+      "sha256": "28c8c5527f6e3f198ed4460d774fea5db4e4879859acf0a36e8f62a852fa437e",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_54_0234_bgr.txt",
+      "sha256": "b08cd19c3c3a9789beaa5e29adeb4a7a0a594fdb2cb474eda302b89bda4e6c5b",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_54_0514_bgr.txt",
+      "sha256": "8bcc4ee43bab827c786ef26eecc593ff16a7a6181034d1f8f235e5ec009e920d",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_14_54_0714_bgr.txt",
+      "sha256": "0df296881fe21786ccabfb99f9c3bec2c49178096e0b691e36eb11b458073970",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_10_0774_bgr.txt",
+      "sha256": "a72f5ec37b5ec007f50a431d1aac569c1b4a2634ff36dc21c54267d1f9d13f23",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_11_0094_bgr.txt",
+      "sha256": "1ab35b6d812d4afde4b9945eac2ba768e6aaa1950918a290b333d0cd2b61f732",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_11_0374_bgr.txt",
+      "sha256": "b083fb470fdc199e7c5dadcccef9c27db1abba9864181d0c9ebbca85bd5ceac9",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_11_0614_bgr.txt",
+      "sha256": "1ab35b6d812d4afde4b9945eac2ba768e6aaa1950918a290b333d0cd2b61f732",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_11_0894_bgr.txt",
+      "sha256": "f4d40fe3d04fd327a7190c7a52c54c4220a880c60a98205f0e154f36e9217363",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_12_0175_bgr.txt",
+      "sha256": "b083fb470fdc199e7c5dadcccef9c27db1abba9864181d0c9ebbca85bd5ceac9",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_12_0454_bgr.txt",
+      "sha256": "b083fb470fdc199e7c5dadcccef9c27db1abba9864181d0c9ebbca85bd5ceac9",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_12_0694_bgr.txt",
+      "sha256": "b083fb470fdc199e7c5dadcccef9c27db1abba9864181d0c9ebbca85bd5ceac9",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_23_0054_bgr.txt",
+      "sha256": "3a98b77704fd532c7d8066a61333861af815fde34ea70c44ac5aad90cd8594dd",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_23_0334_bgr.txt",
+      "sha256": "52db745f4cef6859a85470f29e552b741eb6bdb441ff32394208372309db7e86",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_23_0614_bgr.txt",
+      "sha256": "82d966cd6968767de3f4a9b67cd5f1d43bf192febdd808fd835568d56faeb16c",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_23_0893_bgr.txt",
+      "sha256": "8248e72a25d366b152c8452bdbeb72a1aece510024e2de55b131e8b6d94016f0",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_24_0174_bgr.txt",
+      "sha256": "dcab75436db3db9e678241d445c82d668fc8b866d2aa721b8c260db8018a8bea",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_24_0434_bgr.txt",
+      "sha256": "486c70acfdadcc16e704fbff94398d6fd7d989f4a6ec1f2e0bd8cb824afd794b",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_24_0674_bgr.txt",
+      "sha256": "45d6406fd37cbe0f74de041799672ba452d6ce76a64f3101583553326dea7a1c",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_24_0914_bgr.txt",
+      "sha256": "1ab35b6d812d4afde4b9945eac2ba768e6aaa1950918a290b333d0cd2b61f732",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_44_0154_bgr.txt",
+      "sha256": "188b6cae88d64718e6a7e693fcb5a72a96840f09f2d30ec73360525367b66a7b",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_44_0393_bgr.txt",
+      "sha256": "a442b4205a19c74fe9fcb11c1160c2c2e4a979b7188e4645065ae993618c502e",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_44_0674_bgr.txt",
+      "sha256": "29b465de27ebde8cec1c237b719ccb9d6f5d7126f1a2311a6ac652a33872fdad",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_47_0154_bgr.txt",
+      "sha256": "9fb85192f5e462080affbc2b81a8c63d41ba908ad6cb38a93321ca6174929ce2",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_47_0434_bgr.txt",
+      "sha256": "5a12df93b1895dc06e1ad545c3cbfbefe86855d6da77a4342d5b0a99b0c8fb46",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_47_0714_bgr.txt",
+      "sha256": "d4793823367654245d245943ef7e14b6efba8666003673520804af48817ee61a",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_47_0954_bgr.txt",
+      "sha256": "48098414574e17385499c80b05e1656c5543c915c579b7ddbb7d8e867a52ee16",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_48_0234_bgr.txt",
+      "sha256": "f8423c4315dc90f323a6b422b769e6e38a6929d660b9e838a0a422c8cb966eed",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_48_0514_bgr.txt",
+      "sha256": "dcb7e9a18531ab8bb778d38f0870621a867d21277ca57412f97b0deb47320d20",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_48_0714_bgr.txt",
+      "sha256": "4db13126194e6d216c049fb8690a9531d6e93aae36708c322a2ef93acbbb270d",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_15_48_0914_bgr.txt",
+      "sha256": "337640956fc537ea9351b6ba3086fc1f81f8a285ac8ceeb8b5a219ac04402ecb",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_13_0254_bgr.txt",
+      "sha256": "789f6eeb81f874c2a6ee271d946b0a4e9f72b51c9c19be749572d1651c6fd486",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_13_0457_bgr.txt",
+      "sha256": "3a98b77704fd532c7d8066a61333861af815fde34ea70c44ac5aad90cd8594dd",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_13_0694_bgr.txt",
+      "sha256": "b083fb470fdc199e7c5dadcccef9c27db1abba9864181d0c9ebbca85bd5ceac9",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_13_0934_bgr.txt",
+      "sha256": "3a98b77704fd532c7d8066a61333861af815fde34ea70c44ac5aad90cd8594dd",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_14_0376_bgr.txt",
+      "sha256": "1685721ffdfcdd973181829c4c30c16a6528ba19a1a74c3b0db3786e214e5755",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_14_0614_bgr.txt",
+      "sha256": "bc04abad88755d64f514a825f53131ba7fb154e2e5bfd21f57f9fcc3087032ef",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_14_0814_bgr.txt",
+      "sha256": "337640956fc537ea9351b6ba3086fc1f81f8a285ac8ceeb8b5a219ac04402ecb",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_15_0014_bgr.txt",
+      "sha256": "5df910e8581b5403f6355a9d658a0b7aec5eac813a50c6f892ffbbeac06bce0b",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_16_0094_bgr.txt",
+      "sha256": "b226d3db9a5fd6755b683075a69a0886c2ee96c92c2014ef8d4df549ad518049",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_16_0294_bgr.txt",
+      "sha256": "044e4bcf0d6e81b13ff48b354a6f5d6602d6c517e344dd3ec77a80ed386d39b7",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_49_0317_bgr.txt",
+      "sha256": "3911fd5b1b2275951ab2a49c9c8f5db7775cbdd2ea696b205a1b911899861c22",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_49_0817_bgr.txt",
+      "sha256": "337640956fc537ea9351b6ba3086fc1f81f8a285ac8ceeb8b5a219ac04402ecb",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_49_0856_bgr.txt",
+      "sha256": "4db13126194e6d216c049fb8690a9531d6e93aae36708c322a2ef93acbbb270d",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_49_0936_bgr.txt",
+      "sha256": "1a5f1babf34654b44dcd0932fb1a7c5426e917b1060d2cb575d864f1d0e7c012",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_50_0574_bgr.txt",
+      "sha256": "b083fb470fdc199e7c5dadcccef9c27db1abba9864181d0c9ebbca85bd5ceac9",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_50_0816_bgr.txt",
+      "sha256": "1ab35b6d812d4afde4b9945eac2ba768e6aaa1950918a290b333d0cd2b61f732",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_51_0015_bgr.txt",
+      "sha256": "dcab75436db3db9e678241d445c82d668fc8b866d2aa721b8c260db8018a8bea",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_51_0255_bgr.txt",
+      "sha256": "1a5f1babf34654b44dcd0932fb1a7c5426e917b1060d2cb575d864f1d0e7c012",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_16_51_0494_bgr.txt",
+      "sha256": "3a98b77704fd532c7d8066a61333861af815fde34ea70c44ac5aad90cd8594dd",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_31_00_0156_bgr.txt",
+      "sha256": "6e3f460776a500fa0217cb79bb0df65ebbdcc1978ff6db9071bbcc1d9ab8eebf",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\2026_05_23_08_31_00_0731_bgr.txt",
+      "sha256": "7f72ac72f8e9e2f97fdd4e86f349c1d4af7b6fd2245316d2bdbf2c1ddad4be32",
+      "bytes": 38,
+      "nonempty_lines": 1,
+      "status": "unreviewed_candidate; empty file not assumed negative",
+      "image_exists": true,
+      "format_valid": true
+    },
+    {
+      "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\annotations\\bgr\\classes.txt",
+      "sha256": "bfe7c7674cae239062f14c2034af5c519ca45cf1a021da02f4615379adff8aa1",
+      "bytes": 6,
+      "text": "fire\n"
+    }
+  ],
+  "raw_annotation_candidate_count": 73,
+  "raw_nonempty_candidate_count": 69,
+  "full_independent_scene_truth_available": false,
+  "truth_policy": "Temperature and UV are inputs only. Raw RGB annotations are candidate object boxes with unverified review/provenance; not full scene truth. Reviewed record(s) are not representative full-set metrics."
+}

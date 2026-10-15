@@ -1,0 +1,358 @@
+{
+  "reference": "Corrected fourth-column UV, primary NO UV input",
+  "source_sha256": "7fa9997f14d65213063651f8448dc56344f797911185a2d6170147f1960bd483",
+  "results": {
+    "rgb_baseline": {
+      "N": 1528,
+      "TP": 1262,
+      "FP": 0,
+      "FN": 26,
+      "TN": 240,
+      "accuracy": 0.9829842931937173,
+      "precision": 1.0,
+      "recall": 0.9798136645962733,
+      "F1": 0.9898039215686274,
+      "FPR": 0.0,
+      "FNR": 0.020186335403726708
+    },
+    "thermal_baseline": {
+      "N": 1528,
+      "TP": 716,
+      "FP": 180,
+      "FN": 572,
+      "TN": 60,
+      "accuracy": 0.5078534031413613,
+      "precision": 0.7991071428571429,
+      "recall": 0.5559006211180124,
+      "F1": 0.6556776556776557,
+      "FPR": 0.75,
+      "FNR": 0.4440993788819876
+    },
+    "rgb_operating": {
+      "N": 1528,
+      "TP": 1279,
+      "FP": 153,
+      "FN": 9,
+      "TN": 87,
+      "accuracy": 0.893979057591623,
+      "precision": 0.8931564245810056,
+      "recall": 0.9930124223602484,
+      "F1": 0.9404411764705882,
+      "FPR": 0.6375,
+      "FNR": 0.006987577639751553
+    },
+    "thermal_operating": {
+      "N": 1528,
+      "TP": 1282,
+      "FP": 240,
+      "FN": 6,
+      "TN": 0,
+      "accuracy": 0.8390052356020943,
+      "precision": 0.8423127463863338,
+      "recall": 0.9953416149068323,
+      "F1": 0.9124555160142349,
+      "FPR": 1.0,
+      "FNR": 0.004658385093167702
+    },
+    "full_fire": {
+      "N": 1528,
+      "TP": 1208,
+      "FP": 0,
+      "FN": 80,
+      "TN": 240,
+      "accuracy": 0.9476439790575916,
+      "precision": 1.0,
+      "recall": 0.937888198757764,
+      "F1": 0.967948717948718,
+      "FPR": 0.0,
+      "FNR": 0.062111801242236024
+    },
+    "oof_fire": {
+      "N": 1528,
+      "TP": 1174,
+      "FP": 6,
+      "FN": 114,
+      "TN": 234,
+      "accuracy": 0.9214659685863874,
+      "precision": 0.9949152542372881,
+      "recall": 0.9114906832298136,
+      "F1": 0.9513776337115073,
+      "FPR": 0.025,
+      "FNR": 0.08850931677018634
+    }
+  },
+  "targets": {
+    "full_fire": {
+      "literal_strict_RGB_FPR_improvement_possible": false,
+      "literal_strict_RGB_FPR_improvement_achieved": false,
+      "thermal_goal": true,
+      "stronger_RGB_goal": false,
+      "fair_low_RGB_FPR_improvement": true
+    },
+    "oof_fire": {
+      "literal_strict_RGB_FPR_improvement_possible": false,
+      "literal_strict_RGB_FPR_improvement_achieved": false,
+      "thermal_goal": true,
+      "stronger_RGB_goal": false,
+      "fair_low_RGB_FPR_improvement": true
+    }
+  },
+  "full_parameters": {
+    "tR": 0.35,
+    "tT": 0.01,
+    "gate": 0.01,
+    "rR": 1.0,
+    "rT": 1.0,
+    "u0": 0.0,
+    "soft": false,
+    "threshold": 0.5
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "config": {
+        "tR": 0.35,
+        "tT": 0.01,
+        "gate": 0.01,
+        "rR": 1.0,
+        "rT": 1.0,
+        "u0": 0.0,
+        "soft": false,
+        "threshold": 0.5
+      },
+      "grid_index": 1237,
+      "freeze_sha256": "73295c0b35bf65c07efc9d581479393487f8befda72f0fd6baaf037ed39cabf2",
+      "train": {
+        "N": 1468,
+        "TP": 1208,
+        "FP": 0,
+        "FN": 80,
+        "TN": 180,
+        "accuracy": 0.9455040871934605,
+        "precision": 1.0,
+        "recall": 0.937888198757764,
+        "F1": 0.967948717948718,
+        "FPR": 0.0,
+        "FNR": 0.062111801242236024
+      },
+      "test": {
+        "N": 60,
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 60,
+        "accuracy": 1.0,
+        "precision": null,
+        "recall": null,
+        "F1": null,
+        "FPR": 0.0,
+        "FNR": null
+      }
+    },
+    {
+      "fold": 1,
+      "config": {
+        "tR": 0.35,
+        "tT": 0.01,
+        "gate": 0.01,
+        "rR": 1.0,
+        "rT": 1.0,
+        "u0": 0.0,
+        "soft": false,
+        "threshold": 0.5
+      },
+      "grid_index": 1237,
+      "freeze_sha256": "0b89026c2d9cab8c539fc96e429438ef6dab8ae0ea01438ed0d36440d391bd1d",
+      "train": {
+        "N": 1461,
+        "TP": 1208,
+        "FP": 0,
+        "FN": 13,
+        "TN": 240,
+        "accuracy": 0.9911019849418207,
+        "precision": 1.0,
+        "recall": 0.9893529893529893,
+        "F1": 0.9946480032935364,
+        "FPR": 0.0,
+        "FNR": 0.010647010647010647
+      },
+      "test": {
+        "N": 67,
+        "TP": 0,
+        "FP": 0,
+        "FN": 67,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0,
+        "FPR": null,
+        "FNR": 1.0
+      }
+    },
+    {
+      "fold": 2,
+      "config": {
+        "tR": 0.35,
+        "tT": 0.01,
+        "gate": 0.01,
+        "rR": 1.0,
+        "rT": 1.0,
+        "u0": 0.0,
+        "soft": false,
+        "threshold": 0.5
+      },
+      "grid_index": 1237,
+      "freeze_sha256": "cf56fafb68c93d84ebd4c5d0b62492e0d1759356b252a8f6caaafbe354e764ca",
+      "train": {
+        "N": 1525,
+        "TP": 1208,
+        "FP": 0,
+        "FN": 77,
+        "TN": 240,
+        "accuracy": 0.9495081967213115,
+        "precision": 1.0,
+        "recall": 0.9400778210116731,
+        "F1": 0.9691135178499799,
+        "FPR": 0.0,
+        "FNR": 0.05992217898832685
+      },
+      "test": {
+        "N": 3,
+        "TP": 0,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0,
+        "FPR": null,
+        "FNR": 1.0
+      }
+    },
+    {
+      "fold": 3,
+      "config": {
+        "tR": 0.2,
+        "tT": 0.01,
+        "gate": 0.01,
+        "rR": 0.7,
+        "rT": 0.1,
+        "u0": 0.0,
+        "soft": false,
+        "threshold": 0.4
+      },
+      "grid_index": 0,
+      "freeze_sha256": "6e173d76d4d59655b7ba92395d0349ab8f5edb20993b77bc9cbe51096c2f1e51",
+      "train": {
+        "N": 747,
+        "TP": 437,
+        "FP": 0,
+        "FN": 70,
+        "TN": 240,
+        "accuracy": 0.9062918340026773,
+        "precision": 1.0,
+        "recall": 0.8619329388560157,
+        "F1": 0.9258474576271186,
+        "FPR": 0.0,
+        "FNR": 0.13806706114398423
+      },
+      "test": {
+        "N": 781,
+        "TP": 737,
+        "FP": 0,
+        "FN": 44,
+        "TN": 0,
+        "accuracy": 0.9436619718309859,
+        "precision": 1.0,
+        "recall": 0.9436619718309859,
+        "F1": 0.9710144927536232,
+        "FPR": null,
+        "FNR": 0.056338028169014086
+      }
+    },
+    {
+      "fold": 4,
+      "config": {
+        "tR": 0.35,
+        "tT": 0.01,
+        "gate": 0.01,
+        "rR": 1.0,
+        "rT": 1.0,
+        "u0": 0.0,
+        "soft": false,
+        "threshold": 0.5
+      },
+      "grid_index": 1237,
+      "freeze_sha256": "81b82bd76e0a377ff009d4d75cad4fa023767b5f6ef590417d9edddebe042d00",
+      "train": {
+        "N": 1091,
+        "TP": 771,
+        "FP": 0,
+        "FN": 80,
+        "TN": 240,
+        "accuracy": 0.9266727772685609,
+        "precision": 1.0,
+        "recall": 0.9059929494712103,
+        "F1": 0.9506781750924784,
+        "FPR": 0.0,
+        "FNR": 0.09400705052878966
+      },
+      "test": {
+        "N": 437,
+        "TP": 437,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0,
+        "FPR": null,
+        "FNR": 0.0
+      }
+    },
+    {
+      "fold": 5,
+      "config": {
+        "tR": 0.2,
+        "tT": 0.01,
+        "gate": 0.01,
+        "rR": 1.0,
+        "rT": 0.1,
+        "u0": 0.0,
+        "soft": false,
+        "threshold": 0.4
+      },
+      "grid_index": 48,
+      "freeze_sha256": "bb8032a7478b45217dc6e4dc7e570e6d59e1477ffc3a31a9c5a50344c0beac05",
+      "train": {
+        "N": 1348,
+        "TP": 1208,
+        "FP": 0,
+        "FN": 80,
+        "TN": 60,
+        "accuracy": 0.9406528189910979,
+        "precision": 1.0,
+        "recall": 0.937888198757764,
+        "F1": 0.967948717948718,
+        "FPR": 0.0,
+        "FNR": 0.062111801242236024
+      },
+      "test": {
+        "N": 180,
+        "TP": 0,
+        "FP": 6,
+        "FN": 0,
+        "TN": 174,
+        "accuracy": 0.9666666666666667,
+        "precision": 0.0,
+        "recall": null,
+        "F1": 0.0,
+        "FPR": 0.03333333333333333,
+        "FNR": null
+      }
+    }
+  ]
+}

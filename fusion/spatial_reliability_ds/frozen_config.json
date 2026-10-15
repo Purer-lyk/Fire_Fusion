@@ -1,0 +1,20 @@
+{
+  "protocol": "fixed_nominal_v1_no_UV_label_tuning",
+  "confidence_strict_gt": 0.5,
+  "base_ignorance": 0.2,
+  "matched_reliability_floor": 0.5,
+  "matched_reliability_slope": 0.5,
+  "unmatched_present_reliability": 0.5,
+  "matching": "Hungarian maximum sum actual affine polygon IoU; dummy unmatched allowed; retain IoU>=0.01",
+  "matching_min_iou": 0.01,
+  "aggregation": "choose one candidate by max ordinary-DS fire mass, ties minimum present confidence then earlier candidate; same candidate for all ablations; no cross-target DS",
+  "uv_instant_reliability": 0.9,
+  "binary": "pignistic P(F)=mF+0.5*mU >0.5; exact tie forced nofire and separately abstain",
+  "abstention": "mF>=0.8 fire else mN>=0.8 nofire else uncertain; additionally report 0.95",
+  "temperature_unit": null,
+  "temperature_center": null,
+  "temperature_scale": null,
+  "temperature_policy": "unit unverified: neutral multiplier 1 in primary; calibrated unit/center/scale required to enable bounded 0.5+0.5*sigmoid((T-center)/scale); controlled legacy-thermal ablation uses documented original T0=50 formula only, not physical calibration",
+  "legacy_reset_gap_seconds": 120,
+  "no_training_no_search": true
+}

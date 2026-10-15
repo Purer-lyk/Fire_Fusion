@@ -1,0 +1,20 @@
+{
+  "unique_pairs": 1528,
+  "verified_image_hashes": 3056,
+  "embedded_images": 3,
+  "report_path": "C:\\lyk\\fire\\qualityDetection\\reports\\跨模态ROI复核_DS_1528验证报告.docx",
+  "report_sha256": "a3862389d2ebab423549e899198a8960aff007816793757aad2dacb263378de7",
+  "docx_zip_ok": true,
+  "report_readback_ok": true,
+  "metric_recompute_ok": true,
+  "protected_readback_unchanged": true,
+  "meets_all_target": false,
+  "example_pair_ids": [
+    285,
+    131,
+    61
+  ],
+  "roi_rescued_ids": [],
+  "roi_lost_ids": [],
+  "positive_spatial_match_coverage": 1107
+}

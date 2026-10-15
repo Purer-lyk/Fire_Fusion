@@ -1,0 +1,15 @@
+test_predeclared_continuous_mass (test_continuous.ContinuousTests.test_predeclared_continuous_mass) ... ok
+test_reselect_all_matches_not_previous_winner (test_continuous.SelectionTests.test_reselect_all_matches_not_previous_winner) ... FAIL
+
+======================================================================
+FAIL: test_reselect_all_matches_not_previous_winner (test_continuous.SelectionTests.test_reselect_all_matches_not_previous_winner)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\continuous_iou_ds\test_continuous.py", line 18, in test_reselect_all_matches_not_previous_winner
+    self.assertTrue(hasattr(c,'select'),'full-candidate reselection is missing')
+AssertionError: False is not true : full-candidate reselection is missing
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=1)

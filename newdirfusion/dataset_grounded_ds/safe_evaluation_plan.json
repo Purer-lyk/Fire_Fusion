@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-14T03:38:18.151300+00:00",
+  "prior_cfg_sha256": "8413ec6bd77a1a6ca45f57cad566b366ba8c75c6c44c568bd1bd9d69aab96399",
+  "parameters": {
+    "tR": 0.2,
+    "tT": 0.1,
+    "iou_gate": 0.01,
+    "rmin": 1.0,
+    "decision_threshold": 0.3
+  },
+  "conf": 0.01,
+  "imgsz": 320,
+  "baseline_conf": 0.5,
+  "batches": 32,
+  "model_selection": "Best validation fitness; no full-test selection",
+  "variants": [
+    "fresh_safe_RGB_and_thermal_primary"
+  ],
+  "historical_baseline": "Supplied thermal640 TP732 FP0 FN666 TN130 reference kept unchanged for stronger FPR comparison. Same fresh native320 thermal baseline primary.",
+  "labels": "UV reference only, no UV inference input; prior202 diagnostic already seen, FNR strict less impossible if thermal baseline FNR0.",
+  "model_hashes": {
+    "fireOrigin": "39d363adfc8ae522cb2e7958df10a25d6fc6fc4ac2cd4e16f2392e0874ab46f6",
+    "thermal": "7d7e4cec5c0dd3fc463074891e1938cff8efb07e75b190dc7dee89396a2e3632"
+  }
+}

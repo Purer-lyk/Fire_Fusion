@@ -1,0 +1,114 @@
+{
+  "success": true,
+  "independently_recomputed_confusion": {
+    "full": {
+      "fusion": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "rgb_baseline": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "thermal_baseline": {
+        "TP": 24,
+        "FP": 0,
+        "FN": 1374,
+        "TN": 130,
+        "FPR": 0.0,
+        "FNR": 0.9828326180257511
+      },
+      "target_met_same_models": false
+    },
+    "prior202_diagnostic": {
+      "fusion": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 180,
+        "TN": 22,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "rgb_baseline": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 180,
+        "TN": 22,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "thermal_baseline": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 180,
+        "TN": 22,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "target_met_same_models": false
+    }
+  },
+  "train_val_test_exact_hash_disjoint": true,
+  "verified_exported_images": 4767,
+  "verified_original_dataset_image_records": 5420,
+  "verified_unique_reserved_images": 3056,
+  "verified_source_protected_files": 15936,
+  "epochs_completed": {
+    "rgb": 30,
+    "thermal": 30
+  },
+  "report_sha256": "c65c838a3c5bf046fd9070a6bc96b9b367e3b1a5efb6a091dd3a4d430d3dc7f9",
+  "report_crc_ok": true,
+  "report_tables": 6,
+  "report_images": 3,
+  "source_unchanged": true,
+  "training_completed": true,
+  "no_UV_in_primary_decisions": true,
+  "artifact_sha256": {
+    "build_report.py": "9c5d6f5d896c64b9b47ea4116fc06d8d04109491b9427f3c75db13606913bdb0",
+    "dataset_grounded_spatial_DS_Chinese.docx": "c65c838a3c5bf046fd9070a6bc96b9b367e3b1a5efb6a091dd3a4d430d3dc7f9",
+    "domain_failure_evidence.json": "002a55cd9fa203504ffe037eed61c3968d2950cf9e182f860c9421819e986f3a",
+    "evaluate_safe.py": "f2c50addde3e1b2f7d59ddbd5c96c567e4ad7ed060919979d1fbb71505a35d80",
+    "execution.json": "849594133cbd57d083ffb5d41e1ea55e11139b0b2de057c0f138fdf3a8aa6130",
+    "export_safe.py": "ae0a9e6e27e7b24e7cc7e3cadd6514883fe27397c968667fe70eb0bd86026fa5",
+    "frame_predictions.csv": "e959c36f9ab76e829264f299d2b8bbb08957527668a0aa5c096dde2ebaa263d7",
+    "frozen_plan.json": "4cfbde7c37d522a36f2e55d79bde22e2f5cf75290791a9c0e61ef0497aa7ca55",
+    "grounded_core.py": "dc75be7abbfd9c96d6570762e9336bbb7014859fce4e26daef9907bc3f031dcc",
+    "metrics.json": "523696c76b7c877b75093ed4842850aa5b0194200feb814a904a1452caf1bb9b",
+    "model_metadata.json": "bb5c123c464546e08e934e625acebcc5bdccaa1761523baff68f6b2b415ac5af",
+    "report_readback.json": "77cbc4ef0ad54ff26114f96b995c89bb02399efaa9b47d5a2a625109bca056f2",
+    "rgb5_control640_predictions.json": "25597e25463074d4ebbadcf9b5e01f51e4cb73882ef320b73e3e4ca1e528e476",
+    "rgb5_native320_predictions.json": "c4b06f51ddd9d16246010ca0248e8eaffb6c0477d69b1bd6f753d51c3a55941d",
+    "rgb6_native320_predictions.json": "3f65b259f26db82734f73dcbdc2adde680c821c3525f45ce4e6ac4d832c4ac02",
+    "run_grounded.py": "4b051eee13fdc976d5ef74a61ca7602c6b5970440d929b6f875c1c13c8d9d5bb",
+    "safe_evaluation_plan.json": "bb5fa01d150e2c423282ba98e64a153ac1a660761148519b53bae6e8b5d6837b",
+    "safe_execution.json": "15b732da0c9d2d896707f3096d54b0ad5f679f681e7ced880d33198cef1db95b",
+    "safe_export_receipt.json": "66e8014faa46c3c991e473caaca5f1f2a8d62640a3707bb8d8888d70996cf62a",
+    "safe_frame_predictions.csv": "43b8fcc0f7dc48f21ad92ef09a0e0d60aadbe271a03a5df0313570f0d88fa043",
+    "safe_matched_evidence.json": "fa5a0736c2716eb86bd17ee0f8e3361e0c1cb4c20124f3dedd601f3ca6762f55",
+    "safe_metrics.json": "ebebe389f2a96aa9b6eb4facb740cb2239a453b7450851f8ffa7223c48a6eb72",
+    "safe_model_metadata.json": "d5a3c93e9e9e4e9a506b22039b629db71cee6f49055914ebbfd5aed05a7bbf79",
+    "safe_rgb_predictions.json": "beb7c6d6e771e8e34bf1bc9b61c946474e7de42ba6ea7f1709c875dfdf99f678",
+    "safe_test_image_audit.json": "a22bdfd3ef22e6c28ec593e088e51cc0c25e45f5527c9af703ef0b12fbc9cdc5",
+    "safe_thermal_predictions.json": "dd3dc6b9f5aa36e7c875298a42b4be714591638a83a4ca60a69381881341f3f2",
+    "safe_training_complete.json": "a97ae75e08d7bf960aec31b60c03219813cdfe2bf55216f8b211cac14e96d444",
+    "safe_training_plan.json": "1d97214d5e035f6ca0529a0f8afb4b5e9a26eb9a17e076a4ebe40050a1f37199",
+    "safe_training_status.json": "a1a1bab4fe8694afc0c5e36717ddf994bf406cc2d8947450fe28e8d690f0cef3",
+    "source_protected_sha256.json": "3b4fc47f24b80cbd08b29b810e5eed30c5d0f32b5d3d3ec59accaeaffb4efcaf",
+    "test_delivery.py": "42a339395d6c00a24e8df6831721828775113e9348cc340c27abf2b3911403db",
+    "thermal3_native320_predictions.json": "fd80fc702a086f5d7b5485008eb340043b662455f2a546fecc0685fc39d9c881",
+    "thermal5_control640_predictions.json": "9657c4fc89930fb3d802767b95beacf7763b5feefde2baf88e77fe2f90cdb508",
+    "thermal5_native320_predictions.json": "acac73cf3713fe64af3c6cab2701c5aa68073b0db8456708c51957a48f6e8fad",
+    "training_dataset_audit.json": "ce604c584e08de524ef019d9a89ebcbb5cdaa61efe90b9ade7a7cca773b53e9b",
+    "train_safe.py": "e8d19073995bfd67b592ec268f84c00ba6f977c3517b3760457de780c5ce7aa1",
+    "verify_final.py": "98e57b77076e3cd8c06e58abb7ea445508dae28510711f7e4e78b50527abaad0"
+  }
+}

@@ -1,0 +1,14 @@
+F
+======================================================================
+FAIL: test_inverse_crop_offsets (__main__.Geometry.test_inverse_crop_offsets)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\dual_baseline_target_ds\test_dual.py", line 6, in test_inverse_crop_offsets
+    p=Path(__file__).with_name('dual_core.py');self.assertTrue(p.exists(),'geometry implementation missing')
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : geometry implementation missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

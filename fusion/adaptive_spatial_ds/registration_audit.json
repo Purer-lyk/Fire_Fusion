@@ -1,0 +1,736 @@
+{
+  "attempts": [
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 305,
+      "thermal_features": 10,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 0
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 297,
+      "thermal_features": 5,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 0
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 607,
+      "thermal_features": 0,
+      "mutual_matches": 0,
+      "reason": "insufficient_features",
+      "pair_index": 0
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 405,
+      "thermal_features": 52,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 60
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 317,
+      "thermal_features": 24,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 60
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 757,
+      "thermal_features": 63,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 60
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 431,
+      "thermal_features": 41,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 66
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 325,
+      "thermal_features": 18,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 66
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 828,
+      "thermal_features": 74,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 66
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 403,
+      "thermal_features": 45,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 80
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 325,
+      "thermal_features": 18,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 80
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 813,
+      "thermal_features": 73,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 80
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 169,
+      "thermal_features": 145,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 132
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 111,
+      "thermal_features": 47,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 132
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 376,
+      "thermal_features": 31,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 132
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 170,
+      "thermal_features": 224,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 199
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 109,
+      "thermal_features": 89,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 199
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 341,
+      "thermal_features": 122,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 199
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 151,
+      "thermal_features": 142,
+      "mutual_matches": 3,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 265
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 110,
+      "thermal_features": 44,
+      "mutual_matches": 3,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 265
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 372,
+      "thermal_features": 16,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 265
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 174,
+      "thermal_features": 316,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 331
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 119,
+      "thermal_features": 76,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 331
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 362,
+      "thermal_features": 249,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 331
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 166,
+      "thermal_features": 231,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 398
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 125,
+      "thermal_features": 87,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 398
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 382,
+      "thermal_features": 116,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 398
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 169,
+      "thermal_features": 318,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 464
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 123,
+      "thermal_features": 97,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 464
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 364,
+      "thermal_features": 220,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 464
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 161,
+      "thermal_features": 311,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 531
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 113,
+      "thermal_features": 88,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 531
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 352,
+      "thermal_features": 222,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 531
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 190,
+      "thermal_features": 291,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 597
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 123,
+      "thermal_features": 86,
+      "mutual_matches": 4,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 597
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 394,
+      "thermal_features": 263,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 597
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 179,
+      "thermal_features": 252,
+      "mutual_matches": 5,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 663
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 116,
+      "thermal_features": 87,
+      "mutual_matches": 3,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 663
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 408,
+      "thermal_features": 219,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 663
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 166,
+      "thermal_features": 269,
+      "mutual_matches": 3,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 730
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 99,
+      "thermal_features": 84,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 730
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 355,
+      "thermal_features": 237,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 730
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 164,
+      "thermal_features": 282,
+      "mutual_matches": 3,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 796
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 106,
+      "thermal_features": 87,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 796
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 372,
+      "thermal_features": 218,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 796
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 168,
+      "thermal_features": 209,
+      "mutual_matches": 5,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 817
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 115,
+      "thermal_features": 88,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 817
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 265,
+      "thermal_features": 138,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 817
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 164,
+      "thermal_features": 301,
+      "mutual_matches": 3,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 863
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 112,
+      "thermal_features": 77,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 863
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 416,
+      "thermal_features": 215,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 863
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 199,
+      "thermal_features": 283,
+      "mutual_matches": 3,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 929
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 110,
+      "thermal_features": 99,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 929
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 447,
+      "thermal_features": 214,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 929
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 204,
+      "thermal_features": 273,
+      "mutual_matches": 3,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 995
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 123,
+      "thermal_features": 90,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 995
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 455,
+      "thermal_features": 209,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 995
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 171,
+      "thermal_features": 295,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1062
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 123,
+      "thermal_features": 96,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1062
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 430,
+      "thermal_features": 200,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1062
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 182,
+      "thermal_features": 170,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1128
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 112,
+      "thermal_features": 86,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1128
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 446,
+      "thermal_features": 29,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1128
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 187,
+      "thermal_features": 252,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1195
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 142,
+      "thermal_features": 88,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1195
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 462,
+      "thermal_features": 187,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1195
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 196,
+      "thermal_features": 296,
+      "mutual_matches": 4,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1261
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 124,
+      "thermal_features": 96,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1261
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 476,
+      "thermal_features": 221,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1261
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 181,
+      "thermal_features": 267,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1327
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 106,
+      "thermal_features": 95,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1327
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 452,
+      "thermal_features": 173,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1327
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 198,
+      "thermal_features": 221,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1394
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 131,
+      "thermal_features": 95,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1394
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 555,
+      "thermal_features": 45,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1394
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 194,
+      "thermal_features": 288,
+      "mutual_matches": 2,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1460
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 128,
+      "thermal_features": 77,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1460
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 569,
+      "thermal_features": 144,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1460
+    },
+    {
+      "variant": "gradient_sift",
+      "accepted": false,
+      "rgb_features": 204,
+      "thermal_features": 303,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1527
+    },
+    {
+      "variant": "intensity_sift",
+      "accepted": false,
+      "rgb_features": 121,
+      "thermal_features": 82,
+      "mutual_matches": 0,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1527
+    },
+    {
+      "variant": "gradient_orb",
+      "accepted": false,
+      "rgb_features": 570,
+      "thermal_features": 131,
+      "mutual_matches": 1,
+      "reason": "insufficient_mutual_matches",
+      "pair_index": 1527
+    }
+  ],
+  "holdout_passes": 0,
+  "promoted": 0,
+  "reason": "No independent full-field neutral correspondences verified; no fire-box/UV-fitted correction used"
+}

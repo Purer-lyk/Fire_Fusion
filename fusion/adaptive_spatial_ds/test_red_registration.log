@@ -1,0 +1,13 @@
+.F.
+======================================================================
+FAIL: test_feature_masks_and_holdout_acceptance (__main__.RegistrationTest.test_feature_masks_and_holdout_acceptance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\test_adaptive.py", line 30, in test_feature_masks_and_holdout_acceptance
+    self.assertTrue(hasattr(c,'feature_proposal'),'image-only robust registration missing')
+AssertionError: False is not true : image-only robust registration missing
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.228s
+
+FAILED (failures=1)

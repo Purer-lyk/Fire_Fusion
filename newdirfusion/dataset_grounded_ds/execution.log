@@ -1,0 +1,359 @@
+AUDIT {'fireOrigin_train': {'images': 2376, 'test_overlap': 298, 'empty_annotation': 45, 'invalid': 0}, 'fireOrigin_val': {'images': 595, 'test_overlap': 74, 'empty_annotation': 10, 'invalid': 0}, 'thermal_train': {'images': 1959, 'test_overlap': 74, 'empty_annotation': 13, 'invalid': 0}, 'thermal_val': {'images': 490, 'test_overlap': 15, 'empty_annotation': 4, 'invalid': 0}}
+rgb5_native320 32
+rgb5_native320 352
+rgb5_native320 672
+rgb5_native320 992
+rgb5_native320 1312
+rgb5_control640 32
+rgb5_control640 352
+rgb5_control640 672
+rgb5_control640 992
+rgb5_control640 1312
+rgb6_native320 32
+rgb6_native320 352
+rgb6_native320 672
+rgb6_native320 992
+rgb6_native320 1312
+thermal5_native320 32
+thermal5_native320 352
+thermal5_native320 672
+thermal5_native320 992
+thermal5_native320 1312
+thermal5_control640 32
+thermal5_control640 352
+thermal5_control640 672
+thermal5_control640 992
+thermal5_control640 1312
+thermal3_native320 32
+thermal3_native320 352
+thermal3_native320 672
+thermal3_native320 992
+thermal3_native320 1312
+{
+  "reference": "UV reference only; UV is NOT inference input; previous entire set seen, diagnostic not independent.",
+  "results": {
+    "primary_native320": {
+      "full": {
+        "fusion": {
+          "N": 1528,
+          "TP": 1359,
+          "FP": 0,
+          "FN": 39,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.027896995708154508,
+          "precision": 1.0,
+          "recall": 0.9721030042918455,
+          "F1": 0.985854189336235
+        },
+        "rgb_baseline": {
+          "N": 1528,
+          "TP": 1195,
+          "FP": 67,
+          "FN": 203,
+          "TN": 63,
+          "FPR": 0.5153846153846153,
+          "FNR": 0.1452074391988555,
+          "precision": 0.9469096671949286,
+          "recall": 0.8547925608011445,
+          "F1": 0.8984962406015038
+        },
+        "thermal_baseline": {
+          "N": 1528,
+          "TP": 885,
+          "FP": 11,
+          "FN": 513,
+          "TN": 119,
+          "FPR": 0.08461538461538462,
+          "FNR": 0.3669527896995708,
+          "precision": 0.9877232142857143,
+          "recall": 0.6330472103004292,
+          "F1": 0.7715780296425457
+        },
+        "target_met": true
+      },
+      "prior202_diagnostic": {
+        "fusion": {
+          "N": 202,
+          "TP": 153,
+          "FP": 0,
+          "FN": 27,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 0.15,
+          "precision": 1.0,
+          "recall": 0.85,
+          "F1": 0.918918918918919
+        },
+        "rgb_baseline": {
+          "N": 202,
+          "TP": 0,
+          "FP": 19,
+          "FN": 180,
+          "TN": 3,
+          "FPR": 0.8636363636363636,
+          "FNR": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "F1": 0.0
+        },
+        "thermal_baseline": {
+          "N": 202,
+          "TP": 180,
+          "FP": 6,
+          "FN": 0,
+          "TN": 16,
+          "FPR": 0.2727272727272727,
+          "FNR": 0.0,
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "F1": 0.9836065573770492
+        },
+        "target_met": false
+      }
+    },
+    "control640": {
+      "full": {
+        "fusion": {
+          "N": 1528,
+          "TP": 993,
+          "FP": 0,
+          "FN": 405,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.28969957081545067,
+          "precision": 1.0,
+          "recall": 0.7103004291845494,
+          "F1": 0.8306148055207027
+        },
+        "rgb_baseline": {
+          "N": 1528,
+          "TP": 452,
+          "FP": 126,
+          "FN": 946,
+          "TN": 4,
+          "FPR": 0.9692307692307692,
+          "FNR": 0.6766809728183119,
+          "precision": 0.7820069204152249,
+          "recall": 0.32331902718168815,
+          "F1": 0.4574898785425101
+        },
+        "thermal_baseline": {
+          "N": 1528,
+          "TP": 730,
+          "FP": 0,
+          "FN": 668,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.47782546494992845,
+          "precision": 1.0,
+          "recall": 0.5221745350500715,
+          "F1": 0.6860902255639098
+        },
+        "target_met": true
+      },
+      "prior202_diagnostic": {
+        "fusion": {
+          "N": 202,
+          "TP": 0,
+          "FP": 0,
+          "FN": 180,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 1.0,
+          "precision": null,
+          "recall": 0.0,
+          "F1": 0.0
+        },
+        "rgb_baseline": {
+          "N": 202,
+          "TP": 0,
+          "FP": 22,
+          "FN": 180,
+          "TN": 0,
+          "FPR": 1.0,
+          "FNR": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "F1": 0.0
+        },
+        "thermal_baseline": {
+          "N": 202,
+          "TP": 176,
+          "FP": 0,
+          "FN": 4,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 0.022222222222222223,
+          "precision": 1.0,
+          "recall": 0.9777777777777777,
+          "F1": 0.9887640449438202
+        },
+        "target_met": false
+      }
+    },
+    "validation_selected_RGB6": {
+      "full": {
+        "fusion": {
+          "N": 1528,
+          "TP": 1386,
+          "FP": 0,
+          "FN": 12,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.008583690987124463,
+          "precision": 1.0,
+          "recall": 0.9914163090128756,
+          "F1": 0.9956896551724138
+        },
+        "rgb_baseline": {
+          "N": 1528,
+          "TP": 1373,
+          "FP": 67,
+          "FN": 25,
+          "TN": 63,
+          "FPR": 0.5153846153846153,
+          "FNR": 0.0178826895565093,
+          "precision": 0.9534722222222223,
+          "recall": 0.9821173104434907,
+          "F1": 0.9675828047921071
+        },
+        "thermal_baseline": {
+          "N": 1528,
+          "TP": 885,
+          "FP": 11,
+          "FN": 513,
+          "TN": 119,
+          "FPR": 0.08461538461538462,
+          "FNR": 0.3669527896995708,
+          "precision": 0.9877232142857143,
+          "recall": 0.6330472103004292,
+          "F1": 0.7715780296425457
+        },
+        "target_met": true
+      },
+      "prior202_diagnostic": {
+        "fusion": {
+          "N": 202,
+          "TP": 180,
+          "FP": 0,
+          "FN": 0,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0
+        },
+        "rgb_baseline": {
+          "N": 202,
+          "TP": 180,
+          "FP": 19,
+          "FN": 0,
+          "TN": 3,
+          "FPR": 0.8636363636363636,
+          "FNR": 0.0,
+          "precision": 0.9045226130653267,
+          "recall": 1.0,
+          "F1": 0.9498680738786279
+        },
+        "thermal_baseline": {
+          "N": 202,
+          "TP": 180,
+          "FP": 6,
+          "FN": 0,
+          "TN": 16,
+          "FPR": 0.2727272727272727,
+          "FNR": 0.0,
+          "precision": 0.967741935483871,
+          "recall": 1.0,
+          "F1": 0.9836065573770492
+        },
+        "target_met": false
+      }
+    },
+    "stronger_thermal_control": {
+      "full": {
+        "fusion": {
+          "N": 1528,
+          "TP": 297,
+          "FP": 0,
+          "FN": 1101,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.7875536480686696,
+          "precision": 1.0,
+          "recall": 0.21244635193133046,
+          "F1": 0.3504424778761062
+        },
+        "rgb_baseline": {
+          "N": 1528,
+          "TP": 1195,
+          "FP": 67,
+          "FN": 203,
+          "TN": 63,
+          "FPR": 0.5153846153846153,
+          "FNR": 0.1452074391988555,
+          "precision": 0.9469096671949286,
+          "recall": 0.8547925608011445,
+          "F1": 0.8984962406015038
+        },
+        "thermal_baseline": {
+          "N": 1528,
+          "TP": 14,
+          "FP": 0,
+          "FN": 1384,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.9899856938483548,
+          "precision": 1.0,
+          "recall": 0.010014306151645207,
+          "F1": 0.019830028328611898
+        },
+        "target_met": true
+      },
+      "prior202_diagnostic": {
+        "fusion": {
+          "N": 202,
+          "TP": 0,
+          "FP": 0,
+          "FN": 180,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 1.0,
+          "precision": null,
+          "recall": 0.0,
+          "F1": 0.0
+        },
+        "rgb_baseline": {
+          "N": 202,
+          "TP": 0,
+          "FP": 19,
+          "FN": 180,
+          "TN": 3,
+          "FPR": 0.8636363636363636,
+          "FNR": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "F1": 0.0
+        },
+        "thermal_baseline": {
+          "N": 202,
+          "TP": 0,
+          "FP": 0,
+          "FN": 180,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 1.0,
+          "precision": null,
+          "recall": 0.0,
+          "F1": 0.0
+        },
+        "target_met": false
+      }
+    }
+  },
+  "primary_target_full_and_prior202": false,
+  "frozen_plan_sha256": "4cfbde7c37d522a36f2e55d79bde22e2f5cf75290791a9c0e61ef0497aa7ca55",
+  "training_performed": false
+}

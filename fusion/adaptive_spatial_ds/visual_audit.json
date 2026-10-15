@@ -1,0 +1,14 @@
+{
+  "manually_inspected_native_images": [60, 95, 817],
+  "original_calibration_image_inspected": true,
+  "original_source_same_hash_as_current_calibration_frame": true,
+  "native_rgb_hw": [320,320],
+  "native_thermal_hw": [256,192],
+  "observations": {
+    "60": "Original tiny thermal bright-source boxes map far ABOVE the strong RGB stove/fire candidate. New selected tile3 thermal box covers a large dark lower-right background region, not the visible hot spots. Actual model box, but not verified true flame evidence. Mapped area ~70 times RGB box; numerical IoU ~0.0102 is weak and semantically spurious.",
+    "95": "Same May setup: original tiny hot sources map high; new tile3 box is nearly the entire lower-right crop over dark background. Mapped area ~66 times RGB. This is candidate coverage, NOT a calibrated geometric repair.",
+    "817": "Original full320 thermal detector box is high around upper person/annotation, not corresponding to small RGB flame. New full640 thermal box is on the small bright hand/flame-like patch and maps to overlap RGB, IoU~0.180. This is plausible local rescue, not independent registration validation. Original thermal pixels contain red box and yellow Fire:0.660 burned in.",
+    "calibration_frame": "Seven original uncommented point pairs visibly lie around the stool/ring band in the August calibration image, not distributed across the field. May stool/ring framing differs markedly. Cross-capture/calibration drift is plausible; timestamp string equality does not establish sensor synchronization. No neutral point correspondence was invented or fitted from fire boxes."
+  },
+  "claim_limit": "Numerical weak-gate fixed model reaches FP0/FN23 on repeatedly seen UV-reference data; group-selected OOF FP6/FN25 fails. Robust full-field geometry and true flame-level consensus remain unverified."
+}

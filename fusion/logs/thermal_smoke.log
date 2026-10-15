@@ -1,0 +1,113 @@
+信息: 用提供的模式无法找到文件。
+C:\lyk\defaultpy\Python312\Lib\site-packages\paddle\utils\cpp_extension\extension_utils.py:712: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+C:\lyk\fire\qualityDetection\runtime\PaddleDetection\ppdet\modeling\losses\detr_loss.py:347: SyntaxWarning: assertion is always true, perhaps remove parentheses?
+  assert (masks is not None and gt_mask is not None,
+C:\lyk\fire\qualityDetection\runtime\PaddleDetection\ppdet\modeling\transformers\matchers.py:139: SyntaxWarning: assertion is always true, perhaps remove parentheses?
+  assert (masks is not None and gt_mask is not None,
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[10/12 09:51:06] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+Warning: import ppdet from source directory without installing, run 'python setup.py install' to install ppdet firstly
+INFERENCE_START {"modality": "thermal", "python": "C:\\lyk\\fire\\qualityDetection\\.venv\\Scripts\\python.exe", "paddle_version": "3.3.1", "device": "Place(gpu:0)", "gpu_name": "NVIDIA GeForce RTX 5070", "config": "C:\\lyk\\fire\\qualityDetection\\configs\\ppyolov2_thermal.yml", "config_sha256": "f078d8de5b6f598b1510b2ad005ae675194f2a58747ef2ec24849f9d9488b77a", "checkpoint": "C:\\lyk\\fire\\qualityDetection\\training\\output\\ppyolov2_thermal\\model_final.pdparams", "checkpoint_sha256": "662f9a630a11dc399a5896eebeaba25b714520478f5da0747c2302c9616cf7f6", "checkpoint_bytes": 217030334, "source_manifest": "C:\\lyk\\fire\\qualityDetection\\audit\\test_manifest.json", "source_pairs": "C:\\lyk\\fire\\qualityDetection\\audit\\test_pairs.json", "paper_sample_sha256": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade", "architecture": "YOLOv3", "backbone": {"depth": 50, "variant": "d", "return_idx": [1, 2, 3], "dcn_v2_stages": [3], "freeze_at": -1, "freeze_norm": false, "norm_decay": 0.0}, "neck": "PPYOLOPAN", "iou_aware": true, "post_process": {"decode": {"name": "YOLOBox", "conf_thresh": 0.01, "downsample_ratio": 32, "clip_bbox": true, "scale_x_y": 1.05}, "nms": {"name": "MatrixNMS", "keep_top_k": 100, "score_threshold": 0.01, "post_threshold": 0.01, "nms_top_k": -1, "background_label": -1}}, "minimum_score": 0.01, "coordinate_format": "xyxy in original-image pixels", "input_shape": [3, 640, 640], "UV_used_by_network": false, "truth_used": false, "expected_images": 3}
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W1012 09:51:07.134686  4856 gpu_resources.cc:116] Please NOTE: device: 0, GPU Compute Capability: 12.0, Driver API Version: 13.2, Runtime API Version: 12.9
+[10/12 09:51:07] ppdet.utils.checkpoint INFO: Finish loading model weights: C:/lyk/fire/qualityDetection/training/output/ppyolov2_thermal/model_final.pdparams
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|鈻堚枅鈻堚枎      | 1/3 [00:00<00:00,  2.71it/s]100%|鈻堚枅鈻堚枅鈻堚枅鈻堚枅鈻堚枅| 3/3 [00:00<00:00,  7.21it/s]
+{'bbox': Tensor(shape=[13, 6], dtype=float32, place=Place(cpu), stop_gradient=True,
+       [[0.          , 0.60408479  , 0.          , 2.57310486  , 184.54168701,
+         255.        ],
+        [0.          , 0.04185711  , 62.65055084 , 119.41583252, 72.19364166 ,
+         127.24240112],
+        [0.          , 0.03266478  , 0.73965454  , 21.41823578 , 191.        ,
+         255.        ],
+        [0.          , 0.02601465  , 0.          , 20.76995087 , 186.63508606,
+         255.        ],
+        [0.          , 0.02080458  , 3.27863312  , 48.50621796 , 189.76669312,
+         255.        ],
+        [0.          , 0.01992187  , 0.23754883  , 2.50650024  , 191.        ,
+         255.        ],
+        [0.          , 0.01883910  , 78.11524200 , 122.03513336, 88.84270477 ,
+         128.77256775],
+        [0.          , 0.01332531  , 0.          , 48.09269714 , 185.71166992,
+         255.        ],
+        [0.          , 0.01290038  , 0.          , 1.74751282  , 170.25933838,
+         255.        ],
+        [0.          , 0.01135284  , 3.91090393  , 73.13002014 , 189.66285706,
+         255.        ],
+        [0.          , 0.01045932  , 0.93976212  , 168.18621826, 65.01863098 ,
+         255.        ],
+        [0.          , 0.01030850  , 7.51643372  , 10.37238312 , 78.90475464 ,
+         246.50598145],
+        [0.          , 0.01001011  , 1.97018433  , 0.          , 191.        ,
+         247.61380005]]), 'bbox_num': Tensor(shape=[1], dtype=int32, place=Place(cpu), stop_gradient=True,
+       [13])}
+{'bbox': Tensor(shape=[13, 6], dtype=float32, place=Place(cpu), stop_gradient=True,
+       [[0.          , 0.63353157  , 0.          , 2.81954956  , 184.76129150,
+         255.        ],
+        [0.          , 0.04016473  , 61.83794403 , 119.25305176, 71.48270416 ,
+         127.14685059],
+        [0.          , 0.03368846  , 1.31044769  , 22.16213989 , 191.        ,
+         255.        ],
+        [0.          , 0.02614044  , 0.          , 21.40406036 , 186.64135742,
+         255.        ],
+        [0.          , 0.02241823  , 3.83485413  , 48.95957184 , 189.08122253,
+         255.        ],
+        [0.          , 0.02215495  , 0.65782166  , 2.87966156  , 191.        ,
+         255.        ],
+        [0.          , 0.01703979  , 78.21343994 , 122.05757904, 88.78411865 ,
+         128.76106262],
+        [0.          , 0.01451040  , 1.95266724  , 0.          , 191.        ,
+         247.10522461],
+        [0.          , 0.01338947  , 0.          , 48.56091309 , 185.72445679,
+         255.        ],
+        [0.          , 0.01252227  , 4.16432190  , 73.25834656 , 189.29330444,
+         255.        ],
+        [0.          , 0.01163194  , 0.          , 1.94510651  , 170.62890625,
+         255.        ],
+        [0.          , 0.01038674  , 0.          , 0.          , 182.63244629,
+         247.11941528],
+        [0.          , 0.01011091  , 0.91199112  , 168.11575317, 65.07162476 ,
+         255.        ]]), 'bbox_num': Tensor(shape=[1], dtype=int32, place=Place(cpu), stop_gradient=True,
+       [13])}
+{'bbox': Tensor(shape=[12, 6], dtype=float32, place=Place(cpu), stop_gradient=True,
+       [[0.          , 0.61504078  , 0.          , 3.24284363  , 184.81475830,
+         255.        ],
+        [0.          , 0.03909646  , 62.71360779 , 119.44968414, 72.12974548 ,
+         127.12538910],
+        [0.          , 0.03286334  , 1.40994263  , 22.24217987 , 191.        ,
+         255.        ],
+        [0.          , 0.02526248  , 0.          , 21.59420013 , 186.47589111,
+         255.        ],
+        [0.          , 0.02148862  , 0.72512817  , 3.32353210  , 191.        ,
+         255.        ],
+        [0.          , 0.02125721  , 3.88572693  , 48.91230774 , 189.01982117,
+         255.        ],
+        [0.          , 0.02088168  , 78.05696869 , 121.98802948, 88.85541534 ,
+         128.91206360],
+        [0.          , 0.01437255  , 2.05515289  , 0.          , 190.94891357,
+         246.52546692],
+        [0.          , 0.01284519  , 0.          , 48.47024536 , 185.63078308,
+         255.        ],
+        [0.          , 0.01176572  , 4.19334412  , 73.29638672 , 189.25653076,
+         255.        ],
+        [0.          , 0.01098848  , 0.          , 2.29965210  , 170.58709717,
+         255.        ],
+        [0.          , 0.01047226  , 0.          , 0.          , 182.77435303,
+         246.70645142]]), 'bbox_num': Tensor(shape=[1], dtype=int32, place=Place(cpu), stop_gradient=True,
+       [12])}
+[10/12 09:51:07] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+[10/12 09:51:07] ppdet.metrics.metrics INFO: The bbox result is saved to C:\lyk\fire\qualityDetection\fusion\smoke\thermal_official\bbox.json and do not evaluate the mAP.
+INFERENCE_COMPLETE {"modality": "thermal", "processed_images": 3, "expected_images": 3, "missing_images": [], "duplicate_images": 0, "retained_boxes": 38, "images_with_detections": 3, "images_without_detections": 0, "elapsed_predict_seconds": 0.42136089969426394, "batches_returned": 3, "prediction_json": "C:\\lyk\\fire\\qualityDetection\\fusion\\smoke\\thermal_predictions.json", "checkpoint_sha256": "662f9a630a11dc399a5896eebeaba25b714520478f5da0747c2302c9616cf7f6", "complete": true}

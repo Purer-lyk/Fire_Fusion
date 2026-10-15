@@ -1,0 +1,60 @@
+{
+  "modality": "rgb",
+  "python": "C:\\lyk\\fire\\qualityDetection\\.venv\\Scripts\\python.exe",
+  "paddle_version": "3.3.1",
+  "device": "Place(gpu:0)",
+  "gpu_name": "NVIDIA GeForce RTX 5070",
+  "config": "C:\\lyk\\fire\\qualityDetection\\configs\\ppyolov2_rgb.yml",
+  "config_sha256": "dd9cafd596d84f5b63a4aedc2beb265931d7b9323f9c90f740c77324dc3f78b7",
+  "checkpoint": "C:\\lyk\\fire\\qualityDetection\\training\\output\\ppyolov2_rgb\\model_final.pdparams",
+  "checkpoint_sha256": "2244929ed99be3a5536b5f529e0f940ced29cd92c282ebb26bba304056f884b7",
+  "checkpoint_bytes": 217030334,
+  "source_manifest": "C:\\lyk\\fire\\qualityDetection\\audit\\test_manifest.json",
+  "source_pairs": "C:\\lyk\\fire\\qualityDetection\\audit\\test_pairs.json",
+  "paper_sample_sha256": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade",
+  "architecture": "YOLOv3",
+  "backbone": {
+    "depth": 50,
+    "variant": "d",
+    "return_idx": [
+      1,
+      2,
+      3
+    ],
+    "dcn_v2_stages": [
+      3
+    ],
+    "freeze_at": -1,
+    "freeze_norm": false,
+    "norm_decay": 0.0
+  },
+  "neck": "PPYOLOPAN",
+  "iou_aware": true,
+  "post_process": {
+    "decode": {
+      "name": "YOLOBox",
+      "conf_thresh": 0.5,
+      "downsample_ratio": 32,
+      "clip_bbox": true,
+      "scale_x_y": 1.05
+    },
+    "nms": {
+      "name": "MatrixNMS",
+      "keep_top_k": 100,
+      "score_threshold": 0.5,
+      "post_threshold": 0.5,
+      "nms_top_k": -1,
+      "background_label": -1
+    }
+  },
+  "minimum_score": 0.5,
+  "coordinate_format": "xyxy in original-image pixels",
+  "input_shape": [
+    3,
+    640,
+    640
+  ],
+  "UV_used_by_network": false,
+  "truth_used": false,
+  "expected_images": 1528
+}

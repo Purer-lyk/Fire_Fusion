@@ -1,0 +1,116 @@
+{
+  "status": "candidate/exploratory, unverified across test scenes",
+  "source": "C:\\lyk\\paper\\bpa_test\\main\\homo_main.cpp",
+  "source_sha256": "e18340285163844a56f8954221d955d838e0df5c606f2e98ab6c2fec5b02d262",
+  "direction": "thermal pts2 -> RGB pts1",
+  "thermal_points": [
+    [
+      23.0,
+      193.0
+    ],
+    [
+      53.0,
+      186.0
+    ],
+    [
+      80.0,
+      193.0
+    ],
+    [
+      118.0,
+      182.0
+    ],
+    [
+      147.0,
+      191.0
+    ],
+    [
+      118.0,
+      204.0
+    ],
+    [
+      47.0,
+      206.0
+    ]
+  ],
+  "rgb_points": [
+    [
+      97.0,
+      163.0
+    ],
+    [
+      116.0,
+      160.0
+    ],
+    [
+      136.0,
+      168.0
+    ],
+    [
+      164.0,
+      154.0
+    ],
+    [
+      183.0,
+      161.0
+    ],
+    [
+      163.0,
+      175.0
+    ],
+    [
+      113.0,
+      180.0
+    ]
+  ],
+  "H": [
+    [
+      1.92042622438008,
+      0.9507123986929582,
+      -12.066726872440976
+    ],
+    [
+      0.12422393753495863,
+      3.4192415867981505,
+      -272.90093436339134
+    ],
+    [
+      0.0014076376148762877,
+      0.006591007646013004,
+      1.0
+    ]
+  ],
+  "estimator": "cv2.findHomography RANSAC threshold=3 original RGB pixels, rng seed=7",
+  "inlier_mask": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "fit_errors_px": [
+    7.077385923430703,
+    0.6987747701550969,
+    1.5718878872776327,
+    0.19853772171850415,
+    0.6297098626125099,
+    0.30050680306727595,
+    0.41575827917885155
+  ],
+  "fit_rmse_px": 2.770962190858275,
+  "fit_max_px": 7.077385923430703,
+  "leave_one_out_errors_px": [
+    9.502276139948723,
+    5.5171966330187,
+    2.07391293569504,
+    6.835540425557816,
+    107.76008572312966,
+    118.8518061742585,
+    3.440810841426269
+  ],
+  "leave_one_out_rmse_px": 60.852967439661775,
+  "leave_one_out_max_px": 118.8518061742585,
+  "validation_note": "Seven points are concentrated in a narrow y band; fit/LOO only measure these points, not full field or independent scenes. No rectangle offsets applied."
+}

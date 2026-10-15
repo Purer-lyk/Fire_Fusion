@@ -1,0 +1,32 @@
+[
+  {
+    "pair_index": 0,
+    "source_line": 1,
+    "rgb_name": "2026_05_23_07_47_22_0604_bgr.jpg",
+    "thermal_name": "2026_05_23_07_47_22_0604_thermal.jpg",
+    "rgb_path": "C:/lyk/paper_data/paper_data_/paper_data/bgr/2026_05_23_07_47_22_0604_bgr.jpg",
+    "rgb_sha256": "e4c84af3fa0c5b83a111965d41d518c83572da94c32cc6eb1f771606e391394e",
+    "thermal_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_07_47_22_0604_thermal.jpg",
+    "thermal_sha256": "a8402b131335d35c7563fcbbbf706a27c4cc9ed09d140559139926003d5b9c70"
+  },
+  {
+    "pair_index": 1,
+    "source_line": 2,
+    "rgb_name": "2026_05_23_07_47_22_0862_bgr.jpg",
+    "thermal_name": "2026_05_23_07_47_22_0862_thermal.jpg",
+    "rgb_path": "C:/lyk/paper_data/paper_data_/paper_data/bgr/2026_05_23_07_47_22_0862_bgr.jpg",
+    "rgb_sha256": "68a7936f2d4642e136594dafe24e3ba5c687b7ed72a9ad4d4202637374e752a6",
+    "thermal_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_07_47_22_0862_thermal.jpg",
+    "thermal_sha256": "c6f225f6059821add56d732439172c3fb461d99f4f300f05f1a244e3a6b6b02e"
+  },
+  {
+    "pair_index": 2,
+    "source_line": 3,
+    "rgb_name": "2026_05_23_07_47_23_0143_bgr.jpg",
+    "thermal_name": "2026_05_23_07_47_23_0143_thermal.jpg",
+    "rgb_path": "C:/lyk/paper_data/paper_data_/paper_data/bgr/2026_05_23_07_47_23_0143_bgr.jpg",
+    "rgb_sha256": "8828c9ece34b86e8ef994caf81e422cf2b7d1c56c775b7dc06c48236f8fc662e",
+    "thermal_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_07_47_23_0143_thermal.jpg",
+    "thermal_sha256": "626413019ca86f5e8897775b626d2e6688ac7dfe281d033c45fc3159776efef9"
+  }
+]

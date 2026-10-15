@@ -1,0 +1,470 @@
+[
+  {
+    "modality": "rgb",
+    "pair_index": 0,
+    "view": "full320",
+    "crop": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "input_size": 320,
+    "detections": 0
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 0,
+    "view": "tile0_320",
+    "crop": [
+      0,
+      0,
+      183,
+      183
+    ],
+    "input_size": 320,
+    "detections": 0
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 0,
+    "view": "tile1_320",
+    "crop": [
+      137,
+      0,
+      320,
+      183
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 0,
+    "view": "tile2_320",
+    "crop": [
+      0,
+      137,
+      183,
+      320
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 0,
+    "view": "tile3_320",
+    "crop": [
+      137,
+      137,
+      320,
+      320
+    ],
+    "input_size": 320,
+    "detections": 3
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 1,
+    "view": "full320",
+    "crop": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "input_size": 320,
+    "detections": 0
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 1,
+    "view": "tile0_320",
+    "crop": [
+      0,
+      0,
+      183,
+      183
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 1,
+    "view": "tile1_320",
+    "crop": [
+      137,
+      0,
+      320,
+      183
+    ],
+    "input_size": 320,
+    "detections": 0
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 1,
+    "view": "tile2_320",
+    "crop": [
+      0,
+      137,
+      183,
+      320
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 1,
+    "view": "tile3_320",
+    "crop": [
+      137,
+      137,
+      320,
+      320
+    ],
+    "input_size": 320,
+    "detections": 2
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 2,
+    "view": "full320",
+    "crop": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "input_size": 320,
+    "detections": 0
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 2,
+    "view": "tile0_320",
+    "crop": [
+      0,
+      0,
+      183,
+      183
+    ],
+    "input_size": 320,
+    "detections": 0
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 2,
+    "view": "tile1_320",
+    "crop": [
+      137,
+      0,
+      320,
+      183
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 2,
+    "view": "tile2_320",
+    "crop": [
+      0,
+      137,
+      183,
+      320
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 2,
+    "view": "tile3_320",
+    "crop": [
+      137,
+      137,
+      320,
+      320
+    ],
+    "input_size": 320,
+    "detections": 2
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 0,
+    "view": "full640",
+    "crop": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "input_size": 640,
+    "detections": 3
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 1,
+    "view": "full640",
+    "crop": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "input_size": 640,
+    "detections": 3
+  },
+  {
+    "modality": "rgb",
+    "pair_index": 2,
+    "view": "full640",
+    "crop": [
+      0,
+      0,
+      320,
+      320
+    ],
+    "input_size": 640,
+    "detections": 3
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 0,
+    "view": "full320",
+    "crop": [
+      0,
+      0,
+      192,
+      256
+    ],
+    "input_size": 320,
+    "detections": 6
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 0,
+    "view": "tile0_320",
+    "crop": [
+      0,
+      0,
+      110,
+      147
+    ],
+    "input_size": 320,
+    "detections": 6
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 0,
+    "view": "tile1_320",
+    "crop": [
+      82,
+      0,
+      192,
+      147
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 0,
+    "view": "tile2_320",
+    "crop": [
+      0,
+      109,
+      110,
+      256
+    ],
+    "input_size": 320,
+    "detections": 3
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 0,
+    "view": "tile3_320",
+    "crop": [
+      82,
+      109,
+      192,
+      256
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 1,
+    "view": "full320",
+    "crop": [
+      0,
+      0,
+      192,
+      256
+    ],
+    "input_size": 320,
+    "detections": 7
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 1,
+    "view": "tile0_320",
+    "crop": [
+      0,
+      0,
+      110,
+      147
+    ],
+    "input_size": 320,
+    "detections": 8
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 1,
+    "view": "tile1_320",
+    "crop": [
+      82,
+      0,
+      192,
+      147
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 1,
+    "view": "tile2_320",
+    "crop": [
+      0,
+      109,
+      110,
+      256
+    ],
+    "input_size": 320,
+    "detections": 3
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 1,
+    "view": "tile3_320",
+    "crop": [
+      82,
+      109,
+      192,
+      256
+    ],
+    "input_size": 320,
+    "detections": 2
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 2,
+    "view": "full320",
+    "crop": [
+      0,
+      0,
+      192,
+      256
+    ],
+    "input_size": 320,
+    "detections": 6
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 2,
+    "view": "tile0_320",
+    "crop": [
+      0,
+      0,
+      110,
+      147
+    ],
+    "input_size": 320,
+    "detections": 9
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 2,
+    "view": "tile1_320",
+    "crop": [
+      82,
+      0,
+      192,
+      147
+    ],
+    "input_size": 320,
+    "detections": 1
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 2,
+    "view": "tile2_320",
+    "crop": [
+      0,
+      109,
+      110,
+      256
+    ],
+    "input_size": 320,
+    "detections": 3
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 2,
+    "view": "tile3_320",
+    "crop": [
+      82,
+      109,
+      192,
+      256
+    ],
+    "input_size": 320,
+    "detections": 2
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 0,
+    "view": "full640",
+    "crop": [
+      0,
+      0,
+      192,
+      256
+    ],
+    "input_size": 640,
+    "detections": 6
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 1,
+    "view": "full640",
+    "crop": [
+      0,
+      0,
+      192,
+      256
+    ],
+    "input_size": 640,
+    "detections": 7
+  },
+  {
+    "modality": "thermal",
+    "pair_index": 2,
+    "view": "full640",
+    "crop": [
+      0,
+      0,
+      192,
+      256
+    ],
+    "input_size": 640,
+    "detections": 6
+  }
+]

@@ -1,0 +1,13 @@
+..F
+======================================================================
+FAIL: test_unequal_sensor_heights (__main__.Montage.test_unequal_sensor_heights)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\dual_baseline_target_ds\test_dual.py", line 15, in test_unequal_sensor_heights
+    self.assertTrue(callable(getattr(m,'montage',None)),'sensor dimensions display helper missing')
+AssertionError: False is not true : sensor dimensions display helper missing
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.231s
+
+FAILED (failures=1)

@@ -1,0 +1,328 @@
+{
+  "reference": "UV fourth column; circular evaluation not independent scene truth",
+  "label_counts": {
+    "0": 130,
+    "1": 1398
+  },
+  "config_sha256": "4dce91bbfb850ca95816d895056c3bdfd0a0ea7215ecea2ff3b6faf37f6433c5",
+  "methods": {
+    "RGB": {
+      "N": 1528,
+      "TP": 452,
+      "FP": 126,
+      "FN": 946,
+      "TN": 4,
+      "accuracy": 0.29842931937172773,
+      "precision": 0.7820069204152249,
+      "recall": 0.32331902718168815,
+      "F1": 0.4574898785425101,
+      "balanced_accuracy": 0.17704412897545946,
+      "specificity": 0.03076923076923077,
+      "FPR": 0.9692307692307692,
+      "FNR": 0.6766809728183119,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 578
+    },
+    "Thermal": {
+      "N": 1528,
+      "TP": 732,
+      "FP": 0,
+      "FN": 666,
+      "TN": 130,
+      "accuracy": 0.5641361256544503,
+      "precision": 1.0,
+      "recall": 0.5236051502145923,
+      "F1": 0.6873239436619718,
+      "balanced_accuracy": 0.7618025751072961,
+      "specificity": 1.0,
+      "FPR": 0.0,
+      "FNR": 0.4763948497854077,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 732
+    },
+    "prior_ordinary_BetP": {
+      "N": 1528,
+      "TP": 966,
+      "FP": 126,
+      "FN": 432,
+      "TN": 4,
+      "accuracy": 0.6348167539267016,
+      "precision": 0.8846153846153846,
+      "recall": 0.6909871244635193,
+      "F1": 0.7759036144578313,
+      "balanced_accuracy": 0.36087817761637503,
+      "specificity": 0.03076923076923077,
+      "FPR": 0.9692307692307692,
+      "FNR": 0.3090128755364807,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 1092
+    },
+    "prior_reliability_BetP": {
+      "N": 1528,
+      "TP": 966,
+      "FP": 126,
+      "FN": 432,
+      "TN": 4,
+      "accuracy": 0.6348167539267016,
+      "precision": 0.8846153846153846,
+      "recall": 0.6909871244635193,
+      "F1": 0.7759036144578313,
+      "balanced_accuracy": 0.36087817761637503,
+      "specificity": 0.03076923076923077,
+      "FPR": 0.9692307692307692,
+      "FNR": 0.3090128755364807,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 1092
+    },
+    "prior_strict_BetP_visual": {
+      "N": 1528,
+      "TP": 168,
+      "FP": 0,
+      "FN": 1230,
+      "TN": 130,
+      "accuracy": 0.1950261780104712,
+      "precision": 1.0,
+      "recall": 0.12017167381974249,
+      "F1": 0.21455938697318008,
+      "balanced_accuracy": 0.5600858369098712,
+      "specificity": 1.0,
+      "FPR": 0.0,
+      "FNR": 0.8798283261802575,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 168
+    },
+    "prior_strict_BetP_classicUV": {
+      "N": 1528,
+      "TP": 168,
+      "FP": 0,
+      "FN": 1230,
+      "TN": 130,
+      "accuracy": 0.1950261780104712,
+      "precision": 1.0,
+      "recall": 0.12017167381974249,
+      "F1": 0.21455938697318008,
+      "balanced_accuracy": 0.5600858369098712,
+      "specificity": 1.0,
+      "FPR": 0.0,
+      "FNR": 0.8798283261802575,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 168
+    },
+    "A_noUV_mF": {
+      "N": 1528,
+      "TP": 455,
+      "FP": 106,
+      "FN": 943,
+      "TN": 24,
+      "accuracy": 0.31348167539267013,
+      "precision": 0.8110516934046346,
+      "recall": 0.32546494992846925,
+      "F1": 0.46452271567126086,
+      "balanced_accuracy": 0.2550401672719269,
+      "specificity": 0.18461538461538463,
+      "FPR": 0.8153846153846154,
+      "FNR": 0.6745350500715308,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 561
+    },
+    "A_UV_mprimeF": {
+      "N": 1528,
+      "TP": 455,
+      "FP": 0,
+      "FN": 943,
+      "TN": 130,
+      "accuracy": 0.38285340314136124,
+      "precision": 1.0,
+      "recall": 0.32546494992846925,
+      "F1": 0.4910955207771182,
+      "balanced_accuracy": 0.6627324749642346,
+      "specificity": 1.0,
+      "FPR": 0.0,
+      "FNR": 0.6745350500715308,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 455
+    },
+    "B_noUV_mF": {
+      "N": 1528,
+      "TP": 95,
+      "FP": 0,
+      "FN": 1303,
+      "TN": 130,
+      "accuracy": 0.14725130890052357,
+      "precision": 1.0,
+      "recall": 0.06795422031473533,
+      "F1": 0.12726054922973878,
+      "balanced_accuracy": 0.5339771101573677,
+      "specificity": 1.0,
+      "FPR": 0.0,
+      "FNR": 0.9320457796852647,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 95
+    },
+    "B_UV_mprimeF": {
+      "N": 1528,
+      "TP": 95,
+      "FP": 0,
+      "FN": 1303,
+      "TN": 130,
+      "accuracy": 0.14725130890052357,
+      "precision": 1.0,
+      "recall": 0.06795422031473533,
+      "F1": 0.12726054922973878,
+      "balanced_accuracy": 0.5339771101573677,
+      "specificity": 1.0,
+      "FPR": 0.0,
+      "FNR": 0.9320457796852647,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 95
+    },
+    "C_noUV_mF": {
+      "N": 1528,
+      "TP": 163,
+      "FP": 0,
+      "FN": 1235,
+      "TN": 130,
+      "accuracy": 0.19175392670157068,
+      "precision": 1.0,
+      "recall": 0.11659513590844063,
+      "F1": 0.2088404868673927,
+      "balanced_accuracy": 0.5582975679542204,
+      "specificity": 1.0,
+      "FPR": 0.0,
+      "FNR": 0.8834048640915594,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 163
+    },
+    "C_UV_mprimeF": {
+      "N": 1528,
+      "TP": 163,
+      "FP": 0,
+      "FN": 1235,
+      "TN": 130,
+      "accuracy": 0.19175392670157068,
+      "precision": 1.0,
+      "recall": 0.11659513590844063,
+      "F1": 0.2088404868673927,
+      "balanced_accuracy": 0.5582975679542204,
+      "specificity": 1.0,
+      "FPR": 0.0,
+      "FNR": 0.8834048640915594,
+      "binary_decision_coverage": 1.0,
+      "predicted_fire_count": 163
+    }
+  },
+  "transitions": {
+    "A": {
+      "kept_fire": 455,
+      "suppressed_fire": 106,
+      "resurrected_fire": 0,
+      "kept_nofire": 967,
+      "reason_counts": {
+        "UV_suppressed": 106,
+        "visual_mF_not_strictly_above_threshold": 967,
+        "fire": 455
+      }
+    },
+    "B": {
+      "kept_fire": 95,
+      "suppressed_fire": 0,
+      "resurrected_fire": 0,
+      "kept_nofire": 1433,
+      "reason_counts": {
+        "visual_mF_not_strictly_above_threshold": 1433,
+        "fire": 95
+      }
+    },
+    "C": {
+      "kept_fire": 163,
+      "suppressed_fire": 0,
+      "resurrected_fire": 0,
+      "kept_nofire": 1365,
+      "reason_counts": {
+        "spatial_gate_blocked": 1360,
+        "fire": 163,
+        "visual_mF_not_strictly_above_threshold": 5
+      }
+    }
+  },
+  "coverage": {
+    "A": {
+      "geometry_states": {
+        "NoFire": 1359,
+        "FireCandidate": 168,
+        "Transition": 1
+      },
+      "matching_status": {
+        "unmatched_rgb": 391,
+        "missing_both": 436,
+        "matched": 169,
+        "unmatched_thermal": 532
+      },
+      "eligible_count": 1528,
+      "hard_gate_eligibility_fraction": 1.0,
+      "binary_decision_coverage": 1.0,
+      "abstentions": 0,
+      "visual_mF_range": [
+        0.0,
+        0.8147522378967721
+      ],
+      "UV_mprimeF_range": [
+        0.0,
+        0.8147522378967721
+      ],
+      "vacuous_count": 436
+    },
+    "B": {
+      "geometry_states": {
+        "NoFire": 1359,
+        "FireCandidate": 168,
+        "Transition": 1
+      },
+      "matching_status": {
+        "unmatched_rgb": 391,
+        "missing_both": 436,
+        "matched": 169,
+        "unmatched_thermal": 532
+      },
+      "eligible_count": 1528,
+      "hard_gate_eligibility_fraction": 1.0,
+      "binary_decision_coverage": 1.0,
+      "abstentions": 0,
+      "visual_mF_range": [
+        0.0,
+        0.6353145517129252
+      ],
+      "UV_mprimeF_range": [
+        0.0,
+        0.6353145517129252
+      ],
+      "vacuous_count": 436
+    },
+    "C": {
+      "geometry_states": {
+        "NoFire": 1359,
+        "FireCandidate": 168,
+        "Transition": 1
+      },
+      "matching_status": {
+        "unmatched_rgb": 391,
+        "missing_both": 436,
+        "matched": 169,
+        "unmatched_thermal": 532
+      },
+      "eligible_count": 168,
+      "hard_gate_eligibility_fraction": 0.1099476439790576,
+      "binary_decision_coverage": 1.0,
+      "abstentions": 0,
+      "visual_mF_range": [
+        0.0,
+        0.8147522378967721
+      ],
+      "UV_mprimeF_range": [
+        0.0,
+        0.8147522378967721
+      ],
+      "vacuous_count": 1359
+    }
+  }
+}

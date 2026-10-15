@@ -1,0 +1,13 @@
+.....F
+======================================================================
+FAIL: test_real_verifier_exists (__main__.Verification.test_real_verifier_exists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\dual_baseline_target_ds\test_dual.py", line 39, in test_real_verifier_exists
+    self.assertTrue(Path(__file__).with_name('verify_dual.py').exists(),'independent verifier missing')
+AssertionError: False is not true : independent verifier missing
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.241s
+
+FAILED (failures=1)

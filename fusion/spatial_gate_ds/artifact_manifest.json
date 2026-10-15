@@ -1,0 +1,133 @@
+{
+  "old_files_rechecked_unchanged": true,
+  "artifacts": {
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\borrowed_core_regression.log": {
+      "bytes": 106,
+      "sha256": "930b467cca21a33ab4d192272bc83db9f53a3c9786c7fd2d6be4f1b8c80ceb60"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\config_freeze_receipt.json": {
+      "bytes": 153,
+      "sha256": "61b1b5c37fd8ba378697efe47607842daa50a0db0fe7c7237436bb5946183ad9"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\deliverable_verification.json": {
+      "bytes": 912,
+      "sha256": "a0a127813ec2adec4193f0c1ae52f11cd10b4d55b7dd64f5e70c0e204c22fcbf"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\docx_package_validation.json": {
+      "bytes": 28,
+      "sha256": "296afd233509f53d934724ea7ffbcc1ac131f331c9cb979dc674b675e10803ed"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\execution_summary.json": {
+      "bytes": 45453,
+      "sha256": "e4d834bf7c3e692deb5d6f2a71e1bb142dd51cb72a5e6f1fe26557fe5c961e01"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\frozen_config.json": {
+      "bytes": 1394,
+      "sha256": "00c08632cb2f75c89380877ab206e6d6c67fcd7bb9a66309733bdc06935194d7"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\fusion_results.csv": {
+      "bytes": 552176,
+      "sha256": "56f526b9c3a1e3e032b31104bc173e626d4c0ccaafe4406c851fc85fd60f1ce9"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\fusion_results.json": {
+      "bytes": 2584269,
+      "sha256": "4682574a3324f9c0cbf7dda749e65c115a4c6c2102aa2564d893f243c940b7e6"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\gate_core.py": {
+      "bytes": 2794,
+      "sha256": "6b6d37e529a3d538f8a18510cd059ab77a4c7eeed145751ed5d8d9779a42576d"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\geometry_evidence.json": {
+      "bytes": 4011618,
+      "sha256": "e1e74c088cc6fbac492cd604d21e74df6b95cecb31f642fc99417aa230c756a8"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\green_frame.log": {
+      "bytes": 462,
+      "sha256": "51d062eecdc2e8beb2af7a5bf92b6b2232d12127c8a4407e97f15cb6b2d0fcc2"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\green_missing.log": {
+      "bytes": 215,
+      "sha256": "3c115770068395fada669d5a67c313d5fe2971bc4b6a98c4e68bed2f4782358e"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\green_transition.log": {
+      "bytes": 329,
+      "sha256": "5fccede2fd407dae201541bae9bffd8c89f9b081fcd4edcc9782a67b3eb46203"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\metrics.csv": {
+      "bytes": 1974,
+      "sha256": "374200b3a935c84c40453ab23b2c69808711e97fc8722904af35e59ca8beda88"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\metrics.json": {
+      "bytes": 9955,
+      "sha256": "65f8c3e6a78a4eda6eaef98d7f35f3f6991f344437efc11d9bb5102365a8f6de"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\protected_before_hashes.json": {
+      "bytes": 30777,
+      "sha256": "15ad032a7a2f24a663fffdb1841fe19eec4be04c02680494ea907f2a23aeea13"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\README.md": {
+      "bytes": 3850,
+      "sha256": "7b12186a130b8a91f9e888d6fadd0f843b606432dfa12b2c84a28028f7696a8d"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\red_frame.log": {
+      "bytes": 1010,
+      "sha256": "ea5c8f6de43b4edfb01bcd4145fefa938802d9647c8699b10593861703cc9ff2"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\red_full_run.log": {
+      "bytes": 1132,
+      "sha256": "f9268bf53a38bcf9517649be84405b28b4910804582b227f39ac36c52962c2e8"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\red_missing.log": {
+      "bytes": 745,
+      "sha256": "0fae2fe9038ea052000831b3c81f645dba43d6e98c6d740ef5ca60c96f5d51e7"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\red_transition.log": {
+      "bytes": 837,
+      "sha256": "9c412b1d1fd161b0a40e423b70f7479c317f6a3d7e4d2598c050303c6ad120d6"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\report_readback.txt": {
+      "bytes": 10360,
+      "sha256": "d47c5c7debffc0530cde5f01fadbff13ce1888f1fe30a9a4a83932ddffa53d30"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\run_experiment.py": {
+      "bytes": 23538,
+      "sha256": "e375a877581165bb8c7defff88cd90f47bb7e9891705f25b4602bb77b0e6b28b"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\sensitivity_metrics.csv": {
+      "bytes": 1622,
+      "sha256": "db5a9cbe52b013f764c871f65e262b8807175d0dff097be0a61380a863761bea"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\tests_and_execution.log": {
+      "bytes": 11459,
+      "sha256": "70f321062a05423d1b67406db53ff04d1facb00064037e0bc373554bb9a5293d"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\test_gate.py": {
+      "bytes": 3685,
+      "sha256": "c870593569edca17f9d7bcb6b064f7040396a1e7b55396e54246bed2fecf1e77"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\examples\\pair_0.png": {
+      "bytes": 411535,
+      "sha256": "ef1fc823b16942157ac18c904d78c9c783107842f4d0db65a52b9e0541493994"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\examples\\pair_1021.png": {
+      "bytes": 350872,
+      "sha256": "53356a98a40f2fb946904a159d0610c1fbf09c7ebda85e370c1dc36d02d01b78"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\examples\\pair_671.png": {
+      "bytes": 364945,
+      "sha256": "e810d1d6ed013f88347723aee450a0e9013f39237c59736a6c384e81598fa912"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\examples\\pair_906.png": {
+      "bytes": 361347,
+      "sha256": "613cee20b68abb37afcb3c146630a4b89c865943197f0848ac0c8d3c3f474d7a"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\__pycache__\\gate_core.cpython-312.pyc": {
+      "bytes": 5390,
+      "sha256": "6298fea88f68bef99485d8cf284ce00230675251a6c1862f831d3621131e9e3c"
+    },
+    "C:\\lyk\\fire\\qualityDetection\\reports\\spatial_gate_DS_1528_最终报告.docx": {
+      "bytes": 1518968,
+      "sha256": "8f0714b953f37eb9da55bb25721eb0d49849a202fc90c02fab375fa58afacfd3"
+    }
+  }
+}

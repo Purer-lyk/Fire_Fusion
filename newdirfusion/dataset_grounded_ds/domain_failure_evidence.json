@@ -1,0 +1,17 @@
+{
+  "sensor_named_source_images": {
+    "rgb": 372,
+    "thermal": 89
+  },
+  "all_sensor_named_source_images_are_reserved_test_exact_hashes": true,
+  "clean_RGB_conf01_real_boxes": 1519,
+  "clean_RGB_frames_any_conf01": 917,
+  "clean_RGB_max_score": 0.11068566143512726,
+  "clean_RGB_frames_at_prior_conf02": 0,
+  "negative_UV_reference_nonempty_fire_annotation_overlap": {
+    "rgb": 70,
+    "thermal": 70
+  },
+  "meaning": "Nonempty fire annotations versus UV0 are a semantic mismatch to this user reference, not proof scene ground truth is false; never relabel from UV. All target sensor-domain labeled photos are exact reserved images and excluded; remaining public-domain labels do not provide non-overlapping camera-domain calibration. No README or sample/paired manifest found in supplied TorchDetection.",
+  "clean_same_model_baseline_zero_FPR_constraint": "Clean RGB baseline FPR0 cannot be significantly lowered below0, so the requested strict RGB reduction is impossible for these fixed model baselines. Frozen RGB support .2 has no candidate; no synthetic boxes or lowering baseline to manufacture failure."
+}

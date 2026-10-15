@@ -1,0 +1,13 @@
+.F
+======================================================================
+FAIL: test_hash_exclusion_not_filename (__main__.CoreTests.test_hash_exclusion_not_filename)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\newdirfusion\dataset_grounded_ds\test_delivery.py", line 14, in test_hash_exclusion_not_filename
+    self.assertTrue(hasattr(c,'safe_records'),'safe_records missing')
+AssertionError: False is not true : safe_records missing
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (failures=1)

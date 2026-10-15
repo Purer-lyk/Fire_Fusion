@@ -1,0 +1,49 @@
+EEEE
+======================================================================
+ERROR: test_fire_only_mass_and_missing_gate (__main__.FusionTest.test_fire_only_mass_and_missing_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\test_calibrated.py", line 5, in test_fire_only_mass_and_missing_gate
+    self.assertAlmostEqual(c.fire_mass(.4,.5,.2,.5),1-(1-.6*.4)*(1-.6*.5))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\calibrated_core.py", line 2, in fire_mass
+    raise NotImplementedError('fire-only BPA missing')
+NotImplementedError: fire-only BPA missing
+
+======================================================================
+ERROR: test_hungarian_recomputed_after_filtering (__main__.FusionTest.test_hungarian_recomputed_after_filtering)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\test_calibrated.py", line 12, in test_hungarian_recomputed_after_filtering
+    self.assertAlmostEqual(c.frame_score(rgb,thermal,[[.9],[.2]],.2,.2,.1,1),.96)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\calibrated_core.py", line 4, in frame_score
+    raise NotImplementedError('filtered matching missing')
+NotImplementedError: filtered matching missing
+
+======================================================================
+ERROR: test_target_uses_subset_baseline (__main__.FusionTest.test_target_uses_subset_baseline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\test_calibrated.py", line 14, in test_target_uses_subset_baseline
+    self.assertFalse(c.target({'FP':0,'FNR':.5},{'FPR':0,'FNR':.4},{'FPR':.9}))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\calibrated_core.py", line 8, in target
+    raise NotImplementedError('subset criterion missing')
+NotImplementedError: subset criterion missing
+
+======================================================================
+ERROR: test_uv_never_forces_fire (__main__.FusionTest.test_uv_never_forces_fire)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\test_calibrated.py", line 8, in test_uv_never_forces_fire
+    self.assertEqual(c.uv_score(0,1,.5),0)
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\calibrated_core.py", line 6, in uv_score
+    raise NotImplementedError('UV multiplication missing')
+NotImplementedError: UV multiplication missing
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (errors=4)

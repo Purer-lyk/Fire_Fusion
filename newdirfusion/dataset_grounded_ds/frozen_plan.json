@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-10-14T03:13:06.084071+00:00",
+  "prior_cfg_sha256": "8413ec6bd77a1a6ca45f57cad566b366ba8c75c6c44c568bd1bd9d69aab96399",
+  "frozen_parameters": {
+    "tR": 0.2,
+    "tT": 0.1,
+    "iou_gate": 0.01,
+    "rmin": 1.0,
+    "decision_threshold": 0.3
+  },
+  "variants": [
+    [
+      "rgb5_native320",
+      "rgb",
+      "fireOrigin_yolo26n-5",
+      320
+    ],
+    [
+      "rgb5_control640",
+      "rgb",
+      "fireOrigin_yolo26n-5",
+      640
+    ],
+    [
+      "rgb6_native320",
+      "rgb",
+      "fireOrigin_yolo26n-6",
+      320
+    ],
+    [
+      "thermal5_native320",
+      "thermal",
+      "thermal_yolo26n-5",
+      320
+    ],
+    [
+      "thermal5_control640",
+      "thermal",
+      "thermal_yolo26n-5",
+      640
+    ],
+    [
+      "thermal3_native320",
+      "thermal",
+      "thermal_yolo26n-3",
+      320
+    ]
+  ],
+  "inference_conf": 0.01,
+  "baseline_conf": 0.5,
+  "selection": "Primary is supplied RGB5+thermal5 native320, chosen from training imgsz BEFORE inference; 640 control. RGB6 chosen from stored validation mAP95, thermal3 stronger validation control. No selecting winner on full labels. All previously seen; diagnostic exploratory evaluation, not independent.",
+  "method": "No UV inference input. Real dual boxes, 4-corner full affine polygon IoU, dummy Hungarian one-to-one. Fire-only DS K=0, rmin1 so spatial is gate only. No ROI synthetic boxes. Prior config tR.2 tT.1 iou.01 strict mF>.3 unchanged."
+}

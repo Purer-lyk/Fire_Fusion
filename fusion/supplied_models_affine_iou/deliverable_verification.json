@@ -1,0 +1,15 @@
+{
+  "csv_rows": 1528,
+  "unique_ids": 1528,
+  "metrics_recomputed_from_csv": true,
+  "docx_zip_crc_ok": true,
+  "docx_readback_ok": true,
+  "embedded_images": 5,
+  "source_and_previous_report_unchanged": true,
+  "prediction_reinference": false,
+  "docx_path": "C:\\lyk\\fire\\qualityDetection\\reports\\uploadedmodels_AffineIoU_DS_1528.docx",
+  "docx_sha256": "57c52e32bfd20bca92231976aed924c2cf4881bcad3bf318abe44081584833a0",
+  "csv_sha256": "43021a18db8aea1ef8271ca65b621b540c2efe6f6fd7f28c6f022fc302bf6101",
+  "metrics_sha256": "67fa1311a9d7418e86a15f49f8362d4d6fe48be434f75be455399c186b5b3b5c",
+  "cpp_parity_max_abs_error": 2.220446049250313e-16
+}

@@ -1,0 +1,17 @@
+metric: COCO
+num_classes: 1
+TrainDataset:
+  name: COCODataSet
+  image_dir: ""
+  anno_path: "C:/lyk/fire/qualityDetection/datasets/rgb/train.json"
+  dataset_dir: ""
+  data_fields: [image, gt_bbox, gt_class, is_crowd]
+  allow_empty: true
+  empty_ratio: 1.0
+EvalDataset:
+  name: COCODataSet
+  image_dir: ""
+  anno_path: "C:/lyk/fire/qualityDetection/datasets/rgb/val.json"
+  dataset_dir: ""
+  allow_empty: true
+  data_fields: [image, gt_bbox, gt_class, is_crowd]

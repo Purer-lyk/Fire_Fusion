@@ -1,0 +1,60 @@
+{
+  "modality": "thermal",
+  "python": "C:\\lyk\\fire\\qualityDetection\\.venv\\Scripts\\python.exe",
+  "paddle_version": "3.3.1",
+  "device": "Place(gpu:0)",
+  "gpu_name": "NVIDIA GeForce RTX 5070",
+  "config": "C:\\lyk\\fire\\qualityDetection\\configs\\ppyolov2_thermal.yml",
+  "config_sha256": "f078d8de5b6f598b1510b2ad005ae675194f2a58747ef2ec24849f9d9488b77a",
+  "checkpoint": "C:\\lyk\\fire\\qualityDetection\\training\\output\\ppyolov2_thermal\\model_final.pdparams",
+  "checkpoint_sha256": "662f9a630a11dc399a5896eebeaba25b714520478f5da0747c2302c9616cf7f6",
+  "checkpoint_bytes": 217030334,
+  "source_manifest": "C:\\lyk\\fire\\qualityDetection\\audit\\test_manifest.json",
+  "source_pairs": "C:\\lyk\\fire\\qualityDetection\\audit\\test_pairs.json",
+  "paper_sample_sha256": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade",
+  "architecture": "YOLOv3",
+  "backbone": {
+    "depth": 50,
+    "variant": "d",
+    "return_idx": [
+      1,
+      2,
+      3
+    ],
+    "dcn_v2_stages": [
+      3
+    ],
+    "freeze_at": -1,
+    "freeze_norm": false,
+    "norm_decay": 0.0
+  },
+  "neck": "PPYOLOPAN",
+  "iou_aware": true,
+  "post_process": {
+    "decode": {
+      "name": "YOLOBox",
+      "conf_thresh": 0.01,
+      "downsample_ratio": 32,
+      "clip_bbox": true,
+      "scale_x_y": 1.05
+    },
+    "nms": {
+      "name": "MatrixNMS",
+      "keep_top_k": 100,
+      "score_threshold": 0.01,
+      "post_threshold": 0.01,
+      "nms_top_k": -1,
+      "background_label": -1
+    }
+  },
+  "minimum_score": 0.01,
+  "coordinate_format": "xyxy in original-image pixels",
+  "input_shape": [
+    3,
+    640,
+    640
+  ],
+  "UV_used_by_network": false,
+  "truth_used": false,
+  "expected_images": 3
+}

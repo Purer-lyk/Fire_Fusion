@@ -1,0 +1,14 @@
+{
+  "elapsed_seconds": 1.972616195678711,
+  "real_cached_rows": 1528,
+  "verified_source_images": 3056,
+  "unique_image_hashes": 3056,
+  "trials": 480,
+  "selection_labels": "calibration only",
+  "heldout_evaluations_after_freeze": 1,
+  "protected_unchanged": true,
+  "frozen_config_sha256": "8413ec6bd77a1a6ca45f57cad566b366ba8c75c6c44c568bd1bd9d69aab96399",
+  "new_detector_forwards": 0,
+  "reuse": "Real prior .1 full frame/ROI YOLO26n outputs; no new inference needed for thresholds >=.1",
+  "completed_utc": "2026-10-14T02:43:37.162040+00:00"
+}

@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_pair_runtime_and_report (__main__.DeliverableTest.test_pair_runtime_and_report)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\test_deliverable.py", line 6, in test_pair_runtime_and_report
+    self.assertTrue((root/'infer_pair.py').exists(),'standalone paired inference not implemented')
+AssertionError: False is not true : standalone paired inference not implemented
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

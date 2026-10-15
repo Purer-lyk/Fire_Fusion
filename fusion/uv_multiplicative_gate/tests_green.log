@@ -1,0 +1,7 @@
+test_literal_uv_suppression (__main__.FormulaTest.test_literal_uv_suppression) ... ok
+test_full_runner_and_invariants (__main__.IntegrationTest.test_full_runner_and_invariants) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 1.150s
+
+OK

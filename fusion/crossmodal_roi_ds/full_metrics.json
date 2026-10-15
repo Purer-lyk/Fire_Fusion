@@ -1,0 +1,103 @@
+{
+  "N": 1528,
+  "reference": "UV fourth column; optional UV metrics circular, vision-only UV-reference agreement not independently reviewed truth",
+  "methods": {
+    "primary_vision_only": {
+      "TP": 158,
+      "FP": 0,
+      "FN": 1240,
+      "TN": 130,
+      "FPR": 0.0,
+      "FNR": 0.8869814020028612,
+      "precision": 1.0,
+      "recall": 0.11301859799713877,
+      "F1": 0.20308483290488433,
+      "balanced_accuracy": 0.5565092989985694,
+      "meets_all_target": false
+    },
+    "optional_uv_gate": {
+      "TP": 158,
+      "FP": 0,
+      "FN": 1240,
+      "TN": 130,
+      "FPR": 0.0,
+      "FNR": 0.8869814020028612,
+      "precision": 1.0,
+      "recall": 0.11301859799713877,
+      "F1": 0.20308483290488433,
+      "balanced_accuracy": 0.5565092989985694,
+      "meets_all_target": false
+    },
+    "before_roi_vision": {
+      "TP": 158,
+      "FP": 0,
+      "FN": 1240,
+      "TN": 130,
+      "FPR": 0.0,
+      "FNR": 0.8869814020028612,
+      "precision": 1.0,
+      "recall": 0.11301859799713877,
+      "F1": 0.20308483290488433,
+      "balanced_accuracy": 0.5565092989985694,
+      "meets_all_target": false
+    },
+    "rgb_historical_baseline": {
+      "TP": 452,
+      "FP": 126,
+      "FN": 946,
+      "TN": 4,
+      "FPR": 0.9692307692307692,
+      "FNR": 0.6766809728183119,
+      "precision": 0.7820069204152249,
+      "recall": 0.32331902718168815,
+      "F1": 0.4574898785425101,
+      "balanced_accuracy": 0.17704412897545946,
+      "meets_all_target": false
+    },
+    "thermal_historical_baseline": {
+      "TP": 732,
+      "FP": 0,
+      "FN": 666,
+      "TN": 130,
+      "FPR": 0.0,
+      "FNR": 0.47639484978540775,
+      "precision": 1.0,
+      "recall": 0.5236051502145923,
+      "F1": 0.6873239436619719,
+      "balanced_accuracy": 0.7618025751072961,
+      "meets_all_target": false
+    },
+    "rgb_new_conf01": {
+      "TP": 1203,
+      "FP": 130,
+      "FN": 195,
+      "TN": 0,
+      "FPR": 1.0,
+      "FNR": 0.13948497854077252,
+      "precision": 0.9024756189047262,
+      "recall": 0.8605150214592274,
+      "F1": 0.8809959721713657,
+      "balanced_accuracy": 0.4302575107296137,
+      "meets_all_target": false
+    },
+    "thermal_new_conf01": {
+      "TP": 1384,
+      "FP": 94,
+      "FN": 14,
+      "TN": 36,
+      "FPR": 0.7230769230769231,
+      "FNR": 0.010014306151645207,
+      "precision": 0.9364005412719891,
+      "recall": 0.9899856938483548,
+      "F1": 0.9624478442280945,
+      "balanced_accuracy": 0.6334543853857157,
+      "meets_all_target": false
+    }
+  },
+  "miss_diagnostics": {
+    "ds_low_score": 949,
+    "iou_failed": 98,
+    "roi_no_response": 189,
+    "candidate_weak_or_missing": 4
+  }
+}

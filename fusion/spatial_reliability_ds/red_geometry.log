@@ -1,0 +1,14 @@
+test_polygon_matching_translation_rotation_one_to_one (test_spatial.GeometryTests.test_polygon_matching_translation_rotation_one_to_one) ... FAIL
+
+======================================================================
+FAIL: test_polygon_matching_translation_rotation_one_to_one (test_spatial.GeometryTests.test_polygon_matching_translation_rotation_one_to_one)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\spatial_reliability_ds\test_spatial.py", line 25, in test_polygon_matching_translation_rotation_one_to_one
+    self.assertTrue(hasattr(s,'match'), 'one-to-one geometry missing')
+AssertionError: False is not true : one-to-one geometry missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

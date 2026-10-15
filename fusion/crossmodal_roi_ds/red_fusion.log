@@ -1,0 +1,50 @@
+EEEEE..
+======================================================================
+ERROR: test_ds_conservative (__main__.Fusion.test_ds_conservative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_core.py", line 22, in test_ds_conservative
+    m,k=core.combine(.9,.8,1)
+        ^^^^^^^^^^^^
+AttributeError: module 'core' has no attribute 'combine'
+
+======================================================================
+ERROR: test_hungarian_one_to_one_gate (__main__.Fusion.test_hungarian_one_to_one_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_core.py", line 15, in test_hungarian_one_to_one_gate
+    pairs=core.match(r,t,np.array([[1,0,0],[0,1,0]]),.3)
+          ^^^^^^^^^^
+AttributeError: module 'core' has no attribute 'match'
+
+======================================================================
+ERROR: test_known_metrics (__main__.Fusion.test_known_metrics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_core.py", line 25, in test_known_metrics
+    m=core.metrics([1,1,0,0],[1,0,1,0]); self.assertEqual([m[k] for k in ['TP','FP','FN','TN']],[1,1,1,1]); self.assertEqual(m['FPR'],.5)
+      ^^^^^^^^^^^^
+AttributeError: module 'core' has no attribute 'metrics'
+
+======================================================================
+ERROR: test_missing_evidence_hard_gate (__main__.Fusion.test_missing_evidence_hard_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_core.py", line 18, in test_missing_evidence_hard_gate
+    self.assertEqual(core.decide([],[],[],0)[0],False)
+                     ^^^^^^^^^^^
+AttributeError: module 'core' has no attribute 'decide'
+
+======================================================================
+ERROR: test_uv_no_resurrection (__main__.Fusion.test_uv_no_resurrection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_core.py", line 20, in test_uv_no_resurrection
+    self.assertEqual(core.uv_score(0,1),0); self.assertEqual(core.uv_score(.8,0),.4)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'core' has no attribute 'uv_score'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.056s
+
+FAILED (errors=5)

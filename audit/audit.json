@@ -1,0 +1,1198 @@
+{
+  "sources": {
+    "rgb": {
+      "source": "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin",
+      "images": 2599,
+      "xml_files": 2599,
+      "orphan_xml": [],
+      "observed_classes": {
+        "fire": 4054
+      },
+      "valid_images": 2599,
+      "negative_images": 51,
+      "issues": {},
+      "group_methods": {
+        "singleton_unknown_provenance": 2599
+      },
+      "train_images": 2079,
+      "val_images": 520,
+      "excluded_images": 0,
+      "train_negative": 42,
+      "val_negative": 9,
+      "exclusion_reasons": {},
+      "retained_groups": 2529,
+      "train_boxes": 3260,
+      "val_boxes": 794,
+      "val_fraction": 0.2000769526741054
+    },
+    "thermal": {
+      "source": "C:/lyk/fire/TorchDetection/datasets/thermal/totals",
+      "images": 2449,
+      "xml_files": 2449,
+      "orphan_xml": [],
+      "observed_classes": {
+        "Fire": 3129
+      },
+      "valid_images": 2399,
+      "negative_images": 17,
+      "issues": {
+        "invalid_box": 50,
+        "invalid_yolo_box": 50
+      },
+      "group_methods": {
+        "timestamp_gap_120s": 89,
+        "augmentation_origin": 2360
+      },
+      "txt_files": 2449,
+      "orphan_txt": [],
+      "txt_xml_agree_images": 2399,
+      "txt_xml_coordinate_agreement_images": 2449,
+      "yolo_class_ids": {
+        "0": 3129
+      },
+      "train_images": 1848,
+      "val_images": 462,
+      "excluded_images": 139,
+      "train_negative": 11,
+      "val_negative": 6,
+      "exclusion_reasons": {
+        "reserved_test_hash": 89,
+        "invalid_annotation": 50
+      },
+      "retained_groups": 123,
+      "train_boxes": 2341,
+      "val_boxes": 498,
+      "val_fraction": 0.2
+    }
+  },
+  "test": {
+    "rgb": {
+      "images": 1528,
+      "gt_covered": 0,
+      "gt_uncovered": 1528,
+      "gt_negative": 0,
+      "gt_boxes": 0,
+      "invalid_images": 0,
+      "distinct_hashes": 1528,
+      "coverage_definition": "valid source annotation AND identical SHA256 AND same modality; uncovered images never treated as negative"
+    },
+    "thermal": {
+      "images": 1528,
+      "gt_covered": 89,
+      "gt_uncovered": 1439,
+      "gt_negative": 0,
+      "gt_boxes": 162,
+      "invalid_images": 0,
+      "distinct_hashes": 1528,
+      "coverage_definition": "valid source annotation AND identical SHA256 AND same modality; uncovered images never treated as negative"
+    }
+  },
+  "test_pairs": {
+    "rows": 1528,
+    "invalid_rows": [],
+    "missing_referenced_images": {
+      "rgb": [],
+      "thermal": []
+    },
+    "unreferenced_images": {
+      "rgb": [],
+      "thermal": []
+    },
+    "UV_role": "fourth-column sensor input ONLY; never ground truth",
+    "scene_ground_truth": "not supplied; no scene labels inferred"
+  },
+  "exact_test_source_matches": [
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_42_0915_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_42_0915_thermal.jpg",
+      "sha256": "a0e747449d2d027ab8311d60d1c157119c9651dacd78a8b2fc9cfa1e9fc0431d",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_43_0355_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_43_0355_thermal.jpg",
+      "sha256": "b2a7b2bcc063c38e090cc9358e156f81f0f4051a035f15a824af1a12dcb62aeb",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_43_0594_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_43_0594_thermal.jpg",
+      "sha256": "2de85f1c4e1d030105870c17fcf80ac3664d54e6092f28faa420c568bcb6f2c9",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_44_0075_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_44_0075_thermal.jpg",
+      "sha256": "19cb598e51b131b516a7fbbc99c7709629edc1a48c6871d0b612320be22906b5",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_44_0314_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_44_0314_thermal.jpg",
+      "sha256": "e51648987255df06e8f7ef4bee04a0f9d1f60d5fd4d02f954abbb70da1785b73",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_46_0034_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_46_0034_thermal.jpg",
+      "sha256": "b23f74300fa4f8189ff5ddd4adf639e03af43e649766edbe37b189f6799d24bf",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_46_0395_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_46_0395_thermal.jpg",
+      "sha256": "d71fe39f1c9e3bdeb22ae644d5a336c3532b6d084ebf8b651a36a8dd807dbd82",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_46_0675_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_46_0675_thermal.jpg",
+      "sha256": "f0d861adfba9dd5ff702d67d0d6602357792bc0836a1b17253047067f43fa602",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_47_0035_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_47_0035_thermal.jpg",
+      "sha256": "60e1efc7e9dd50f7a15a170d728c527c33cb307eceaec7a5e4ba5ee638d81581",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_47_0314_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_47_0314_thermal.jpg",
+      "sha256": "a33852aeaf6dcebc1857e32e15e613a3d22ac635bf6bba35ef5677ee6e99ea94",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_48_0155_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_48_0155_thermal.jpg",
+      "sha256": "4e4736f3e4f7cb886987683b25498ab5b3bf7d4718f0f5c29d6a8c50f0e0562c",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_48_0555_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_48_0555_thermal.jpg",
+      "sha256": "893f877270c671c5adf32967060fbfc1e7d77ff62be1056936ee901005dd4b7c",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_48_0835_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_48_0835_thermal.jpg",
+      "sha256": "9908851c286cf578bc27e70eb9d04b60fda31a0c6b10fe64002f51db5cb6f277",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_52_0714_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_52_0714_thermal.jpg",
+      "sha256": "f26324ce01db0f3dade07a12676c1e318488ce8d3311941e29a23d70c2e2fffe",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_53_0035_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_53_0035_thermal.jpg",
+      "sha256": "4c7d73145603611cd9a8870232d01070940f24163106aff472f71a1de2954a51",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_53_0314_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_53_0314_thermal.jpg",
+      "sha256": "31ac0e98d7d758b4efef1949d9c315b4f6a5adabbc47c3fb6cc2a14126853e9f",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_53_0594_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_53_0594_thermal.jpg",
+      "sha256": "edbc48337ded140a5abae290a14d57e46d1a3f9713191c5577ba7fd6c2b5cdd7",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_53_0955_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_53_0955_thermal.jpg",
+      "sha256": "cb884013fc4b3470735d2a4345112e286a753e99e27b28d11168612716f329ac",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_54_0234_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_54_0234_thermal.jpg",
+      "sha256": "8c23c853b77d5da519880ec299c33dc91e3ad31af56ac8cadf3fb00085ccb70d",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_54_0514_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_54_0514_thermal.jpg",
+      "sha256": "ca5834892411fdfa21d7165c2f3a73111b0b5f40aa727ef3f4482e512e6a42d7",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_14_54_0714_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_14_54_0714_thermal.jpg",
+      "sha256": "85d16effbd874031f0c825a5faddf8909eb5d0c5a603d221501d59fca68604e5",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_10_0774_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_10_0774_thermal.jpg",
+      "sha256": "7da70627c48ce568993afb5c6ecf0622a4009a95594eb72c426d9690c3a34759",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_11_0094_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_11_0094_thermal.jpg",
+      "sha256": "f4ba0ddcacc0b89def910b94d6106083936d63e4ba88cec2f0906f230ca40ab7",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_11_0374_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_11_0374_thermal.jpg",
+      "sha256": "aa0e8b249fa7a462a4ce958cc8e102c46edbd9bf243dc3124cd5db5d683ce25a",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_11_0614_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_11_0614_thermal.jpg",
+      "sha256": "112e38ab39bde10a90becc688878d55e5e98582aec1f5abdfdc28d75e74248b8",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_11_0894_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_11_0894_thermal.jpg",
+      "sha256": "937cd5976b2679519f36cfadf980e61bd08679a6cbc6a7e3acecb64eec32dbde",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_12_0175_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_12_0175_thermal.jpg",
+      "sha256": "31e7d04d89d9a1164409c8d9531ace774c7b7e38dc766b2d97ea089dc568763d",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_12_0454_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_12_0454_thermal.jpg",
+      "sha256": "4aefe597443c693ef0a9b1c277e8e09e03c8742b0c8861d8271a4c63635a6042",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_12_0694_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_12_0694_thermal.jpg",
+      "sha256": "616105f531fb33fc7658be26ffefc4e65a20af4304e26a9c33577222f2b18760",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_23_0054_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_23_0054_thermal.jpg",
+      "sha256": "4f66fe8b0d0c79e905ba8ae91b9200342c43f6b9605728cf6c315c8217d64e86",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_23_0334_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_23_0334_thermal.jpg",
+      "sha256": "684c6a4681eb47992af0bbe25fb4b95b4521b94b07448a26b6783e7380aa1c5d",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_23_0614_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_23_0614_thermal.jpg",
+      "sha256": "ce96dca56ed7804efcc6264ace005f9c41f2b3d3825dcb6735b265b64317d4b6",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_23_0893_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_23_0893_thermal.jpg",
+      "sha256": "65e2cededb3d6adda3ec2f2565fa2e0692650f7bdf8b0b4d5c304f51311d15d4",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_24_0174_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_24_0174_thermal.jpg",
+      "sha256": "69bd0835694b2a5e2130bdfac0c43180a7e56a2f2463a6c9ca93812b6818e44b",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_24_0434_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_24_0434_thermal.jpg",
+      "sha256": "15b965a1086d5d71ab530fec7b64d678507c35ad4195396414fcedbf6f036102",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_24_0674_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_24_0674_thermal.jpg",
+      "sha256": "c3c63489f6b1d674d2a774e366a636545b495bf2638fa675bfe15229fb362bf2",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_24_0914_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_24_0914_thermal.jpg",
+      "sha256": "05f0676ad1c7e4ead5a4545a222c8f52cbc3e3b7b78cca55be92a336934889dd",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_44_0154_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_44_0154_thermal.jpg",
+      "sha256": "5433cba19831ff7be910d0f05e35f3701d595fb2976a40b880802095e99c703a",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_44_0393_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_44_0393_thermal.jpg",
+      "sha256": "a5c831b47a0d24915843ccd227c36c03c0ecd0c472e5702855cee4a709f0d4cf",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_44_0674_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_44_0674_thermal.jpg",
+      "sha256": "a30b55586ca442a04fd6a721a71be90d46f3208650037a2543d8a2f48830b77b",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_47_0154_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_47_0154_thermal.jpg",
+      "sha256": "c882c9a6aa561fca286f3b28fa7c1e8ff3880b3cf10ff993d29f605eaeeec3a4",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_47_0434_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_47_0434_thermal.jpg",
+      "sha256": "6c7ba2ceb13cd22869379e752629174fd8fa151fe505e9c4c5dcc91aa2982a1d",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_47_0714_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_47_0714_thermal.jpg",
+      "sha256": "1eb4a5d87cc532126f4afbe8b3e8147df48ad2bb7b13b940178b5e4426c32886",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_47_0954_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_47_0954_thermal.jpg",
+      "sha256": "f1275ec6c962bbf25161bb02de1e12dd544c909a994137b32f5405cf085163cd",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_48_0234_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_48_0234_thermal.jpg",
+      "sha256": "01e6f8f70c5e1eb3852bc6d43ff471aa2d6af3d3c6808e14057a130b4d86eaf6",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_48_0514_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_48_0514_thermal.jpg",
+      "sha256": "64fc1a15907afc13e55104f26d4fc3a2e851f196d6ab486b5eea49ffe0c0c7c2",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_48_0714_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_48_0714_thermal.jpg",
+      "sha256": "278fd47b9dfdca18708f9acd1e18a366b374a94c177d676f35fa7f5bb3aac8cc",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_15_48_0914_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_15_48_0914_thermal.jpg",
+      "sha256": "638804c0f74103efc6414281c773970ade28fb9e0883922f066799a76b8d7816",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_13_0254_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_13_0254_thermal.jpg",
+      "sha256": "6529129bf94bb9fecba99885b6a75f0c6fbbd40200aa8d7fb70cfa10bfaa9909",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_13_0457_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_13_0457_thermal.jpg",
+      "sha256": "06868d732a38123ab4cfbf5c1cbbf4fd689f7c1e4299e13612d4b214f9965c0a",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_13_0694_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_13_0694_thermal.jpg",
+      "sha256": "ceb221faa88201d8ba8e6d139e4db7c1dec9905d33d15581c48f7e18b22177b9",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_13_0934_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_13_0934_thermal.jpg",
+      "sha256": "611aece426e5053ebb28cd4bba3e4e5fa1b59eafcd1831311c9ced65243546d3",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_14_0376_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_14_0376_thermal.jpg",
+      "sha256": "204e1a85cc7eeca7260753f45d241e9192d94b16da33d1e0bd0bd650f777493c",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_14_0614_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_14_0614_thermal.jpg",
+      "sha256": "a4471121db7ed94092a6457bce38d6e9a120306b2a6afaa2021ddfc873c23eb6",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_14_0814_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_14_0814_thermal.jpg",
+      "sha256": "4dc2d7fe42e9522875aede9efab5c0f674ee65c70f449de16871e9876e13c2fd",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_15_0014_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_15_0014_thermal.jpg",
+      "sha256": "e5c5fb32b0998f40eb2dda40f987e9d4e0fb0f680483d19f31f3088304ea3c7e",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_16_0094_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_16_0094_thermal.jpg",
+      "sha256": "14a97bb100f81d694487e66495a1096cf548a2ac177c0500784d7ac96c521aaa",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_16_0294_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_16_0294_thermal.jpg",
+      "sha256": "a7db12ff2523fb57069b3b4f25b846608b7fed6948d317220e2a978a15578356",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_49_0317_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_49_0317_thermal.jpg",
+      "sha256": "96ceb70b06654f7fd9d0ab352c968793dae5eed2a9e188d055feb1f404a108fb",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_49_0817_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_49_0817_thermal.jpg",
+      "sha256": "7d6c1cd8f41d7317e5e32831245a00501fae1d79e5375dd57b6345c031964371",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_49_0856_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_49_0856_thermal.jpg",
+      "sha256": "94512617e661f185f8bbb0f5322005935dd1901ddaa93f9e01a1bdff26870f72",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_49_0936_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_49_0936_thermal.jpg",
+      "sha256": "3302b526465db98a0dbe8ab6759405b09f5311b68acbb5c7c9e742eb1d332ed6",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_50_0574_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_50_0574_thermal.jpg",
+      "sha256": "6a697bce35d32b77cca0342c767f8f38dba6025d73cc896ed8df52f51a440d2e",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_50_0816_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_50_0816_thermal.jpg",
+      "sha256": "9ec7308c1989e2ff448da0d4fc98d1336db412052df7c25ed8f5f9edd9f33f0a",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_51_0015_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_51_0015_thermal.jpg",
+      "sha256": "286ccd436e67634ab51952e60212799c2e24fafe6c7d2dc89ccb4b312b53fdcd",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_51_0255_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_51_0255_thermal.jpg",
+      "sha256": "fa5ddf188db6ad676dce8c1073d1d9feff8f6b4641a00fd7ad04f4465b406095",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_16_51_0494_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_16_51_0494_thermal.jpg",
+      "sha256": "d3367a4d843f5ab4637e12b5d7147856c5a538801aa19f42699535ffb441fe11",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_31_00_0156_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_31_00_0156_thermal.jpg",
+      "sha256": "ee7d1d31a7188638c69b486cab228b11f450a422c1ff4fd2c0585dd18cd81704",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_31_00_0731_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_31_00_0731_thermal.jpg",
+      "sha256": "88d9f78ba0f9d4449af236ba3b93ca1114bf3da1d529515fb2b3c2940277a737",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_08_31_01_0255_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_05_23_08_31_01_0255_thermal.jpg",
+      "sha256": "7d5e28984fba3657fc24491e1dba9aa44889ce127df49b305bfd35f04fb0e5d8",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_07_0154_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_07_0154_thermal.jpg",
+      "sha256": "032b11c42c74fd9ed1f8933394c01584e544ab003e724edfa49290a9d4a6763f",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_07_0355_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_07_0355_thermal.jpg",
+      "sha256": "2f047ac8bb99ba2b225edbf07e1fc0308be5d573291b0653cbe53e1a8994bc55",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_07_0654_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_07_0654_thermal.jpg",
+      "sha256": "c336d7d0ccb8739d10928851af7f265aa2b8ceaa95305cc0ee6090df72415ddf",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_07_0954_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_07_0954_thermal.jpg",
+      "sha256": "f9623f07302e698141365c33b81247547bc01a7cac31161db1d86b65e3913de3",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_08_0460_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_08_0460_thermal.jpg",
+      "sha256": "383b6d7b2ba82baa844ae9489439247a07ea181276169c878cb2b1447906753f",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_08_0659_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_08_0659_thermal.jpg",
+      "sha256": "26ebb38c33f9ffdf96985a83913b3ed2fa461f84c88c62dfe5b0b2a229dd784a",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_08_0956_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_08_0956_thermal.jpg",
+      "sha256": "5a438df12f1843be9bd226da6fb7c5ae685530c4e0ee26fabde441a4f67db047",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_09_0357_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_09_0357_thermal.jpg",
+      "sha256": "acf7cb21d8f08fe9475ee9d51c6269dacf322853b97d6d1bcc36f334e1a02720",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_09_0556_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_09_0556_thermal.jpg",
+      "sha256": "551b97ab2db282b9c6ccb03d7ff33dd95b59cb32927bdcff69730889c717880e",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_09_0755_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_09_0755_thermal.jpg",
+      "sha256": "f5db4f6ebb76aa628d921435d87a7f53e36c2f1911d34752f6cae120732692a7",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_09_0958_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_09_0958_thermal.jpg",
+      "sha256": "d88ddd0a4b16c0ab013d4c3b78422d3d419793a8c3158b59ccbc7431db7e398e",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_10_0561_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_10_0561_thermal.jpg",
+      "sha256": "6aedae2b847a6adb8c3e48be4b0807e5aa9da8dbc70b79e5a4c44e8f7323818a",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_11_0061_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_11_0061_thermal.jpg",
+      "sha256": "71b308e1269e0619cf35d10651967af781bf44a534566ca8b72df6eab3e635ed",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_11_0253_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_11_0253_thermal.jpg",
+      "sha256": "3a367dc248454dcec5042d3e0860927b1f59a2e53c06b1cf835a56cc11e7ff61",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_11_0459_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_11_0459_thermal.jpg",
+      "sha256": "cfff9ab720724547b0964b61c96d13bfd716519209542afd58ce7341e44ea588",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_11_0659_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_11_0659_thermal.jpg",
+      "sha256": "be7e342d534d5bcc9a3e037bcd540bf9428b95dcb3aaee67abc79ad257f9ab37",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_12_0267_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_12_0267_thermal.jpg",
+      "sha256": "fedd95c8d9a71cb58351f91c011e8f0534e8b2f201e741b4461d0c78a1f53a47",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_12_0591_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_12_0591_thermal.jpg",
+      "sha256": "b5ad85394bd50ffc3c33d925c9fb089210f55c43601dabe64b49412e5362ab8f",
+      "valid_annotation": true
+    },
+    {
+      "test_path": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_08_08_03_37_24_0059_thermal.jpg",
+      "source_path": "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/2026_08_08_03_37_24_0059_thermal.jpg",
+      "sha256": "e2940cc04a01788dcd81564c6215321fe1acc4c743e61ae81d61b956c73a6ceb",
+      "valid_annotation": true
+    }
+  ],
+  "same_basename_different_hash": [],
+  "internal_source_duplicate_hashes": [
+    {
+      "sha256": "2c38ead5e8addf4801e50768dea6c0eb9c0566493d8bc9bb690d3736044ee32d",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000017.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000816.jpg"
+      ]
+    },
+    {
+      "sha256": "3555c2ed79ae605ed256e8960c389dbbeff426527d24f316bbb209f588041c70",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000020.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001188.jpg"
+      ]
+    },
+    {
+      "sha256": "c5e87dde434a60f5bb58440c661b2d4afa96c0623e06be44922a62838bdffb02",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000025.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000740.jpg"
+      ]
+    },
+    {
+      "sha256": "1b7f7ad7a6ba30fde5140edc3c54cb67cab0fde5c80495f2a52b0579c62f8d9a",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000033.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001378.jpg"
+      ]
+    },
+    {
+      "sha256": "3e65f8617a94d7ae39bbb8ec1753d48f5b0b3d18442a7539bba8fc1d22a2a954",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000042.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001470.jpg"
+      ]
+    },
+    {
+      "sha256": "8e783d07a43f938d7c80191f85d1c84ebd8d92182f6df4c04f32d3487a6fca25",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000047.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001420.jpg"
+      ]
+    },
+    {
+      "sha256": "24fbd36792a3a11b9f15f4dd0aaae60ac15ad33ff6b64c88bd8c9d6caa3a1167",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000063.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001281.jpg"
+      ]
+    },
+    {
+      "sha256": "4b4be63d7b6b84576afe29f3afae5720be267ecf014391b65c4f0818cd7eb4c3",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000069.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000630.jpg"
+      ]
+    },
+    {
+      "sha256": "7a6e2fd36d3dc0c6144d84567f37cc76f5259ff4c91abd3b90a8e7796add5d7a",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000094.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000232.jpg"
+      ]
+    },
+    {
+      "sha256": "0d9e4d4fceddb5f618b24b500f9807d0ff648829aea7c7924bee0ae3c7cc647a",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000098.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000426.jpg"
+      ]
+    },
+    {
+      "sha256": "aa0fc7992b4ce07db71a305c1b70ae2879f9cbb5c317dd961838a12b8e836845",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000110.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/002019.jpg"
+      ]
+    },
+    {
+      "sha256": "fc3b90d6dcffd5b61e9e943a6b8504b4bf993168a6f0327a9a166b935d069fdb",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000116.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001655.jpg"
+      ]
+    },
+    {
+      "sha256": "68c85dd188ae3155c393d79a300efe964940c48b60346dafa3ee3f2bc73a421e",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000125.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001282.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/002023.jpg"
+      ]
+    },
+    {
+      "sha256": "e5375a1bf679a1996f4abc767713a4a1c69b2b4e1d181f48f846ea62a6a9f6a2",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000163.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000399.jpg"
+      ]
+    },
+    {
+      "sha256": "6ba7aa9b3f713da8b639d1d94d0b8d2bf2c7ad32c03ddeb97c50ffb1bf229b8e",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000168.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001562.jpg"
+      ]
+    },
+    {
+      "sha256": "a45f251d675bcc5c54d34b4af32043258e3b6c1f5758ab287211931eab714a24",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000200.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000507.jpg"
+      ]
+    },
+    {
+      "sha256": "1ad2ebbcb2fae7cde09715841455a168c58303e37495c8a733a642847084ff47",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000257.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001073.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001819.jpg"
+      ]
+    },
+    {
+      "sha256": "9a416fd4beabbe68596b4ad3818d351943d2a1fe1149199e285ea9c2d1c1acf7",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000275.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000806.jpg"
+      ]
+    },
+    {
+      "sha256": "acd46955a3a26c1afdbac9ae1e744304b7796b514b100a30aba862cda4ac930a",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000296.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000952.jpg"
+      ]
+    },
+    {
+      "sha256": "80af26e17bcaa0add7d16f284e73d6185633217e382607e5d1f1f2a91c186895",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000317.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001326.jpg"
+      ]
+    },
+    {
+      "sha256": "7b6f73df4885438c47f6049ba57493bca3039ea06549a3f76a3f4089d599ed89",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000353.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000469.jpg"
+      ]
+    },
+    {
+      "sha256": "6cddb35d254b5373d299305fdf818d89b7a4da17b17549ce3f7ef15b950e45e1",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000355.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001742.jpg"
+      ]
+    },
+    {
+      "sha256": "4930f5ba09d192d6a1663005c1a51a8553e10002362f0347d05a3a99e6672d04",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000372.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000467.jpg"
+      ]
+    },
+    {
+      "sha256": "a606267b21bbc806a333ee20d410eb103a0b2de6df004412406c36326f5217c6",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000439.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001529.jpg"
+      ]
+    },
+    {
+      "sha256": "fd7c104df0d2985662ed813b1470b4815dc2d841698d152945e57c90ae44a234",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000487.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000766.jpg"
+      ]
+    },
+    {
+      "sha256": "62682db41a02f9da41e9627dc56cdf8c5433f78f25b7f9d4f7df8887fd3c33f3",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000510.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001001.jpg"
+      ]
+    },
+    {
+      "sha256": "a42a2311bbe0d26dbdbd98f267e7315e3b241d66b453e2c9e006fb22d030f1ff",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000511.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000794.jpg"
+      ]
+    },
+    {
+      "sha256": "3c0cb762de3f8d99abe9b8c3612911305a65d92e684866c1167aeec79ef778b2",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000523.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000847.jpg"
+      ]
+    },
+    {
+      "sha256": "78fa2b18d9667e47c1dd16701edd809939db1add8be2f63361b53f44ca42ca60",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000562.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000741.jpg"
+      ]
+    },
+    {
+      "sha256": "bc52419818b391af6a8da4f3d737c7a461c413e81c52407f5ca179ef7f0b1089",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000585.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001257.jpg"
+      ]
+    },
+    {
+      "sha256": "5b439a7f79c64df133f590812ca7f5a2ade34c52197156051c2170499a4ab093",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000608.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/002053.jpg"
+      ]
+    },
+    {
+      "sha256": "e04af3dce1202c09b638c9e2c587839915555fc9bb72c44073b79a1b5e32238f",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000633.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000838.jpg"
+      ]
+    },
+    {
+      "sha256": "c973834fa68d363a834c9c134280cc5e5b04132f4339d93afbf9d4603a077bb2",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000640.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001267.jpg"
+      ]
+    },
+    {
+      "sha256": "4f5b72fd4f1fda2f77671371aed0f64be454ef60ca3bd5f27e3178587ec802a3",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000656.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001867.jpg"
+      ]
+    },
+    {
+      "sha256": "686e6eba768e7663d5ecb9407745324bdaf9411603979cc4b91d77e92a61c448",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000708.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001690.jpg"
+      ]
+    },
+    {
+      "sha256": "23581b57e12790e7d3a6c921b4a5cee4764fb91d4fbba779c2a335a5829647a0",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000714.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001106.jpg"
+      ]
+    },
+    {
+      "sha256": "6a39830174c5adb4b87e737fcc5478619c11378e1ed094110d83269c4edc1985",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000722.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000770.jpg"
+      ]
+    },
+    {
+      "sha256": "c35424a0f3eef48a2cb1fd6f8e2cbd3524e425383181b3b271db2b4940b82178",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000729.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001688.jpg"
+      ]
+    },
+    {
+      "sha256": "c15e082ee6fe2cecb0c1a65ed4af6b56818787fc84904cf1f40bacf28d73f6de",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000755.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001290.jpg"
+      ]
+    },
+    {
+      "sha256": "cc3d1710abbec95534fee407b7b2afdeeef2f7f2d7f329dd0b6bc103e06e85d7",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000789.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001565.jpg"
+      ]
+    },
+    {
+      "sha256": "b98a7215180fc1939cc0b2405f0c067529409ed9be42b5e8d7f02b0c3c17a6e4",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000843.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001888.jpg"
+      ]
+    },
+    {
+      "sha256": "b465779b13dc8f62e911c2f43d2e807939fe89f9933fcd1d4ac660c0eb174742",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000852.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001809.jpg"
+      ]
+    },
+    {
+      "sha256": "69bba9798594c7aa7d9d7059186acd60af3c9df4d3d8ff2526be78a95ded3a16",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000868.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001231.jpg"
+      ]
+    },
+    {
+      "sha256": "7d43e17b960ca4ff2d822c259f28e995b98bb7169ccc0bb4a90a09420d0b9f3c",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000903.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001423.jpg"
+      ]
+    },
+    {
+      "sha256": "73abfffed160158de82a2023c3e04f160719f8df38b3993385264381d48be085",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000910.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001098.jpg"
+      ]
+    },
+    {
+      "sha256": "991ad3ea6f7d4dbd8680dbb74b9d4378ae44487e485d839ebfa5aecd21b15d26",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000924.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001026.jpg"
+      ]
+    },
+    {
+      "sha256": "368b33c1394e41965fd0451fbbf8b96740a67389d9efc1e2b823d9b86c5efe4a",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000951.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001882.jpg"
+      ]
+    },
+    {
+      "sha256": "ab6f6f6eb9539f6e6384055256b1fd8eb2c524a0b2c462691862c283879bb77f",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000981.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/002043.jpg"
+      ]
+    },
+    {
+      "sha256": "dbd60df432cf23408c806d88e8700c2825ae4f59785d1e0f5f1bc2652086fe6b",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000985.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001995.jpg"
+      ]
+    },
+    {
+      "sha256": "b6406af75cea8976d89ae48495fe239f6c3a4d26ccc07cb9d2e0263e3bddc452",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/000996.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001345.jpg"
+      ]
+    },
+    {
+      "sha256": "26ed280319178ebba0158f7efe9c7b3485b2dbcf98120f75bfc03e98a3637639",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001007.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001656.jpg"
+      ]
+    },
+    {
+      "sha256": "5ca2742fe4b78eb2b6435986b06f73a9202f6116b7d7100f5cc5f1f2929305dd",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001031.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001146.jpg"
+      ]
+    },
+    {
+      "sha256": "e4a652dac0224e6d72df4aaf2226ca57774f5a5f6138d81860e8b3a8988fe86d",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001070.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001636.jpg"
+      ]
+    },
+    {
+      "sha256": "148aa2513ab175314212922d6574d7195daed1eae4c7da1df375045e2bbba56b",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001108.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001766.jpg"
+      ]
+    },
+    {
+      "sha256": "891fe73f28ed176dc2439e59f6de70d26fefdbbbd53e473c33b809e23efc010b",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001507.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/002027.jpg"
+      ]
+    },
+    {
+      "sha256": "a367e8c5e4a20d6d4e941f9bc82e92597b9597161ea247b95c5a6d2a84835085",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001603.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001670.jpg"
+      ]
+    },
+    {
+      "sha256": "c5a383887a672a0fe9858bf1abfc04eb6471d2eccc3b3cc6e354f248c49f5b03",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001866.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/001961.jpg"
+      ]
+    },
+    {
+      "sha256": "fd98ab31d0bd355ef1554aecd61282c21153bbadda39229aa643f56ac908f34f",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/137.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/176.jpg"
+      ]
+    },
+    {
+      "sha256": "16ff773aa9eb4a263b03df3a20ceaa820c1831f024a732dc739b6ef71d5ee930",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/213.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/390.jpg"
+      ]
+    },
+    {
+      "sha256": "7c1beb15f1984280cdee82196d309825a97ed072cc1307bae31a1826e5db11c7",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/224.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/235.jpg"
+      ]
+    },
+    {
+      "sha256": "c1661d031a70b7fe213ddeeda56b752de14a2e3c0f3dd7f500f9f907b1fbec04",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/258.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/269.jpg"
+      ]
+    },
+    {
+      "sha256": "ab7c215f6f10910323c7bc7e71d9dfded4ca5e203bf8c67f8af4eb5cf572d195",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/298.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/309.jpg"
+      ]
+    },
+    {
+      "sha256": "12c4216a9595460b63f3ee020c338ff9445a1ded29f8aaad978f0071118fe6dd",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/319.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/322.jpg"
+      ]
+    },
+    {
+      "sha256": "1da8b648a7a0be6d9fab3eeffeb4d1e3369041bbc9952a8e2d7a6eae200c2d02",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/32.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/326.jpg"
+      ]
+    },
+    {
+      "sha256": "2187c937b726c4bc54c334ed6df09b7e2a65e7eb8bf852c09a5a810023c4122c",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/320.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/35.jpg"
+      ]
+    },
+    {
+      "sha256": "4c6effc2075c029c14d2ae2e730ca482fc437d48fed59307e11be9888fd8ce62",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/346.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/368.jpg"
+      ]
+    },
+    {
+      "sha256": "302ea9de5862f033a3cc76e6c087ed67f5a31a5309a35c4b0aac08eadf329946",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/39.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/41.jpg"
+      ]
+    },
+    {
+      "sha256": "31b4f3bea0cba148fd297fe14cff42aa374c8c373e62b5aa76eb742396f84bcd",
+      "paths": [
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/46.jpg",
+        "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin/images/57.jpg"
+      ]
+    },
+    {
+      "sha256": "96346d51b58ba20df553b8d851b783adddd9c965969d5927cf4d8f4ec1c05a28",
+      "paths": [
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-12-_aug36_png.rf.310251d0593cdf64c6865a52536100ce.jpg",
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-12-_aug36_png.rf.854e524436767c6e9f87bc6c830bb3f4.jpg"
+      ]
+    },
+    {
+      "sha256": "2b85474692ea07d4dbb6e43eb392f3956a377922d535af012558e0db623e1ec1",
+      "paths": [
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-15-_aug22_png.rf.9db3b538c60fc610b97c27c7e96512e4.jpg",
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-15-_aug22_png.rf.db9ce64931a4873cce27a2d13c752ad6.jpg"
+      ]
+    },
+    {
+      "sha256": "8d0eff367f81fc0fe5cdf776aeead9a95103ce1162a4a8823e6d58d3a7ec1409",
+      "paths": [
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-17-_aug6_png.rf.5f51f3db68d77bf23542e7a41d7d8ab6.jpg",
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-17-_aug6_png.rf.bacdc14162c7fdf2350c1933fb83f5a0.jpg"
+      ]
+    },
+    {
+      "sha256": "75d829edcb64eb1e3a24f2b2bd69505c3d328e4e531add8dbb17601b25dce9fd",
+      "paths": [
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-20-_aug11_png.rf.3b8942afd67716862672750730c30a36.jpg",
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-20-_aug11_png.rf.fbf3036565656233b32d3f996ab30ce5.jpg"
+      ]
+    },
+    {
+      "sha256": "eb827f6ba5932530f3ee7a1eb717206dc58e657cc8669a10afbb7d336c90f2cb",
+      "paths": [
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-7-_aug30_png.rf.5faf8096d859828e856c313c104d8aec.jpg",
+        "C:/lyk/fire/TorchDetection/datasets/thermal/totals/images/Fire_Smoke-7-_aug30_png.rf.fceb72eade2b02af0db573468dfd9fb5.jpg"
+      ]
+    }
+  ],
+  "paths": {
+    "rgb": {
+      "train": "C:/lyk/fire/qualityDetection/datasets/rgb/train.json",
+      "val": "C:/lyk/fire/qualityDetection/datasets/rgb/val.json",
+      "test_existing_gt": "C:/lyk/fire/qualityDetection/datasets/rgb/test_existing_gt.json",
+      "image_dir": "",
+      "file_name_policy": "absolute original read-only image paths",
+      "category_id": 1,
+      "category_name": "fire",
+      "keep_empty": true,
+      "allow_empty": true
+    },
+    "thermal": {
+      "train": "C:/lyk/fire/qualityDetection/datasets/thermal/train.json",
+      "val": "C:/lyk/fire/qualityDetection/datasets/thermal/val.json",
+      "test_existing_gt": "C:/lyk/fire/qualityDetection/datasets/thermal/test_existing_gt.json",
+      "image_dir": "",
+      "file_name_policy": "absolute original read-only image paths",
+      "category_id": 1,
+      "category_name": "fire",
+      "keep_empty": true,
+      "allow_empty": true
+    }
+  },
+  "policy": {
+    "split": "deterministic greedy nearest 20 percent by SHA256-sorted group identifiers; whole burst/origin/hash groups",
+    "seed": "qualityDetection-v1",
+    "timestamp_burst_gap_seconds": 120,
+    "reserved_policy": "exclude exact reserved image hashes in BOTH modalities plus entire source temporal/augmentation/duplicate groups touching those hashes",
+    "classes": "observed fire / Fire explicitly case-normalized to fire; other names invalid and require human mapping",
+    "box_policy": "strict actual JPEG size and 0<=xmin<xmax<=width; no clipping or unverified coordinate shift",
+    "txt_xml_tolerance_px": 0.01,
+    "ground_truth_policy": "export candidates only if valid and identical SHA256 and nonconflicting source boxes"
+  },
+  "limitations": [
+    "RGB numerical filenames do not identify videos/scenes; temporal independence cannot be certified; numeric adjacency is not invented video truth.",
+    "Filename timestamp bursts are heuristic, not verified video identifiers.",
+    "Nonidentical near-duplicates are not detected by SHA256; augmentation names are grouped where recognizable.",
+    "Source folder tags are not validated scene ground truth.",
+    "Configs are dataset fragments, not complete PPYOLOv2 model/training configs; no training performed.",
+    "JPEG header dimensions inspected with stdlib; full pixel decode/corruption verification not performed."
+  ]
+}

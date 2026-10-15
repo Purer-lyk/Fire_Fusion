@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-14T03:18:30.805607+00:00",
+  "epochs_each": 30,
+  "imgsz": 320,
+  "batch": 32,
+  "workers": 0,
+  "seed": 42,
+  "amp": false,
+  "device": "NVIDIA GeForce RTX 5070",
+  "initialization_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "init": "generic COCO only, no leaked fire checkpoint fine-tune",
+  "export_sha256": "66e8014faa46c3c991e473caaca5f1f2a8d62640a3707bb8d8888d70996cf62a",
+  "test_in_network_training": false,
+  "selection": "Validation fitness best.pt only. No network training on 1528; fixed prior DS cfg unchanged. Planned fresh same-model .5 baselines and .01 candidate forward. All 1528 already seen; not independent fusion validation."
+}

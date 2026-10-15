@@ -1,0 +1,12 @@
+test_binary_rules_and_conflict (test_core.FusionTests.test_binary_rules_and_conflict) ... ok
+test_explicit_registration_and_nonspatial_uv (test_core.GeometryTests.test_explicit_registration_and_nonspatial_uv) ... ok
+test_temporal_source_evidence (test_core.SensorTests.test_temporal_source_evidence) ... ok
+test_homography_translation_and_horizon (test_execution_geometry.ExecutedGeometryTests.test_homography_translation_and_horizon) ... ok
+test_legacy_and_recommended_are_not_same_algorithm (test_execution_geometry.ExecutedGeometryTests.test_legacy_and_recommended_are_not_same_algorithm) ... ok
+test_polygon_iou_not_axis_aligned_envelope (test_execution_geometry.ExecutedGeometryTests.test_polygon_iou_not_axis_aligned_envelope) ... ok
+test_spatial_denominator_cancels_after_normalize (test_execution_geometry.ExecutedGeometryTests.test_spatial_denominator_cancels_after_normalize) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.064s
+
+OK

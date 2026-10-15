@@ -1,0 +1,518 @@
+{
+  "metadata": {
+    "modality": "thermal",
+    "python": "C:\\lyk\\fire\\qualityDetection\\.venv\\Scripts\\python.exe",
+    "paddle_version": "3.3.1",
+    "device": "Place(gpu:0)",
+    "gpu_name": "NVIDIA GeForce RTX 5070",
+    "config": "C:\\lyk\\fire\\qualityDetection\\configs\\ppyolov2_thermal.yml",
+    "config_sha256": "f078d8de5b6f598b1510b2ad005ae675194f2a58747ef2ec24849f9d9488b77a",
+    "checkpoint": "C:\\lyk\\fire\\qualityDetection\\training\\output\\ppyolov2_thermal\\model_final.pdparams",
+    "checkpoint_sha256": "662f9a630a11dc399a5896eebeaba25b714520478f5da0747c2302c9616cf7f6",
+    "checkpoint_bytes": 217030334,
+    "source_manifest": "C:\\lyk\\fire\\qualityDetection\\audit\\test_manifest.json",
+    "source_pairs": "C:\\lyk\\fire\\qualityDetection\\audit\\test_pairs.json",
+    "paper_sample_sha256": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade",
+    "architecture": "YOLOv3",
+    "backbone": {
+      "depth": 50,
+      "variant": "d",
+      "return_idx": [
+        1,
+        2,
+        3
+      ],
+      "dcn_v2_stages": [
+        3
+      ],
+      "freeze_at": -1,
+      "freeze_norm": false,
+      "norm_decay": 0.0
+    },
+    "neck": "PPYOLOPAN",
+    "iou_aware": true,
+    "post_process": {
+      "decode": {
+        "name": "YOLOBox",
+        "conf_thresh": 0.01,
+        "downsample_ratio": 32,
+        "clip_bbox": true,
+        "scale_x_y": 1.05
+      },
+      "nms": {
+        "name": "MatrixNMS",
+        "keep_top_k": 100,
+        "score_threshold": 0.01,
+        "post_threshold": 0.01,
+        "nms_top_k": -1,
+        "background_label": -1
+      }
+    },
+    "minimum_score": 0.01,
+    "coordinate_format": "xyxy in original-image pixels",
+    "input_shape": [
+      3,
+      640,
+      640
+    ],
+    "UV_used_by_network": false,
+    "truth_used": false,
+    "expected_images": 3
+  },
+  "images": [
+    {
+      "pair_index": 0,
+      "source_line": 1,
+      "image_id": 0,
+      "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_05_23_07_47_22_0604_thermal.jpg",
+      "image_name": "2026_05_23_07_47_22_0604_thermal.jpg",
+      "image_sha256": "a8402b131335d35c7563fcbbbf706a27c4cc9ed09d140559139926003d5b9c70",
+      "width": 192,
+      "height": 256,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.6040847897529602,
+          "bbox_xyxy": [
+            0.0,
+            2.5731048583984375,
+            184.54168701171875,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.04185711219906807,
+          "bbox_xyxy": [
+            62.650550842285156,
+            119.41583251953125,
+            72.19364166259766,
+            127.24240112304688
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.03266478329896927,
+          "bbox_xyxy": [
+            0.739654541015625,
+            21.418235778808594,
+            191.0,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.026014646515250206,
+          "bbox_xyxy": [
+            0.0,
+            20.76995086669922,
+            186.6350860595703,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.020804576575756073,
+          "bbox_xyxy": [
+            3.2786331176757812,
+            48.50621795654297,
+            189.76669311523438,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.01992187462747097,
+          "bbox_xyxy": [
+            0.237548828125,
+            2.506500244140625,
+            191.0,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.018839098513126373,
+          "bbox_xyxy": [
+            78.11524200439453,
+            122.0351333618164,
+            88.84270477294922,
+            128.77256774902344
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.013325311243534088,
+          "bbox_xyxy": [
+            0.0,
+            48.09269714355469,
+            185.711669921875,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.01290038414299488,
+          "bbox_xyxy": [
+            0.0,
+            1.7475128173828125,
+            170.25933837890625,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.011352837085723877,
+          "bbox_xyxy": [
+            3.9109039306640625,
+            73.13002014160156,
+            189.66285705566406,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010459319688379765,
+          "bbox_xyxy": [
+            0.9397621154785156,
+            168.18621826171875,
+            65.01863098144531,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010308499448001385,
+          "bbox_xyxy": [
+            7.5164337158203125,
+            10.372383117675781,
+            78.90475463867188,
+            246.5059814453125
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010010112076997757,
+          "bbox_xyxy": [
+            1.970184326171875,
+            0.0,
+            191.0,
+            247.61380004882812
+          ]
+        }
+      ]
+    },
+    {
+      "pair_index": 1,
+      "source_line": 2,
+      "image_id": 1,
+      "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_05_23_07_47_22_0862_thermal.jpg",
+      "image_name": "2026_05_23_07_47_22_0862_thermal.jpg",
+      "image_sha256": "c6f225f6059821add56d732439172c3fb461d99f4f300f05f1a244e3a6b6b02e",
+      "width": 192,
+      "height": 256,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.6335315704345703,
+          "bbox_xyxy": [
+            0.0,
+            2.819549560546875,
+            184.76129150390625,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.040164731442928314,
+          "bbox_xyxy": [
+            61.83794403076172,
+            119.2530517578125,
+            71.48270416259766,
+            127.1468505859375
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.03368845582008362,
+          "bbox_xyxy": [
+            1.3104476928710938,
+            22.162139892578125,
+            191.0,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.02614044025540352,
+          "bbox_xyxy": [
+            0.0,
+            21.40406036376953,
+            186.641357421875,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.022418227046728134,
+          "bbox_xyxy": [
+            3.8348541259765625,
+            48.959571838378906,
+            189.0812225341797,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.022154953330755234,
+          "bbox_xyxy": [
+            0.6578216552734375,
+            2.8796615600585938,
+            191.0,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.017039785161614418,
+          "bbox_xyxy": [
+            78.21343994140625,
+            122.05757904052734,
+            88.78411865234375,
+            128.7610626220703
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.014510402455925941,
+          "bbox_xyxy": [
+            1.952667236328125,
+            0.0,
+            191.0,
+            247.105224609375
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.0133894681930542,
+          "bbox_xyxy": [
+            0.0,
+            48.5609130859375,
+            185.72445678710938,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.012522269040346146,
+          "bbox_xyxy": [
+            4.1643218994140625,
+            73.25834655761719,
+            189.29330444335938,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.011631936766207218,
+          "bbox_xyxy": [
+            0.0,
+            1.9451065063476562,
+            170.62890625,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010386738926172256,
+          "bbox_xyxy": [
+            0.0,
+            0.0,
+            182.6324462890625,
+            247.11941528320312
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010110910050570965,
+          "bbox_xyxy": [
+            0.9119911193847656,
+            168.11575317382812,
+            65.07162475585938,
+            255.0
+          ]
+        }
+      ]
+    },
+    {
+      "pair_index": 2,
+      "source_line": 3,
+      "image_id": 2,
+      "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_05_23_07_47_23_0143_thermal.jpg",
+      "image_name": "2026_05_23_07_47_23_0143_thermal.jpg",
+      "image_sha256": "626413019ca86f5e8897775b626d2e6688ac7dfe281d033c45fc3159776efef9",
+      "width": 192,
+      "height": 256,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.6150407791137695,
+          "bbox_xyxy": [
+            0.0,
+            3.2428436279296875,
+            184.81475830078125,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.03909645974636078,
+          "bbox_xyxy": [
+            62.71360778808594,
+            119.4496841430664,
+            72.12974548339844,
+            127.1253890991211
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.03286334499716759,
+          "bbox_xyxy": [
+            1.409942626953125,
+            22.24217987060547,
+            191.0,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.025262484326958656,
+          "bbox_xyxy": [
+            0.0,
+            21.594200134277344,
+            186.47589111328125,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.021488618105649948,
+          "bbox_xyxy": [
+            0.725128173828125,
+            3.3235321044921875,
+            191.0,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.02125720866024494,
+          "bbox_xyxy": [
+            3.8857269287109375,
+            48.91230773925781,
+            189.0198211669922,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.020881682634353638,
+          "bbox_xyxy": [
+            78.05696868896484,
+            121.98802947998047,
+            88.85541534423828,
+            128.9120635986328
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.014372550882399082,
+          "bbox_xyxy": [
+            2.0551528930664062,
+            0.0,
+            190.94891357421875,
+            246.5254669189453
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.012845194898545742,
+          "bbox_xyxy": [
+            0.0,
+            48.470245361328125,
+            185.6307830810547,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.011765724048018456,
+          "bbox_xyxy": [
+            4.1933441162109375,
+            73.29638671875,
+            189.25653076171875,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010988478548824787,
+          "bbox_xyxy": [
+            0.0,
+            2.299652099609375,
+            170.58709716796875,
+            255.0
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010472258552908897,
+          "bbox_xyxy": [
+            0.0,
+            0.0,
+            182.77435302734375,
+            246.70645141601562
+          ]
+        }
+      ]
+    }
+  ]
+}

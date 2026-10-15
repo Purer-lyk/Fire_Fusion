@@ -1,0 +1,33 @@
+{
+  "verified": true,
+  "all_frames": 1528,
+  "policies": 5,
+  "frame_policy_checks": 7640,
+  "independent_polygon_hungarian": true,
+  "all_match_rows": 9078,
+  "source_primary_match_rows": 3090,
+  "images_sha256_verified": 3056,
+  "model_hashes_verified": 2,
+  "protected_sources_unchanged": 136,
+  "mass_changed_frames": 81,
+  "UV_runtime": false,
+  "fresh_forward": false,
+  "protocol_sha256": "54bfe2546d5e272a34b805e4958d5eb3300642fa332a0482e01d5876b42ec2d8",
+  "dense_continuity_normalization_monotonicity_tests": true,
+  "docx": {
+    "path": "C:\\lyk\\fire\\qualityDetection\\reports\\连续IoU可靠性_DS复验报告.docx",
+    "sha256": "baeddb665a16d680f77d9f0dd0f18b1e0eadfe4d392ff53f71e23e5a615328d0",
+    "crc_ok": true,
+    "tables": 6
+  },
+  "artifacts": {
+    "continuous_core.py": "7fcd575bbb8212731ec35e2b9a8196760ab2ef5bcdda6358a50ecb3a925947e4",
+    "run_continuous.py": "718a4ad3ed325b55ae8b13346eb4f66a8d8033d6d4578167a0a5eb2d860d03d6",
+    "verify_continuous.py": "a3edee9c97a7379de89216ef3331f7ae40f39db1e06f7aef7204dcaf481743a0",
+    "frame_predictions.csv": "0fd5c69a6d09cb61a8fb23e3de58601a49b1b3d5893c7da5e43462604ce9651d",
+    "all_matched_candidates.csv": "6a580cb70e511cd86a3cfe85fa397ec7f77d6cd698b77a396b109e2f14514129",
+    "frame_evidence.json": "8cc76d9464c1f4f7889a838872e5182a8404c665427a14edfb76de483b577e5c",
+    "metrics.json": "078970737ae19683f5cd059635a2c2dc33bcb627e772fbfbbf8ca8675d507174",
+    "delta_cases.json": "304cbb79a4c0f6dc97e29660e3061a04270b300770888f3c6a5a318e7e08e92b"
+  }
+}

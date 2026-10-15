@@ -1,0 +1,42 @@
+{
+  "real_cached": true,
+  "results": [
+    {
+      "pair_index": 0,
+      "output": {
+        "fire": 0,
+        "matches": [],
+        "selected": null,
+        "mF": 0.0,
+        "mN": 0.0,
+        "mU": 1.0,
+        "K": 0.0
+      }
+    },
+    {
+      "pair_index": 1,
+      "output": {
+        "fire": 0,
+        "matches": [],
+        "selected": null,
+        "mF": 0.0,
+        "mN": 0.0,
+        "mU": 1.0,
+        "K": 0.0
+      }
+    },
+    {
+      "pair_index": 2,
+      "output": {
+        "fire": 0,
+        "matches": [],
+        "selected": null,
+        "mF": 0.0,
+        "mN": 0.0,
+        "mU": 1.0,
+        "K": 0.0
+      }
+    }
+  ],
+  "utc": "2026-10-14T11:49:46.661603+00:00"
+}

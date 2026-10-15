@@ -1,0 +1,7 @@
+test_predeclared_continuous_mass (test_continuous.ContinuousTests.test_predeclared_continuous_mass) ... ok
+test_reselect_all_matches_not_previous_winner (test_continuous.SelectionTests.test_reselect_all_matches_not_previous_winner) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK

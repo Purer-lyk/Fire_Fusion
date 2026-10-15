@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\verify_optimization.py", line 76, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\verify_optimization.py", line 25, in main
+    for path,h in manifest.items():assert sha(path)==h,('Old manifest mismatch',path)
+                                          ^^^^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\run_optimization.py", line 11, in <lambda>
+    sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\lyk\defaultpy\Python312\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\lyk\defaultpy\Python312\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'build_report.py'

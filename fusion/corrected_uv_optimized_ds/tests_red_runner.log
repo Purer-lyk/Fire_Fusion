@@ -1,0 +1,13 @@
+....F.
+======================================================================
+FAIL: test_protocol_before_search_and_temporal_group_isolation (__main__.FusionTests.test_protocol_before_search_and_temporal_group_isolation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\test_optimized.py", line 39, in test_protocol_before_search_and_temporal_group_isolation
+    self.assertTrue(p.exists(),'end-to-end runner missing')
+AssertionError: False is not true : end-to-end runner missing
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.221s
+
+FAILED (failures=1)

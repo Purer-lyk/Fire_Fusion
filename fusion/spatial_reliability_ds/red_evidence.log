@@ -1,0 +1,14 @@
+test_discount_missing_and_ds_identity (test_spatial.EvidenceTests.test_discount_missing_and_ds_identity) ... FAIL
+
+======================================================================
+FAIL: test_discount_missing_and_ds_identity (test_spatial.EvidenceTests.test_discount_missing_and_ds_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\spatial_reliability_ds\test_spatial.py", line 7, in test_discount_missing_and_ds_identity
+    self.assertIsNotNone(importlib.util.find_spec('spatial_core'), 'new evidence implementation missing')
+AssertionError: unexpectedly None : new evidence implementation missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

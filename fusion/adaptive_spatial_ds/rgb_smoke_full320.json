@@ -1,0 +1,62 @@
+[
+  {
+    "pair_index": 0,
+    "image_name": "2026_05_23_07_47_22_0604_bgr.jpg",
+    "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_22_0604_bgr.jpg",
+    "image_sha256": "e4c84af3fa0c5b83a111965d41d518c83572da94c32cc6eb1f771606e391394e",
+    "orig_shape": [
+      320,
+      320
+    ],
+    "detections": [],
+    "model_input_shapes": [
+      [
+        32,
+        3,
+        320,
+        320
+      ]
+    ],
+    "device": "cuda:0"
+  },
+  {
+    "pair_index": 1,
+    "image_name": "2026_05_23_07_47_22_0862_bgr.jpg",
+    "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_22_0862_bgr.jpg",
+    "image_sha256": "68a7936f2d4642e136594dafe24e3ba5c687b7ed72a9ad4d4202637374e752a6",
+    "orig_shape": [
+      320,
+      320
+    ],
+    "detections": [],
+    "model_input_shapes": [
+      [
+        32,
+        3,
+        320,
+        320
+      ]
+    ],
+    "device": "cuda:0"
+  },
+  {
+    "pair_index": 2,
+    "image_name": "2026_05_23_07_47_23_0143_bgr.jpg",
+    "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_23_0143_bgr.jpg",
+    "image_sha256": "8828c9ece34b86e8ef994caf81e422cf2b7d1c56c775b7dc06c48236f8fc662e",
+    "orig_shape": [
+      320,
+      320
+    ],
+    "detections": [],
+    "model_input_shapes": [
+      [
+        32,
+        3,
+        320,
+        320
+      ]
+    ],
+    "device": "cuda:0"
+  }
+]

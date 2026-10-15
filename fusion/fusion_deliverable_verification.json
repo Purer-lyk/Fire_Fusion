@@ -1,0 +1,16 @@
+{
+  "output_csv_rows": 1528,
+  "unique_pair_indices": 1528,
+  "blank_label_rows": 1528,
+  "blank_labels_verified": true,
+  "docx_crc_ok": true,
+  "docx_readback_ok": true,
+  "docx_paragraphs": 57,
+  "docx_tables": 7,
+  "docx_sha256": "aeb793a3bfda81b257b28bfdad9495dc521ced53272b9795d61b3f92b2fae511",
+  "fusion_csv_sha256": "b9cfc654a6b6c80b6ef8fc113eef392a2a818295186e4802ddb77386a92a0801",
+  "original_cpp_unchanged": true,
+  "cpp_reference_rows": 1528,
+  "cpp_reference_max_abs_error": 3.3306690738754696e-16,
+  "report_path": "C:\\lyk\\fire\\qualityDetection\\reports\\PPYOLOv2_DS融合实际测试报告.docx"
+}

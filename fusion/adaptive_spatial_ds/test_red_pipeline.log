@@ -1,0 +1,13 @@
+.F..
+======================================================================
+FAIL: test_protocol_and_real_smoke (__main__.PipelineTest.test_protocol_and_real_smoke)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\test_adaptive.py", line 42, in test_protocol_and_real_smoke
+    self.assertTrue(p.exists(),'frozen real multiscale forward runner missing')
+AssertionError: False is not true : frozen real multiscale forward runner missing
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.248s
+
+FAILED (failures=1)

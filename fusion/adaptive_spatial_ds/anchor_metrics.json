@@ -1,0 +1,231 @@
+{
+  "metrics": {
+    "fixed_exposed": {
+      "N": 1528,
+      "TP": 1265,
+      "FP": 0,
+      "FN": 23,
+      "TN": 240,
+      "accuracy": 0.9849476439790575,
+      "precision": 1.0,
+      "recall": 0.9821428571428571,
+      "F1": 0.990990990990991,
+      "FPR": 0.0,
+      "FNR": 0.017857142857142856
+    },
+    "full_descriptive": {
+      "N": 1528,
+      "TP": 1265,
+      "FP": 0,
+      "FN": 23,
+      "TN": 240,
+      "accuracy": 0.9849476439790575,
+      "precision": 1.0,
+      "recall": 0.9821428571428571,
+      "F1": 0.990990990990991,
+      "FPR": 0.0,
+      "FNR": 0.017857142857142856
+    },
+    "group_oof_exploratory": {
+      "N": 1528,
+      "TP": 1263,
+      "FP": 6,
+      "FN": 25,
+      "TN": 234,
+      "accuracy": 0.9797120418848168,
+      "precision": 0.9952718676122931,
+      "recall": 0.9805900621118012,
+      "F1": 0.9878764176769652,
+      "FPR": 0.025,
+      "FNR": 0.019409937888198756
+    }
+  },
+  "baselines": {
+    "rgb_native320": {
+      "N": 1528,
+      "TP": 1262,
+      "FP": 0,
+      "FN": 26,
+      "TN": 240,
+      "accuracy": 0.9829842931937173,
+      "precision": 1.0,
+      "recall": 0.9798136645962733,
+      "F1": 0.9898039215686274,
+      "FPR": 0.0,
+      "FNR": 0.020186335403726708
+    },
+    "thermal_multiview": {
+      "N": 1528,
+      "TP": 1199,
+      "FP": 180,
+      "FN": 89,
+      "TN": 60,
+      "accuracy": 0.8239528795811518,
+      "precision": 0.8694706308919506,
+      "recall": 0.9309006211180124,
+      "F1": 0.8991376077990251,
+      "FPR": 0.75,
+      "FNR": 0.06909937888198758
+    }
+  },
+  "fixed": {
+    "rT": 0.1,
+    "threshold": 0.5,
+    "soft": false
+  },
+  "full_config": {
+    "rT": 0.1,
+    "threshold": 0.5,
+    "soft": false
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "config": {
+        "rT": 0.1,
+        "threshold": 0.5,
+        "soft": false
+      },
+      "test": {
+        "N": 60,
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "TN": 60,
+        "accuracy": 1.0,
+        "precision": null,
+        "recall": null,
+        "F1": null,
+        "FPR": 0.0,
+        "FNR": null
+      }
+    },
+    {
+      "fold": 1,
+      "config": {
+        "rT": 0.1,
+        "threshold": 0.5,
+        "soft": false
+      },
+      "test": {
+        "N": 67,
+        "TP": 67,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0,
+        "FPR": null,
+        "FNR": 0.0
+      }
+    },
+    {
+      "fold": 2,
+      "config": {
+        "rT": 0.1,
+        "threshold": 0.5,
+        "soft": false
+      },
+      "test": {
+        "N": 3,
+        "TP": 0,
+        "FP": 0,
+        "FN": 3,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0,
+        "FPR": null,
+        "FNR": 1.0
+      }
+    },
+    {
+      "fold": 3,
+      "config": {
+        "rT": 0.05,
+        "threshold": 0.5,
+        "soft": false
+      },
+      "test": {
+        "N": 781,
+        "TP": 759,
+        "FP": 0,
+        "FN": 22,
+        "TN": 0,
+        "accuracy": 0.971830985915493,
+        "precision": 1.0,
+        "recall": 0.971830985915493,
+        "F1": 0.9857142857142858,
+        "FPR": null,
+        "FNR": 0.028169014084507043
+      }
+    },
+    {
+      "fold": 4,
+      "config": {
+        "rT": 0.1,
+        "threshold": 0.5,
+        "soft": false
+      },
+      "test": {
+        "N": 437,
+        "TP": 437,
+        "FP": 0,
+        "FN": 0,
+        "TN": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0,
+        "FPR": null,
+        "FNR": 0.0
+      }
+    },
+    {
+      "fold": 5,
+      "config": {
+        "rT": 0.3,
+        "threshold": 0.5,
+        "soft": false
+      },
+      "test": {
+        "N": 180,
+        "TP": 0,
+        "FP": 6,
+        "FN": 0,
+        "TN": 174,
+        "accuracy": 0.9666666666666667,
+        "precision": 0.0,
+        "recall": null,
+        "F1": 0.0,
+        "FPR": 0.03333333333333333,
+        "FNR": null
+      }
+    }
+  ],
+  "coverage": {
+    "positive_covered": 1282,
+    "positive_uncovered": 6,
+    "negative_covered": 180
+  },
+  "UV_runtime": false,
+  "independent_test": false,
+  "prior_label_exposure": true,
+  "targets": {
+    "fixed_exposed": {
+      "original_target": true,
+      "fair_same_selected_views": true
+    },
+    "full_descriptive": {
+      "original_target": true,
+      "fair_same_selected_views": true
+    },
+    "group_oof_exploratory": {
+      "original_target": false,
+      "fair_same_selected_views": false
+    }
+  }
+}

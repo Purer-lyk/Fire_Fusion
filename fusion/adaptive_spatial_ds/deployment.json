@@ -1,0 +1,30 @@
+{
+  "models": {
+    "rgb": {
+      "source": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best.pt",
+      "sha256": "1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32"
+    },
+    "thermal": {
+      "source": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best-2.pt",
+      "sha256": "c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6"
+    }
+  },
+  "affine": [
+    [
+      0.7113039166517691,
+      0.0044504657857417015,
+      78.2274089470037
+    ],
+    [
+      -0.045135242080470914,
+      0.963053329624529,
+      -15.942804622066248
+    ]
+  ],
+  "fusion": {
+    "rT": 0.1,
+    "threshold": 0.5,
+    "soft": false
+  },
+  "warning": "Experimental exposed-data fixed setting. Nominal affine is NOT independently validated; weak overlap can be spurious. Not an OOF zero-FP or deployment validation claim."
+}

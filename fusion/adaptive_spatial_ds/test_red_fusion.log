@@ -1,0 +1,13 @@
+F.
+======================================================================
+FAIL: test_actual_polygon_gate_and_normalized_conflict_masses (__main__.FusionTest.test_actual_polygon_gate_and_normalized_conflict_masses)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\test_adaptive.py", line 18, in test_actual_polygon_gate_and_normalized_conflict_masses
+    self.assertTrue(hasattr(c,'fuse'),'strict no-UV dual-detection fusion missing')
+AssertionError: False is not true : strict no-UV dual-detection fusion missing
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.015s
+
+FAILED (failures=1)

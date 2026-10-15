@@ -1,0 +1,39 @@
+{
+  "lambda_nominal": 0.5,
+  "tau_F": 0.5,
+  "decision_operator": ">",
+  "tau_L": 0.1,
+  "tau_H": 0.3,
+  "spatial_operator": ">=",
+  "UV": "paper_sample.txt fourth column binary",
+  "formula": "mprimeF=mF*(lambda+(1-lambda)*guv)",
+  "BPA_conservation": "mprimeN=mN; mprimeU=mU+(1-q)*mF",
+  "UV_is_third_DS_source": false,
+  "renormalize": false,
+  "threshold_source": "pre-fixed configurable defaults, not user-specified numerics; no test tuning",
+  "lambda_not_historical_smoothing_07": true,
+  "sensitivity_lambda": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "candidate_selection": {
+    "A": "original spatial_reliability_ds ordinary mF maximum candidate",
+    "B": "same original candidate as A",
+    "C": "latest spatial_gate_ds maximum IoU, tie visual BetP/min confidence/index"
+  },
+  "visual_mass_sources": {
+    "A": "spatial_reliability_ds ordinary_ds_*",
+    "B": "spatial_reliability_ds spatial_ds_*",
+    "C": "spatial_gate_ds raw_spatial_ds_*"
+  },
+  "source_sha256": {
+    "C:\\lyk\\paper_data\\paper_data_\\paper_data\\paper_sample.txt": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_reliability_ds\\fusion_results.csv": "d9f8a53a6099e47c8d86e6343ce8483113c299ff58be8774a392ef9d29a2891f",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_reliability_ds\\fusion_results.json": "e2600e6dfb0ba91a5bbfe833e40b63a0b2e1ea39491fe555ab7e0c7fcbcd73c5",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\fusion_results.csv": "56f526b9c3a1e3e032b31104bc173e626d4c0ccaafe4406c851fc85fd60f1ce9",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_gate_ds\\fusion_results.json": "4682574a3324f9c0cbf7dda749e65c115a4c6c2102aa2564d893f243c940b7e6"
+  }
+}

@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_full_evaluation_has_32_bounded_trials_and_weak_supervision (test_adaptive.EvaluationTest.test_full_evaluation_has_32_bounded_trials_and_weak_supervision)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\test_adaptive.py", line 57, in test_full_evaluation_has_32_bounded_trials_and_weak_supervision
+    self.assertTrue(hasattr(r,'evaluate'),'groupwise calibrated real spatial model evaluation missing')
+AssertionError: False is not true : groupwise calibrated real spatial model evaluation missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.231s
+
+FAILED (failures=1)

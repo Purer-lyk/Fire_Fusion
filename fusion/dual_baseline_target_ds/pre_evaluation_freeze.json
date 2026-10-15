@@ -1,0 +1,328 @@
+{
+  "utc": "2026-10-15T01:51:58.065125+00:00",
+  "protocol_sha256": "b0b66bb3a1c0e5befbc9c7d729aff47f5d626b00a37b580de02c11dc3bde1dc8",
+  "grid": [
+    {
+      "gate": 0.001,
+      "tR": 0.3,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.3,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.3,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.3,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.3,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.3,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.3,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.3,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.5,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.5,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.5,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.5,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.5,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.5,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.5,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.001,
+      "tR": 0.5,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.3,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.3,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.3,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.3,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.3,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.3,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.3,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.3,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.5,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.5,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.5,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.5,
+      "tT": 0.005,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.5,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.5,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.1,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.5,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "gate": 0.01,
+      "tR": 0.5,
+      "tT": 0.05,
+      "rR": 1.0,
+      "rT": 0.3,
+      "soft": false,
+      "u0": 0.0,
+      "threshold": 0.5
+    }
+  ],
+  "coverage_impossible": true,
+  "reason": "Candidate floor exceeds target: skip exhaustive futile optimization, finite 32-grid diagnostic only; no claim of repaired recall"
+}

@@ -1,0 +1,12 @@
+.BOUNDS {'nominal': {'positive_covered': 1287, 'positive_uncovered': 1, 'negative_covered': 240, 'uncovered_positive_reasons': {'zero_overlap': 1}, 'target_possible': True}, 'expected': {'positive_covered': 1287, 'positive_uncovered': 1, 'negative_covered': 240, 'uncovered_positive_reasons': {'zero_overlap': 1}, 'target_possible': True}, 'q10': {'positive_covered': 1287, 'positive_uncovered': 1, 'negative_covered': 240, 'uncovered_positive_reasons': {'zero_overlap': 1}, 'target_possible': True}}
+RESULT nominal_raw {'N': 1528, 'TP': 490, 'FP': 0, 'FN': 798, 'TN': 240, 'accuracy': 0.47774869109947643, 'precision': 1.0, 'recall': 0.3804347826086957, 'F1': 0.5511811023622047, 'FPR': 0.0, 'FNR': 0.6195652173913043} {'N': 1528, 'TP': 490, 'FP': 91, 'FN': 798, 'TN': 149, 'accuracy': 0.4181937172774869, 'precision': 0.8433734939759037, 'recall': 0.3804347826086957, 'F1': 0.5243445692883895, 'FPR': 0.37916666666666665, 'FNR': 0.6195652173913043}
+RESULT nominal_calibrated {'N': 1528, 'TP': 1215, 'FP': 181, 'FN': 73, 'TN': 59, 'accuracy': 0.8337696335078534, 'precision': 0.8703438395415473, 'recall': 0.9433229813664596, 'F1': 0.9053651266766021, 'FPR': 0.7541666666666667, 'FNR': 0.056677018633540376} {'N': 1528, 'TP': 431, 'FP': 240, 'FN': 857, 'TN': 0, 'accuracy': 0.28206806282722513, 'precision': 0.6423248882265276, 'recall': 0.33462732919254656, 'F1': 0.4400204185809086, 'FPR': 1.0, 'FNR': 0.6653726708074534}
+RESULT expected_raw {'N': 1528, 'TP': 493, 'FP': 0, 'FN': 795, 'TN': 240, 'accuracy': 0.47971204188481675, 'precision': 1.0, 'recall': 0.3827639751552795, 'F1': 0.553621560920831, 'FPR': 0.0, 'FNR': 0.6172360248447205} {'N': 1528, 'TP': 493, 'FP': 99, 'FN': 795, 'TN': 141, 'accuracy': 0.41492146596858637, 'precision': 0.8327702702702703, 'recall': 0.3827639751552795, 'F1': 0.524468085106383, 'FPR': 0.4125, 'FNR': 0.6172360248447205}
+RESULT expected_calibrated {'N': 1528, 'TP': 1214, 'FP': 181, 'FN': 74, 'TN': 59, 'accuracy': 0.8331151832460733, 'precision': 0.8702508960573476, 'recall': 0.9425465838509317, 'F1': 0.9049571375326128, 'FPR': 0.7541666666666667, 'FNR': 0.05745341614906832} {'N': 1528, 'TP': 430, 'FP': 240, 'FN': 858, 'TN': 0, 'accuracy': 0.281413612565445, 'precision': 0.6417910447761194, 'recall': 0.3338509316770186, 'F1': 0.43922369765066394, 'FPR': 1.0, 'FNR': 0.6661490683229814}
+...FORWARD smoke rgb 3 18
+FORWARD smoke thermal 3 36
+....
+----------------------------------------------------------------------
+Ran 8 tests in 56.853s
+
+OK

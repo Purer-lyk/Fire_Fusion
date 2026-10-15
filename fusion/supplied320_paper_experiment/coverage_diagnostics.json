@@ -1,0 +1,18 @@
+{
+  "rgb_raw_boxes": 2054,
+  "thermal_raw_boxes": 5005,
+  "rgb_operating_boxes": 1939,
+  "thermal_operating_boxes": 3929,
+  "no_rgb_candidates": 96,
+  "no_thermal_candidates": 6,
+  "no_eligible_match": 169,
+  "positive_no_eligible_match": 39,
+  "matched_pairs": 1855,
+  "selected_iou_quantiles": {
+    "min": 0.2066873136816356,
+    "q25": 0.4264707453672858,
+    "median": 0.48387415017880403,
+    "q75": 0.5701887644290465,
+    "max": 0.7051060991861787
+  }
+}

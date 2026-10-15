@@ -1,0 +1,14 @@
+{
+  "info": {
+    "description": "Existing fire boxes only. No UV-derived truth. Coordinates retained as continuous xyxy; no speculative VOC -1 shift."
+  },
+  "images": [],
+  "annotations": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "fire",
+      "supercategory": "fire"
+    }
+  ]
+}

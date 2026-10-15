@@ -1,0 +1,424 @@
+{
+  "primary_algorithm": "Original C++ fuse3 spatial s=0.1 applied twice; original random inputs replaced real NN maximum scores and text Tmax/UV",
+  "total_rows": 1528,
+  "inference_verification": {
+    "rgb": {
+      "processed_images": 1528,
+      "missing_images": [],
+      "unique_pair_indices": 1528,
+      "checkpoint": "C:\\lyk\\fire\\qualityDetection\\training\\output\\ppyolov2_rgb\\model_final.pdparams",
+      "checkpoint_sha256": "2244929ed99be3a5536b5f529e0f940ced29cd92c282ebb26bba304056f884b7",
+      "prediction_sha256": "2c411317f9da7883fcfd552cbee4d85261b09f7cc6c6de0cab9f7611c0ed54cc",
+      "retained_boxes": 9629,
+      "minimum_retained_score": 0.01,
+      "config_sha256": "dd9cafd596d84f5b63a4aedc2beb265931d7b9323f9c90f740c77324dc3f78b7",
+      "current_image_hashes_verified": true
+    },
+    "thermal": {
+      "processed_images": 1528,
+      "missing_images": [],
+      "unique_pair_indices": 1528,
+      "checkpoint": "C:\\lyk\\fire\\qualityDetection\\training\\output\\ppyolov2_thermal\\model_final.pdparams",
+      "checkpoint_sha256": "662f9a630a11dc399a5896eebeaba25b714520478f5da0747c2302c9616cf7f6",
+      "prediction_sha256": "566dc26e7d5a554fb003fc6b7d0bf809acb1ddc16c112408374d2be67204ae53",
+      "retained_boxes": 134778,
+      "minimum_retained_score": 0.01,
+      "config_sha256": "f078d8de5b6f598b1510b2ad005ae675194f2a58747ef2ec24849f9d9488b77a",
+      "current_image_hashes_verified": true
+    }
+  },
+  "test_source": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\paper_sample.txt",
+  "test_source_sha256": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade",
+  "algorithm_source_sha256": {
+    "C:\\lyk\\paper\\bpa_test\\src\\bpa.cpp": "e79d12517df664e9c05cf9bc111779c06ca83fd97218a8df9246192b6f34646b",
+    "C:\\lyk\\paper\\bpa_test\\src\\draw_curve.cpp": "a254534867fd3182775a911977b3f02d71a40f3bea34bff2a5f9703ea8e6061a",
+    "C:\\lyk\\paper\\bpa_test\\src\\ds_fusion.cpp": "83982336f033d5767ef4542feb1f213dd6ff35f9e969462d722847b28b3bb08c",
+    "C:\\lyk\\paper\\bpa_test\\src\\homography.cpp": "da51631a99bb3abac4d948fa2b694537b490f478504fbbb1c27df4c48db93347",
+    "C:\\lyk\\paper\\bpa_test\\src\\temp_bpa.cpp": "101ae8c469b150e18bd8840b5c15ede2e4b7b95bc96bc1403a42dec179a5716e",
+    "C:\\lyk\\paper\\bpa_test\\src\\uv_bpa.cpp": "02118314184abebee152ca80b98d839f864b2e6c8a41542209a22af12b0a9615",
+    "C:\\lyk\\paper\\bpa_test\\src\\vision_bpa.cpp": "35f6ee5e4f8eaede7ab38a645d38bb4ed53c1c4532e9071df979d90c6fddfa1f",
+    "C:\\lyk\\paper\\bpa_test\\main\\homo_main.cpp": "e18340285163844a56f8954221d955d838e0df5c606f2e98ab6c2fec5b02d262",
+    "C:\\lyk\\paper\\bpa_test\\main\\main.cpp": "c2cb3b25e2ebc4d59b55164f3636edfa3558d7f91ab0d623cc81a01179df76bc",
+    "C:\\lyk\\paper\\bpa_test\\include\\bpa.h": "069dd59653c6cb0e4bbc5c79a154c84c0285afe8e0105a97d0dde8aba84aec63",
+    "C:\\lyk\\paper\\bpa_test\\include\\draw_curve.h": "dcd2eea2c448399c6bd6fc31b8e3cc21942e23554df4a3baff96213c52ca8bc3",
+    "C:\\lyk\\paper\\bpa_test\\include\\ds_fusion.h": "974d8198d491513090a91b3b142096d64edaf1e2655014361bfa50774d4762c8",
+    "C:\\lyk\\paper\\bpa_test\\include\\homography.h": "faa58b442f8fdc6d41ed8a9c575cf1dd5facff7081ab8027cb05f75d19c9e702",
+    "C:\\lyk\\paper\\bpa_test\\include\\temp_bpa.h": "1dae1bbe4db89202275127e298364e853e63b1b4c3076bd1ed1f1dece382e828",
+    "C:\\lyk\\paper\\bpa_test\\include\\uv_bpa.h": "0445f6fa4cfde6ccb9edb395a553e24fa5837f7169a849beed2a5db7b077d974",
+    "C:\\lyk\\paper\\bpa_test\\include\\vision_bpa.h": "dff1d4dcc5d973fa1d4e801560a5a7d8673429ff27556ae82fcfafa95fe779b0"
+  },
+  "parameters": {
+    "window": 10,
+    "time_lambda": 0.7,
+    "rgb_reliability": 0.3,
+    "T0": 50,
+    "uv_alpha": 0.01,
+    "uv_beta": 0.1,
+    "baseline_threshold": 0.5,
+    "fusion_fire_nofire_threshold": 0.95
+  },
+  "temporal_policy": {
+    "order": "paper_sample.txt exact order",
+    "reset_rule": "initial or nonincreasing timestamp or gap >120 seconds",
+    "resets": [
+      {
+        "pair_index": 0,
+        "source_line": 1,
+        "gap_seconds": null,
+        "reason": "initial"
+      },
+      {
+        "pair_index": 60,
+        "source_line": 61,
+        "gap_seconds": 1606.0314,
+        "reason": "timestamp_discontinuity_gap_gt_120s_or_nonincreasing"
+      },
+      {
+        "pair_index": 127,
+        "source_line": 128,
+        "gap_seconds": 848.9662,
+        "reason": "timestamp_discontinuity_gap_gt_120s_or_nonincreasing"
+      },
+      {
+        "pair_index": 130,
+        "source_line": 131,
+        "gap_seconds": 6635162.0462,
+        "reason": "timestamp_discontinuity_gap_gt_120s_or_nonincreasing"
+      },
+      {
+        "pair_index": 911,
+        "source_line": 912,
+        "gap_seconds": 505.9893,
+        "reason": "timestamp_discontinuity_gap_gt_120s_or_nonincreasing"
+      },
+      {
+        "pair_index": 1348,
+        "source_line": 1349,
+        "gap_seconds": 307.9977,
+        "reason": "timestamp_discontinuity_gap_gt_120s_or_nonincreasing"
+      }
+    ],
+    "sequence_count": 6,
+    "sequence_boundaries_validated": false,
+    "note": "Filename timestamps and 120s threshold identify acquisition discontinuities heuristically, not verified scene boundaries. Fraction parsed with %f; physical timestamp scale unverified. State reset is an explicit adaptation from original uninterrupted while loop."
+  },
+  "calibration": {
+    "status": "candidate/exploratory, unverified across test scenes",
+    "source": "C:\\lyk\\paper\\bpa_test\\main\\homo_main.cpp",
+    "source_sha256": "e18340285163844a56f8954221d955d838e0df5c606f2e98ab6c2fec5b02d262",
+    "direction": "thermal pts2 -> RGB pts1",
+    "thermal_points": [
+      [
+        23.0,
+        193.0
+      ],
+      [
+        53.0,
+        186.0
+      ],
+      [
+        80.0,
+        193.0
+      ],
+      [
+        118.0,
+        182.0
+      ],
+      [
+        147.0,
+        191.0
+      ],
+      [
+        118.0,
+        204.0
+      ],
+      [
+        47.0,
+        206.0
+      ]
+    ],
+    "rgb_points": [
+      [
+        97.0,
+        163.0
+      ],
+      [
+        116.0,
+        160.0
+      ],
+      [
+        136.0,
+        168.0
+      ],
+      [
+        164.0,
+        154.0
+      ],
+      [
+        183.0,
+        161.0
+      ],
+      [
+        163.0,
+        175.0
+      ],
+      [
+        113.0,
+        180.0
+      ]
+    ],
+    "H": [
+      [
+        1.92042622438008,
+        0.9507123986929582,
+        -12.066726872440976
+      ],
+      [
+        0.12422393753495863,
+        3.4192415867981505,
+        -272.90093436339134
+      ],
+      [
+        0.0014076376148762877,
+        0.006591007646013004,
+        1.0
+      ]
+    ],
+    "estimator": "cv2.findHomography RANSAC threshold=3 original RGB pixels, rng seed=7",
+    "inlier_mask": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "fit_errors_px": [
+      7.077385923430703,
+      0.6987747701550969,
+      1.5718878872776327,
+      0.19853772171850415,
+      0.6297098626125099,
+      0.30050680306727595,
+      0.41575827917885155
+    ],
+    "fit_rmse_px": 2.770962190858275,
+    "fit_max_px": 7.077385923430703,
+    "leave_one_out_errors_px": [
+      9.502276139948723,
+      5.5171966330187,
+      2.07391293569504,
+      6.835540425557816,
+      107.76008572312966,
+      118.8518061742585,
+      3.440810841426269
+    ],
+    "leave_one_out_rmse_px": 60.852967439661775,
+    "leave_one_out_max_px": 118.8518061742585,
+    "validation_note": "Seven points are concentrated in a narrow y band; fit/LOO only measure these points, not full field or independent scenes. No rectangle offsets applied."
+  },
+  "geometry_policy": "Anchor max-score RGB detection; select largest polygon IoU thermal detection among all retained >=0.01 outputs (tie: higher thermal score). Confidence BPA uses independent frame maxima. Also export max-score/max-score IoU. No one-to-one multiobject assignment. Missing/no overlap or invalid geometry => s=0; absence not proof of nofire. No clipping or offsets.",
+  "counts": {
+    "rgb_baseline": {
+      "fire": 0,
+      "nofire": 1528,
+      "uncertain": 0,
+      "decision_coverage": 1.0,
+      "uncertainty_rate": 0.0,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "F1": null
+    },
+    "thermal_baseline": {
+      "fire": 78,
+      "nofire": 1450,
+      "uncertain": 0,
+      "decision_coverage": 1.0,
+      "uncertainty_rate": 0.0,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "F1": null
+    },
+    "legacy_fixed_01": {
+      "fire": 0,
+      "nofire": 1479,
+      "uncertain": 49,
+      "decision_coverage": 0.9679319371727748,
+      "uncertainty_rate": 0.03206806282722513,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "F1": null,
+      "binary05_fire_count": 0,
+      "degenerate_count": 0
+    },
+    "classic_ds": {
+      "fire": 0,
+      "nofire": 172,
+      "uncertain": 1356,
+      "decision_coverage": 0.112565445026178,
+      "uncertainty_rate": 0.887434554973822,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "F1": null,
+      "binary05_fire_count": 123,
+      "degenerate_count": 0
+    },
+    "candidate_geometry_repeated": {
+      "fire": 0,
+      "nofire": 1043,
+      "uncertain": 485,
+      "decision_coverage": 0.6825916230366492,
+      "uncertainty_rate": 0.3174083769633508,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "F1": null,
+      "binary05_fire_count": 0,
+      "degenerate_count": 0
+    },
+    "recommended_spatial_then_ds": {
+      "fire": 0,
+      "nofire": 691,
+      "uncertain": 837,
+      "decision_coverage": 0.45222513089005234,
+      "uncertainty_rate": 0.5477748691099477,
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "F1": null,
+      "binary05_fire_count": 23,
+      "degenerate_count": 0
+    }
+  },
+  "distributions": {
+    "rgb_confidence": {
+      "min": 0.0,
+      "p25": 0.02925167977809906,
+      "median": 0.05790042504668236,
+      "p75": 0.09542592614889145,
+      "max": 0.3232288360595703,
+      "mean": 0.07050181658882453
+    },
+    "thermal_confidence": {
+      "min": 0.07371115684509277,
+      "p25": 0.24253171682357788,
+      "median": 0.28059089183807373,
+      "p75": 0.32376521825790405,
+      "max": 0.9408405423164368,
+      "mean": 0.2887284257083507
+    },
+    "Tmax": {
+      "min": 392.475,
+      "p25": 630.037,
+      "median": 645.225,
+      "p75": 647.662,
+      "max": 656.6,
+      "mean": 602.9741191099478
+    },
+    "candidate_spatial_iou": {
+      "min": 0.0,
+      "p25": 0.024430270460894417,
+      "median": 0.3383395751254944,
+      "p75": 0.3794047709872897,
+      "max": 0.5357597258404634,
+      "mean": 0.26420087898403827
+    },
+    "top_score_pair_iou": {
+      "min": 0.0,
+      "p25": 0.002044930095862379,
+      "median": 0.007485902935658216,
+      "p75": 0.029989851209463767,
+      "max": 0.41990729080812184,
+      "mean": 0.03250883616360911
+    },
+    "uv_bpa_fire": {
+      "min": 1.1616244331652462e-06,
+      "p25": 0.0027191987902308815,
+      "median": 0.010969329835291386,
+      "p75": 0.06079980705591223,
+      "max": 0.7012083294644161,
+      "mean": 0.08535288150025092
+    },
+    "legacy_fixed_01_fire": {
+      "min": 0.00021467345928327384,
+      "p25": 0.0007674512806185255,
+      "median": 0.0017737021617501036,
+      "p75": 0.003711285894932601,
+      "max": 0.07865920122212101,
+      "mean": 0.004961777320113663
+    },
+    "classic_ds_fire": {
+      "min": 0.019146997498969455,
+      "p25": 0.06732807814882202,
+      "median": 0.14095222783681488,
+      "p75": 0.23975499628784766,
+      "max": 0.8424440647992054,
+      "mean": 0.19348245470273914
+    },
+    "candidate_geometry_repeated_fire": {
+      "min": 0.0,
+      "p25": 0.00014525150724324252,
+      "median": 0.014393995991220748,
+      "p75": 0.03960534954660339,
+      "max": 0.434455443979609,
+      "mean": 0.032712526189848025
+    },
+    "recommended_spatial_then_ds_fire": {
+      "min": 4.178122173739959e-05,
+      "p25": 0.005029294180693935,
+      "median": 0.04239003902691103,
+      "p75": 0.10022330460774659,
+      "max": 0.6727383134518828,
+      "mean": 0.07717320618615471
+    }
+  },
+  "geometry_nonzero_rows": 1524,
+  "reviewed_scene_sanity": [
+    {
+      "pair_index": 0,
+      "scene_truth": "nofire",
+      "evidence_exposed": false,
+      "predictions": {
+        "rgb_baseline": "nofire",
+        "thermal_baseline": "fire",
+        "legacy_fixed_01": "nofire",
+        "classic_ds": "uncertain",
+        "candidate_geometry_repeated": "nofire",
+        "recommended_spatial_then_ds": "nofire"
+      },
+      "interpretation": "Single/current reviewed records only; not full-set accuracy or representative performance"
+    }
+  ],
+  "thermal_subset_metrics": {
+    "scope": "ONLY exact-hash and current source-XML verified thermal subset; target-level, not full fusion or scene-level",
+    "images": 89,
+    "gt_boxes": 162,
+    "score_threshold": 0.5,
+    "iou_threshold": 0.5,
+    "matching": "descending score, one-to-one greedy best unmatched GT IoU",
+    "TP": 0,
+    "FP": 0,
+    "FN": 162,
+    "precision": null,
+    "recall": 0.0,
+    "F1": 0.0,
+    "accuracy": null,
+    "accuracy_reason": "Object detection has no well-defined TN universe"
+  },
+  "truth_audit": {
+    "thermal_verified_images": 89,
+    "thermal_verified_boxes": 162,
+    "reviewed_scene_count": 1,
+    "raw_rgb_candidate_count": 73,
+    "raw_nonempty_rgb_candidate_count": 69,
+    "full_scene_truth": false
+  },
+  "cpp_reference_max_abs_error": 3.3306690738754696e-16,
+  "metrics_note": "Full 1528-row Accuracy/Precision/Recall/F1 unavailable. Never use Tmax or UV as labels. Output counts are not accuracy.",
+  "created_utc": "2026-10-12T03:03:56.271645+00:00"
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\newdirfusion\dataset_grounded_ds\export_safe.py", line 12, in <module>
+    assert r['label_sha256']==byhash[r['sha256']]['label_sha256'],'duplicate conflicting annotations'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: duplicate conflicting annotations

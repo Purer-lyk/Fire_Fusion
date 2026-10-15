@@ -1,0 +1,85 @@
+信息: 用提供的模式无法找到文件。
+C:\lyk\defaultpy\Python312\Lib\site-packages\paddle\utils\cpp_extension\extension_utils.py:712: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+C:\lyk\fire\qualityDetection\runtime\PaddleDetection\ppdet\modeling\losses\detr_loss.py:347: SyntaxWarning: assertion is always true, perhaps remove parentheses?
+  assert (masks is not None and gt_mask is not None,
+C:\lyk\fire\qualityDetection\runtime\PaddleDetection\ppdet\modeling\transformers\matchers.py:139: SyntaxWarning: assertion is always true, perhaps remove parentheses?
+  assert (masks is not None and gt_mask is not None,
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[10/12 09:51:01] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+Warning: import ppdet from source directory without installing, run 'python setup.py install' to install ppdet firstly
+INFERENCE_START {"modality": "rgb", "python": "C:\\lyk\\fire\\qualityDetection\\.venv\\Scripts\\python.exe", "paddle_version": "3.3.1", "device": "Place(gpu:0)", "gpu_name": "NVIDIA GeForce RTX 5070", "config": "C:\\lyk\\fire\\qualityDetection\\configs\\ppyolov2_rgb.yml", "config_sha256": "dd9cafd596d84f5b63a4aedc2beb265931d7b9323f9c90f740c77324dc3f78b7", "checkpoint": "C:\\lyk\\fire\\qualityDetection\\training\\output\\ppyolov2_rgb\\model_final.pdparams", "checkpoint_sha256": "2244929ed99be3a5536b5f529e0f940ced29cd92c282ebb26bba304056f884b7", "checkpoint_bytes": 217030334, "source_manifest": "C:\\lyk\\fire\\qualityDetection\\audit\\test_manifest.json", "source_pairs": "C:\\lyk\\fire\\qualityDetection\\audit\\test_pairs.json", "paper_sample_sha256": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade", "architecture": "YOLOv3", "backbone": {"depth": 50, "variant": "d", "return_idx": [1, 2, 3], "dcn_v2_stages": [3], "freeze_at": -1, "freeze_norm": false, "norm_decay": 0.0}, "neck": "PPYOLOPAN", "iou_aware": true, "post_process": {"decode": {"name": "YOLOBox", "conf_thresh": 0.01, "downsample_ratio": 32, "clip_bbox": true, "scale_x_y": 1.05}, "nms": {"name": "MatrixNMS", "keep_top_k": 100, "score_threshold": 0.01, "post_threshold": 0.01, "nms_top_k": -1, "background_label": -1}}, "minimum_score": 0.01, "coordinate_format": "xyxy in original-image pixels", "input_shape": [3, 640, 640], "UV_used_by_network": false, "truth_used": false, "expected_images": 3}
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W1012 09:51:01.922545 19476 gpu_resources.cc:116] Please NOTE: device: 0, GPU Compute Capability: 12.0, Driver API Version: 13.2, Runtime API Version: 12.9
+[10/12 09:51:02] ppdet.utils.checkpoint INFO: Finish loading model weights: C:/lyk/fire/qualityDetection/training/output/ppyolov2_rgb/model_final.pdparams
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|鈻堚枅鈻堚枎      | 1/3 [00:00<00:00,  2.05it/s]100%|鈻堚枅鈻堚枅鈻堚枅鈻堚枅鈻堚枅| 3/3 [00:00<00:00,  5.60it/s]
+{'bbox': Tensor(shape=[9, 6], dtype=float32, place=Place(cpu), stop_gradient=True,
+       [[0.          , 0.12080351  , 226.61505127, 56.57411194 , 243.60174561,
+         74.82681274 ],
+        [0.          , 0.01821183  , 224.48982239, 55.77062225 , 247.62394714,
+         76.54376984 ],
+        [0.          , 0.01446204  , 221.93095398, 120.44743347, 238.69371033,
+         146.91526794],
+        [0.          , 0.01415579  , 223.66368103, 4.58412552  , 249.08396912,
+         82.55151367 ],
+        [0.          , 0.01275867  , 226.67355347, 47.84036255 , 260.67404175,
+         76.01852417 ],
+        [0.          , 0.01247334  , 226.64553833, 55.39219284 , 243.02975464,
+         76.42765808 ],
+        [0.          , 0.01223473  , 226.50881958, 54.99881744 , 260.48254395,
+         78.56836700 ],
+        [0.          , 0.01123976  , 222.76461792, 35.81558990 , 266.44192505,
+         81.34566498 ],
+        [0.          , 0.01119386  , 244.81619263, 90.94977570 , 254.10470581,
+         103.69847870]]), 'bbox_num': Tensor(shape=[1], dtype=int32, place=Place(cpu), stop_gradient=True,
+       [9])}
+{'bbox': Tensor(shape=[7, 6], dtype=float32, place=Place(cpu), stop_gradient=True,
+       [[0.          , 0.06127704  , 226.05029297, 53.86172485 , 243.23382568,
+         77.23037720 ],
+        [0.          , 0.01456219  , 221.45187378, 120.34765625, 237.95480347,
+         146.93881226],
+        [0.          , 0.01444459  , 244.84432983, 90.61862946 , 254.25494385,
+         103.78743744],
+        [0.          , 0.01217782  , 230.68167114, 5.58708191  , 242.78543091,
+         48.38988495 ],
+        [0.          , 0.01167834  , 226.00225830, 56.25664902 , 243.65332031,
+         75.00061035 ],
+        [0.          , 0.01099745  , 208.48944092, 53.49598694 , 260.67016602,
+         217.38591003],
+        [0.          , 0.01042750  , 223.67239380, 54.40537262 , 246.81890869,
+         77.26248932 ]]), 'bbox_num': Tensor(shape=[1], dtype=int32, place=Place(cpu), stop_gradient=True,
+       [7])}
+{'bbox': Tensor(shape=[8, 6], dtype=float32, place=Place(cpu), stop_gradient=True,
+       [[0.          , 0.10169727  , 226.31030273, 54.08490372 , 243.30606079,
+         77.06762695 ],
+        [0.          , 0.02563754  , 221.82635498, 119.77473450, 239.39370728,
+         147.30940247],
+        [0.          , 0.01895135  , 226.42642212, 56.26542664 , 243.79339600,
+         74.87413025 ],
+        [0.          , 0.01618851  , 223.74075317, 54.52148056 , 246.77966309,
+         77.25847626 ],
+        [0.          , 0.01466893  , 225.84523010, 50.64585495 , 243.16868591,
+         75.13948059 ],
+        [0.          , 0.01249009  , 223.43865967, 50.60650253 , 246.28384399,
+         75.38655853 ],
+        [0.          , 0.01094279  , 228.01283264, 56.84199524 , 244.71900940,
+         74.16548157 ],
+        [0.          , 0.01054137  , 232.68566895, 55.72690582 , 242.73712158,
+         71.00519562 ]]), 'bbox_num': Tensor(shape=[1], dtype=int32, place=Place(cpu), stop_gradient=True,
+       [8])}
+[10/12 09:51:02] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+[10/12 09:51:02] ppdet.metrics.metrics INFO: The bbox result is saved to C:\lyk\fire\qualityDetection\fusion\smoke\rgb_official\bbox.json and do not evaluate the mAP.
+INFERENCE_COMPLETE {"modality": "rgb", "processed_images": 3, "expected_images": 3, "missing_images": [], "duplicate_images": 0, "retained_boxes": 24, "images_with_detections": 3, "images_without_detections": 0, "elapsed_predict_seconds": 0.5440311003476381, "batches_returned": 3, "prediction_json": "C:\\lyk\\fire\\qualityDetection\\fusion\\smoke\\rgb_predictions.json", "checkpoint_sha256": "2244929ed99be3a5536b5f529e0f940ced29cd92c282ebb26bba304056f884b7", "complete": true}

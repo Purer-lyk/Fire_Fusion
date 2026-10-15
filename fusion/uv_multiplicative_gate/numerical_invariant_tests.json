@@ -1,0 +1,11 @@
+{
+  "cases": 400,
+  "lambda_endpoints": true,
+  "uv_endpoints": true,
+  "mass_conservation": true,
+  "no_score_increase": true,
+  "no_resurrection": true,
+  "strict_mF_boundary": true,
+  "inclusive_spatial_boundary": true,
+  "UV_cannot_override_spatial_or_both_missing": true
+}

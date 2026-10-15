@@ -1,0 +1,29 @@
+{
+  "images": [
+    {
+      "id": 0,
+      "file_name": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_07_47_22_0604_thermal.jpg",
+      "width": 192,
+      "height": 256
+    },
+    {
+      "id": 1,
+      "file_name": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_07_47_22_0862_thermal.jpg",
+      "width": 192,
+      "height": 256
+    },
+    {
+      "id": 2,
+      "file_name": "C:/lyk/paper_data/paper_data_/paper_data/thermal/2026_05_23_07_47_23_0143_thermal.jpg",
+      "width": 192,
+      "height": 256
+    }
+  ],
+  "annotations": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "fire"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-14T02:43:37.091523+00:00",
+  "selected_trial": {
+    "trial_id": 324,
+    "tR": 0.2,
+    "tT": 0.1,
+    "iou_gate": 0.01,
+    "rmin": 1.0,
+    "decision_threshold": 0.3,
+    "TP": 379,
+    "FP": 0,
+    "FN": 0,
+    "TN": 27,
+    "FPR": 0.0,
+    "FNR": 0.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0,
+    "balanced_accuracy": 1.0
+  },
+  "parameters": {
+    "tR": 0.2,
+    "tT": 0.1,
+    "iou_gate": 0.01,
+    "rmin": 1.0,
+    "decision_threshold": 0.3
+  },
+  "allocation_sha256": "86326a1a2df3c99a7aae65814ee48119689af060694b65369f0cb10f069b3e2b",
+  "search_plan_sha256": "345f91487f0f924b854d56eebb723b88ed084a989c081f8917d33229dc618b2f",
+  "trial_csv_sha256": "28b403dfdb6a52ad46d68ae982b49526d0c6ae057c346a51238adc62f3500c90",
+  "heldout_evaluations_before_freeze": 0,
+  "formula": "fire-only nominal BPA, r=q_A*(rmin+(1-rmin)*IoU), q_A=1; mF=1-(1-r*cR)*(1-r*cT); decision strict >; dual real box gate; UV lambda .5 secondary only"
+}

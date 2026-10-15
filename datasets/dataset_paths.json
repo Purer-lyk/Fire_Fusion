@@ -1,0 +1,24 @@
+{
+  "rgb": {
+    "train": "C:/lyk/fire/qualityDetection/datasets/rgb/train.json",
+    "val": "C:/lyk/fire/qualityDetection/datasets/rgb/val.json",
+    "test_existing_gt": "C:/lyk/fire/qualityDetection/datasets/rgb/test_existing_gt.json",
+    "image_dir": "",
+    "file_name_policy": "absolute original read-only image paths",
+    "category_id": 1,
+    "category_name": "fire",
+    "keep_empty": true,
+    "allow_empty": true
+  },
+  "thermal": {
+    "train": "C:/lyk/fire/qualityDetection/datasets/thermal/train.json",
+    "val": "C:/lyk/fire/qualityDetection/datasets/thermal/val.json",
+    "test_existing_gt": "C:/lyk/fire/qualityDetection/datasets/thermal/test_existing_gt.json",
+    "image_dir": "",
+    "file_name_policy": "absolute original read-only image paths",
+    "category_id": 1,
+    "category_name": "fire",
+    "keep_empty": true,
+    "allow_empty": true
+  }
+}

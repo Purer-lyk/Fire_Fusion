@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "regression_tests": 7,
+  "independently_recomputed_rows": 1528,
+  "geometry_and_selected_indices": true,
+  "all_six_metrics_recomputed": true,
+  "diff_rows": 250,
+  "report_crc_ok": true,
+  "report_tables": 3,
+  "report_sha256": "3a9b12e5b80b5d5236cb891b957e89fbd135c7e264f5ada262038df3a0b009f2"
+}

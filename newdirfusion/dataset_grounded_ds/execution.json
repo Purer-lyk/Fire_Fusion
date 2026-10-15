@@ -1,0 +1,35 @@
+{
+  "completed_utc": "2026-10-14T03:13:54.886551+00:00",
+  "elapsed_seconds": 52.908650636672974,
+  "actual_device": "NVIDIA GeForce RTX 5070",
+  "forward_images": 9168,
+  "unique_input_images": 3056,
+  "source_files_unchanged": 15936,
+  "protected_unchanged": true,
+  "audit": {
+    "fireOrigin_train": {
+      "images": 2376,
+      "test_overlap": 298,
+      "empty_annotation": 45,
+      "invalid": 0
+    },
+    "fireOrigin_val": {
+      "images": 595,
+      "test_overlap": 74,
+      "empty_annotation": 10,
+      "invalid": 0
+    },
+    "thermal_train": {
+      "images": 1959,
+      "test_overlap": 74,
+      "empty_annotation": 13,
+      "invalid": 0
+    },
+    "thermal_val": {
+      "images": 490,
+      "test_overlap": 15,
+      "empty_annotation": 4,
+      "invalid": 0
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "rows": 1528,
+  "values_per_row": 15,
+  "maximum_absolute_error": 2.220446049250313e-16,
+  "reference_exit_code": 0,
+  "reference_exe_sha256": "75816aa555dd8138654637261479bf79ee9401e1a7c7f18cb84843c108e81edf",
+  "reference_source": "C:\\lyk\\fire\\qualityDetection\\fusion\\cpp_reference_harness.cpp",
+  "reference_source_sha256": "2c064fec97945b5bcdb0c88fe9c5c0a43cc10aba4bee0e598aa45fe4f0648f79",
+  "source_unchanged": true
+}

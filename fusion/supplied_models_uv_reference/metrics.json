@@ -1,0 +1,156 @@
+{
+  "reference": "text column4 UV 0=nofire 1=fire",
+  "circularity": "UV is simultaneously fusion input and evaluation reference; metrics are agreement with UV, not independent detection validity",
+  "threshold_protocol": "Retain class0 boxes with YOLO.predict(conf=0.5) end2end postprocess strict score>0.5. No boxes -> frame confidence0. All binary methods use confidence/mF>=0.5.",
+  "UV_label_counts": {
+    "0": 130,
+    "1": 1398
+  },
+  "methods": {
+    "rgb_baseline": {
+      "N": 1528,
+      "TP": 452,
+      "FP": 126,
+      "FN": 946,
+      "TN": 4,
+      "accuracy": 0.29842931937172773,
+      "precision": 0.7820069204152249,
+      "recall": 0.32331902718168815,
+      "F1": 0.4574898785425101
+    },
+    "thermal_baseline": {
+      "N": 1528,
+      "TP": 732,
+      "FP": 0,
+      "FN": 666,
+      "TN": 130,
+      "accuracy": 0.5641361256544503,
+      "precision": 1.0,
+      "recall": 0.5236051502145923,
+      "F1": 0.6873239436619718
+    },
+    "legacy_fixed_01": {
+      "N": 1528,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1398,
+      "TN": 130,
+      "accuracy": 0.08507853403141362,
+      "precision": null,
+      "recall": 0.0,
+      "F1": 0.0
+    },
+    "classic_ds": {
+      "N": 1528,
+      "TP": 58,
+      "FP": 0,
+      "FN": 1340,
+      "TN": 130,
+      "accuracy": 0.12303664921465969,
+      "precision": 1.0,
+      "recall": 0.04148783977110158,
+      "F1": 0.07967032967032966
+    },
+    "candidate_geometry_repeated": {
+      "N": 1528,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1398,
+      "TN": 130,
+      "accuracy": 0.08507853403141362,
+      "precision": null,
+      "recall": 0.0,
+      "F1": 0.0
+    },
+    "recommended_spatial_then_ds": {
+      "N": 1528,
+      "TP": 22,
+      "FP": 0,
+      "FN": 1376,
+      "TN": 130,
+      "accuracy": 0.09947643979057591,
+      "precision": 1.0,
+      "recall": 0.015736766809728183,
+      "F1": 0.030985915492957747
+    }
+  },
+  "fusion_abstention_threshold": 0.95,
+  "abstention": {
+    "legacy_fixed_01": {
+      "fire": 0,
+      "nofire": 472,
+      "uncertain": 1056,
+      "decision_coverage": 0.3089005235602094,
+      "uncertainty_rate": 0.6910994764397905,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 472,
+        "TP": 0,
+        "FP": 0,
+        "FN": 469,
+        "TN": 3,
+        "accuracy": 0.006355932203389831,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    },
+    "classic_ds": {
+      "fire": 0,
+      "nofire": 266,
+      "uncertain": 1262,
+      "decision_coverage": 0.17408376963350786,
+      "uncertainty_rate": 0.8259162303664922,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 266,
+        "TP": 0,
+        "FP": 0,
+        "FN": 266,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    },
+    "candidate_geometry_repeated": {
+      "fire": 0,
+      "nofire": 516,
+      "uncertain": 1012,
+      "decision_coverage": 0.337696335078534,
+      "uncertainty_rate": 0.662303664921466,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 516,
+        "TP": 0,
+        "FP": 0,
+        "FN": 513,
+        "TN": 3,
+        "accuracy": 0.005813953488372093,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    },
+    "recommended_spatial_then_ds": {
+      "fire": 0,
+      "nofire": 383,
+      "uncertain": 1145,
+      "decision_coverage": 0.2506544502617801,
+      "uncertainty_rate": 0.7493455497382199,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 383,
+        "TP": 0,
+        "FP": 0,
+        "FN": 383,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    }
+  }
+}

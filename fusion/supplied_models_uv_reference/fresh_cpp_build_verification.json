@@ -1,0 +1,9 @@
+{
+  "compile_command": "g++ -std=c++17 -O2 -static -I C:/lyk/paper/bpa_test/include C:/lyk/fire/qualityDetection/fusion/cpp_reference_harness.cpp C:/lyk/paper/bpa_test/src/bpa.cpp C:/lyk/paper/bpa_test/src/vision_bpa.cpp C:/lyk/paper/bpa_test/src/temp_bpa.cpp C:/lyk/paper/bpa_test/src/uv_bpa.cpp C:/lyk/paper/bpa_test/src/ds_fusion.cpp -o C:/lyk/fire/qualityDetection/fusion/supplied_models_uv_reference/cpp_reference_fresh.exe",
+  "exit_code": 0,
+  "rows": 1528,
+  "values_per_row": 15,
+  "fresh_vs_previous_max_abs_error": 0.0,
+  "fresh_exe_sha256": "919bd569244ed86df6c90405ee2c7b6b3810beda541724e4932320fa8274a99f",
+  "source_hashes_verified_unchanged": true
+}

@@ -1,0 +1,87 @@
+{
+  "python": "C:\\lyk\\fire\\qualityDetection\\.venv\\Scripts\\python.exe",
+  "sequential_gpu_order": [
+    "rgb",
+    "thermal"
+  ],
+  "smoke_verified": {
+    "rgb": {
+      "modality": "rgb",
+      "processed_images": 3,
+      "expected_images": 3,
+      "missing_images": [],
+      "duplicate_images": 0,
+      "retained_boxes": 24,
+      "images_with_detections": 3,
+      "images_without_detections": 0,
+      "elapsed_predict_seconds": 0.5440311003476381,
+      "batches_returned": 3,
+      "prediction_json": "C:\\lyk\\fire\\qualityDetection\\fusion\\smoke\\rgb_predictions.json",
+      "checkpoint_sha256": "2244929ed99be3a5536b5f529e0f940ced29cd92c282ebb26bba304056f884b7",
+      "complete": true
+    },
+    "thermal": {
+      "modality": "thermal",
+      "processed_images": 3,
+      "expected_images": 3,
+      "missing_images": [],
+      "duplicate_images": 0,
+      "retained_boxes": 38,
+      "images_with_detections": 3,
+      "images_without_detections": 0,
+      "elapsed_predict_seconds": 0.42136089969426394,
+      "batches_returned": 3,
+      "prediction_json": "C:\\lyk\\fire\\qualityDetection\\fusion\\smoke\\thermal_predictions.json",
+      "checkpoint_sha256": "662f9a630a11dc399a5896eebeaba25b714520478f5da0747c2302c9616cf7f6",
+      "complete": true
+    }
+  },
+  "runs": [
+    {
+      "modality": "rgb",
+      "command": [
+        "C:\\lyk\\fire\\qualityDetection\\.venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\lyk\\fire\\qualityDetection\\fusion\\infer_trained_pairs.py",
+        "--modality",
+        "rgb",
+        "--output-dir",
+        "C:\\lyk\\fire\\qualityDetection\\fusion"
+      ],
+      "log": "C:\\lyk\\fire\\qualityDetection\\fusion\\logs\\rgb_full.log",
+      "started_utc": "2026-10-12T01:51:44.925076+00:00",
+      "exit_code": 0,
+      "finished_utc": "2026-10-12T01:52:26.334913+00:00",
+      "verified_summary": {
+        "modality": "rgb",
+        "processed_images": 1528,
+        "expected_images": 1528,
+        "missing_images": [],
+        "duplicate_images": 0,
+        "retained_boxes": 9629,
+        "images_with_detections": 1526,
+        "images_without_detections": 2,
+        "elapsed_predict_seconds": 35.21844090055674,
+        "batches_returned": 1528,
+        "prediction_json": "C:\\lyk\\fire\\qualityDetection\\fusion\\rgb_predictions.json",
+        "checkpoint_sha256": "2244929ed99be3a5536b5f529e0f940ced29cd92c282ebb26bba304056f884b7",
+        "complete": true
+      }
+    },
+    {
+      "modality": "thermal",
+      "command": [
+        "C:\\lyk\\fire\\qualityDetection\\.venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\lyk\\fire\\qualityDetection\\fusion\\infer_trained_pairs.py",
+        "--modality",
+        "thermal",
+        "--output-dir",
+        "C:\\lyk\\fire\\qualityDetection\\fusion"
+      ],
+      "log": "C:\\lyk\\fire\\qualityDetection\\fusion\\logs\\thermal_full.log",
+      "started_utc": "2026-10-12T01:52:26.334913+00:00",
+      "exit_code": null
+    }
+  ]
+}

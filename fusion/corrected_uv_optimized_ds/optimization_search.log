@@ -1,0 +1,144 @@
+GEOMETRY 1 / 36 matched 1361
+GEOMETRY 2 / 36 matched 1360
+GEOMETRY 3 / 36 matched 1360
+GEOMETRY 4 / 36 matched 1358
+GEOMETRY 5 / 36 matched 1359
+GEOMETRY 6 / 36 matched 1359
+GEOMETRY 7 / 36 matched 1359
+GEOMETRY 8 / 36 matched 1355
+GEOMETRY 9 / 36 matched 1359
+GEOMETRY 10 / 36 matched 1359
+GEOMETRY 11 / 36 matched 1359
+GEOMETRY 12 / 36 matched 1354
+GEOMETRY 13 / 36 matched 1227
+GEOMETRY 14 / 36 matched 1226
+GEOMETRY 15 / 36 matched 1226
+GEOMETRY 16 / 36 matched 1224
+GEOMETRY 17 / 36 matched 1225
+GEOMETRY 18 / 36 matched 1225
+GEOMETRY 19 / 36 matched 1225
+GEOMETRY 20 / 36 matched 1221
+GEOMETRY 21 / 36 matched 1225
+GEOMETRY 22 / 36 matched 1225
+GEOMETRY 23 / 36 matched 1225
+GEOMETRY 24 / 36 matched 1220
+GEOMETRY 25 / 36 matched 1194
+GEOMETRY 26 / 36 matched 1193
+GEOMETRY 27 / 36 matched 1193
+GEOMETRY 28 / 36 matched 1191
+GEOMETRY 29 / 36 matched 1192
+GEOMETRY 30 / 36 matched 1192
+GEOMETRY 31 / 36 matched 1192
+GEOMETRY 32 / 36 matched 1188
+GEOMETRY 33 / 36 matched 1192
+GEOMETRY 34 / 36 matched 1192
+GEOMETRY 35 / 36 matched 1192
+GEOMETRY 36 / 36 matched 1187
+{
+  "results": {
+    "rgb_baseline": {
+      "N": 1528,
+      "TP": 1262,
+      "FP": 0,
+      "FN": 26,
+      "TN": 240,
+      "accuracy": 0.9829842931937173,
+      "precision": 1.0,
+      "recall": 0.9798136645962733,
+      "F1": 0.9898039215686274,
+      "FPR": 0.0,
+      "FNR": 0.020186335403726708
+    },
+    "thermal_baseline": {
+      "N": 1528,
+      "TP": 716,
+      "FP": 180,
+      "FN": 572,
+      "TN": 60,
+      "accuracy": 0.5078534031413613,
+      "precision": 0.7991071428571429,
+      "recall": 0.5559006211180124,
+      "F1": 0.6556776556776557,
+      "FPR": 0.75,
+      "FNR": 0.4440993788819876
+    },
+    "rgb_operating": {
+      "N": 1528,
+      "TP": 1279,
+      "FP": 153,
+      "FN": 9,
+      "TN": 87,
+      "accuracy": 0.893979057591623,
+      "precision": 0.8931564245810056,
+      "recall": 0.9930124223602484,
+      "F1": 0.9404411764705882,
+      "FPR": 0.6375,
+      "FNR": 0.006987577639751553
+    },
+    "thermal_operating": {
+      "N": 1528,
+      "TP": 1282,
+      "FP": 240,
+      "FN": 6,
+      "TN": 0,
+      "accuracy": 0.8390052356020943,
+      "precision": 0.8423127463863338,
+      "recall": 0.9953416149068323,
+      "F1": 0.9124555160142349,
+      "FPR": 1.0,
+      "FNR": 0.004658385093167702
+    },
+    "full_fire": {
+      "N": 1528,
+      "TP": 1208,
+      "FP": 0,
+      "FN": 80,
+      "TN": 240,
+      "accuracy": 0.9476439790575916,
+      "precision": 1.0,
+      "recall": 0.937888198757764,
+      "F1": 0.967948717948718,
+      "FPR": 0.0,
+      "FNR": 0.062111801242236024
+    },
+    "oof_fire": {
+      "N": 1528,
+      "TP": 1174,
+      "FP": 6,
+      "FN": 114,
+      "TN": 234,
+      "accuracy": 0.9214659685863874,
+      "precision": 0.9949152542372881,
+      "recall": 0.9114906832298136,
+      "F1": 0.9513776337115073,
+      "FPR": 0.025,
+      "FNR": 0.08850931677018634
+    }
+  },
+  "targets": {
+    "full_fire": {
+      "literal_strict_RGB_FPR_improvement_possible": false,
+      "literal_strict_RGB_FPR_improvement_achieved": false,
+      "thermal_goal": true,
+      "stronger_RGB_goal": false,
+      "fair_low_RGB_FPR_improvement": true
+    },
+    "oof_fire": {
+      "literal_strict_RGB_FPR_improvement_possible": false,
+      "literal_strict_RGB_FPR_improvement_achieved": false,
+      "thermal_goal": true,
+      "stronger_RGB_goal": false,
+      "fair_low_RGB_FPR_improvement": true
+    }
+  },
+  "full_parameters": {
+    "tR": 0.35,
+    "tT": 0.01,
+    "gate": 0.01,
+    "rR": 1.0,
+    "rT": 1.0,
+    "u0": 0.0,
+    "soft": false,
+    "threshold": 0.5
+  }
+}

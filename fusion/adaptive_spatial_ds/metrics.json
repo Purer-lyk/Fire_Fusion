@@ -1,0 +1,669 @@
+{
+  "source_sha256": "7fa9997f14d65213063651f8448dc56344f797911185a2d6170147f1960bd483",
+  "N": 1528,
+  "positive": 1288,
+  "negative": 240,
+  "UV_runtime": false,
+  "independent_test": false,
+  "trials": 32,
+  "baselines": {
+    "rgb_multiview": {
+      "N": 1528,
+      "TP": 1279,
+      "FP": 59,
+      "FN": 9,
+      "TN": 181,
+      "accuracy": 0.9554973821989529,
+      "precision": 0.9559043348281017,
+      "recall": 0.9930124223602484,
+      "F1": 0.9741051028179741,
+      "FPR": 0.24583333333333332,
+      "FNR": 0.006987577639751553
+    },
+    "rgb_original320": {
+      "N": 1528,
+      "TP": 1262,
+      "FP": 0,
+      "FN": 26,
+      "TN": 240,
+      "accuracy": 0.9829842931937173,
+      "precision": 1.0,
+      "recall": 0.9798136645962733,
+      "F1": 0.9898039215686274,
+      "FPR": 0.0,
+      "FNR": 0.020186335403726708
+    },
+    "thermal_multiview": {
+      "N": 1528,
+      "TP": 1199,
+      "FP": 180,
+      "FN": 89,
+      "TN": 60,
+      "accuracy": 0.8239528795811518,
+      "precision": 0.8694706308919506,
+      "recall": 0.9309006211180124,
+      "F1": 0.8991376077990251,
+      "FPR": 0.75,
+      "FNR": 0.06909937888198758
+    },
+    "thermal_original320": {
+      "N": 1528,
+      "TP": 717,
+      "FP": 180,
+      "FN": 571,
+      "TN": 60,
+      "accuracy": 0.5085078534031413,
+      "precision": 0.7993311036789298,
+      "recall": 0.5566770186335404,
+      "F1": 0.6562929061784897,
+      "FPR": 0.75,
+      "FNR": 0.44332298136645965
+    }
+  },
+  "results": {
+    "nominal_raw": {
+      "full": {
+        "N": 1528,
+        "TP": 490,
+        "FP": 0,
+        "FN": 798,
+        "TN": 240,
+        "accuracy": 0.47774869109947643,
+        "precision": 1.0,
+        "recall": 0.3804347826086957,
+        "F1": 0.5511811023622047,
+        "FPR": 0.0,
+        "FNR": 0.6195652173913043
+      },
+      "oof": {
+        "N": 1528,
+        "TP": 490,
+        "FP": 91,
+        "FN": 798,
+        "TN": 149,
+        "accuracy": 0.4181937172774869,
+        "precision": 0.8433734939759037,
+        "recall": 0.3804347826086957,
+        "F1": 0.5243445692883895,
+        "FPR": 0.37916666666666665,
+        "FNR": 0.6195652173913043
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 60,
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "accuracy": 1.0,
+            "precision": null,
+            "recall": null,
+            "F1": null,
+            "FPR": 0.0,
+            "FNR": null
+          }
+        },
+        {
+          "fold": 1,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 67,
+            "TP": 0,
+            "FP": 0,
+            "FN": 67,
+            "TN": 0,
+            "accuracy": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "F1": 0.0,
+            "FPR": null,
+            "FNR": 1.0
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 3,
+            "TP": 0,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "accuracy": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "F1": 0.0,
+            "FPR": null,
+            "FNR": 1.0
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 781,
+            "TP": 290,
+            "FP": 0,
+            "FN": 491,
+            "TN": 0,
+            "accuracy": 0.3713188220230474,
+            "precision": 1.0,
+            "recall": 0.3713188220230474,
+            "F1": 0.5415499533146592,
+            "FPR": null,
+            "FNR": 0.6286811779769527
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 437,
+            "TP": 200,
+            "FP": 0,
+            "FN": 237,
+            "TN": 0,
+            "accuracy": 0.4576659038901602,
+            "precision": 1.0,
+            "recall": 0.4576659038901602,
+            "F1": 0.6279434850863422,
+            "FPR": null,
+            "FNR": 0.5423340961098398
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.7,
+          "heldout": {
+            "N": 180,
+            "TP": 0,
+            "FP": 91,
+            "FN": 0,
+            "TN": 89,
+            "accuracy": 0.49444444444444446,
+            "precision": 0.0,
+            "recall": null,
+            "F1": 0.0,
+            "FPR": 0.5055555555555555,
+            "FNR": null
+          }
+        }
+      ],
+      "primary": true
+    },
+    "nominal_calibrated": {
+      "full": {
+        "N": 1528,
+        "TP": 1215,
+        "FP": 181,
+        "FN": 73,
+        "TN": 59,
+        "accuracy": 0.8337696335078534,
+        "precision": 0.8703438395415473,
+        "recall": 0.9433229813664596,
+        "F1": 0.9053651266766021,
+        "FPR": 0.7541666666666667,
+        "FNR": 0.056677018633540376
+      },
+      "oof": {
+        "N": 1528,
+        "TP": 431,
+        "FP": 240,
+        "FN": 857,
+        "TN": 0,
+        "accuracy": 0.28206806282722513,
+        "precision": 0.6423248882265276,
+        "recall": 0.33462732919254656,
+        "F1": 0.4400204185809086,
+        "FPR": 1.0,
+        "FNR": 0.6653726708074534
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "threshold": 0.2,
+          "heldout": {
+            "N": 60,
+            "TP": 0,
+            "FP": 60,
+            "FN": 0,
+            "TN": 0,
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": null,
+            "F1": 0.0,
+            "FPR": 1.0,
+            "FNR": null
+          }
+        },
+        {
+          "fold": 1,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 67,
+            "TP": 2,
+            "FP": 0,
+            "FN": 65,
+            "TN": 0,
+            "accuracy": 0.029850746268656716,
+            "precision": 1.0,
+            "recall": 0.029850746268656716,
+            "F1": 0.057971014492753624,
+            "FPR": null,
+            "FNR": 0.9701492537313433
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 3,
+            "TP": 1,
+            "FP": 0,
+            "FN": 2,
+            "TN": 0,
+            "accuracy": 0.3333333333333333,
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "F1": 0.5,
+            "FPR": null,
+            "FNR": 0.6666666666666666
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 781,
+            "TP": 1,
+            "FP": 0,
+            "FN": 780,
+            "TN": 0,
+            "accuracy": 0.0012804097311139564,
+            "precision": 1.0,
+            "recall": 0.0012804097311139564,
+            "F1": 0.0025575447570332483,
+            "FPR": null,
+            "FNR": 0.998719590268886
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 437,
+            "TP": 427,
+            "FP": 0,
+            "FN": 10,
+            "TN": 0,
+            "accuracy": 0.977116704805492,
+            "precision": 1.0,
+            "recall": 0.977116704805492,
+            "F1": 0.9884259259259259,
+            "FPR": null,
+            "FNR": 0.02288329519450801
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 180,
+            "TP": 0,
+            "FP": 180,
+            "FN": 0,
+            "TN": 0,
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": null,
+            "F1": 0.0,
+            "FPR": 1.0,
+            "FNR": null
+          }
+        }
+      ],
+      "primary": true
+    },
+    "expected_raw": {
+      "full": {
+        "N": 1528,
+        "TP": 493,
+        "FP": 0,
+        "FN": 795,
+        "TN": 240,
+        "accuracy": 0.47971204188481675,
+        "precision": 1.0,
+        "recall": 0.3827639751552795,
+        "F1": 0.553621560920831,
+        "FPR": 0.0,
+        "FNR": 0.6172360248447205
+      },
+      "oof": {
+        "N": 1528,
+        "TP": 493,
+        "FP": 99,
+        "FN": 795,
+        "TN": 141,
+        "accuracy": 0.41492146596858637,
+        "precision": 0.8327702702702703,
+        "recall": 0.3827639751552795,
+        "F1": 0.524468085106383,
+        "FPR": 0.4125,
+        "FNR": 0.6172360248447205
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 60,
+            "TP": 0,
+            "FP": 0,
+            "FN": 0,
+            "TN": 60,
+            "accuracy": 1.0,
+            "precision": null,
+            "recall": null,
+            "F1": null,
+            "FPR": 0.0,
+            "FNR": null
+          }
+        },
+        {
+          "fold": 1,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 67,
+            "TP": 0,
+            "FP": 0,
+            "FN": 67,
+            "TN": 0,
+            "accuracy": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "F1": 0.0,
+            "FPR": null,
+            "FNR": 1.0
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 3,
+            "TP": 0,
+            "FP": 0,
+            "FN": 3,
+            "TN": 0,
+            "accuracy": 0.0,
+            "precision": null,
+            "recall": 0.0,
+            "F1": 0.0,
+            "FPR": null,
+            "FNR": 1.0
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 781,
+            "TP": 279,
+            "FP": 0,
+            "FN": 502,
+            "TN": 0,
+            "accuracy": 0.35723431498079383,
+            "precision": 1.0,
+            "recall": 0.35723431498079383,
+            "F1": 0.5264150943396226,
+            "FPR": null,
+            "FNR": 0.6427656850192062
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 437,
+            "TP": 214,
+            "FP": 0,
+            "FN": 223,
+            "TN": 0,
+            "accuracy": 0.4897025171624714,
+            "precision": 1.0,
+            "recall": 0.4897025171624714,
+            "F1": 0.6574500768049155,
+            "FPR": null,
+            "FNR": 0.5102974828375286
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.7,
+          "heldout": {
+            "N": 180,
+            "TP": 0,
+            "FP": 99,
+            "FN": 0,
+            "TN": 81,
+            "accuracy": 0.45,
+            "precision": 0.0,
+            "recall": null,
+            "F1": 0.0,
+            "FPR": 0.55,
+            "FNR": null
+          }
+        }
+      ],
+      "primary": false
+    },
+    "expected_calibrated": {
+      "full": {
+        "N": 1528,
+        "TP": 1214,
+        "FP": 181,
+        "FN": 74,
+        "TN": 59,
+        "accuracy": 0.8331151832460733,
+        "precision": 0.8702508960573476,
+        "recall": 0.9425465838509317,
+        "F1": 0.9049571375326128,
+        "FPR": 0.7541666666666667,
+        "FNR": 0.05745341614906832
+      },
+      "oof": {
+        "N": 1528,
+        "TP": 430,
+        "FP": 240,
+        "FN": 858,
+        "TN": 0,
+        "accuracy": 0.281413612565445,
+        "precision": 0.6417910447761194,
+        "recall": 0.3338509316770186,
+        "F1": 0.43922369765066394,
+        "FPR": 1.0,
+        "FNR": 0.6661490683229814
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "threshold": 0.2,
+          "heldout": {
+            "N": 60,
+            "TP": 0,
+            "FP": 60,
+            "FN": 0,
+            "TN": 0,
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": null,
+            "F1": 0.0,
+            "FPR": 1.0,
+            "FNR": null
+          }
+        },
+        {
+          "fold": 1,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 67,
+            "TP": 2,
+            "FP": 0,
+            "FN": 65,
+            "TN": 0,
+            "accuracy": 0.029850746268656716,
+            "precision": 1.0,
+            "recall": 0.029850746268656716,
+            "F1": 0.057971014492753624,
+            "FPR": null,
+            "FNR": 0.9701492537313433
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 3,
+            "TP": 1,
+            "FP": 0,
+            "FN": 2,
+            "TN": 0,
+            "accuracy": 0.3333333333333333,
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "F1": 0.5,
+            "FPR": null,
+            "FNR": 0.6666666666666666
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 781,
+            "TP": 1,
+            "FP": 0,
+            "FN": 780,
+            "TN": 0,
+            "accuracy": 0.0012804097311139564,
+            "precision": 1.0,
+            "recall": 0.0012804097311139564,
+            "F1": 0.0025575447570332483,
+            "FPR": null,
+            "FNR": 0.998719590268886
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 437,
+            "TP": 426,
+            "FP": 0,
+            "FN": 11,
+            "TN": 0,
+            "accuracy": 0.9748283752860412,
+            "precision": 1.0,
+            "recall": 0.9748283752860412,
+            "F1": 0.9872537659327926,
+            "FPR": null,
+            "FNR": 0.02517162471395881
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.9,
+          "heldout": {
+            "N": 180,
+            "TP": 0,
+            "FP": 180,
+            "FN": 0,
+            "TN": 0,
+            "accuracy": 0.0,
+            "precision": 0.0,
+            "recall": null,
+            "F1": 0.0,
+            "FPR": 1.0,
+            "FNR": null
+          }
+        }
+      ],
+      "primary": false
+    }
+  },
+  "targets": {
+    "nominal_raw": {
+      "full": {
+        "original_target": false,
+        "fair_updated": false
+      },
+      "oof": {
+        "original_target": false,
+        "fair_updated": false
+      }
+    },
+    "nominal_calibrated": {
+      "full": {
+        "original_target": false,
+        "fair_updated": false
+      },
+      "oof": {
+        "original_target": false,
+        "fair_updated": false
+      }
+    },
+    "expected_raw": {
+      "full": {
+        "original_target": false,
+        "fair_updated": false
+      },
+      "oof": {
+        "original_target": false,
+        "fair_updated": false
+      }
+    },
+    "expected_calibrated": {
+      "full": {
+        "original_target": false,
+        "fair_updated": false
+      },
+      "oof": {
+        "original_target": false,
+        "fair_updated": false
+      }
+    }
+  },
+  "bounds": {
+    "nominal": {
+      "positive_covered": 1287,
+      "positive_uncovered": 1,
+      "negative_covered": 240,
+      "uncovered_positive_reasons": {
+        "zero_overlap": 1
+      },
+      "target_possible": true
+    },
+    "expected": {
+      "positive_covered": 1287,
+      "positive_uncovered": 1,
+      "negative_covered": 240,
+      "uncovered_positive_reasons": {
+        "zero_overlap": 1
+      },
+      "target_possible": true
+    },
+    "q10": {
+      "positive_covered": 1287,
+      "positive_uncovered": 1,
+      "negative_covered": 240,
+      "uncovered_positive_reasons": {
+        "zero_overlap": 1
+      },
+      "target_possible": true
+    }
+  },
+  "registration_promoted": false
+}

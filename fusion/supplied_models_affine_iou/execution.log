@@ -1,0 +1,409 @@
+{
+  "metrics": {
+    "rgb_baseline": {
+      "N": 1528,
+      "TP": 452,
+      "FP": 126,
+      "FN": 946,
+      "TN": 4,
+      "accuracy": 0.29842931937172773,
+      "precision": 0.7820069204152249,
+      "recall": 0.32331902718168815,
+      "F1": 0.4574898785425101
+    },
+    "thermal_baseline": {
+      "N": 1528,
+      "TP": 732,
+      "FP": 0,
+      "FN": 666,
+      "TN": 130,
+      "accuracy": 0.5641361256544503,
+      "precision": 1.0,
+      "recall": 0.5236051502145923,
+      "F1": 0.6873239436619718
+    },
+    "affine_dynamic_repeated": {
+      "N": 1528,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1398,
+      "TN": 130,
+      "accuracy": 0.08507853403141362,
+      "precision": null,
+      "recall": 0.0,
+      "F1": 0.0
+    },
+    "affine_spatial_then_classic": {
+      "N": 1528,
+      "TP": 26,
+      "FP": 0,
+      "FN": 1372,
+      "TN": 130,
+      "accuracy": 0.10209424083769633,
+      "precision": 1.0,
+      "recall": 0.01859799713876967,
+      "F1": 0.03651685393258427
+    }
+  },
+  "abstention": {
+    "affine_dynamic_repeated": {
+      "fire": 0,
+      "nofire": 510,
+      "uncertain": 1018,
+      "decision_coverage": 0.3337696335078534,
+      "uncertainty_rate": 0.6662303664921466,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 510,
+        "TP": 0,
+        "FP": 0,
+        "FN": 507,
+        "TN": 3,
+        "accuracy": 0.0058823529411764705,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    },
+    "affine_spatial_then_classic": {
+      "fire": 0,
+      "nofire": 381,
+      "uncertain": 1147,
+      "decision_coverage": 0.2493455497382199,
+      "uncertainty_rate": 0.7506544502617801,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 381,
+        "TP": 0,
+        "FP": 0,
+        "FN": 381,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    }
+  },
+  "calibration": {
+    "status": "candidate_unvalidated: no independent scene/full-field checks",
+    "direction": "thermal pts2 -> RGB pts1 original pixel coordinates",
+    "source": "C:\\lyk\\paper\\bpa_test\\main\\homo_main.cpp",
+    "source_sha256": "e18340285163844a56f8954221d955d838e0df5c606f2e98ab6c2fec5b02d262",
+    "thermal_points": [
+      [
+        23.0,
+        193.0
+      ],
+      [
+        53.0,
+        186.0
+      ],
+      [
+        80.0,
+        193.0
+      ],
+      [
+        118.0,
+        182.0
+      ],
+      [
+        147.0,
+        191.0
+      ],
+      [
+        118.0,
+        204.0
+      ],
+      [
+        47.0,
+        206.0
+      ]
+    ],
+    "rgb_points": [
+      [
+        97.0,
+        163.0
+      ],
+      [
+        116.0,
+        160.0
+      ],
+      [
+        136.0,
+        168.0
+      ],
+      [
+        164.0,
+        154.0
+      ],
+      [
+        183.0,
+        161.0
+      ],
+      [
+        163.0,
+        175.0
+      ],
+      [
+        113.0,
+        180.0
+      ]
+    ],
+    "affine_matrix_2x3": [
+      [
+        0.7113039166517691,
+        0.0044504657857417015,
+        78.2274089470037
+      ],
+      [
+        -0.045135242080470914,
+        0.963053329624529,
+        -15.942804622066248
+      ]
+    ],
+    "estimator": "cv2.estimateAffine2D FULL affine RANSAC; seed=7; threshold=3px; maxIters=2000; confidence=0.99; refineIters=10",
+    "inlier_mask": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "inlier_count": 6,
+    "fit_errors_px": [
+      6.089897491824994,
+      1.094412164187936,
+      1.6843572549177097,
+      1.0287675426673721,
+      0.7362539311725552,
+      0.20607036899984263,
+      0.5345285982155142
+    ],
+    "fit_rmse_px": 2.479927047762139,
+    "inlier_fit_rmse_px": 0.9969466447290716,
+    "leave_one_out_errors_px": [
+      7.124361539882253,
+      2.7019837768168813,
+      2.092235175806979,
+      2.3079372559928064,
+      9.142143818601445,
+      8.64123063706294,
+      2.6805219929169497
+    ],
+    "leave_one_out_rmse_px": 5.771804926500622,
+    "leave_one_out_max_px": 9.142143818601445,
+    "leave_one_out_matrices": [
+      [
+        [
+          0.6996225342933009,
+          -0.037369139953666385,
+          87.73295762103898
+        ],
+        [
+          -0.057415073131866806,
+          0.9190912644033952,
+          -5.950277352092334
+        ]
+      ],
+      [
+        [
+          0.6996225342933009,
+          -0.037369139953666385,
+          87.73295762103898
+        ],
+        [
+          -0.057415073131866806,
+          0.9190912644033952,
+          -5.950277352092334
+        ]
+      ],
+      [
+        [
+          0.7113258394368236,
+          0.0044876295311950115,
+          78.21622130725726
+        ],
+        [
+          -0.04118086964971905,
+          0.9697568251003977,
+          -17.960800696294207
+        ]
+      ],
+      [
+        [
+          0.7036388281127983,
+          0.024095988491468313,
+          75.0103411293893
+        ],
+        [
+          -0.061717940672028127,
+          0.853240428303079,
+          7.680133167697579
+        ]
+      ],
+      [
+        [
+          0.6780957367123778,
+          0.15785231281215353,
+          50.927093349644345
+        ],
+        [
+          0.06505731813834624,
+          0.5814311521425286,
+          49.24593019187275
+        ]
+      ],
+      [
+        [
+          0.6846131760860447,
+          0.039031339031339096,
+          73.16428587203778
+        ],
+        [
+          0.08717065306212622,
+          1.0484330484330486,
+          -40.59413856313089
+        ]
+      ],
+      [
+        [
+          0.7020278333628275,
+          -0.04131943026458381,
+          88.19426861418509
+        ],
+        [
+          -0.07727910047508135,
+          0.951714515184928,
+          -9.759988293107986
+        ]
+      ]
+    ],
+    "leave_one_out_inlier_masks": [
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "note": "Seven points occupy narrow y band; fitting and LOO do not validate independent scenes, field coverage or parallax. No manual offsets or projective mapping."
+  },
+  "status_counts": {
+    "missing_thermal": 360,
+    "missing_both": 436,
+    "positive_overlap": 169,
+    "missing_rgb": 514,
+    "both_present_no_overlap": 49
+  },
+  "selected_thermal_not_frame_max": 3,
+  "examples": [
+    {
+      "pair_index": 1021,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_affine_iou\\examples\\pair_1021.png",
+      "s": 0.7440791755050987,
+      "status": "positive_overlap",
+      "label": "最大正重叠",
+      "sha256": "f4e3deb39051731f6760ff8f41257aa79a6a05c6f2702b8f90c42cb73dea3ac9"
+    },
+    {
+      "pair_index": 906,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_affine_iou\\examples\\pair_906.png",
+      "s": 0.29394320301209803,
+      "status": "positive_overlap",
+      "label": "较小正重叠",
+      "sha256": "0cb93b7660df1dec02f354a10d8b65106d5f719b51d06ebefe344bcdd843869e"
+    },
+    {
+      "pair_index": 1082,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_affine_iou\\examples\\pair_1082.png",
+      "s": 0.6619608371466532,
+      "status": "positive_overlap",
+      "label": "多目标配对",
+      "sha256": "35b0d4b6eb9db7b69b118671a4578055a721ec28d41f5e7858c1297c0baf34bf"
+    },
+    {
+      "pair_index": 0,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_affine_iou\\examples\\pair_0.png",
+      "s": 0.0,
+      "status": "missing_thermal",
+      "label": "缺失模态",
+      "sha256": "4d367aa4593e6047a9994b43fb27606143265c781c52128384af1d1d80ae8933"
+    },
+    {
+      "pair_index": 671,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_affine_iou\\examples\\pair_671.png",
+      "s": 0.0,
+      "status": "both_present_no_overlap",
+      "label": "双模态无重叠",
+      "sha256": "046eb3883752a02e72027787d2583a8fdb1fca0d7ec1117a1f74adff052d7a4a"
+    }
+  ],
+  "verification": {
+    "csv_rows": 1528,
+    "unique_ids": 1528,
+    "metrics_recomputed_from_csv": true,
+    "docx_zip_crc_ok": true,
+    "docx_readback_ok": true,
+    "embedded_images": 5,
+    "source_and_previous_report_unchanged": true,
+    "prediction_reinference": false,
+    "docx_path": "C:\\lyk\\fire\\qualityDetection\\reports\\uploadedmodels_AffineIoU_DS_1528.docx",
+    "docx_sha256": "57c52e32bfd20bca92231976aed924c2cf4881bcad3bf318abe44081584833a0",
+    "csv_sha256": "43021a18db8aea1ef8271ca65b621b540c2efe6f6fd7f28c6f022fc302bf6101",
+    "metrics_sha256": "67fa1311a9d7418e86a15f49f8362d4d6fe48be434f75be455399c186b5b3b5c",
+    "cpp_parity_max_abs_error": 2.220446049250313e-16
+  }
+}

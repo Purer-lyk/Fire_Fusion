@@ -1,0 +1,13 @@
+{
+  "both_real_detection": {
+    "positive_covered": 1282,
+    "positive_uncovered": 6,
+    "minimum_possible_FNR": 0.004658385093167702
+  },
+  "raw_iou_at_least_001": {
+    "positive_covered": 1210,
+    "positive_uncovered": 78,
+    "minimum_possible_FNR": 0.06055900621118013
+  },
+  "scope": "Diagnostic logical bounds from all real full-image detections score>.01; no labels used as runtime gate, no new search or OOF retune."
+}

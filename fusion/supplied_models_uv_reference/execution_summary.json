@@ -1,0 +1,1301 @@
+{
+  "created_utc": "2026-10-13T03:00:02.450440+00:00",
+  "total_pairs": 1528,
+  "models": {
+    "rgb": {
+      "original_checkpoint": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best.pt",
+      "checkpoint": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\weights\\best.pt",
+      "bytes": 5348485,
+      "checkpoint_sha256": "1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32",
+      "names": {
+        "0": "fire"
+      },
+      "class_mapping": "class0 fire/Fire -> fire; no smoke class",
+      "model_class": "DetectionModel",
+      "yaml": {
+        "nc": 1,
+        "end2end": true,
+        "reg_max": 1,
+        "scales": {
+          "n": [
+            0.5,
+            0.25,
+            1024
+          ],
+          "s": [
+            0.5,
+            0.5,
+            1024
+          ],
+          "m": [
+            0.5,
+            1.0,
+            512
+          ],
+          "l": [
+            1.0,
+            1.0,
+            512
+          ],
+          "x": [
+            1.0,
+            1.5,
+            512
+          ]
+        },
+        "backbone": [
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              64,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              128,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              256,
+              false,
+              0.25
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              256,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              512,
+              false,
+              0.25
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              512,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              512,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              1024,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              1024,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "SPPF",
+            [
+              1024,
+              5,
+              3,
+              true
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C2PSA",
+            [
+              1024
+            ]
+          ]
+        ],
+        "head": [
+          [
+            -1,
+            1,
+            "nn.Upsample",
+            [
+              "None",
+              2,
+              "nearest"
+            ]
+          ],
+          [
+            [
+              -1,
+              6
+            ],
+            1,
+            "Concat",
+            [
+              1
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              512,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "nn.Upsample",
+            [
+              "None",
+              2,
+              "nearest"
+            ]
+          ],
+          [
+            [
+              -1,
+              4
+            ],
+            1,
+            "Concat",
+            [
+              1
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              256,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              256,
+              3,
+              2
+            ]
+          ],
+          [
+            [
+              -1,
+              13
+            ],
+            1,
+            "Concat",
+            [
+              1
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              512,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              512,
+              3,
+              2
+            ]
+          ],
+          [
+            [
+              -1,
+              10
+            ],
+            1,
+            "Concat",
+            [
+              1
+            ]
+          ],
+          [
+            -1,
+            1,
+            "C3k2",
+            [
+              1024,
+              true,
+              0.5,
+              true
+            ]
+          ],
+          [
+            [
+              16,
+              19,
+              22
+            ],
+            1,
+            "Detect",
+            [
+              "nc"
+            ]
+          ]
+        ],
+        "scale": "n",
+        "yaml_file": "yolo26n.yaml",
+        "channels": 3
+      },
+      "layer_types": [
+        "Conv",
+        "Conv",
+        "C3k2",
+        "Conv",
+        "C3k2",
+        "Conv",
+        "C3k2",
+        "Conv",
+        "C3k2",
+        "SPPF",
+        "C2PSA",
+        "Upsample",
+        "Concat",
+        "C3k2",
+        "Upsample",
+        "Concat",
+        "C3k2",
+        "Conv",
+        "Concat",
+        "C3k2",
+        "Conv",
+        "Concat",
+        "C3k2",
+        "Detect"
+      ],
+      "architecture": "Ultralytics YOLO26n (yolo26n.yaml, end2end=True, reg_max=1); not PPYOLOv2 or YOLO11",
+      "train_args": {
+        "task": "detect",
+        "mode": "train",
+        "model": "yolo26n.yaml",
+        "data": "cfgs\\bgr.yaml",
+        "epochs": 100,
+        "time": null,
+        "patience": 100,
+        "batch": 16,
+        "imgsz": 320,
+        "save": true,
+        "save_period": -1,
+        "cache": false,
+        "device": "0",
+        "workers": 4,
+        "project": null,
+        "name": "fireOrigin_yolo26n-5",
+        "exist_ok": false,
+        "pretrained": "yolo26n.pt",
+        "optimizer": "auto",
+        "verbose": true,
+        "seed": 0,
+        "deterministic": true,
+        "single_cls": false,
+        "rect": false,
+        "cos_lr": false,
+        "close_mosaic": 10,
+        "resume": false,
+        "amp": true,
+        "fraction": 1.0,
+        "profile": false,
+        "freeze": null,
+        "multi_scale": 0.0,
+        "compile": false,
+        "overlap_mask": true,
+        "mask_ratio": 4,
+        "dropout": 0.0,
+        "val": true,
+        "split": "val",
+        "save_json": false,
+        "conf": null,
+        "iou": 0.7,
+        "max_det": 300,
+        "half": false,
+        "dnn": false,
+        "plots": true,
+        "end2end": null,
+        "source": null,
+        "vid_stride": 1,
+        "stream_buffer": false,
+        "visualize": false,
+        "augment": false,
+        "agnostic_nms": false,
+        "classes": null,
+        "retina_masks": false,
+        "embed": null,
+        "show": false,
+        "save_frames": false,
+        "save_txt": false,
+        "save_conf": false,
+        "save_crop": false,
+        "show_labels": true,
+        "show_conf": true,
+        "show_boxes": true,
+        "line_width": null,
+        "format": "torchscript",
+        "keras": false,
+        "optimize": false,
+        "int8": false,
+        "dynamic": false,
+        "simplify": true,
+        "opset": null,
+        "workspace": null,
+        "nms": false,
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "warmup_epochs": 3.0,
+        "warmup_momentum": 0.8,
+        "warmup_bias_lr": 0.0,
+        "box": 7.5,
+        "cls": 0.5,
+        "cls_pw": 0.0,
+        "dfl": 1.5,
+        "pose": 12.0,
+        "kobj": 1.0,
+        "rle": 1.0,
+        "angle": 1.0,
+        "nbs": 64,
+        "hsv_h": 0.015,
+        "hsv_s": 0.7,
+        "hsv_v": 0.4,
+        "degrees": 0.0,
+        "translate": 0.1,
+        "scale": 0.5,
+        "shear": 0.0,
+        "perspective": 0.0,
+        "flipud": 0.0,
+        "fliplr": 0.5,
+        "bgr": 0.0,
+        "mosaic": 1.0,
+        "mixup": 0.0,
+        "cutmix": 0.0,
+        "copy_paste": 0.0,
+        "copy_paste_mode": "flip",
+        "auto_augment": "randaugment",
+        "erasing": 0.4,
+        "cfg": null,
+        "tracker": "botsort.yaml"
+      },
+      "checkpoint_keys": [
+        "date",
+        "version",
+        "license",
+        "docs",
+        "epoch",
+        "best_fitness",
+        "model",
+        "ema",
+        "updates",
+        "optimizer",
+        "scaler",
+        "train_args",
+        "train_metrics",
+        "train_results",
+        "git"
+      ],
+      "checkpoint_epoch": -1,
+      "checkpoint_version": "8.4.60",
+      "checkpoint_date": "2026-10-12T20:26:38.154406",
+      "parameters": 2504190,
+      "end2end": true,
+      "processed_images": 1528,
+      "unique_ids": 1528,
+      "missing_images": [],
+      "retained_fire_boxes": 609,
+      "actual_devices": [
+        "0"
+      ],
+      "inference_seconds": 12.946279000490904
+    },
+    "thermal": {
+      "original_checkpoint": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best-2.pt",
+      "checkpoint": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\weights\\best-2.pt",
+      "bytes": 5336965,
+      "checkpoint_sha256": "c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6",
+      "names": {
+        "0": "Fire"
+      },
+      "class_mapping": "class0 fire/Fire -> fire; no smoke class",
+      "model_class": "DetectionModel",
+      "yaml": {
+        "nc": 1,
+        "end2end": true,
+        "reg_max": 1,
+        "scales": {
+          "n": [
+            0.5,
+            0.25,
+            1024
+          ],
+          "s": [
+            0.5,
+            0.5,
+            1024
+          ],
+          "m": [
+            0.5,
+            1.0,
+            512
+          ],
+          "l": [
+            1.0,
+            1.0,
+            512
+          ],
+          "x": [
+            1.0,
+            1.5,
+            512
+          ]
+        },
+        "backbone": [
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              64,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              128,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              256,
+              false,
+              0.25
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              256,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              512,
+              false,
+              0.25
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              512,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              512,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              1024,
+              3,
+              2
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              1024,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "SPPF",
+            [
+              1024,
+              5,
+              3,
+              true
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C2PSA",
+            [
+              1024
+            ]
+          ]
+        ],
+        "head": [
+          [
+            -1,
+            1,
+            "nn.Upsample",
+            [
+              "None",
+              2,
+              "nearest"
+            ]
+          ],
+          [
+            [
+              -1,
+              6
+            ],
+            1,
+            "Concat",
+            [
+              1
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              512,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "nn.Upsample",
+            [
+              "None",
+              2,
+              "nearest"
+            ]
+          ],
+          [
+            [
+              -1,
+              4
+            ],
+            1,
+            "Concat",
+            [
+              1
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              256,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              256,
+              3,
+              2
+            ]
+          ],
+          [
+            [
+              -1,
+              13
+            ],
+            1,
+            "Concat",
+            [
+              1
+            ]
+          ],
+          [
+            -1,
+            2,
+            "C3k2",
+            [
+              512,
+              true
+            ]
+          ],
+          [
+            -1,
+            1,
+            "Conv",
+            [
+              512,
+              3,
+              2
+            ]
+          ],
+          [
+            [
+              -1,
+              10
+            ],
+            1,
+            "Concat",
+            [
+              1
+            ]
+          ],
+          [
+            -1,
+            1,
+            "C3k2",
+            [
+              1024,
+              true,
+              0.5,
+              true
+            ]
+          ],
+          [
+            [
+              16,
+              19,
+              22
+            ],
+            1,
+            "Detect",
+            [
+              "nc"
+            ]
+          ]
+        ],
+        "scale": "n",
+        "yaml_file": "yolo26n.yaml",
+        "channels": 3
+      },
+      "layer_types": [
+        "Conv",
+        "Conv",
+        "C3k2",
+        "Conv",
+        "C3k2",
+        "Conv",
+        "C3k2",
+        "Conv",
+        "C3k2",
+        "SPPF",
+        "C2PSA",
+        "Upsample",
+        "Concat",
+        "C3k2",
+        "Upsample",
+        "Concat",
+        "C3k2",
+        "Conv",
+        "Concat",
+        "C3k2",
+        "Conv",
+        "Concat",
+        "C3k2",
+        "Detect"
+      ],
+      "architecture": "Ultralytics YOLO26n (yolo26n.yaml, end2end=True, reg_max=1); not PPYOLOv2 or YOLO11",
+      "train_args": {
+        "task": "detect",
+        "mode": "train",
+        "model": "yolo26n.yaml",
+        "data": "cfgs\\thermal.yaml",
+        "epochs": 10,
+        "time": null,
+        "patience": 100,
+        "batch": 16,
+        "imgsz": 320,
+        "save": true,
+        "save_period": -1,
+        "cache": false,
+        "device": "0",
+        "workers": 4,
+        "project": null,
+        "name": "thermal_yolo26n-5",
+        "exist_ok": false,
+        "pretrained": "yolo26n.pt",
+        "optimizer": "auto",
+        "verbose": true,
+        "seed": 0,
+        "deterministic": true,
+        "single_cls": false,
+        "rect": false,
+        "cos_lr": false,
+        "close_mosaic": 10,
+        "resume": false,
+        "amp": true,
+        "fraction": 1.0,
+        "profile": false,
+        "freeze": null,
+        "multi_scale": 0.0,
+        "compile": false,
+        "overlap_mask": true,
+        "mask_ratio": 4,
+        "dropout": 0.0,
+        "val": true,
+        "split": "val",
+        "save_json": false,
+        "conf": null,
+        "iou": 0.7,
+        "max_det": 300,
+        "half": false,
+        "dnn": false,
+        "plots": true,
+        "end2end": null,
+        "source": null,
+        "vid_stride": 1,
+        "stream_buffer": false,
+        "visualize": false,
+        "augment": false,
+        "agnostic_nms": false,
+        "classes": null,
+        "retina_masks": false,
+        "embed": null,
+        "show": false,
+        "save_frames": false,
+        "save_txt": false,
+        "save_conf": false,
+        "save_crop": false,
+        "show_labels": true,
+        "show_conf": true,
+        "show_boxes": true,
+        "line_width": null,
+        "format": "torchscript",
+        "keras": false,
+        "optimize": false,
+        "int8": false,
+        "dynamic": false,
+        "simplify": true,
+        "opset": null,
+        "workspace": null,
+        "nms": false,
+        "lr0": 0.01,
+        "lrf": 0.01,
+        "momentum": 0.937,
+        "weight_decay": 0.0005,
+        "warmup_epochs": 3.0,
+        "warmup_momentum": 0.8,
+        "warmup_bias_lr": 0.0,
+        "box": 7.5,
+        "cls": 0.5,
+        "cls_pw": 0.0,
+        "dfl": 1.5,
+        "pose": 12.0,
+        "kobj": 1.0,
+        "rle": 1.0,
+        "angle": 1.0,
+        "nbs": 64,
+        "hsv_h": 0.015,
+        "hsv_s": 0.7,
+        "hsv_v": 0.4,
+        "degrees": 0.0,
+        "translate": 0.1,
+        "scale": 0.5,
+        "shear": 0.0,
+        "perspective": 0.0,
+        "flipud": 0.0,
+        "fliplr": 0.5,
+        "bgr": 0.0,
+        "mosaic": 1.0,
+        "mixup": 0.0,
+        "cutmix": 0.0,
+        "copy_paste": 0.0,
+        "copy_paste_mode": "flip",
+        "auto_augment": "randaugment",
+        "erasing": 0.4,
+        "cfg": null,
+        "tracker": "botsort.yaml"
+      },
+      "checkpoint_keys": [
+        "date",
+        "version",
+        "license",
+        "docs",
+        "epoch",
+        "best_fitness",
+        "model",
+        "ema",
+        "updates",
+        "optimizer",
+        "scaler",
+        "train_args",
+        "train_metrics",
+        "train_results",
+        "git"
+      ],
+      "checkpoint_epoch": -1,
+      "checkpoint_version": "8.4.60",
+      "checkpoint_date": "2026-08-10T17:21:02.554367",
+      "parameters": 2504190,
+      "end2end": true,
+      "processed_images": 1528,
+      "unique_ids": 1528,
+      "missing_images": [],
+      "retained_fire_boxes": 825,
+      "actual_devices": [
+        "0"
+      ],
+      "inference_seconds": 10.3384267995134
+    }
+  },
+  "device": "0",
+  "GPU_name": "NVIDIA GeForce RTX 5070",
+  "torch_version": "2.13.0+cu132",
+  "ultralytics_version": "8.4.60",
+  "fallback_failures": [],
+  "inference_seconds": {
+    "rgb": 12.946279000490904,
+    "thermal": 10.3384267995134
+  },
+  "elapsed_before_report_seconds": 24.744788500480354,
+  "paper_sample_sha256": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade",
+  "source_algorithm_sha256": {
+    "C:\\lyk\\paper\\bpa_test\\src\\bpa.cpp": "e79d12517df664e9c05cf9bc111779c06ca83fd97218a8df9246192b6f34646b",
+    "C:\\lyk\\paper\\bpa_test\\src\\draw_curve.cpp": "a254534867fd3182775a911977b3f02d71a40f3bea34bff2a5f9703ea8e6061a",
+    "C:\\lyk\\paper\\bpa_test\\src\\ds_fusion.cpp": "83982336f033d5767ef4542feb1f213dd6ff35f9e969462d722847b28b3bb08c",
+    "C:\\lyk\\paper\\bpa_test\\src\\homography.cpp": "da51631a99bb3abac4d948fa2b694537b490f478504fbbb1c27df4c48db93347",
+    "C:\\lyk\\paper\\bpa_test\\src\\temp_bpa.cpp": "101ae8c469b150e18bd8840b5c15ede2e4b7b95bc96bc1403a42dec179a5716e",
+    "C:\\lyk\\paper\\bpa_test\\src\\uv_bpa.cpp": "02118314184abebee152ca80b98d839f864b2e6c8a41542209a22af12b0a9615",
+    "C:\\lyk\\paper\\bpa_test\\src\\vision_bpa.cpp": "35f6ee5e4f8eaede7ab38a645d38bb4ed53c1c4532e9071df979d90c6fddfa1f",
+    "C:\\lyk\\paper\\bpa_test\\main\\homo_main.cpp": "e18340285163844a56f8954221d955d838e0df5c606f2e98ab6c2fec5b02d262",
+    "C:\\lyk\\paper\\bpa_test\\main\\main.cpp": "c2cb3b25e2ebc4d59b55164f3636edfa3558d7f91ab0d623cc81a01179df76bc",
+    "C:\\lyk\\paper\\bpa_test\\include\\bpa.h": "069dd59653c6cb0e4bbc5c79a154c84c0285afe8e0105a97d0dde8aba84aec63",
+    "C:\\lyk\\paper\\bpa_test\\include\\draw_curve.h": "dcd2eea2c448399c6bd6fc31b8e3cc21942e23554df4a3baff96213c52ca8bc3",
+    "C:\\lyk\\paper\\bpa_test\\include\\ds_fusion.h": "974d8198d491513090a91b3b142096d64edaf1e2655014361bfa50774d4762c8",
+    "C:\\lyk\\paper\\bpa_test\\include\\homography.h": "faa58b442f8fdc6d41ed8a9c575cf1dd5facff7081ab8027cb05f75d19c9e702",
+    "C:\\lyk\\paper\\bpa_test\\include\\temp_bpa.h": "1dae1bbe4db89202275127e298364e853e63b1b4c3076bd1ed1f1dece382e828",
+    "C:\\lyk\\paper\\bpa_test\\include\\uv_bpa.h": "0445f6fa4cfde6ccb9edb395a553e24fa5837f7169a849beed2a5db7b077d974",
+    "C:\\lyk\\paper\\bpa_test\\include\\vision_bpa.h": "dff1d4dcc5d973fa1d4e801560a5a7d8673429ff27556ae82fcfafa95fe779b0"
+  },
+  "parameters": {
+    "window": 10,
+    "time_lambda": 0.7,
+    "reliability": 0.3,
+    "T0": 50,
+    "uv_alpha": 0.01,
+    "uv_beta": 0.1,
+    "imgsz": 640,
+    "confidence": 0.5
+  },
+  "temporal_policy": "Exact file order, reset at initial/nonincreasing timestamp/gap>120s; heuristic acquisition boundaries, not independently verified scenes; adaptation from uninterrupted original loop",
+  "resets": [
+    {
+      "pair_index": 0,
+      "source_line": 1,
+      "gap_seconds": null
+    },
+    {
+      "pair_index": 60,
+      "source_line": 61,
+      "gap_seconds": 1606.0314
+    },
+    {
+      "pair_index": 127,
+      "source_line": 128,
+      "gap_seconds": 848.9662
+    },
+    {
+      "pair_index": 130,
+      "source_line": 131,
+      "gap_seconds": 6635162.0462
+    },
+    {
+      "pair_index": 911,
+      "source_line": 912,
+      "gap_seconds": 505.9893
+    },
+    {
+      "pair_index": 1348,
+      "source_line": 1349,
+      "gap_seconds": 307.9977
+    }
+  ],
+  "sequence_count": 6,
+  "calibration": {
+    "status": "candidate/exploratory, unverified across test scenes",
+    "source": "C:\\lyk\\paper\\bpa_test\\main\\homo_main.cpp",
+    "source_sha256": "e18340285163844a56f8954221d955d838e0df5c606f2e98ab6c2fec5b02d262",
+    "direction": "thermal pts2 -> RGB pts1",
+    "thermal_points": [
+      [
+        23.0,
+        193.0
+      ],
+      [
+        53.0,
+        186.0
+      ],
+      [
+        80.0,
+        193.0
+      ],
+      [
+        118.0,
+        182.0
+      ],
+      [
+        147.0,
+        191.0
+      ],
+      [
+        118.0,
+        204.0
+      ],
+      [
+        47.0,
+        206.0
+      ]
+    ],
+    "rgb_points": [
+      [
+        97.0,
+        163.0
+      ],
+      [
+        116.0,
+        160.0
+      ],
+      [
+        136.0,
+        168.0
+      ],
+      [
+        164.0,
+        154.0
+      ],
+      [
+        183.0,
+        161.0
+      ],
+      [
+        163.0,
+        175.0
+      ],
+      [
+        113.0,
+        180.0
+      ]
+    ],
+    "H": [
+      [
+        1.92042622438008,
+        0.9507123986929582,
+        -12.066726872440976
+      ],
+      [
+        0.12422393753495863,
+        3.4192415867981505,
+        -272.90093436339134
+      ],
+      [
+        0.0014076376148762877,
+        0.006591007646013004,
+        1.0
+      ]
+    ],
+    "estimator": "cv2.findHomography RANSAC threshold=3 original RGB pixels, rng seed=7",
+    "inlier_mask": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "fit_errors_px": [
+      7.077385923430703,
+      0.6987747701550969,
+      1.5718878872776327,
+      0.19853772171850415,
+      0.6297098626125099,
+      0.30050680306727595,
+      0.41575827917885155
+    ],
+    "fit_rmse_px": 2.770962190858275,
+    "fit_max_px": 7.077385923430703,
+    "leave_one_out_errors_px": [
+      9.502276139948723,
+      5.5171966330187,
+      2.07391293569504,
+      6.835540425557816,
+      107.76008572312966,
+      118.8518061742585,
+      3.440810841426269
+    ],
+    "leave_one_out_rmse_px": 60.852967439661775,
+    "leave_one_out_max_px": 118.8518061742585,
+    "validation_note": "Seven points are concentrated in a narrow y band; fit/LOO only measure these points, not full field or independent scenes. No rectangle offsets applied."
+  },
+  "spatial_nonzero_rows": 169,
+  "geometry_status_counts": {
+    "missing_detection": 1310,
+    "candidate_geometry": 218
+  },
+  "metrics": {
+    "rgb_baseline": {
+      "N": 1528,
+      "TP": 452,
+      "FP": 126,
+      "FN": 946,
+      "TN": 4,
+      "accuracy": 0.29842931937172773,
+      "precision": 0.7820069204152249,
+      "recall": 0.32331902718168815,
+      "F1": 0.4574898785425101
+    },
+    "thermal_baseline": {
+      "N": 1528,
+      "TP": 732,
+      "FP": 0,
+      "FN": 666,
+      "TN": 130,
+      "accuracy": 0.5641361256544503,
+      "precision": 1.0,
+      "recall": 0.5236051502145923,
+      "F1": 0.6873239436619718
+    },
+    "legacy_fixed_01": {
+      "N": 1528,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1398,
+      "TN": 130,
+      "accuracy": 0.08507853403141362,
+      "precision": null,
+      "recall": 0.0,
+      "F1": 0.0
+    },
+    "classic_ds": {
+      "N": 1528,
+      "TP": 58,
+      "FP": 0,
+      "FN": 1340,
+      "TN": 130,
+      "accuracy": 0.12303664921465969,
+      "precision": 1.0,
+      "recall": 0.04148783977110158,
+      "F1": 0.07967032967032966
+    },
+    "candidate_geometry_repeated": {
+      "N": 1528,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1398,
+      "TN": 130,
+      "accuracy": 0.08507853403141362,
+      "precision": null,
+      "recall": 0.0,
+      "F1": 0.0
+    },
+    "recommended_spatial_then_ds": {
+      "N": 1528,
+      "TP": 22,
+      "FP": 0,
+      "FN": 1376,
+      "TN": 130,
+      "accuracy": 0.09947643979057591,
+      "precision": 1.0,
+      "recall": 0.015736766809728183,
+      "F1": 0.030985915492957747
+    }
+  },
+  "abstention": {
+    "legacy_fixed_01": {
+      "fire": 0,
+      "nofire": 472,
+      "uncertain": 1056,
+      "decision_coverage": 0.3089005235602094,
+      "uncertainty_rate": 0.6910994764397905,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 472,
+        "TP": 0,
+        "FP": 0,
+        "FN": 469,
+        "TN": 3,
+        "accuracy": 0.006355932203389831,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    },
+    "classic_ds": {
+      "fire": 0,
+      "nofire": 266,
+      "uncertain": 1262,
+      "decision_coverage": 0.17408376963350786,
+      "uncertainty_rate": 0.8259162303664922,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 266,
+        "TP": 0,
+        "FP": 0,
+        "FN": 266,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    },
+    "candidate_geometry_repeated": {
+      "fire": 0,
+      "nofire": 516,
+      "uncertain": 1012,
+      "decision_coverage": 0.337696335078534,
+      "uncertainty_rate": 0.662303664921466,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 516,
+        "TP": 0,
+        "FP": 0,
+        "FN": 513,
+        "TN": 3,
+        "accuracy": 0.005813953488372093,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    },
+    "recommended_spatial_then_ds": {
+      "fire": 0,
+      "nofire": 383,
+      "uncertain": 1145,
+      "decision_coverage": 0.2506544502617801,
+      "uncertainty_rate": 0.7493455497382199,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 383,
+        "TP": 0,
+        "FP": 0,
+        "FN": 383,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    }
+  },
+  "UV_label_counts": {
+    "0": 130,
+    "1": 1398
+  },
+  "cpp_reference_max_abs_error": 2.220446049250313e-16,
+  "examples": [
+    {
+      "pair_index": 0,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\examples\\pair_0.jpg",
+      "sha256": "52dccbedc9fb931943a410728a68f51386cca5f70dd20df9bf8ce2c9606f8bfb",
+      "note": "Green real detector boxes; magenta candidate thermal polygon on RGB. UV is reference, not independent scene ground truth."
+    },
+    {
+      "pair_index": 2,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\examples\\pair_2.jpg",
+      "sha256": "873f32c39daa59e7452c4297dd8ad8cf366ee64f4e830781a15ccaf3a1c81a69",
+      "note": "Green real detector boxes; magenta candidate thermal polygon on RGB. UV is reference, not independent scene ground truth."
+    },
+    {
+      "pair_index": 130,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\examples\\pair_130.jpg",
+      "sha256": "a2f7202b4c5efaeddf227654c38dc93e3f18f7bfde32c5a2665b20a702da918d",
+      "note": "Green real detector boxes; magenta candidate thermal polygon on RGB. UV is reference, not independent scene ground truth."
+    },
+    {
+      "pair_index": 494,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\examples\\pair_494.jpg",
+      "sha256": "25f4bb4498fcc1e3f58b7e9975efed9d02f39862349b72083818e062e7eac89f",
+      "note": "Green real detector boxes; magenta candidate thermal polygon on RGB. UV is reference, not independent scene ground truth."
+    },
+    {
+      "pair_index": 1527,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\examples\\pair_1527.jpg",
+      "sha256": "22118f5ba01da2dda56039c2f17a07eb44562823ae1dc8faf2c3c35d637bdba8",
+      "note": "Green real detector boxes; magenta candidate thermal polygon on RGB. UV is reference, not independent scene ground truth."
+    }
+  ]
+}

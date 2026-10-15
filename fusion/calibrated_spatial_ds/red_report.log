@@ -1,0 +1,23 @@
+C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\test_artifacts.py:7: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\lyk\\fire\\qualityDetection\\fusion\\calibrated_spatial_ds\\frame_predictions.csv' mode='r' encoding='utf-8-sig'>
+  m=json.loads((OUT/'metrics.json').read_text()); f=json.loads((OUT/'frozen_selected.json').read_text());rows=list(csv.DictReader((OUT/'frame_predictions.csv').open(encoding='utf-8-sig')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\test_artifacts.py:10: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\lyk\\fire\\qualityDetection\\fusion\\calibrated_spatial_ds\\calibration_trials.csv' mode='r' encoding='utf-8-sig'>
+  trials=list(csv.DictReader((OUT/'calibration_trials.csv').open(encoding='utf-8-sig')));self.assertEqual(len(trials),480)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\test_artifacts.py:17: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\lyk\\fire\\qualityDetection\\fusion\\calibrated_spatial_ds\\split_allocation.csv' mode='r' encoding='utf-8-sig'>
+  allocation=list(csv.DictReader((OUT/'split_allocation.csv').open(encoding='utf-8-sig')));groups={}
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.F
+======================================================================
+FAIL: test_docx_readback (__main__.ArtifactTest.test_docx_readback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\calibrated_spatial_ds\test_artifacts.py", line 22, in test_docx_readback
+    p=ROOT/'reports/校准空间DS_优化验证报告.docx';self.assertTrue(p.exists(),'new report not yet produced')
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : new report not yet produced
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.017s
+
+FAILED (failures=1)

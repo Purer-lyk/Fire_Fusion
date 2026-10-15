@@ -1,0 +1,75 @@
+{
+  "success": true,
+  "independently_recomputed_confusion": {
+    "full": {
+      "fusion": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "rgb_baseline": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "thermal_baseline": {
+        "TP": 24,
+        "FP": 0,
+        "FN": 1374,
+        "TN": 130,
+        "FPR": 0.0,
+        "FNR": 0.9828326180257511
+      },
+      "target_met_same_models": false
+    },
+    "prior202_diagnostic": {
+      "fusion": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 180,
+        "TN": 22,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "rgb_baseline": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 180,
+        "TN": 22,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "thermal_baseline": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 180,
+        "TN": 22,
+        "FPR": 0.0,
+        "FNR": 1.0
+      },
+      "target_met_same_models": false
+    }
+  },
+  "train_val_test_exact_hash_disjoint": true,
+  "verified_exported_images": 4767,
+  "verified_original_dataset_image_records": 5420,
+  "verified_unique_reserved_images": 3056,
+  "verified_source_protected_files": 15936,
+  "epochs_completed": {
+    "rgb": 30,
+    "thermal": 30
+  },
+  "report_sha256": "c65c838a3c5bf046fd9070a6bc96b9b367e3b1a5efb6a091dd3a4d430d3dc7f9",
+  "report_crc_ok": true,
+  "report_tables": 6,
+  "report_images": 3,
+  "source_unchanged": true,
+  "training_completed": true,
+  "no_UV_in_primary_decisions": true
+}

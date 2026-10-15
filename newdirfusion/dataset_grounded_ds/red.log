@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_actual_same_denominator_target (__main__.CoreTests.test_actual_same_denominator_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\newdirfusion\dataset_grounded_ds\test_delivery.py", line 8, in test_actual_same_denominator_target
+    self.assertIsNotNone(c,'grounded_core missing')
+AssertionError: unexpectedly None : grounded_core missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

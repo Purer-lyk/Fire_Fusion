@@ -1,0 +1,18 @@
+E
+======================================================================
+ERROR: test_continuous (unittest.loader._FailedTest.test_continuous)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_continuous
+Traceback (most recent call last):
+  File "C:\lyk\defaultpy\Python312\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\continuous_iou_ds\test_continuous.py", line 2, in <module>
+    import continuous_core as c
+ModuleNotFoundError: No module named 'continuous_core'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

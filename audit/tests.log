@@ -1,0 +1,11 @@
+test_annotation_rejects_bad_bounds_and_preserves_negatives (test_audit.AuditTests.test_annotation_rejects_bad_bounds_and_preserves_negatives) ... ok
+test_end_to_end_exact_hash_gt_only_and_coco_negatives (test_audit.AuditTests.test_end_to_end_exact_hash_gt_only_and_coco_negatives) ... ok
+test_jpeg_dimensions (test_audit.AuditTests.test_jpeg_dimensions) ... ok
+test_split_excludes_reserved_hash_and_temporal_neighbors (test_audit.AuditTests.test_split_excludes_reserved_hash_and_temporal_neighbors) ... ok
+test_yolo_boundary_rounding_is_not_real_out_of_bounds (test_audit.AuditTests.test_yolo_boundary_rounding_is_not_real_out_of_bounds) ... ok
+test_yolo_rounding_agreement (test_audit.AuditTests.test_yolo_rounding_agreement) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.020s
+
+OK

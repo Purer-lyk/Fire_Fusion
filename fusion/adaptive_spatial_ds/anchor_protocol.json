@@ -1,0 +1,182 @@
+{
+  "utc": "2026-10-15T02:29:43.184546+00:00",
+  "adaptive_followup": true,
+  "reason": "Symmetric multiview creates RGB false alarms; preserve original real RGB anchors, thermal multiscale repairs geometric coverage",
+  "prior_full_label_exposure": true,
+  "not_independent_selection": true,
+  "fixed": {
+    "rT": 0.1,
+    "threshold": 0.5,
+    "soft": false
+  },
+  "grid": [
+    {
+      "rT": 0.05,
+      "threshold": 0.5,
+      "soft": false
+    },
+    {
+      "rT": 0.05,
+      "threshold": 0.5,
+      "soft": true
+    },
+    {
+      "rT": 0.05,
+      "threshold": 0.55,
+      "soft": false
+    },
+    {
+      "rT": 0.05,
+      "threshold": 0.55,
+      "soft": true
+    },
+    {
+      "rT": 0.05,
+      "threshold": 0.6,
+      "soft": false
+    },
+    {
+      "rT": 0.05,
+      "threshold": 0.6,
+      "soft": true
+    },
+    {
+      "rT": 0.05,
+      "threshold": 0.65,
+      "soft": false
+    },
+    {
+      "rT": 0.05,
+      "threshold": 0.65,
+      "soft": true
+    },
+    {
+      "rT": 0.1,
+      "threshold": 0.5,
+      "soft": false
+    },
+    {
+      "rT": 0.1,
+      "threshold": 0.5,
+      "soft": true
+    },
+    {
+      "rT": 0.1,
+      "threshold": 0.55,
+      "soft": false
+    },
+    {
+      "rT": 0.1,
+      "threshold": 0.55,
+      "soft": true
+    },
+    {
+      "rT": 0.1,
+      "threshold": 0.6,
+      "soft": false
+    },
+    {
+      "rT": 0.1,
+      "threshold": 0.6,
+      "soft": true
+    },
+    {
+      "rT": 0.1,
+      "threshold": 0.65,
+      "soft": false
+    },
+    {
+      "rT": 0.1,
+      "threshold": 0.65,
+      "soft": true
+    },
+    {
+      "rT": 0.2,
+      "threshold": 0.5,
+      "soft": false
+    },
+    {
+      "rT": 0.2,
+      "threshold": 0.5,
+      "soft": true
+    },
+    {
+      "rT": 0.2,
+      "threshold": 0.55,
+      "soft": false
+    },
+    {
+      "rT": 0.2,
+      "threshold": 0.55,
+      "soft": true
+    },
+    {
+      "rT": 0.2,
+      "threshold": 0.6,
+      "soft": false
+    },
+    {
+      "rT": 0.2,
+      "threshold": 0.6,
+      "soft": true
+    },
+    {
+      "rT": 0.2,
+      "threshold": 0.65,
+      "soft": false
+    },
+    {
+      "rT": 0.2,
+      "threshold": 0.65,
+      "soft": true
+    },
+    {
+      "rT": 0.3,
+      "threshold": 0.5,
+      "soft": false
+    },
+    {
+      "rT": 0.3,
+      "threshold": 0.5,
+      "soft": true
+    },
+    {
+      "rT": 0.3,
+      "threshold": 0.55,
+      "soft": false
+    },
+    {
+      "rT": 0.3,
+      "threshold": 0.55,
+      "soft": true
+    },
+    {
+      "rT": 0.3,
+      "threshold": 0.6,
+      "soft": false
+    },
+    {
+      "rT": 0.3,
+      "threshold": 0.6,
+      "soft": true
+    },
+    {
+      "rT": 0.3,
+      "threshold": 0.65,
+      "soft": false
+    },
+    {
+      "rT": 0.3,
+      "threshold": 0.65,
+      "soft": true
+    }
+  ],
+  "trials": 32,
+  "same_candidate_baselines": [
+    "rgb_original320",
+    "thermal_multiview"
+  ],
+  "all_multiview_RGB_control_not_dominated": true,
+  "gate": "actual nominal polygon IoU>=.001",
+  "UV_runtime": false
+}

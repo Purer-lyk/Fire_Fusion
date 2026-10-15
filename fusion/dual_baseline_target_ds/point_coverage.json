@@ -1,0 +1,24 @@
+{
+  "rgb": {
+    "hull_area_px": 1382.0,
+    "image_area_px": 102400,
+    "field_fraction": 0.01349609375,
+    "candidate_centers_inside": 79,
+    "candidate_centers_total": 3193,
+    "original_dimensions": [
+      320,
+      320
+    ]
+  },
+  "thermal": {
+    "hull_area_px": 2017.0,
+    "image_area_px": 49152,
+    "field_fraction": 0.041035970052083336,
+    "candidate_centers_inside": 63,
+    "candidate_centers_total": 11941,
+    "original_dimensions": [
+      256,
+      192
+    ]
+  }
+}

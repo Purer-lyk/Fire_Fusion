@@ -1,0 +1,97 @@
+{
+  "device": "0",
+  "results": {
+    "rgb": [
+      {
+        "pair_index": 0,
+        "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_22_0604_bgr.jpg",
+        "boxes": [
+          [
+            135.2167205810547,
+            187.32749938964844,
+            142.39410400390625,
+            193.47491455078125,
+            0.6424232721328735,
+            0.0
+          ]
+        ],
+        "speed": {
+          "preprocess": 5.105266657968362,
+          "inference": 12.958533441027006,
+          "postprocess": 2.615733382602533
+        }
+      },
+      {
+        "pair_index": 1,
+        "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_22_0862_bgr.jpg",
+        "boxes": [
+          [
+            135.35279846191406,
+            187.4254150390625,
+            142.56524658203125,
+            193.53524780273438,
+            0.6202555894851685,
+            0.0
+          ]
+        ],
+        "speed": {
+          "preprocess": 5.105266657968362,
+          "inference": 12.958533441027006,
+          "postprocess": 2.615733382602533
+        }
+      },
+      {
+        "pair_index": 2,
+        "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_23_0143_bgr.jpg",
+        "boxes": [
+          [
+            135.30642700195312,
+            187.30410766601562,
+            142.68771362304688,
+            193.53097534179688,
+            0.7190321683883667,
+            0.0
+          ]
+        ],
+        "speed": {
+          "preprocess": 5.105266657968362,
+          "inference": 12.958533441027006,
+          "postprocess": 2.615733382602533
+        }
+      }
+    ],
+    "thermal": [
+      {
+        "pair_index": 0,
+        "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_05_23_07_47_22_0604_thermal.jpg",
+        "boxes": [],
+        "speed": {
+          "preprocess": 2.149233284095923,
+          "inference": 5.452366545796394,
+          "postprocess": 0.49063314994176227
+        }
+      },
+      {
+        "pair_index": 1,
+        "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_05_23_07_47_22_0862_thermal.jpg",
+        "boxes": [],
+        "speed": {
+          "preprocess": 2.149233284095923,
+          "inference": 5.452366545796394,
+          "postprocess": 0.49063314994176227
+        }
+      },
+      {
+        "pair_index": 2,
+        "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_05_23_07_47_23_0143_thermal.jpg",
+        "boxes": [],
+        "speed": {
+          "preprocess": 2.149233284095923,
+          "inference": 5.452366545796394,
+          "postprocess": 0.49063314994176227
+        }
+      }
+    ]
+  },
+  "failures": []
+}

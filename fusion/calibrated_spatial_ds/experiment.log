@@ -1,0 +1,267 @@
+FROZEN {"created_utc": "2026-10-14T02:43:37.091523+00:00", "selected_trial": {"trial_id": 324, "tR": 0.2, "tT": 0.1, "iou_gate": 0.01, "rmin": 1.0, "decision_threshold": 0.3, "TP": 379, "FP": 0, "FN": 0, "TN": 27, "FPR": 0.0, "FNR": 0.0, "precision": 1.0, "recall": 1.0, "F1": 1.0, "balanced_accuracy": 1.0}, "parameters": {"tR": 0.2, "tT": 0.1, "iou_gate": 0.01, "rmin": 1.0, "decision_threshold": 0.3}, "allocation_sha256": "86326a1a2df3c99a7aae65814ee48119689af060694b65369f0cb10f069b3e2b", "search_plan_sha256": "345f91487f0f924b854d56eebb723b88ed084a989c081f8917d33229dc618b2f", "trial_csv_sha256": "28b403dfdb6a52ad46d68ae982b49526d0c6ae057c346a51238adc62f3500c90", "heldout_evaluations_before_freeze": 0, "formula": "fire-only nominal BPA, r=q_A*(rmin+(1-rmin)*IoU), q_A=1; mF=1-(1-r*cR)*(1-r*cT); decision strict >; dual real box gate; UV lambda .5 secondary only"}
+{
+  "selected": {
+    "tR": 0.2,
+    "tT": 0.1,
+    "iou_gate": 0.01,
+    "rmin": 1.0,
+    "decision_threshold": 0.3
+  },
+  "results": {
+    "train": {
+      "N": 920,
+      "positive": 839,
+      "negative": 81,
+      "methods": {
+        "primary_vision": {
+          "TP": 653,
+          "FP": 0,
+          "FN": 186,
+          "TN": 81,
+          "FPR": 0.0,
+          "FNR": 0.22169249106078665,
+          "precision": 1.0,
+          "recall": 0.7783075089392133,
+          "F1": 0.8753351206434316,
+          "balanced_accuracy": 0.8891537544696066,
+          "meets_target_same_subset": true
+        },
+        "secondary_uv": {
+          "TP": 653,
+          "FP": 0,
+          "FN": 186,
+          "TN": 81,
+          "FPR": 0.0,
+          "FNR": 0.22169249106078665,
+          "precision": 1.0,
+          "recall": 0.7783075089392133,
+          "F1": 0.8753351206434316,
+          "balanced_accuracy": 0.8891537544696066,
+          "meets_target_same_subset": true
+        },
+        "rgb_baseline": {
+          "TP": 229,
+          "FP": 79,
+          "FN": 610,
+          "TN": 2,
+          "FPR": 0.9753086419753086,
+          "FNR": 0.7270560190703218,
+          "precision": 0.7435064935064936,
+          "recall": 0.2729439809296782,
+          "F1": 0.39930252833478647,
+          "balanced_accuracy": 0.14881766947718472
+        },
+        "thermal_baseline": {
+          "TP": 409,
+          "FP": 0,
+          "FN": 430,
+          "TN": 81,
+          "FPR": 0.0,
+          "FNR": 0.5125148986889154,
+          "precision": 1.0,
+          "recall": 0.48748510131108463,
+          "F1": 0.655448717948718,
+          "balanced_accuracy": 0.7437425506555423
+        }
+      }
+    },
+    "calibration": {
+      "N": 406,
+      "positive": 379,
+      "negative": 27,
+      "methods": {
+        "primary_vision": {
+          "TP": 379,
+          "FP": 0,
+          "FN": 0,
+          "TN": 27,
+          "FPR": 0.0,
+          "FNR": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0,
+          "balanced_accuracy": 1.0,
+          "meets_target_same_subset": true
+        },
+        "secondary_uv": {
+          "TP": 379,
+          "FP": 0,
+          "FN": 0,
+          "TN": 27,
+          "FPR": 0.0,
+          "FNR": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0,
+          "balanced_accuracy": 1.0,
+          "meets_target_same_subset": true
+        },
+        "rgb_baseline": {
+          "TP": 223,
+          "FP": 25,
+          "FN": 156,
+          "TN": 2,
+          "FPR": 0.9259259259259259,
+          "FNR": 0.41160949868073876,
+          "precision": 0.8991935483870968,
+          "recall": 0.5883905013192612,
+          "F1": 0.7113237639553429,
+          "balanced_accuracy": 0.3312322876966676
+        },
+        "thermal_baseline": {
+          "TP": 147,
+          "FP": 0,
+          "FN": 232,
+          "TN": 27,
+          "FPR": 0.0,
+          "FNR": 0.6121372031662269,
+          "precision": 1.0,
+          "recall": 0.38786279683377306,
+          "F1": 0.55893536121673,
+          "balanced_accuracy": 0.6939313984168866
+        }
+      }
+    },
+    "heldout": {
+      "N": 202,
+      "positive": 180,
+      "negative": 22,
+      "methods": {
+        "primary_vision": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 180,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "F1": 0.0,
+          "balanced_accuracy": 0.5,
+          "meets_target_same_subset": false
+        },
+        "secondary_uv": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 180,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "F1": 0.0,
+          "balanced_accuracy": 0.5,
+          "meets_target_same_subset": false
+        },
+        "rgb_baseline": {
+          "TP": 0,
+          "FP": 22,
+          "FN": 180,
+          "TN": 0,
+          "FPR": 1.0,
+          "FNR": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "F1": 0.0,
+          "balanced_accuracy": 0.0
+        },
+        "thermal_baseline": {
+          "TP": 176,
+          "FP": 0,
+          "FN": 4,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 0.022222222222222223,
+          "precision": 1.0,
+          "recall": 0.9777777777777777,
+          "F1": 0.9887640449438202,
+          "balanced_accuracy": 0.9888888888888889
+        }
+      }
+    },
+    "full": {
+      "N": 1528,
+      "positive": 1398,
+      "negative": 130,
+      "methods": {
+        "primary_vision": {
+          "TP": 1032,
+          "FP": 0,
+          "FN": 366,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.26180257510729615,
+          "precision": 1.0,
+          "recall": 0.7381974248927039,
+          "F1": 0.8493827160493828,
+          "balanced_accuracy": 0.869098712446352,
+          "meets_target_same_subset": true
+        },
+        "secondary_uv": {
+          "TP": 1032,
+          "FP": 0,
+          "FN": 366,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.26180257510729615,
+          "precision": 1.0,
+          "recall": 0.7381974248927039,
+          "F1": 0.8493827160493828,
+          "balanced_accuracy": 0.869098712446352,
+          "meets_target_same_subset": true
+        },
+        "rgb_baseline": {
+          "TP": 452,
+          "FP": 126,
+          "FN": 946,
+          "TN": 4,
+          "FPR": 0.9692307692307692,
+          "FNR": 0.6766809728183119,
+          "precision": 0.7820069204152249,
+          "recall": 0.32331902718168815,
+          "F1": 0.4574898785425101,
+          "balanced_accuracy": 0.17704412897545946
+        },
+        "thermal_baseline": {
+          "TP": 732,
+          "FP": 0,
+          "FN": 666,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.47639484978540775,
+          "precision": 1.0,
+          "recall": 0.5236051502145923,
+          "F1": 0.6873239436619719,
+          "balanced_accuracy": 0.7618025751072961
+        }
+      }
+    }
+  },
+  "coverage": {
+    "0.01": {
+      "positive_real_pair_coverage": 1184,
+      "negative_real_pair_coverage": 0,
+      "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+    },
+    "0.05": {
+      "positive_real_pair_coverage": 1184,
+      "negative_real_pair_coverage": 0,
+      "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+    },
+    "0.1": {
+      "positive_real_pair_coverage": 1172,
+      "negative_real_pair_coverage": 0,
+      "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+    },
+    "0.2": {
+      "positive_real_pair_coverage": 1141,
+      "negative_real_pair_coverage": 0,
+      "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+    },
+    "0.3": {
+      "positive_real_pair_coverage": 1107,
+      "negative_real_pair_coverage": 0,
+      "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+    }
+  }
+}

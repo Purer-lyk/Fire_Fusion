@@ -1,0 +1,364 @@
+{
+  "metadata": {
+    "modality": "rgb",
+    "python": "C:\\lyk\\fire\\qualityDetection\\.venv\\Scripts\\python.exe",
+    "paddle_version": "3.3.1",
+    "device": "Place(gpu:0)",
+    "gpu_name": "NVIDIA GeForce RTX 5070",
+    "config": "C:\\lyk\\fire\\qualityDetection\\configs\\ppyolov2_rgb.yml",
+    "config_sha256": "dd9cafd596d84f5b63a4aedc2beb265931d7b9323f9c90f740c77324dc3f78b7",
+    "checkpoint": "C:\\lyk\\fire\\qualityDetection\\training\\output\\ppyolov2_rgb\\model_final.pdparams",
+    "checkpoint_sha256": "2244929ed99be3a5536b5f529e0f940ced29cd92c282ebb26bba304056f884b7",
+    "checkpoint_bytes": 217030334,
+    "source_manifest": "C:\\lyk\\fire\\qualityDetection\\audit\\test_manifest.json",
+    "source_pairs": "C:\\lyk\\fire\\qualityDetection\\audit\\test_pairs.json",
+    "paper_sample_sha256": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade",
+    "architecture": "YOLOv3",
+    "backbone": {
+      "depth": 50,
+      "variant": "d",
+      "return_idx": [
+        1,
+        2,
+        3
+      ],
+      "dcn_v2_stages": [
+        3
+      ],
+      "freeze_at": -1,
+      "freeze_norm": false,
+      "norm_decay": 0.0
+    },
+    "neck": "PPYOLOPAN",
+    "iou_aware": true,
+    "post_process": {
+      "decode": {
+        "name": "YOLOBox",
+        "conf_thresh": 0.01,
+        "downsample_ratio": 32,
+        "clip_bbox": true,
+        "scale_x_y": 1.05
+      },
+      "nms": {
+        "name": "MatrixNMS",
+        "keep_top_k": 100,
+        "score_threshold": 0.01,
+        "post_threshold": 0.01,
+        "nms_top_k": -1,
+        "background_label": -1
+      }
+    },
+    "minimum_score": 0.01,
+    "coordinate_format": "xyxy in original-image pixels",
+    "input_shape": [
+      3,
+      640,
+      640
+    ],
+    "UV_used_by_network": false,
+    "truth_used": false,
+    "expected_images": 3
+  },
+  "images": [
+    {
+      "pair_index": 0,
+      "source_line": 1,
+      "image_id": 0,
+      "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_22_0604_bgr.jpg",
+      "image_name": "2026_05_23_07_47_22_0604_bgr.jpg",
+      "image_sha256": "e4c84af3fa0c5b83a111965d41d518c83572da94c32cc6eb1f771606e391394e",
+      "width": 320,
+      "height": 320,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.12080351263284683,
+          "bbox_xyxy": [
+            226.61505126953125,
+            56.57411193847656,
+            243.60174560546875,
+            74.82681274414062
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.018211834132671356,
+          "bbox_xyxy": [
+            224.4898223876953,
+            55.77062225341797,
+            247.6239471435547,
+            76.54376983642578
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.014462043531239033,
+          "bbox_xyxy": [
+            221.9309539794922,
+            120.44743347167969,
+            238.69371032714844,
+            146.91526794433594
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.014155793003737926,
+          "bbox_xyxy": [
+            223.66368103027344,
+            4.584125518798828,
+            249.08396911621094,
+            82.551513671875
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.012758666649460793,
+          "bbox_xyxy": [
+            226.67355346679688,
+            47.840362548828125,
+            260.6740417480469,
+            76.01852416992188
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.012473342008888721,
+          "bbox_xyxy": [
+            226.64553833007812,
+            55.39219284057617,
+            243.02975463867188,
+            76.42765808105469
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.012234732508659363,
+          "bbox_xyxy": [
+            226.50881958007812,
+            54.998817443847656,
+            260.4825439453125,
+            78.56836700439453
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.011239764280617237,
+          "bbox_xyxy": [
+            222.76461791992188,
+            35.815589904785156,
+            266.4419250488281,
+            81.34566497802734
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.011193855665624142,
+          "bbox_xyxy": [
+            244.81619262695312,
+            90.94977569580078,
+            254.10470581054688,
+            103.69847869873047
+          ]
+        }
+      ]
+    },
+    {
+      "pair_index": 1,
+      "source_line": 2,
+      "image_id": 1,
+      "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_22_0862_bgr.jpg",
+      "image_name": "2026_05_23_07_47_22_0862_bgr.jpg",
+      "image_sha256": "68a7936f2d4642e136594dafe24e3ba5c687b7ed72a9ad4d4202637374e752a6",
+      "width": 320,
+      "height": 320,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.06127703934907913,
+          "bbox_xyxy": [
+            226.05029296875,
+            53.861724853515625,
+            243.23382568359375,
+            77.23037719726562
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.014562186785042286,
+          "bbox_xyxy": [
+            221.45187377929688,
+            120.34765625,
+            237.95480346679688,
+            146.93881225585938
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.014444591477513313,
+          "bbox_xyxy": [
+            244.84432983398438,
+            90.6186294555664,
+            254.25494384765625,
+            103.78743743896484
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.012177820317447186,
+          "bbox_xyxy": [
+            230.68167114257812,
+            5.5870819091796875,
+            242.78543090820312,
+            48.38988494873047
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.011678342707455158,
+          "bbox_xyxy": [
+            226.00225830078125,
+            56.256649017333984,
+            243.6533203125,
+            75.0006103515625
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010997450910508633,
+          "bbox_xyxy": [
+            208.48944091796875,
+            53.49598693847656,
+            260.670166015625,
+            217.3859100341797
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010427501983940601,
+          "bbox_xyxy": [
+            223.67239379882812,
+            54.405372619628906,
+            246.81890869140625,
+            77.26248931884766
+          ]
+        }
+      ]
+    },
+    {
+      "pair_index": 2,
+      "source_line": 3,
+      "image_id": 2,
+      "image_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_23_0143_bgr.jpg",
+      "image_name": "2026_05_23_07_47_23_0143_bgr.jpg",
+      "image_sha256": "8828c9ece34b86e8ef994caf81e422cf2b7d1c56c775b7dc06c48236f8fc662e",
+      "width": 320,
+      "height": 320,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.10169726610183716,
+          "bbox_xyxy": [
+            226.310302734375,
+            54.084903717041016,
+            243.30606079101562,
+            77.067626953125
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.025637540966272354,
+          "bbox_xyxy": [
+            221.82635498046875,
+            119.77473449707031,
+            239.39370727539062,
+            147.3094024658203
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.01895134523510933,
+          "bbox_xyxy": [
+            226.42642211914062,
+            56.26542663574219,
+            243.79339599609375,
+            74.87413024902344
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.01618851162493229,
+          "bbox_xyxy": [
+            223.74075317382812,
+            54.521480560302734,
+            246.7796630859375,
+            77.25847625732422
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.01466892659664154,
+          "bbox_xyxy": [
+            225.84523010253906,
+            50.64585494995117,
+            243.16868591308594,
+            75.13948059082031
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.012490086257457733,
+          "bbox_xyxy": [
+            223.43865966796875,
+            50.606502532958984,
+            246.28384399414062,
+            75.38655853271484
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010942794382572174,
+          "bbox_xyxy": [
+            228.01283264160156,
+            56.84199523925781,
+            244.71900939941406,
+            74.16548156738281
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "fire",
+          "score": 0.010541374795138836,
+          "bbox_xyxy": [
+            232.6856689453125,
+            55.726905822753906,
+            242.73712158203125,
+            71.00519561767578
+          ]
+        }
+      ]
+    }
+  ]
+}

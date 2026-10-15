@@ -1,0 +1,210 @@
+{
+  "result": {
+    "fire": 1,
+    "masses": [
+      0.8413422932632904,
+      0.0,
+      0.1586577067367095
+    ],
+    "K": 0.0,
+    "iou": 0.17993337317488428,
+    "selected": {
+      "rgb_index": 0,
+      "thermal_index": 2,
+      "rgb": {
+        "bbox": [
+          173.0928955078125,
+          99.39144897460938,
+          187.03518676757812,
+          121.71028137207031
+        ],
+        "score": 0.8389010429382324,
+        "class_id": 0,
+        "view": "full320",
+        "crop": [
+          0,
+          0,
+          320,
+          320
+        ],
+        "input_size": 320,
+        "actual_detector": true
+      },
+      "thermal": {
+        "bbox": [
+          133.46363830566406,
+          114.3453369140625,
+          149.90719604492188,
+          133.5374298095703
+        ],
+        "score": 0.15153731405735016,
+        "class_id": 0,
+        "view": "full640",
+        "crop": [
+          0,
+          0,
+          192,
+          256
+        ],
+        "input_size": 640,
+        "actual_detector": true
+      },
+      "bpa_rgb": [
+        0.8389010429382324,
+        0.0,
+        0.16109895706176758
+      ],
+      "bpa_thermal": [
+        0.015153731405735017,
+        0.0,
+        0.9848462685942649
+      ],
+      "thermal_reliability": 0.1
+    }
+  },
+  "actual_detector_views": 7,
+  "views": [
+    {
+      "modality": "rgb",
+      "view": "full320",
+      "crop": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "input_size": 320
+    },
+    {
+      "modality": "thermal",
+      "view": "full320",
+      "crop": [
+        0,
+        0,
+        192,
+        256
+      ],
+      "input_size": 320
+    },
+    {
+      "modality": "thermal",
+      "view": "tile0_320",
+      "crop": [
+        0,
+        0,
+        110,
+        147
+      ],
+      "input_size": 320
+    },
+    {
+      "modality": "thermal",
+      "view": "tile1_320",
+      "crop": [
+        82,
+        0,
+        192,
+        147
+      ],
+      "input_size": 320
+    },
+    {
+      "modality": "thermal",
+      "view": "tile2_320",
+      "crop": [
+        0,
+        109,
+        110,
+        256
+      ],
+      "input_size": 320
+    },
+    {
+      "modality": "thermal",
+      "view": "tile3_320",
+      "crop": [
+        82,
+        109,
+        192,
+        256
+      ],
+      "input_size": 320
+    },
+    {
+      "modality": "thermal",
+      "view": "full640",
+      "crop": [
+        0,
+        0,
+        192,
+        256
+      ],
+      "input_size": 640
+    }
+  ],
+  "input_shapes": [
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      1,
+      3,
+      640,
+      640
+    ]
+  ],
+  "UV_runtime": false,
+  "geometry_validated": false,
+  "warning": "Experimental exposed-data fixed setting. Nominal affine is NOT independently validated; weak overlap can be spurious. Not an OOF zero-FP or deployment validation claim.",
+  "image_sha256": {
+    "rgb": "d0303dcfc3d600fd8742cfe01aeb61315e79c868adb2b75b73999f7291341c4c",
+    "thermal": "6fc9a849ea3f3586c96d8df994d0604cabba5fdd9a78bc7c231f6bf043e45542"
+  },
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "seconds": 1.1282121995463967
+}

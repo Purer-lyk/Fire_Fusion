@@ -1,0 +1,5 @@
+path: C:/lyk/fire/qualityDetection/newdirfusion/dataset_grounded_ds/safe_datasets/thermal
+train: images/train
+val: images/val
+names:
+  0: fire

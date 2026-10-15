@@ -1,0 +1,176 @@
+{
+  "created_utc": "2026-10-14T02:43:35.465743+00:00",
+  "allocation_sha256": "86326a1a2df3c99a7aae65814ee48119689af060694b65369f0cb10f069b3e2b",
+  "gap_seconds": 10,
+  "groups": [
+    {
+      "group_id": "temporal_gap_proxy_00",
+      "start": 0,
+      "stop_exclusive": 60,
+      "label": 0,
+      "count": 60,
+      "start_timestamp": "2026-05-23T07:47:22.060400",
+      "end_timestamp": "2026-05-23T07:47:56.060100",
+      "split": "train"
+    },
+    {
+      "group_id": "temporal_gap_proxy_01",
+      "start": 60,
+      "stop_exclusive": 81,
+      "label": 0,
+      "count": 21,
+      "start_timestamp": "2026-05-23T08:14:42.091500",
+      "end_timestamp": "2026-05-23T08:14:54.071400",
+      "split": "train"
+    },
+    {
+      "group_id": "temporal_gap_proxy_02",
+      "start": 81,
+      "stop_exclusive": 89,
+      "label": 0,
+      "count": 8,
+      "start_timestamp": "2026-05-23T08:15:10.077400",
+      "end_timestamp": "2026-05-23T08:15:12.069400",
+      "split": "calibration"
+    },
+    {
+      "group_id": "temporal_gap_proxy_03",
+      "start": 89,
+      "stop_exclusive": 97,
+      "label": 0,
+      "count": 8,
+      "start_timestamp": "2026-05-23T08:15:23.005400",
+      "end_timestamp": "2026-05-23T08:15:24.091400",
+      "split": "calibration"
+    },
+    {
+      "group_id": "temporal_gap_proxy_04",
+      "start": 97,
+      "stop_exclusive": 108,
+      "label": 0,
+      "count": 11,
+      "start_timestamp": "2026-05-23T08:15:44.015400",
+      "end_timestamp": "2026-05-23T08:15:48.091400",
+      "split": "calibration"
+    },
+    {
+      "group_id": "temporal_gap_proxy_05",
+      "start": 108,
+      "stop_exclusive": 118,
+      "label": 0,
+      "count": 10,
+      "start_timestamp": "2026-05-23T08:16:13.025400",
+      "end_timestamp": "2026-05-23T08:16:16.029400",
+      "split": "heldout"
+    },
+    {
+      "group_id": "temporal_gap_proxy_06",
+      "start": 118,
+      "stop_exclusive": 127,
+      "label": 0,
+      "count": 9,
+      "start_timestamp": "2026-05-23T08:16:49.031700",
+      "end_timestamp": "2026-05-23T08:16:51.049400",
+      "split": "heldout"
+    },
+    {
+      "group_id": "temporal_gap_proxy_07",
+      "start": 127,
+      "stop_exclusive": 130,
+      "label": 0,
+      "count": 3,
+      "start_timestamp": "2026-05-23T08:31:00.015600",
+      "end_timestamp": "2026-05-23T08:31:01.025500",
+      "split": "heldout"
+    },
+    {
+      "group_id": "temporal_gap_proxy_08",
+      "start": 130,
+      "stop_exclusive": 169,
+      "label": 1,
+      "count": 39,
+      "start_timestamp": "2026-08-08T03:37:03.071700",
+      "end_timestamp": "2026-08-08T03:37:12.059100",
+      "split": "train"
+    },
+    {
+      "group_id": "temporal_gap_proxy_09",
+      "start": 169,
+      "stop_exclusive": 450,
+      "label": 1,
+      "count": 281,
+      "start_timestamp": "2026-08-08T03:37:24.005900",
+      "end_timestamp": "2026-08-08T03:38:43.025500",
+      "split": "train"
+    },
+    {
+      "group_id": "temporal_gap_proxy_10",
+      "start": 450,
+      "stop_exclusive": 911,
+      "label": 1,
+      "count": 461,
+      "start_timestamp": "2026-08-08T03:39:29.022500",
+      "end_timestamp": "2026-08-08T03:41:39.049200",
+      "split": "train"
+    },
+    {
+      "group_id": "temporal_gap_proxy_11",
+      "start": 911,
+      "stop_exclusive": 969,
+      "label": 1,
+      "count": 58,
+      "start_timestamp": "2026-08-08T03:50:05.038500",
+      "end_timestamp": "2026-08-08T03:50:17.018300",
+      "split": "train"
+    },
+    {
+      "group_id": "temporal_gap_proxy_12",
+      "start": 969,
+      "stop_exclusive": 1093,
+      "label": 1,
+      "count": 124,
+      "start_timestamp": "2026-08-08T03:50:37.098400",
+      "end_timestamp": "2026-08-08T03:51:16.024700",
+      "split": "calibration"
+    },
+    {
+      "group_id": "temporal_gap_proxy_13",
+      "start": 1093,
+      "stop_exclusive": 1348,
+      "label": 1,
+      "count": 255,
+      "start_timestamp": "2026-08-08T03:51:28.006100",
+      "end_timestamp": "2026-08-08T03:52:34.046000",
+      "split": "calibration"
+    },
+    {
+      "group_id": "temporal_gap_proxy_14",
+      "start": 1348,
+      "stop_exclusive": 1528,
+      "label": 1,
+      "count": 180,
+      "start_timestamp": "2026-08-08T03:57:42.043700",
+      "end_timestamp": "2026-08-08T03:58:39.042700",
+      "split": "heldout"
+    }
+  ],
+  "distribution": {
+    "train": {
+      "0": 81,
+      "1": 839
+    },
+    "calibration": {
+      "0": 27,
+      "1": 379
+    },
+    "heldout": {
+      "0": 22,
+      "1": 180
+    },
+    "full": {
+      "0": 130,
+      "1": 1398
+    }
+  },
+  "disclosure": "Entire 1528 already seen. Internal retained exploratory evaluation only, NOT independent validation. Filename timestamp 4 digits interpreted as fractional seconds; gap groups are temporal proxies, NOT verified scenes. Class-stratified chronologically ordered WHOLE groups; cannot globally chronological-split and have both classes because negatives are May and positives August. Closest feasible 60/20/20 frame allocation within each class; unequal group sizes prevent exact ratio. No random-row splitting, no scene fabrication. Near duplicate/source-video leakage remains unverified. No supervised score fitting; train portion used only for descriptive evaluation."
+}

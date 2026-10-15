@@ -1,0 +1,161 @@
+上传模型：仿射IoU动态空间系数D-S融合
+完整1528对真实预测重用，不重新推理。best.pt为RGB、best-2.pt为热成像；实际架构YOLO26n而非PPYOLOv2。只使用class0 fire、score>0.5原始保留框。第三列Tmax与第四列UV保持原输入语义。用户UV0/1作为参考标准，同时UV参与融合，属于循环评价的UV符合度，不是独立场景真值或定位AP。未验证模型训练/测试独立性，不承诺融合性能提升。
+1. FULL affine候选配准：2×3，不是投影单应性
+从当前main/homo_main.cpp七个未注释thermal pts2→RGB pts1点估计cv2.estimateAffine2D FULL affine，非estimateAffinePartial2D。RANSAC阈值3px，seed7，maxIters2000，confidence0.99，refineIters10。仅2×3线性仿射加平移，无透视除法，无人工矩形偏移，无固定空间系数。
+矩阵：[[0.7113039166517691, 0.0044504657857417015, 78.2274089470037], [-0.045135242080470914, 0.963053329624529, -15.942804622066248]]；inliers=[0, 1, 1, 1, 1, 1, 1]
+全部点fit RMSE=2.479927px；inlier fit RMSE=0.996947px；留一RMSE=5.771805px，最大=9.142144px。七点集中狭窄y区域，无独立场景/全视场检查，因此candidate_unvalidated（未验证），误差指标不能证明跨场景配准有效。
+2. 实际polygon IoU与置信度配对政策
+热矩形四角q=A[:,0:2]p+A[:,2]映射到RGB原始像素坐标，形成凸四边形。s=area(RGB框∩映射热四边形)/[area(RGB框)+area(映射热四边形)-intersection]；cv2.intersectConvexConvex计算交面积。使用完整原始多边形，不裁剪到图像边界，不以轴对齐外包矩形替代。
+RGB最高分fire框为锚；在全部保留热框中选择实际polygon IoU最高者，IoU相等优先置信度，再原始检测索引较小。RGB BPA用锚分数、热BPA用该选中框分数，几何与BPA来源一致，非各模态独立最大分。双模态均存在但无重叠s=0，仍按同一政策选最高分热框；RGB缺失时无有效配对，热BPA使用最高保留分数；热缺失时热置信度0；双缺失时两者0。所有缺失状态s=0且明确标记。s=0不证明无火。检测基线仍是本模态任一保留fire框存在。
+状态计数：{"missing_thermal": 360, "missing_both": 436, "positive_overlap": 169, "missing_rgb": 514, "both_present_no_overlap": 49}；实际非零IoU帧=169；选中热分数不同于帧最高分的帧=3。CSV存原框坐标/索引/分数、仿射四角、s、状态与BPA；geometry_pairing.json另存候选全部IoU。
+3. 原C++结构与非空间UV变体：分别报告
+主要兼容结果“原C++结构：动态IoU两次”：ab=fuse_sp(RGB,thermal,s)，abc=fuse_sp(ab,UV,s)。仅把原fuse3两个空间调用的固定值替换为实际s；第二次重复同一RGB–热IoU是保留原结构的算法规则，不是假称UV具有空间框。科学上非空间UV变体“动态RGB/热空间融合＋UV经典DS”：ab=fuse_sp(RGB,thermal,s)，abc=fuse(ab,UV)。两种定义冻结后计算，不能按测试结果择优包装。
+原公式：Ksp=(1-s)(aF*bN+aN*bF)，F=s(aF*bF+aF*bU+aU*bF)/(1-Ksp)，N=(aN*bN+aN*bU+aU*bN)/(1-Ksp)，U=aU*bU/(1-Ksp)，随后归一化。共同分母归一化后抵消，实际比例(sFsupport,Nsupport,Usupport)，不能单独宣称动态冲突系数提升性能。经典DS不乘s。总/近总冲突或零支持显式回退(0,0,1)并标degenerate；真实数据退化数见表。
+BPA忠实重用core.py：窗口10，稳定性exp(-std)，λ0.7平滑；RGB可靠性0.3；热PC=1-exp(-10c)、PT=clamp(1-exp(-0.1(Tmax-50)),0,1)；UV q初始0.001，UV1增0.01q(1-q)、UV0减0.1q(1-q)，原UV BPA(q,0.8(1-q),0.2(1-q))。这些0.1是温度/UV公式参数，不是空间系数。UV不是直接注入硬标签BPA。原startup与平滑均保留。
+时序沿原文件顺序；开始/时间不递增/间隔>120s重置，属既有启发式而非独立验证场景界线。sequence数=6；resets=[{"pair_index": 0, "gap_seconds": null}, {"pair_index": 60, "gap_seconds": 1606.0314}, {"pair_index": 127, "gap_seconds": 848.9662}, {"pair_index": 130, "gap_seconds": 6635162.0462}, {"pair_index": 911, "gap_seconds": 505.9893}, {"pair_index": 1348, "gap_seconds": 307.9977}]
+重新编译链接原始C++四类源文件，只读未改；参考入口显式传每帧实际s调用原fuse_sp及fuse。全部1528行×18个BPA/融合值与Python最大绝对误差=2.220e-16，exit0。
+4. 全量UV参考帧级指标：阈值0.5
+融合mF≥0.5为fire，否则nofire；基线任一严格score>0.5框为fire。Accuracy=(TP+TN)/N，Precision=TP/(TP+FP)，Recall=TP/(TP+FN)，F1=2TP/(2TP+FP+FN)，零分母未定义。所有1528帧均纳入，无丢弃困难帧。
+5. 0.95弃权与覆盖子集
+mF≥0.95 fire；否则mN≥0.95 nofire；其余uncertain。覆盖率=(fire+nofire)/1528；弃权不视为正确。覆盖子集指标与全量0.5分开，不能混比。
+6. 五个真实RGB叠加样例
+原始RGB检测框和实际仿射热框四角叠加；检测索引与配对s明确标注，中文由TrueType字体渲染。非标注真值；样例按情况展示，不是随机性能代表。
+最大正重叠；pair 1021；s=0.744079
+
+较小正重叠；pair 906；s=0.293943
+
+多目标配对；pair 1082；s=0.661961
+
+缺失模态；pair 0；s=0.000000
+
+双模态无重叠；pair 671；s=0.000000
+
+7. 来源与交付核验
+rgb：{"prediction_path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\rgb_predictions.json", "prediction_sha256": "d63a199e1f309243da733e58173dd7e165b7715e3d6c928ae3170fe81f93dad8", "checkpoint_sha256": "1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32", "architecture": "Ultralytics YOLO26n (yolo26n.yaml, end2end=True, reg_max=1); not PPYOLOv2 or YOLO11", "rows": 1528, "retained_boxes": 609, "actual_image_dimensions": {"320x320": 1528}, "reused_without_reinference": true, "current_source_image_hashes_verified": true}
+thermal：{"prediction_path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\thermal_predictions.json", "prediction_sha256": "efb3dd0f8981a8fce079eb23c9d492d4295d2ed64d9434f0ec243804b8192fe8", "checkpoint_sha256": "c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6", "architecture": "Ultralytics YOLO26n (yolo26n.yaml, end2end=True, reg_max=1); not PPYOLOv2 or YOLO11", "rows": 1528, "retained_boxes": 825, "actual_image_dimensions": {"192x256": 1528}, "reused_without_reinference": true, "current_source_image_hashes_verified": true}
+结果目录fusion/supplied_models_affine_iou；旧uploadedmodels_UVreference_1528.docx及原算法、图像、预测保持不变。附CSV/JSON、指标、七点2×3矩阵及LOO、C++参考输入输出、五个PNG及验证清单。当前paper_sample SHA256=bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade。配准候选未独立验证；UV循环评价不能支撑真实场景泛化或独立性能提升结论。
+热点
+RGB点
+fit误差px
+留一误差px
+[23.0, 193.0]
+[97.0, 163.0]
+6.089897
+7.124362
+[53.0, 186.0]
+[116.0, 160.0]
+1.094412
+2.701984
+[80.0, 193.0]
+[136.0, 168.0]
+1.684357
+2.092235
+[118.0, 182.0]
+[164.0, 154.0]
+1.028768
+2.307937
+[147.0, 191.0]
+[183.0, 161.0]
+0.736254
+9.142144
+[118.0, 204.0]
+[163.0, 175.0]
+0.206070
+8.641231
+[47.0, 206.0]
+[113.0, 180.0]
+0.534529
+2.680522
+方法
+TP
+FP
+FN
+TN
+Accuracy
+P
+R
+F1
+RGB检测基线
+452
+126
+946
+4
+0.298429
+0.782007
+0.323319
+0.457490
+热成像检测基线
+732
+0
+666
+130
+0.564136
+1.000000
+0.523605
+0.687324
+原C++结构：动态IoU两次
+0
+0
+1398
+130
+0.085079
+未定义
+0.000000
+0.000000
+动态RGB/热空间融合＋UV经典DS
+26
+0
+1372
+130
+0.102094
+1.000000
+0.018598
+0.036517
+方法
+fire
+nofire
+uncertain
+覆盖率
+退化
+原C++结构：动态IoU两次
+0
+510
+1018
+0.333770
+0
+动态RGB/热空间融合＋UV经典DS
+0
+381
+1147
+0.249346
+0
+方法（仅覆盖）
+N
+TP
+FP
+FN
+TN
+Acc
+P
+R
+F1
+原C++结构：动态IoU两次
+510
+0
+0
+507
+3
+0.005882
+未定义
+0.000000
+0.000000
+动态RGB/热空间融合＋UV经典DS
+381
+0
+0
+381
+0
+0.000000
+未定义
+0.000000
+0.000000

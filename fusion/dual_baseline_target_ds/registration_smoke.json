@@ -1,0 +1,83 @@
+[
+  {
+    "pair_index": 60,
+    "variant": "gradient",
+    "accepted": false,
+    "error": "OpenCV(4.11.0) D:\\a\\opencv-python\\opencv-python\\opencv\\modules\\video\\src\\ecc.cpp:589: error: (-7:Iterations do not converge) The algorithm stopped before its convergence. The correlation is going to be minimized. Images may be uncorrelated or non-overlapped in function 'cv::findTransformECC'\n"
+  },
+  {
+    "pair_index": 60,
+    "variant": "inverted_intensity",
+    "before": 0.4474579088074572,
+    "after": 0.41043505944940145,
+    "corner_displacement": 583.8138287577705,
+    "accepted": false,
+    "candidate_matrix": [
+      [
+        2.3229829038078695,
+        0.12550836368013632,
+        -7.934793089697241
+      ],
+      [
+        0.44583744099790573,
+        2.1330764372231186,
+        -198.86289539390455
+      ]
+    ],
+    "note": "Smoke-only no full-field independent correspondence validation; never promoted automatically"
+  },
+  {
+    "pair_index": 817,
+    "variant": "gradient",
+    "before": 0.218331219489085,
+    "after": 0.1713011834174792,
+    "corner_displacement": 253.92340703735744,
+    "accepted": false,
+    "candidate_matrix": [
+      [
+        1.4892753435222414,
+        0.332561554155865,
+        -22.233398952557778
+      ],
+      [
+        -0.06371800286488175,
+        0.892105511323747,
+        -2.197675179863929
+      ]
+    ],
+    "note": "Smoke-only no full-field independent correspondence validation; never promoted automatically"
+  },
+  {
+    "pair_index": 817,
+    "variant": "inverted_intensity",
+    "accepted": false,
+    "error": "OpenCV(4.11.0) D:\\a\\opencv-python\\opencv-python\\opencv\\modules\\video\\src\\ecc.cpp:589: error: (-7:Iterations do not converge) The algorithm stopped before its convergence. The correlation is going to be minimized. Images may be uncorrelated or non-overlapped in function 'cv::findTransformECC'\n"
+  },
+  {
+    "pair_index": 490,
+    "variant": "gradient",
+    "before": 0.01078481565417622,
+    "after": 0.07832467811363468,
+    "corner_displacement": 114.64775833917165,
+    "accepted": false,
+    "candidate_matrix": [
+      [
+        0.9604836192863981,
+        -0.07188744057843673,
+        67.51906238453695
+      ],
+      [
+        -0.4044703828063664,
+        1.0992934271637163,
+        7.507104862002773
+      ]
+    ],
+    "note": "Smoke-only no full-field independent correspondence validation; never promoted automatically"
+  },
+  {
+    "pair_index": 490,
+    "variant": "inverted_intensity",
+    "accepted": false,
+    "error": "OpenCV(4.11.0) D:\\a\\opencv-python\\opencv-python\\opencv\\modules\\video\\src\\ecc.cpp:589: error: (-7:Iterations do not converge) The algorithm stopped before its convergence. The correlation is going to be minimized. Images may be uncorrelated or non-overlapped in function 'cv::findTransformECC'\n"
+  }
+]

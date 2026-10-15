@@ -1,0 +1,4 @@
+﻿pair_index,source_line,rgb_name,thermal_name,temperature_raw,uv_reference,mf,uv_gated_mf,visual_fire,uv_fire,pre_roi_visual_fire,reason
+0,1,2026_05_23_07_47_22_0604_bgr.jpg,2026_05_23_07_47_22_0604_thermal.jpg,394.038,0,0.0,0.0,False,False,False,iou_failed
+1,2,2026_05_23_07_47_22_0862_bgr.jpg,2026_05_23_07_47_22_0862_thermal.jpg,393.85,0,0.0,0.0,False,False,False,iou_failed
+2,3,2026_05_23_07_47_23_0143_bgr.jpg,2026_05_23_07_47_23_0143_thermal.jpg,393.85,0,0.0,0.0,False,False,False,iou_failed

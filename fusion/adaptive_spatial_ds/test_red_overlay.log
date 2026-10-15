@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_burned_in_red_yellow_excluded_without_flame_alignment (test_adaptive.OverlayMaskTest.test_burned_in_red_yellow_excluded_without_flame_alignment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\test_adaptive.py", line 51, in test_burned_in_red_yellow_excluded_without_flame_alignment
+    self.assertTrue(hasattr(c,'overlay_mask'),'burned-in text/box pixel mask missing')
+AssertionError: False is not true : burned-in text/box pixel mask missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.013s
+
+FAILED (failures=1)

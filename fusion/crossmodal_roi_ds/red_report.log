@@ -1,0 +1,13 @@
+E
+======================================================================
+ERROR: test_report_real_results_and_three_images (__main__.Report.test_report_real_results_and_three_images)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_report.py", line 4, in test_report_real_results_and_three_images
+    import build_report
+ModuleNotFoundError: No module named 'build_report'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

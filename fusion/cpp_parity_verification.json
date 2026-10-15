@@ -1,0 +1,9 @@
+{
+  "rows": 1528,
+  "values_per_row": 15,
+  "compared": "RGB/thermal/UV BPA + original fixed0.1 fuse3 + classic DS",
+  "maximum_absolute_error": 3.3306690738754696e-16,
+  "tolerance": 1e-10,
+  "reference_exit_code": 0,
+  "source_cpp_unchanged": true
+}

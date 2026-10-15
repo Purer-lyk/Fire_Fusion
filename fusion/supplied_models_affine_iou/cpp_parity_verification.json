@@ -1,0 +1,24 @@
+{
+  "rows": 1528,
+  "values_per_row": 18,
+  "maximum_absolute_error": 2.220446049250313e-16,
+  "build_command": [
+    "C:/msys64/ucrt64/bin/g++.exe",
+    "-O2",
+    "-static",
+    "-std=c++17",
+    "-IC:\\lyk\\paper\\bpa_test\\include",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_affine_iou\\cpp_dynamic_reference.cpp",
+    "C:\\lyk\\paper\\bpa_test\\src\\bpa.cpp",
+    "C:\\lyk\\paper\\bpa_test\\src\\vision_bpa.cpp",
+    "C:\\lyk\\paper\\bpa_test\\src\\temp_bpa.cpp",
+    "C:\\lyk\\paper\\bpa_test\\src\\uv_bpa.cpp",
+    "C:\\lyk\\paper\\bpa_test\\src\\ds_fusion.cpp",
+    "-o",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_affine_iou\\cpp_dynamic_reference.exe"
+  ],
+  "build_exit": 0,
+  "reference_exit": 0,
+  "reference_sha256": "b9beaeaf24dc4f4d6580f29a9f7ccc1f71c7bdec62a19a701fc0a9692d2adae3",
+  "actual_dynamic_s": true
+}

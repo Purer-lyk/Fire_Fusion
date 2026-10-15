@@ -1,0 +1,44 @@
+{
+  "workspace": "C:/lyk/fire/qualityDetection",
+  "source_policy": "read_only",
+  "architecture": "PPYOLOv2",
+  "target_classes": ["fire"],
+  "training_sources": {
+    "bgr": "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin",
+    "thermal": "C:/lyk/fire/TorchDetection/datasets/thermal/totals"
+  },
+  "reserved_test": {
+    "root": "C:/lyk/paper_data/paper_data_/paper_data",
+    "pair_file": "paper_sample.txt",
+    "columns": ["bgr_filename", "thermal_filename", "maximum_temperature", "uv_level"],
+    "use_for_training": false,
+    "ground_truth_policy": "Only independently verified labels or valid labels mapped by identical image SHA256; never UV or predictions as truth"
+  },
+  "uv": {
+    "source_column_one_based": 4,
+    "network_training": false,
+    "annotation_required": false,
+    "role": "D-S evidence and reliability gate",
+    "bpa_mapping": "to_be_defined_before_test_evaluation"
+  },
+  "fusion": {
+    "spatial_consistency": "Actual aligned BGR/Thermal detection regions, not a fixed constant",
+    "registration_status": "not_verified",
+    "dynamic_bpa_status": "not_finalized",
+    "temperature_role": "not_finalized; diagram does not specify this input"
+  },
+  "leakage_policy": {
+    "exclude_reserved_test_hashes_from_train_and_validation": true,
+    "keep_duplicate_hashes_in_one_split": true,
+    "group_temporally_related_frames": true,
+    "tune_parameters_on_validation_only": true
+  },
+  "report": {
+    "format": "docx",
+    "comparison": ["BGR PPYOLOv2", "Thermal PPYOLOv2", "Spatial-consistency D-S plus UV"],
+    "frame_level_metrics": ["accuracy", "precision", "recall", "F1", "confusion_matrix", "uncertain_rate", "decision_coverage"],
+    "object_level_metrics": ["precision", "recall", "F1", "AP50", "mAP50:95"],
+    "uncertain_policy": "must be fixed and disclosed before evaluation; report decision coverage separately",
+    "status": "No training results yet; no metrics may be fabricated"
+  }
+}

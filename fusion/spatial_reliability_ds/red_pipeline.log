@@ -1,0 +1,14 @@
+test_fixed_candidate_ablation_and_confusion (test_spatial.PipelineTests.test_fixed_candidate_ablation_and_confusion) ... FAIL
+
+======================================================================
+FAIL: test_fixed_candidate_ablation_and_confusion (test_spatial.PipelineTests.test_fixed_candidate_ablation_and_confusion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\spatial_reliability_ds\test_spatial.py", line 47, in test_fixed_candidate_ablation_and_confusion
+    self.assertIsNotNone(importlib.util.find_spec('run_experiment'), 'fixed experiment pipeline missing')
+AssertionError: unexpectedly None : fixed experiment pipeline missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

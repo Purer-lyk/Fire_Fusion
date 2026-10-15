@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "completed_utc": "2026-10-14T03:38:32.366106+00:00",
+  "forward_images": 3056,
+  "unique_input_images": 3056,
+  "elapsed_seconds": 14.916247606277466,
+  "device": "NVIDIA GeForce RTX 5070",
+  "protected_source_files_unchanged": 15936,
+  "test_train_exact_overlap": 0,
+  "freeze_sha256": "bb5fa01d150e2c423282ba98e64a153ac1a660761148519b53bae6e8b5d6837b"
+}

@@ -1,0 +1,187 @@
+{
+  "N": 3,
+  "unique_pairs": 3,
+  "verified_source_images": 6,
+  "full_frame_inferences": 6,
+  "model_input_counts": {
+    "rgb": 9,
+    "thermal": 9
+  },
+  "roi_attempts": 12,
+  "roi_actual_forward_images": 12,
+  "roi_real_detections": 0,
+  "actual_devices": [
+    "cuda:0"
+  ],
+  "gpu_name": "NVIDIA GeForce RTX 5070",
+  "torch": "2.13.0+cu132",
+  "ultralytics": "8.4.60",
+  "fallbacks": [],
+  "elapsed_seconds": 1.1859475001692772,
+  "protected_unchanged": true,
+  "config_sha256": "b20ec33655ec9b7886d97f6d1e31255004b00a24b79771a096fee45f9a097021",
+  "timings": [
+    {
+      "modality": "rgb",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 9.223800152540207,
+        "inference": 31.95136661330859,
+        "postprocess": 3.8328667481740317
+      }
+    },
+    {
+      "modality": "rgb",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 9.223800152540207,
+        "inference": 31.95136661330859,
+        "postprocess": 3.8328667481740317
+      }
+    },
+    {
+      "modality": "rgb",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 9.223800152540207,
+        "inference": 31.95136661330859,
+        "postprocess": 3.8328667481740317
+      }
+    },
+    {
+      "modality": "thermal",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.181100038190683,
+        "inference": 5.412399768829346,
+        "postprocess": 0.7971000547210375
+      }
+    },
+    {
+      "modality": "thermal",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.181100038190683,
+        "inference": 5.412399768829346,
+        "postprocess": 0.7971000547210375
+      }
+    },
+    {
+      "modality": "thermal",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.181100038190683,
+        "inference": 5.412399768829346,
+        "postprocess": 0.7971000547210375
+      }
+    },
+    {
+      "modality": "thermal",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.4398001842200756,
+        "inference": 34.329949878156185,
+        "postprocess": 0.6064996123313904
+      }
+    },
+    {
+      "modality": "thermal",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.4398001842200756,
+        "inference": 34.329949878156185,
+        "postprocess": 0.6064996123313904
+      }
+    },
+    {
+      "modality": "rgb",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.3123500868678093,
+        "inference": 8.617349900305271,
+        "postprocess": 0.39755040779709816
+      }
+    },
+    {
+      "modality": "rgb",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.3123500868678093,
+        "inference": 8.617349900305271,
+        "postprocess": 0.39755040779709816
+      }
+    },
+    {
+      "modality": "thermal",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.292599994689226,
+        "inference": 7.581550162285566,
+        "postprocess": 0.5075498484075069
+      }
+    },
+    {
+      "modality": "thermal",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.292599994689226,
+        "inference": 7.581550162285566,
+        "postprocess": 0.5075498484075069
+      }
+    },
+    {
+      "modality": "rgb",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.2038500756025314,
+        "inference": 7.497699931263924,
+        "postprocess": 0.45674992725253105
+      }
+    },
+    {
+      "modality": "rgb",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.2038500756025314,
+        "inference": 7.497699931263924,
+        "postprocess": 0.45674992725253105
+      }
+    },
+    {
+      "modality": "thermal",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.1090502850711346,
+        "inference": 7.317700423300266,
+        "postprocess": 0.48059970140457153
+      }
+    },
+    {
+      "modality": "thermal",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.1090502850711346,
+        "inference": 7.317700423300266,
+        "postprocess": 0.48059970140457153
+      }
+    },
+    {
+      "modality": "rgb",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.1390998736023903,
+        "inference": 7.144249975681305,
+        "postprocess": 0.4489496350288391
+      }
+    },
+    {
+      "modality": "rgb",
+      "device": "cuda:0",
+      "speed_ms": {
+        "preprocess": 2.1390998736023903,
+        "inference": 7.144249975681305,
+        "postprocess": 0.4489496350288391
+      }
+    }
+  ]
+}

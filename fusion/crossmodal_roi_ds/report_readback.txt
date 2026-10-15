@@ -1,0 +1,187 @@
+跨模态 ROI 复核与 D-S 融合：1528 对真实验证报告
+结论：固定名义参数下，主视觉算法未达到全部目标。FPR 为 0%，但 FNR 为 88.69814%，高于热成像基线 47.63948%。ROI 产生真实复核框，但在同样的去重和匹配协议下未增加最终真阳性，无法抵消严格空间一致性和固定 mF 决策的漏报。不得据此宣称已达到目标或保证部署效果。
+1. 数据、参考标准与执行证据
+数据仅来自 C:/lyk/paper_data/paper_data_/paper_data/paper_sample.txt。1528 个唯一配对、3056 张输入图片逐一验证原始 SHA256 与尺寸。第四列 UV=1 有 1398 对、UV=0 有 130 对；这些统计是 UV 参考一致性，不是独立人工标注的场景真实性评估。第三列温度仅保留原值，单位未知，未启用物理温度门控。
+用户原始权重只读使用 best.pt（RGB）及 best-2.pt（热成像）；实测架构 YOLO26n，不替换为 PPYOLOv2、不重新训练。Torch 2.13.0+cu132，Ultralytics 8.4.60；实际设备 ['cuda:0']，NVIDIA GeForce RTX 5070，CPU 回退 []。完整执行耗时 43.454 秒。
+真实前向：全图 3056 次，ROI 1525 次，合计 4581 个模型输入。ROI 尝试 1525 次，产生 422 个真实火焰检测输出（含跨裁剪重复，非独立目标数）。GPU 与单次预处理/推理/后处理耗时均写入 full_execution.json。原权重、历史预测、仿射标定和数据清单哈希前后不变。
+2. 预冻结参数与实现范围
+全量测试前冻结配置 SHA256：b20ec33655ec9b7886d97f6d1e31255004b00a24b79771a096fee45f9a097021；启动时刻 UTC：2026-10-14T02:27:01.555319+00:00。不使用测试 UV 标签优化任何阈值或挑选参数。
+置信分数校准仅提供可调用接口，本次为 identity：没有拟合独立校准器，因此不能称为“概率已校准”。q_A=1 仅为名义图像质量，无独立质量估计。仿射矩阵为既有 FULL thermal→RGB 候选标定，LOO RMSE 5.7718px，独立场景与全视场未验证。时间平滑关闭；未启用温度、重训练或其他未实际执行的特征。
+3. 算法和严格坐标绑定
+逐一按 paper_sample 的明确 pair_index/文件名读取 OpenCV BGR 数组；对列表预测逐项 zip 原数组与结果，检查 orig_shape，绝不依赖 Ultralytics 数组列表的虚拟文件名。两模型独立以 conf=0.1、imgsz=640、max_det=300 推理。
+热成像真实框四角通过 2×3 FULL 仿射映射到 RGB；RGB 框保持原像素坐标。凸多边形相交面积计算 IoU，含 dummy 节点的 Hungarian 最大总 IoU 一对一匹配，硬门限 s≥0.3。
+初始未匹配且置信分数≥0.25 的候选，按各模态最高分最多 3 个触发对方原始图像裁剪；RGB→thermal 用逆仿射，thermal→RGB 用正仿射。投影四角外包络每边扩展尺寸的 25% 加 10px 注册裕量，向外取整并裁至原图。每帧最多 6 个 ROI，不递归触发。
+ROI 仅用于定义待复核区域，不作为检测证据。对裁剪原图实际再次运行对方 YOLO；真实输出框加 crop 左上角偏移回原图，再按同一仿射进行空间匹配。每模态原坐标 IoU>0.7 的重复框按置信分数保留一个。未匹配或无真实输出均不得报警。
+每个真实匹配对：c 为未校准 detector confidence，u=0.1；基础 BPA=(0.9c,0.9(1−c),0.1)。r=0.5+0.5s，对称可靠性折扣 m=(r·mF,r·mN,1−r+r·mU)。
+经典 D-S：K=mRF·mTN+mRN·mTF；mF=(mRF·mTF+mRF·mTU+mRU·mTF)/(1−K)，mN 对称，mU=mRU·mTU/(1−K)。记录冲突 K；奇异冲突退为全未知。不额外声称经过独立验证的冲突自适应机制。
+每帧只选择最高视觉 mF 的实际匹配对，不累计同源多框，不以 UV 挑选框。主判定必须真实双模态匹配且 mF>0.5。无匹配视为 NoFire；这包含可能漏报而非安全证明。
+可选 UV 只做乘性门控 mF_UV=mF·[(1−λ)+λUV]，λ=0.5。UV=0 将分数减半，UV=1 保持，不能复活缺失证据或凭 UV 合成检测。该支路把 UV 同时用作输入和参考，存在循环评价。
+实际热成像→RGB 仿射矩阵：
+[[ 7.1130391665e-01  4.4504657857e-03  7.8227408947e+01]
+ [-4.5135242080e-02  9.6305332962e-01 -1.5942804622e+01]]
+4. 实际混淆矩阵与目标判定
+主算法 meets_all_target=False；可选 UV 门控结果与主算法相同，不依赖 UV 才取得 0 FP。相对 RGB 基线观察 FPR 从 96.92308% 降至 0%，但主算法召回率仅 11.30186%，不能以低 FPR 掩盖漏报。0/130 FP 的双侧 95% Clopper–Pearson FPR 区间约 [0, 2.7977%]（独立二项假设；时间相关样本会削弱解释），不是总体 FPR 必为零的保证。
+5. 漏报与 ROI 收益诊断
+both_no_candidates: 0 个 UV 阳性漏报。
+candidate_weak_or_missing: 4 个 UV 阳性漏报。
+roi_no_response: 189 个 UV 阳性漏报。
+iou_failed: 98 个 UV 阳性漏报。
+ds_low_score: 949 个 UV 阳性漏报。
+最终 UV 阳性空间匹配覆盖 1107/1398；即使只放宽 DS 分数而保持此冻结匹配结果，召回也受该覆盖限制。ROI 后新检出 0 个，ROI 前阳性变阴性 0 个；净变化 0。rescued IDs=[]，lost IDs=[]。低候选门限改善检索覆盖不意味着低原始置信分数的双模态 BPA 能超过 mF=0.5；本次主要障碍为 DS 低分。注册候选未经独立验证，IoU 失败不能都归为检测器错误。
+6. 三个真实复核/匹配案例
+Pair 285 / ds_low_score
+2026_08_08_03_37_49_0718_bgr.jpg
+2026_08_08_03_37_49_0718_thermal.jpg
+UV参考=1，mF=0.275147，ROI前=False，ROI后=False。
+
+实际选择：RGB score=0.140267 roi_actual_detection bbox=[175.267972946167, 100.25536346435547, 196.6077537536621, 120.76168060302734]；thermal score=0.622865 full_frame bbox=[133.98765563964844, 109.53667449951172, 160.71751403808594, 144.48590087890625]；polygonIoU=0.369722，K=0.223543。
+触发 rgb[0] score=0.2614 → thermal，原图crop=[24, 141, 61, 176]，状态=inferred，真实响应数=0。
+触发 thermal[0] score=0.6229 → rgb，原图crop=[159, 63, 208, 136]，状态=inferred，真实响应数=1。
+Pair 131 / fire
+2026_08_08_03_37_04_0223_bgr.jpg
+2026_08_08_03_37_04_0223_thermal.jpg
+UV参考=1，mF=0.572985，ROI前=True，ROI后=True。
+
+实际选择：RGB score=0.728717 full_frame bbox=[173.32794189453125, 101.17681121826172, 195.36239624023438, 122.57611083984375]；thermal score=0.591902 full_frame bbox=[135.76336669921875, 112.50286102294922, 160.55845642089844, 144.2499237060547]；polygonIoU=0.358242，K=0.171083。
+触发 rgb[1] score=0.3421 → thermal，原图crop=[23, 140, 63, 177]，状态=inferred，真实响应数=0。
+Pair 61 / roi_no_response
+2026_05_23_08_14_43_0355_bgr.jpg
+2026_05_23_08_14_43_0355_thermal.jpg
+UV参考=0，mF=0.000000，ROI前=False，ROI后=False。
+
+触发 rgb[0] score=0.7517 → thermal，原图crop=[66, 183, 111, 219]，状态=inferred，真实响应数=0。
+7. 复现、验证与交付
+C:/lyk/fire/qualityDetection/.venv/Scripts/python.exe C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_core.py
+C:/lyk/fire/qualityDetection/.venv/Scripts/python.exe C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_smoke.py
+C:/lyk/fire/qualityDetection/.venv/Scripts/python.exe C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\run_experiment.py
+C:/lyk/fire/qualityDetection/.venv/Scripts/python.exe C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_report.py
+运行 test_smoke 和 run_experiment 将再次进行真实推理并覆盖本实验自己的输出；不修改历史代码/结果。测试记录 red_geometry.log、red_fusion.log、red_smoke.log、red_report.log 与 green_tests.log、smoke.log、report_test.log。测试覆盖仿射逆映射、四角、ROI偏移与裁剪、真实数组尺寸绑定、一对一匹配、缺失证据硬门、UV不能复活证据、DS质量和已知混淆矩阵。
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\frozen_config.json
+SHA256=b20ec33655ec9b7886d97f6d1e31255004b00a24b79771a096fee45f9a097021
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\core.py
+SHA256=9d1f6a9d18094ead807fa15c483395ccc9486b33fa9c9cc94f664dd91aeba3c1
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\run_experiment.py
+SHA256=67ecd4adbef997acbbb63b92aabe66c61f6f177a9686d0a62b09acf89306177a
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\full_results.csv
+SHA256=b3768f10caf4ebb60fd5f929b035d16fe4bfac1b18530dab90a2e3992aa6909d
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\full_results.json
+SHA256=c7c999f2e15f35287ea8264361ef24329dc3d09d9b6b826ce9ccff75e532bf7a
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\full_metrics.json
+SHA256=22809a6ff3c9ca462f2d2193bc07d7d5b672f7b7aaa651ce2ac8fc68e6ac26dc
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\full_execution.json
+SHA256=6c6ec8233a66c17763aebf3d6d89f03e4d0ee94a7f4734dfb790da70ad66e662
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\full_image_audit.json
+SHA256=8a94ed5766291367c20cdaebd02db830f97d1408789928caef1aff850c61e592
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\full_receipt.json
+SHA256=17ad6baa0f050631ab59f4bf899832c6039911d91db591573183e3aa2c605638
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\full_model_metadata.json
+SHA256=4032bc973c4b03d005af646d68d2539a4d076e06f5d4c752681c3a1bc3acf90e
+C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\full_inference.log
+SHA256=c69afb6941aaea28fad6d977772283595e8011153851edb317e280a79018e078
+后续应独立场景验证配准，并使用与本测试集隔离的标注验证集拟合概率校准及阈值。不能根据本次1528 UV标签调参后仍称其为独立测试，也不应为达标取消用户要求的真实双模态证据门。
+参数
+实际值
+candidate_conf
+0.1
+roi_trigger_conf
+0.25
+roi_top_per_modality
+3
+roi_padding
+0.25
+registration_margin_px
+10
+imgsz
+640
+max_det
+300
+inference_iou
+0.7
+batch
+16
+polygon_iou_gate
+0.3
+base_ignorance
+0.1
+reliability
+0.5+0.5*polygonIoU
+decision_threshold
+0.5
+comparison
+strict greater than
+uv_lambda
+0.5
+calibrator
+identity; NOT independently fitted calibration
+conflict_policy
+classic normalized DS; singular conflict -> vacuous
+quality
+1
+temperature_gate
+OFF: units unknown
+temporal_smoothing
+OFF: scene boundaries unknown
+test_tuning
+False
+architecture
+supplied YOLO26n; no retraining
+方法
+TP
+FP
+FN
+TN
+FPR%
+FNR%
+Precision
+Recall
+F1
+历史RGB conf0.5
+452
+126
+946
+4
+96.92308
+67.66810
+0.782007
+0.323319
+0.457490
+历史热成像 conf0.5
+732
+0
+666
+130
+0.00000
+47.63948
+1.000000
+0.523605
+0.687324
+ROI前视觉DS
+158
+0
+1240
+130
+0.00000
+88.69814
+1.000000
+0.113019
+0.203085
+主视觉ROI+DS
+158
+0
+1240
+130
+0.00000
+88.69814
+1.000000
+0.113019
+0.203085
+可选UV乘性门控
+158
+0
+1240
+130
+0.00000
+88.69814
+1.000000
+0.113019
+0.203085

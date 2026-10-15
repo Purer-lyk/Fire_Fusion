@@ -1,0 +1,14 @@
+F.
+======================================================================
+FAIL: test_runner_stages_exist (__main__.Execution.test_runner_stages_exist)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\dual_baseline_target_ds\test_dual.py", line 14, in test_runner_stages_exist
+    p=Path(__file__).with_name('run_dual.py');self.assertTrue(p.exists(),'real-data runner missing')
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : real-data runner missing
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.058s
+
+FAILED (failures=1)

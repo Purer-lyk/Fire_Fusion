@@ -1,0 +1,46 @@
+{
+  "N": 3,
+  "reference": "UV fourth column; optional UV metrics circular, vision-only UV-reference agreement not independently reviewed truth",
+  "methods": {
+    "primary_vision_only": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 3,
+      "FPR": 0.0,
+      "FNR": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "F1": 0.0,
+      "balanced_accuracy": 0.5,
+      "meets_all_target": true
+    },
+    "optional_uv_gate": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 3,
+      "FPR": 0.0,
+      "FNR": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "F1": 0.0,
+      "balanced_accuracy": 0.5,
+      "meets_all_target": true
+    },
+    "before_roi_vision": {
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "TN": 3,
+      "FPR": 0.0,
+      "FNR": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "F1": 0.0,
+      "balanced_accuracy": 0.5,
+      "meets_all_target": true
+    }
+  },
+  "miss_diagnostics": {}
+}

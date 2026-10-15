@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-14T11:50:11.130427+00:00",
+  "parameters": {
+    "tR": 0.35,
+    "tT": 0.01,
+    "gate": 0.01,
+    "rR": 1.0,
+    "rT": 1.0,
+    "u0": 0.0,
+    "soft": false,
+    "threshold": 0.5
+  },
+  "grid_index": 1237,
+  "claim": "ALL-LABEL exploratory descriptive fit, NOT heldout validation"
+}

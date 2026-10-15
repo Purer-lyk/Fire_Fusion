@@ -1,0 +1,95 @@
+{
+  "reference": "User column4 UV0=nofire UV1=fire; UV is also fusion input, circular agreement not independent truth",
+  "methods": {
+    "rgb_baseline": {
+      "N": 1528,
+      "TP": 452,
+      "FP": 126,
+      "FN": 946,
+      "TN": 4,
+      "accuracy": 0.29842931937172773,
+      "precision": 0.7820069204152249,
+      "recall": 0.32331902718168815,
+      "F1": 0.4574898785425101
+    },
+    "thermal_baseline": {
+      "N": 1528,
+      "TP": 732,
+      "FP": 0,
+      "FN": 666,
+      "TN": 130,
+      "accuracy": 0.5641361256544503,
+      "precision": 1.0,
+      "recall": 0.5236051502145923,
+      "F1": 0.6873239436619718
+    },
+    "affine_dynamic_repeated": {
+      "N": 1528,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1398,
+      "TN": 130,
+      "accuracy": 0.08507853403141362,
+      "precision": null,
+      "recall": 0.0,
+      "F1": 0.0
+    },
+    "affine_spatial_then_classic": {
+      "N": 1528,
+      "TP": 26,
+      "FP": 0,
+      "FN": 1372,
+      "TN": 130,
+      "accuracy": 0.10209424083769633,
+      "precision": 1.0,
+      "recall": 0.01859799713876967,
+      "F1": 0.03651685393258427
+    }
+  },
+  "UV_label_counts": {
+    "0": 130,
+    "1": 1398
+  },
+  "abstention": {
+    "affine_dynamic_repeated": {
+      "fire": 0,
+      "nofire": 510,
+      "uncertain": 1018,
+      "decision_coverage": 0.3337696335078534,
+      "uncertainty_rate": 0.6662303664921466,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 510,
+        "TP": 0,
+        "FP": 0,
+        "FN": 507,
+        "TN": 3,
+        "accuracy": 0.0058823529411764705,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    },
+    "affine_spatial_then_classic": {
+      "fire": 0,
+      "nofire": 381,
+      "uncertain": 1147,
+      "decision_coverage": 0.2493455497382199,
+      "uncertainty_rate": 0.7506544502617801,
+      "degenerate_count": 0,
+      "covered_only_metrics": {
+        "N": 381,
+        "TP": 0,
+        "FP": 0,
+        "FN": 381,
+        "TN": 0,
+        "accuracy": 0.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      }
+    }
+  },
+  "binary_threshold": 0.5,
+  "abstention_threshold": 0.95
+}

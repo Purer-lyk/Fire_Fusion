@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\verify_adaptive.py", line 78, in <module>
+    if __name__=='__main__':verify()
+                            ^^^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\verify_adaptive.py", line 63, in verify
+    if branch.startswith('nominal'):assert abs(polygon_iou(q['rgb']['bbox'],q['thermal']['bbox'],B)-o['iou'])<1e-6
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

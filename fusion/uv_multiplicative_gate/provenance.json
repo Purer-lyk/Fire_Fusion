@@ -1,0 +1,18 @@
+{
+  "rgb": {
+    "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\rgb_predictions.json",
+    "sha256": "d63a199e1f309243da733e58173dd7e165b7715e3d6c928ae3170fe81f93dad8",
+    "architecture": "Ultralytics YOLO26n (yolo26n.yaml, end2end=True, reg_max=1); not PPYOLOv2 or YOLO11",
+    "checkpoint": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\weights\\best.pt",
+    "checkpoint_sha256": "1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32",
+    "rows": 1528
+  },
+  "thermal": {
+    "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\thermal_predictions.json",
+    "sha256": "efb3dd0f8981a8fce079eb23c9d492d4295d2ed64d9434f0ec243804b8192fe8",
+    "architecture": "Ultralytics YOLO26n (yolo26n.yaml, end2end=True, reg_max=1); not PPYOLOv2 or YOLO11",
+    "checkpoint": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\weights\\best-2.pt",
+    "checkpoint_sha256": "c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6",
+    "rows": 1528
+  }
+}

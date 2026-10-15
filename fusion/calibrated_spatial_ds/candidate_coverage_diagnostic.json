@@ -1,0 +1,27 @@
+{
+  "0.01": {
+    "positive_real_pair_coverage": 1184,
+    "negative_real_pair_coverage": 0,
+    "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+  },
+  "0.05": {
+    "positive_real_pair_coverage": 1184,
+    "negative_real_pair_coverage": 0,
+    "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+  },
+  "0.1": {
+    "positive_real_pair_coverage": 1172,
+    "negative_real_pair_coverage": 0,
+    "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+  },
+  "0.2": {
+    "positive_real_pair_coverage": 1141,
+    "negative_real_pair_coverage": 0,
+    "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+  },
+  "0.3": {
+    "positive_real_pair_coverage": 1107,
+    "negative_real_pair_coverage": 0,
+    "meaning": "Optimistic spatial candidate upper bound ONLY, not selected predictions or achievable label-free performance."
+  }
+}

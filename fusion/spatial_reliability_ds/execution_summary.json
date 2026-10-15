@@ -1,0 +1,2030 @@
+{
+  "created_utc": "2026-10-13T07:25:39.483546+00:00",
+  "total_pairs": 1528,
+  "source_sample_sha256": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade",
+  "config": {
+    "protocol": "fixed_nominal_v1_no_UV_label_tuning",
+    "confidence_strict_gt": 0.5,
+    "base_ignorance": 0.2,
+    "matched_reliability_floor": 0.5,
+    "matched_reliability_slope": 0.5,
+    "unmatched_present_reliability": 0.5,
+    "matching": "Hungarian maximum sum actual affine polygon IoU; dummy unmatched allowed; retain IoU>=0.01",
+    "matching_min_iou": 0.01,
+    "aggregation": "choose one candidate by max ordinary-DS fire mass, ties minimum present confidence then earlier candidate; same candidate for all ablations; no cross-target DS",
+    "uv_instant_reliability": 0.9,
+    "binary": "pignistic P(F)=mF+0.5*mU >0.5; exact tie forced nofire and separately abstain",
+    "abstention": "mF>=0.8 fire else mN>=0.8 nofire else uncertain; additionally report 0.95",
+    "temperature_unit": null,
+    "temperature_center": null,
+    "temperature_scale": null,
+    "temperature_policy": "unit unverified: neutral multiplier 1 in primary; calibrated unit/center/scale required to enable bounded 0.5+0.5*sigmoid((T-center)/scale); controlled legacy-thermal ablation uses documented original T0=50 formula only, not physical calibration",
+    "legacy_reset_gap_seconds": 120,
+    "no_training_no_search": true
+  },
+  "freeze": {
+    "utc": "2026-10-13T07:15:08.723378+00:00",
+    "sha256": "8d621aad5853bd707f06386872eb465f3a78d17dfedb7a91ca0e1e5a1e1fd2bb",
+    "before_full_metrics": true
+  },
+  "calibration": {
+    "status": "candidate_unvalidated: no independent scene/full-field checks",
+    "direction": "thermal pts2 -> RGB pts1 original pixel coordinates",
+    "source": "C:\\lyk\\paper\\bpa_test\\main\\homo_main.cpp",
+    "source_sha256": "e18340285163844a56f8954221d955d838e0df5c606f2e98ab6c2fec5b02d262",
+    "thermal_points": [
+      [
+        23.0,
+        193.0
+      ],
+      [
+        53.0,
+        186.0
+      ],
+      [
+        80.0,
+        193.0
+      ],
+      [
+        118.0,
+        182.0
+      ],
+      [
+        147.0,
+        191.0
+      ],
+      [
+        118.0,
+        204.0
+      ],
+      [
+        47.0,
+        206.0
+      ]
+    ],
+    "rgb_points": [
+      [
+        97.0,
+        163.0
+      ],
+      [
+        116.0,
+        160.0
+      ],
+      [
+        136.0,
+        168.0
+      ],
+      [
+        164.0,
+        154.0
+      ],
+      [
+        183.0,
+        161.0
+      ],
+      [
+        163.0,
+        175.0
+      ],
+      [
+        113.0,
+        180.0
+      ]
+    ],
+    "affine_matrix_2x3": [
+      [
+        0.7113039166517691,
+        0.0044504657857417015,
+        78.2274089470037
+      ],
+      [
+        -0.045135242080470914,
+        0.963053329624529,
+        -15.942804622066248
+      ]
+    ],
+    "estimator": "cv2.estimateAffine2D FULL affine RANSAC; seed=7; threshold=3px; maxIters=2000; confidence=0.99; refineIters=10",
+    "inlier_mask": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "inlier_count": 6,
+    "fit_errors_px": [
+      6.089897491824994,
+      1.094412164187936,
+      1.6843572549177097,
+      1.0287675426673721,
+      0.7362539311725552,
+      0.20607036899984263,
+      0.5345285982155142
+    ],
+    "fit_rmse_px": 2.479927047762139,
+    "inlier_fit_rmse_px": 0.9969466447290716,
+    "leave_one_out_errors_px": [
+      7.124361539882253,
+      2.7019837768168813,
+      2.092235175806979,
+      2.3079372559928064,
+      9.142143818601445,
+      8.64123063706294,
+      2.6805219929169497
+    ],
+    "leave_one_out_rmse_px": 5.771804926500622,
+    "leave_one_out_max_px": 9.142143818601445,
+    "leave_one_out_matrices": [
+      [
+        [
+          0.6996225342933009,
+          -0.037369139953666385,
+          87.73295762103898
+        ],
+        [
+          -0.057415073131866806,
+          0.9190912644033952,
+          -5.950277352092334
+        ]
+      ],
+      [
+        [
+          0.6996225342933009,
+          -0.037369139953666385,
+          87.73295762103898
+        ],
+        [
+          -0.057415073131866806,
+          0.9190912644033952,
+          -5.950277352092334
+        ]
+      ],
+      [
+        [
+          0.7113258394368236,
+          0.0044876295311950115,
+          78.21622130725726
+        ],
+        [
+          -0.04118086964971905,
+          0.9697568251003977,
+          -17.960800696294207
+        ]
+      ],
+      [
+        [
+          0.7036388281127983,
+          0.024095988491468313,
+          75.0103411293893
+        ],
+        [
+          -0.061717940672028127,
+          0.853240428303079,
+          7.680133167697579
+        ]
+      ],
+      [
+        [
+          0.6780957367123778,
+          0.15785231281215353,
+          50.927093349644345
+        ],
+        [
+          0.06505731813834624,
+          0.5814311521425286,
+          49.24593019187275
+        ]
+      ],
+      [
+        [
+          0.6846131760860447,
+          0.039031339031339096,
+          73.16428587203778
+        ],
+        [
+          0.08717065306212622,
+          1.0484330484330486,
+          -40.59413856313089
+        ]
+      ],
+      [
+        [
+          0.7020278333628275,
+          -0.04131943026458381,
+          88.19426861418509
+        ],
+        [
+          -0.07727910047508135,
+          0.951714515184928,
+          -9.759988293107986
+        ]
+      ]
+    ],
+    "leave_one_out_inlier_masks": [
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "note": "Seven points occupy narrow y band; fitting and LOO do not validate independent scenes, field coverage or parallax. No manual offsets or projective mapping."
+  },
+  "provenance": {
+    "rgb": {
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\rgb_predictions.json",
+      "sha256": "d63a199e1f309243da733e58173dd7e165b7715e3d6c928ae3170fe81f93dad8",
+      "metadata": {
+        "original_checkpoint": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best.pt",
+        "checkpoint": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\weights\\best.pt",
+        "bytes": 5348485,
+        "checkpoint_sha256": "1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32",
+        "names": {
+          "0": "fire"
+        },
+        "class_mapping": "class0 fire/Fire -> fire; no smoke class",
+        "model_class": "DetectionModel",
+        "yaml": {
+          "nc": 1,
+          "end2end": true,
+          "reg_max": 1,
+          "scales": {
+            "n": [
+              0.5,
+              0.25,
+              1024
+            ],
+            "s": [
+              0.5,
+              0.5,
+              1024
+            ],
+            "m": [
+              0.5,
+              1.0,
+              512
+            ],
+            "l": [
+              1.0,
+              1.0,
+              512
+            ],
+            "x": [
+              1.0,
+              1.5,
+              512
+            ]
+          },
+          "backbone": [
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                64,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                128,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                256,
+                false,
+                0.25
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                256,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                false,
+                0.25
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                512,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                1024,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                1024,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "SPPF",
+              [
+                1024,
+                5,
+                3,
+                true
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C2PSA",
+              [
+                1024
+              ]
+            ]
+          ],
+          "head": [
+            [
+              -1,
+              1,
+              "nn.Upsample",
+              [
+                "None",
+                2,
+                "nearest"
+              ]
+            ],
+            [
+              [
+                -1,
+                6
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "nn.Upsample",
+              [
+                "None",
+                2,
+                "nearest"
+              ]
+            ],
+            [
+              [
+                -1,
+                4
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                256,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                256,
+                3,
+                2
+              ]
+            ],
+            [
+              [
+                -1,
+                13
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                512,
+                3,
+                2
+              ]
+            ],
+            [
+              [
+                -1,
+                10
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              1,
+              "C3k2",
+              [
+                1024,
+                true,
+                0.5,
+                true
+              ]
+            ],
+            [
+              [
+                16,
+                19,
+                22
+              ],
+              1,
+              "Detect",
+              [
+                "nc"
+              ]
+            ]
+          ],
+          "scale": "n",
+          "yaml_file": "yolo26n.yaml",
+          "channels": 3
+        },
+        "layer_types": [
+          "Conv",
+          "Conv",
+          "C3k2",
+          "Conv",
+          "C3k2",
+          "Conv",
+          "C3k2",
+          "Conv",
+          "C3k2",
+          "SPPF",
+          "C2PSA",
+          "Upsample",
+          "Concat",
+          "C3k2",
+          "Upsample",
+          "Concat",
+          "C3k2",
+          "Conv",
+          "Concat",
+          "C3k2",
+          "Conv",
+          "Concat",
+          "C3k2",
+          "Detect"
+        ],
+        "architecture": "Ultralytics YOLO26n (yolo26n.yaml, end2end=True, reg_max=1); not PPYOLOv2 or YOLO11",
+        "train_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "yolo26n.yaml",
+          "data": "cfgs\\bgr.yaml",
+          "epochs": 100,
+          "time": null,
+          "patience": 100,
+          "batch": 16,
+          "imgsz": 320,
+          "save": true,
+          "save_period": -1,
+          "cache": false,
+          "device": "0",
+          "workers": 4,
+          "project": null,
+          "name": "fireOrigin_yolo26n-5",
+          "exist_ok": false,
+          "pretrained": "yolo26n.pt",
+          "optimizer": "auto",
+          "verbose": true,
+          "seed": 0,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 10,
+          "resume": false,
+          "amp": true,
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": true,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "half": false,
+          "dnn": false,
+          "plots": true,
+          "end2end": null,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "int8": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "nms": false,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.0,
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.015,
+          "hsv_s": 0.7,
+          "hsv_v": 0.4,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 1.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.4,
+          "cfg": null,
+          "tracker": "botsort.yaml"
+        },
+        "checkpoint_keys": [
+          "date",
+          "version",
+          "license",
+          "docs",
+          "epoch",
+          "best_fitness",
+          "model",
+          "ema",
+          "updates",
+          "optimizer",
+          "scaler",
+          "train_args",
+          "train_metrics",
+          "train_results",
+          "git"
+        ],
+        "checkpoint_epoch": -1,
+        "checkpoint_version": "8.4.60",
+        "checkpoint_date": "2026-10-12T20:26:38.154406",
+        "parameters": 2504190,
+        "end2end": true,
+        "processed_images": 1528,
+        "unique_ids": 1528,
+        "missing_images": [],
+        "retained_fire_boxes": 609,
+        "actual_devices": [
+          "0"
+        ],
+        "inference_seconds": 12.946279000490904
+      },
+      "rows": 1528,
+      "boxes": 609,
+      "missing_frames": 950,
+      "dimensions": {
+        "320x320": 1528
+      }
+    },
+    "thermal": {
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\thermal_predictions.json",
+      "sha256": "efb3dd0f8981a8fce079eb23c9d492d4295d2ed64d9434f0ec243804b8192fe8",
+      "metadata": {
+        "original_checkpoint": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best-2.pt",
+        "checkpoint": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\weights\\best-2.pt",
+        "bytes": 5336965,
+        "checkpoint_sha256": "c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6",
+        "names": {
+          "0": "Fire"
+        },
+        "class_mapping": "class0 fire/Fire -> fire; no smoke class",
+        "model_class": "DetectionModel",
+        "yaml": {
+          "nc": 1,
+          "end2end": true,
+          "reg_max": 1,
+          "scales": {
+            "n": [
+              0.5,
+              0.25,
+              1024
+            ],
+            "s": [
+              0.5,
+              0.5,
+              1024
+            ],
+            "m": [
+              0.5,
+              1.0,
+              512
+            ],
+            "l": [
+              1.0,
+              1.0,
+              512
+            ],
+            "x": [
+              1.0,
+              1.5,
+              512
+            ]
+          },
+          "backbone": [
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                64,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                128,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                256,
+                false,
+                0.25
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                256,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                false,
+                0.25
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                512,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                1024,
+                3,
+                2
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                1024,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "SPPF",
+              [
+                1024,
+                5,
+                3,
+                true
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C2PSA",
+              [
+                1024
+              ]
+            ]
+          ],
+          "head": [
+            [
+              -1,
+              1,
+              "nn.Upsample",
+              [
+                "None",
+                2,
+                "nearest"
+              ]
+            ],
+            [
+              [
+                -1,
+                6
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "nn.Upsample",
+              [
+                "None",
+                2,
+                "nearest"
+              ]
+            ],
+            [
+              [
+                -1,
+                4
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                256,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                256,
+                3,
+                2
+              ]
+            ],
+            [
+              [
+                -1,
+                13
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              2,
+              "C3k2",
+              [
+                512,
+                true
+              ]
+            ],
+            [
+              -1,
+              1,
+              "Conv",
+              [
+                512,
+                3,
+                2
+              ]
+            ],
+            [
+              [
+                -1,
+                10
+              ],
+              1,
+              "Concat",
+              [
+                1
+              ]
+            ],
+            [
+              -1,
+              1,
+              "C3k2",
+              [
+                1024,
+                true,
+                0.5,
+                true
+              ]
+            ],
+            [
+              [
+                16,
+                19,
+                22
+              ],
+              1,
+              "Detect",
+              [
+                "nc"
+              ]
+            ]
+          ],
+          "scale": "n",
+          "yaml_file": "yolo26n.yaml",
+          "channels": 3
+        },
+        "layer_types": [
+          "Conv",
+          "Conv",
+          "C3k2",
+          "Conv",
+          "C3k2",
+          "Conv",
+          "C3k2",
+          "Conv",
+          "C3k2",
+          "SPPF",
+          "C2PSA",
+          "Upsample",
+          "Concat",
+          "C3k2",
+          "Upsample",
+          "Concat",
+          "C3k2",
+          "Conv",
+          "Concat",
+          "C3k2",
+          "Conv",
+          "Concat",
+          "C3k2",
+          "Detect"
+        ],
+        "architecture": "Ultralytics YOLO26n (yolo26n.yaml, end2end=True, reg_max=1); not PPYOLOv2 or YOLO11",
+        "train_args": {
+          "task": "detect",
+          "mode": "train",
+          "model": "yolo26n.yaml",
+          "data": "cfgs\\thermal.yaml",
+          "epochs": 10,
+          "time": null,
+          "patience": 100,
+          "batch": 16,
+          "imgsz": 320,
+          "save": true,
+          "save_period": -1,
+          "cache": false,
+          "device": "0",
+          "workers": 4,
+          "project": null,
+          "name": "thermal_yolo26n-5",
+          "exist_ok": false,
+          "pretrained": "yolo26n.pt",
+          "optimizer": "auto",
+          "verbose": true,
+          "seed": 0,
+          "deterministic": true,
+          "single_cls": false,
+          "rect": false,
+          "cos_lr": false,
+          "close_mosaic": 10,
+          "resume": false,
+          "amp": true,
+          "fraction": 1.0,
+          "profile": false,
+          "freeze": null,
+          "multi_scale": 0.0,
+          "compile": false,
+          "overlap_mask": true,
+          "mask_ratio": 4,
+          "dropout": 0.0,
+          "val": true,
+          "split": "val",
+          "save_json": false,
+          "conf": null,
+          "iou": 0.7,
+          "max_det": 300,
+          "half": false,
+          "dnn": false,
+          "plots": true,
+          "end2end": null,
+          "source": null,
+          "vid_stride": 1,
+          "stream_buffer": false,
+          "visualize": false,
+          "augment": false,
+          "agnostic_nms": false,
+          "classes": null,
+          "retina_masks": false,
+          "embed": null,
+          "show": false,
+          "save_frames": false,
+          "save_txt": false,
+          "save_conf": false,
+          "save_crop": false,
+          "show_labels": true,
+          "show_conf": true,
+          "show_boxes": true,
+          "line_width": null,
+          "format": "torchscript",
+          "keras": false,
+          "optimize": false,
+          "int8": false,
+          "dynamic": false,
+          "simplify": true,
+          "opset": null,
+          "workspace": null,
+          "nms": false,
+          "lr0": 0.01,
+          "lrf": 0.01,
+          "momentum": 0.937,
+          "weight_decay": 0.0005,
+          "warmup_epochs": 3.0,
+          "warmup_momentum": 0.8,
+          "warmup_bias_lr": 0.0,
+          "box": 7.5,
+          "cls": 0.5,
+          "cls_pw": 0.0,
+          "dfl": 1.5,
+          "pose": 12.0,
+          "kobj": 1.0,
+          "rle": 1.0,
+          "angle": 1.0,
+          "nbs": 64,
+          "hsv_h": 0.015,
+          "hsv_s": 0.7,
+          "hsv_v": 0.4,
+          "degrees": 0.0,
+          "translate": 0.1,
+          "scale": 0.5,
+          "shear": 0.0,
+          "perspective": 0.0,
+          "flipud": 0.0,
+          "fliplr": 0.5,
+          "bgr": 0.0,
+          "mosaic": 1.0,
+          "mixup": 0.0,
+          "cutmix": 0.0,
+          "copy_paste": 0.0,
+          "copy_paste_mode": "flip",
+          "auto_augment": "randaugment",
+          "erasing": 0.4,
+          "cfg": null,
+          "tracker": "botsort.yaml"
+        },
+        "checkpoint_keys": [
+          "date",
+          "version",
+          "license",
+          "docs",
+          "epoch",
+          "best_fitness",
+          "model",
+          "ema",
+          "updates",
+          "optimizer",
+          "scaler",
+          "train_args",
+          "train_metrics",
+          "train_results",
+          "git"
+        ],
+        "checkpoint_epoch": -1,
+        "checkpoint_version": "8.4.60",
+        "checkpoint_date": "2026-08-10T17:21:02.554367",
+        "parameters": 2504190,
+        "end2end": true,
+        "processed_images": 1528,
+        "unique_ids": 1528,
+        "missing_images": [],
+        "retained_fire_boxes": 825,
+        "actual_devices": [
+          "0"
+        ],
+        "inference_seconds": 10.3384267995134
+      },
+      "rows": 1528,
+      "boxes": 825,
+      "missing_frames": 796,
+      "dimensions": {
+        "192x256": 1528
+      }
+    }
+  },
+  "cpp_reexecuted": {
+    "fixed": {
+      "rows": 1528,
+      "exit": 0,
+      "max_abs_error": 0.0,
+      "exe_sha256": "75816aa555dd8138654637261479bf79ee9401e1a7c7f18cb84843c108e81edf",
+      "inputs_sha256": "2a6a487e39ed7ec09e8eea5ab73fc929ebb0003902f19e3a401e2b7267db2939"
+    },
+    "dynamic": {
+      "rows": 1528,
+      "exit": 0,
+      "max_abs_error": 0.0,
+      "exe_sha256": "b9beaeaf24dc4f4d6580f29a9f7ccc1f71c7bdec62a19a701fc0a9692d2adae3",
+      "inputs_sha256": "0f8fdc260fdcc8d6263caeae514f8237a9d77d3b2b149843a4b96f13be21adbd"
+    }
+  },
+  "selected_status_counts": {
+    "unmatched_rgb": 391,
+    "missing_both": 436,
+    "matched": 169,
+    "unmatched_thermal": 532
+  },
+  "candidate_status_counts": {
+    "unmatched_rgb": 440,
+    "missing_both": 436,
+    "matched": 169,
+    "unmatched_thermal": 656
+  },
+  "both_missing_frames": 436,
+  "both_present_no_match_frames": 49,
+  "legacy_resets": [
+    0,
+    60,
+    127,
+    130,
+    911,
+    1348
+  ],
+  "metrics": {
+    "reference": "UV-reference agreement; UV also input: circular NOT independent scene validity",
+    "methods": {
+      "rgb": {
+        "N": 1528,
+        "TP": 452,
+        "FP": 126,
+        "FN": 946,
+        "TN": 4,
+        "accuracy": 0.29842931937172773,
+        "precision": 0.7820069204152249,
+        "recall": 0.32331902718168815,
+        "F1": 0.4574898785425101
+      },
+      "thermal": {
+        "N": 1528,
+        "TP": 732,
+        "FP": 0,
+        "FN": 666,
+        "TN": 130,
+        "accuracy": 0.5641361256544503,
+        "precision": 1.0,
+        "recall": 0.5236051502145923,
+        "F1": 0.6873239436619718
+      },
+      "ordinary_ds": {
+        "N": 1528,
+        "TP": 966,
+        "FP": 126,
+        "FN": 432,
+        "TN": 4,
+        "accuracy": 0.6348167539267016,
+        "precision": 0.8846153846153846,
+        "recall": 0.6909871244635193,
+        "F1": 0.7759036144578313
+      },
+      "spatial_ds": {
+        "N": 1528,
+        "TP": 966,
+        "FP": 126,
+        "FN": 432,
+        "TN": 4,
+        "accuracy": 0.6348167539267016,
+        "precision": 0.8846153846153846,
+        "recall": 0.6909871244635193,
+        "F1": 0.7759036144578313
+      },
+      "ordinary_uv": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      "spatial_uv": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      "ordinary_legacy_uv": {
+        "N": 1528,
+        "TP": 145,
+        "FP": 0,
+        "FN": 1253,
+        "TN": 130,
+        "accuracy": 0.1799738219895288,
+        "precision": 1.0,
+        "recall": 0.10371959942775394,
+        "F1": 0.1879455605962411
+      },
+      "spatial_legacy_uv": {
+        "N": 1528,
+        "TP": 124,
+        "FP": 0,
+        "FN": 1274,
+        "TN": 130,
+        "accuracy": 0.1662303664921466,
+        "precision": 1.0,
+        "recall": 0.08869814020028613,
+        "F1": 0.16294349540078842
+      },
+      "legacy_thermal_spatial": {
+        "N": 1528,
+        "TP": 966,
+        "FP": 126,
+        "FN": 432,
+        "TN": 4,
+        "accuracy": 0.6348167539267016,
+        "precision": 0.8846153846153846,
+        "recall": 0.6909871244635193,
+        "F1": 0.7759036144578313
+      },
+      "legacy_thermal_uv": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      "original_dynamic": {
+        "N": 1528,
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "accuracy": 0.08507853403141362,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "original_fixed": {
+        "N": 1528,
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "accuracy": 0.08507853403141362,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "uv_alone": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      }
+    },
+    "common_betp_metrics": {
+      "ordinary_ds": {
+        "N": 1528,
+        "TP": 966,
+        "FP": 126,
+        "FN": 432,
+        "TN": 4,
+        "accuracy": 0.6348167539267016,
+        "precision": 0.8846153846153846,
+        "recall": 0.6909871244635193,
+        "F1": 0.7759036144578313
+      },
+      "spatial_ds": {
+        "N": 1528,
+        "TP": 966,
+        "FP": 126,
+        "FN": 432,
+        "TN": 4,
+        "accuracy": 0.6348167539267016,
+        "precision": 0.8846153846153846,
+        "recall": 0.6909871244635193,
+        "F1": 0.7759036144578313
+      },
+      "ordinary_uv": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      "spatial_uv": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      "ordinary_legacy_uv": {
+        "N": 1528,
+        "TP": 145,
+        "FP": 0,
+        "FN": 1253,
+        "TN": 130,
+        "accuracy": 0.1799738219895288,
+        "precision": 1.0,
+        "recall": 0.10371959942775394,
+        "F1": 0.1879455605962411
+      },
+      "spatial_legacy_uv": {
+        "N": 1528,
+        "TP": 124,
+        "FP": 0,
+        "FN": 1274,
+        "TN": 130,
+        "accuracy": 0.1662303664921466,
+        "precision": 1.0,
+        "recall": 0.08869814020028613,
+        "F1": 0.16294349540078842
+      },
+      "legacy_thermal_spatial": {
+        "N": 1528,
+        "TP": 966,
+        "FP": 126,
+        "FN": 432,
+        "TN": 4,
+        "accuracy": 0.6348167539267016,
+        "precision": 0.8846153846153846,
+        "recall": 0.6909871244635193,
+        "F1": 0.7759036144578313
+      },
+      "legacy_thermal_uv": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      "original_dynamic": {
+        "N": 1528,
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "accuracy": 0.08507853403141362,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "original_fixed": {
+        "N": 1528,
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "accuracy": 0.08507853403141362,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "uv_alone": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      }
+    },
+    "common_mf05_metrics": {
+      "ordinary_ds": {
+        "N": 1528,
+        "TP": 455,
+        "FP": 106,
+        "FN": 943,
+        "TN": 24,
+        "accuracy": 0.31348167539267013,
+        "precision": 0.8110516934046346,
+        "recall": 0.32546494992846925,
+        "F1": 0.46452271567126086
+      },
+      "spatial_ds": {
+        "N": 1528,
+        "TP": 95,
+        "FP": 0,
+        "FN": 1303,
+        "TN": 130,
+        "accuracy": 0.14725130890052357,
+        "precision": 1.0,
+        "recall": 0.06795422031473533,
+        "F1": 0.12726054922973878
+      },
+      "ordinary_uv": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      "spatial_uv": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      "ordinary_legacy_uv": {
+        "N": 1528,
+        "TP": 129,
+        "FP": 0,
+        "FN": 1269,
+        "TN": 130,
+        "accuracy": 0.1695026178010471,
+        "precision": 1.0,
+        "recall": 0.09227467811158799,
+        "F1": 0.16895874263261296
+      },
+      "spatial_legacy_uv": {
+        "N": 1528,
+        "TP": 100,
+        "FP": 0,
+        "FN": 1298,
+        "TN": 130,
+        "accuracy": 0.1505235602094241,
+        "precision": 1.0,
+        "recall": 0.0715307582260372,
+        "F1": 0.13351134846461948
+      },
+      "legacy_thermal_spatial": {
+        "N": 1528,
+        "TP": 114,
+        "FP": 0,
+        "FN": 1284,
+        "TN": 130,
+        "accuracy": 0.15968586387434555,
+        "precision": 1.0,
+        "recall": 0.0815450643776824,
+        "F1": 0.15079365079365079
+      },
+      "legacy_thermal_uv": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      },
+      "original_dynamic": {
+        "N": 1528,
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "accuracy": 0.08507853403141362,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "original_fixed": {
+        "N": 1528,
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "accuracy": 0.08507853403141362,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "uv_alone": {
+        "N": 1528,
+        "TP": 1398,
+        "FP": 0,
+        "FN": 0,
+        "TN": 130,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "F1": 1.0
+      }
+    },
+    "coverage": {
+      "ordinary_ds": {
+        "08": {
+          "fire": 1,
+          "nofire": 0,
+          "uncertain": 1527,
+          "coverage": 0.0006544502617801048,
+          "covered_only_metrics": {
+            "N": 1,
+            "TP": 1,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0
+          }
+        },
+        "095": {
+          "fire": 0,
+          "nofire": 0,
+          "uncertain": 1528,
+          "coverage": 0.0,
+          "covered_only_metrics": null
+        },
+        "vacuous_count": 436,
+        "tie_count": 436
+      },
+      "spatial_ds": {
+        "08": {
+          "fire": 0,
+          "nofire": 0,
+          "uncertain": 1528,
+          "coverage": 0.0,
+          "covered_only_metrics": null
+        },
+        "095": {
+          "fire": 0,
+          "nofire": 0,
+          "uncertain": 1528,
+          "coverage": 0.0,
+          "covered_only_metrics": null
+        },
+        "vacuous_count": 436,
+        "tie_count": 436
+      },
+      "ordinary_uv": {
+        "08": {
+          "fire": 1398,
+          "nofire": 129,
+          "uncertain": 1,
+          "coverage": 0.9993455497382199,
+          "covered_only_metrics": {
+            "N": 1527,
+            "TP": 1398,
+            "FP": 0,
+            "FN": 0,
+            "TN": 129,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0
+          }
+        },
+        "095": {
+          "fire": 140,
+          "nofire": 0,
+          "uncertain": 1388,
+          "coverage": 0.09162303664921466,
+          "covered_only_metrics": {
+            "N": 140,
+            "TP": 140,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0
+          }
+        },
+        "vacuous_count": 0,
+        "tie_count": 0
+      },
+      "spatial_uv": {
+        "08": {
+          "fire": 1398,
+          "nofire": 130,
+          "uncertain": 0,
+          "coverage": 1.0,
+          "covered_only_metrics": {
+            "N": 1528,
+            "TP": 1398,
+            "FP": 0,
+            "FN": 0,
+            "TN": 130,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0
+          }
+        },
+        "095": {
+          "fire": 11,
+          "nofire": 0,
+          "uncertain": 1517,
+          "coverage": 0.007198952879581152,
+          "covered_only_metrics": {
+            "N": 11,
+            "TP": 11,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0
+          }
+        },
+        "vacuous_count": 0,
+        "tie_count": 0
+      },
+      "ordinary_legacy_uv": {
+        "08": {
+          "fire": 13,
+          "nofire": 90,
+          "uncertain": 1425,
+          "coverage": 0.06740837696335078,
+          "covered_only_metrics": {
+            "N": 103,
+            "TP": 13,
+            "FP": 0,
+            "FN": 88,
+            "TN": 2,
+            "accuracy": 0.14563106796116504,
+            "precision": 1.0,
+            "recall": 0.12871287128712872,
+            "F1": 0.22807017543859648
+          }
+        },
+        "095": {
+          "fire": 0,
+          "nofire": 0,
+          "uncertain": 1528,
+          "coverage": 0.0,
+          "covered_only_metrics": null
+        },
+        "vacuous_count": 0,
+        "tie_count": 0
+      },
+      "spatial_legacy_uv": {
+        "08": {
+          "fire": 0,
+          "nofire": 60,
+          "uncertain": 1468,
+          "coverage": 0.03926701570680628,
+          "covered_only_metrics": {
+            "N": 60,
+            "TP": 0,
+            "FP": 0,
+            "FN": 58,
+            "TN": 2,
+            "accuracy": 0.03333333333333333,
+            "precision": null,
+            "recall": 0.0,
+            "F1": 0.0
+          }
+        },
+        "095": {
+          "fire": 0,
+          "nofire": 0,
+          "uncertain": 1528,
+          "coverage": 0.0,
+          "covered_only_metrics": null
+        },
+        "vacuous_count": 0,
+        "tie_count": 0
+      },
+      "legacy_thermal_spatial": {
+        "08": {
+          "fire": 0,
+          "nofire": 0,
+          "uncertain": 1528,
+          "coverage": 0.0,
+          "covered_only_metrics": null
+        },
+        "095": {
+          "fire": 0,
+          "nofire": 0,
+          "uncertain": 1528,
+          "coverage": 0.0,
+          "covered_only_metrics": null
+        },
+        "vacuous_count": 436,
+        "tie_count": 436
+      },
+      "legacy_thermal_uv": {
+        "08": {
+          "fire": 1398,
+          "nofire": 130,
+          "uncertain": 0,
+          "coverage": 1.0,
+          "covered_only_metrics": {
+            "N": 1528,
+            "TP": 1398,
+            "FP": 0,
+            "FN": 0,
+            "TN": 130,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0
+          }
+        },
+        "095": {
+          "fire": 65,
+          "nofire": 0,
+          "uncertain": 1463,
+          "coverage": 0.04253926701570681,
+          "covered_only_metrics": {
+            "N": 65,
+            "TP": 65,
+            "FP": 0,
+            "FN": 0,
+            "TN": 0,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0
+          }
+        },
+        "vacuous_count": 0,
+        "tie_count": 0
+      },
+      "original_dynamic": {
+        "08": {
+          "fire": 0,
+          "nofire": 1502,
+          "uncertain": 26,
+          "coverage": 0.9829842931937173,
+          "covered_only_metrics": {
+            "N": 1502,
+            "TP": 0,
+            "FP": 0,
+            "FN": 1372,
+            "TN": 130,
+            "accuracy": 0.08655126498002663,
+            "precision": null,
+            "recall": 0.0,
+            "F1": 0.0
+          }
+        },
+        "095": {
+          "fire": 0,
+          "nofire": 510,
+          "uncertain": 1018,
+          "coverage": 0.3337696335078534,
+          "covered_only_metrics": {
+            "N": 510,
+            "TP": 0,
+            "FP": 0,
+            "FN": 507,
+            "TN": 3,
+            "accuracy": 0.0058823529411764705,
+            "precision": null,
+            "recall": 0.0,
+            "F1": 0.0
+          }
+        },
+        "vacuous_count": 0,
+        "tie_count": 0
+      },
+      "original_fixed": {
+        "08": {
+          "fire": 0,
+          "nofire": 1511,
+          "uncertain": 17,
+          "coverage": 0.9888743455497382,
+          "covered_only_metrics": {
+            "N": 1511,
+            "TP": 0,
+            "FP": 0,
+            "FN": 1381,
+            "TN": 130,
+            "accuracy": 0.08603573792190602,
+            "precision": null,
+            "recall": 0.0,
+            "F1": 0.0
+          }
+        },
+        "095": {
+          "fire": 0,
+          "nofire": 472,
+          "uncertain": 1056,
+          "coverage": 0.3089005235602094,
+          "covered_only_metrics": {
+            "N": 472,
+            "TP": 0,
+            "FP": 0,
+            "FN": 469,
+            "TN": 3,
+            "accuracy": 0.006355932203389831,
+            "precision": null,
+            "recall": 0.0,
+            "F1": 0.0
+          }
+        },
+        "vacuous_count": 0,
+        "tie_count": 0
+      },
+      "uv_alone": {
+        "08": {
+          "fire": 1398,
+          "nofire": 130,
+          "uncertain": 0,
+          "coverage": 1.0,
+          "covered_only_metrics": {
+            "N": 1528,
+            "TP": 1398,
+            "FP": 0,
+            "FN": 0,
+            "TN": 130,
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "F1": 1.0
+          }
+        },
+        "095": {
+          "fire": 0,
+          "nofire": 0,
+          "uncertain": 1528,
+          "coverage": 0.0,
+          "covered_only_metrics": null
+        },
+        "vacuous_count": 0,
+        "tie_count": 0
+      }
+    },
+    "label_counts": {
+      "0": 130,
+      "1": 1398
+    },
+    "parameters_sha256": "8d621aad5853bd707f06386872eb465f3a78d17dfedb7a91ca0e1e5a1e1fd2bb"
+  },
+  "examples": [
+    {
+      "pair_index": 1021,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_reliability_ds\\examples\\pair_1021.png",
+      "sha256": "b504b5e81f2b8d05d89f031f436918b206929c3fb410de20e3f5059e68331010"
+    },
+    {
+      "pair_index": 1082,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_reliability_ds\\examples\\pair_1082.png",
+      "sha256": "9f574fc04c2c7c53965dd2f2a1f90ebbc6fcdc71a544d4270c7a470b90ed66b2"
+    },
+    {
+      "pair_index": 50,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_reliability_ds\\examples\\pair_50.png",
+      "sha256": "0f2ac4306a75e300eb4b04c1c321e2d09f5a06a01c46dcf62b3b006675912a9e"
+    },
+    {
+      "pair_index": 0,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_reliability_ds\\examples\\pair_0.png",
+      "sha256": "5910703ac112bcc3b185b254aa2b1dc22a452462923e7d3063b9dbdfe484611a"
+    },
+    {
+      "pair_index": 132,
+      "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\spatial_reliability_ds\\examples\\pair_132.png",
+      "sha256": "d43fff4110d543800c0e11d0424a9c8bfe405727af3e9fc376c4e1221fc4abb0"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "csv_rows": 1528,
+  "unique_pair_ids": 1528,
+  "unique_rgb_names": 1528,
+  "unique_thermal_names": 1528,
+  "current_image_hashes_verified": 3056,
+  "input_csv_json_parity_verified": true,
+  "visual_only_masses_rederived": true,
+  "metrics_recomputed_from_csv": true,
+  "all_output_formulas_rechecked": true,
+  "docx_zip_crc_ok": true,
+  "docx_readback": true,
+  "docx_tables": 4,
+  "original_sources_and_old_reports_unchanged": true,
+  "frozen_config_unchanged": true,
+  "config_sha256": "4dce91bbfb850ca95816d895056c3bdfd0a0ea7215ecea2ff3b6faf37f6433c5",
+  "report_path": "C:\\lyk\\fire\\qualityDetection\\reports\\UV乘性门控_DS_1528统计报告.docx",
+  "report_sha256": "10fdd256a88f978497c91cd8e921ce4d05a18edc8aede4815f7767f80b3b1564",
+  "numerical_invariants": {
+    "cases": 400,
+    "lambda_endpoints": true,
+    "uv_endpoints": true,
+    "mass_conservation": true,
+    "no_score_increase": true,
+    "no_resurrection": true,
+    "strict_mF_boundary": true,
+    "inclusive_spatial_boundary": true,
+    "UV_cannot_override_spatial_or_both_missing": true
+  },
+  "verified_utc": "2026-10-14T02:06:00.378086+00:00"
+}

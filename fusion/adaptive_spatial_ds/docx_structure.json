@@ -1,0 +1,72 @@
+{
+  "outline": [
+    {
+      "index": 3,
+      "level": 1,
+      "text": "1 验收口径与数据独立性"
+    },
+    {
+      "index": 5,
+      "level": 1,
+      "text": "2 原始坐标、七点来源与视觉诊断"
+    },
+    {
+      "index": 7,
+      "level": 1,
+      "text": "3 真实新检测与公平基线"
+    },
+    {
+      "index": 9,
+      "level": 1,
+      "text": "4 注册方案及不确定性：没有伪造新标定"
+    },
+    {
+      "index": 12,
+      "level": 1,
+      "text": "5 对称候选与弱监督BPA：真实失败也保留"
+    },
+    {
+      "index": 14,
+      "level": 1,
+      "text": "6 非对称固定诊断：达标数值的具体来源"
+    },
+    {
+      "index": 17,
+      "level": 1,
+      "text": "7 数值覆盖不是可靠火焰几何"
+    },
+    {
+      "index": 19,
+      "level": 1,
+      "text": "8 实测指标"
+    },
+    {
+      "index": 21,
+      "level": 1,
+      "text": "9 分组、漏报与逐行复核"
+    },
+    {
+      "index": 32,
+      "level": 1,
+      "text": "10 尚未完成与禁止外推"
+    },
+    {
+      "index": 34,
+      "level": 1,
+      "text": "11 原像素图像证据"
+    }
+  ],
+  "paragraph_count": 49,
+  "table_count": 2,
+  "tables": [
+    {
+      "rows": 8,
+      "cols": 7
+    },
+    {
+      "rows": 9,
+      "cols": 7
+    }
+  ],
+  "section_count": 1
+}

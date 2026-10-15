@@ -1,0 +1,13 @@
+.F.
+======================================================================
+FAIL: test_final_real_predictions_and_report (__main__.CoreTests.test_final_real_predictions_and_report)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\newdirfusion\dataset_grounded_ds\test_delivery.py", line 22, in test_final_real_predictions_and_report
+    self.assertTrue((out/'safe_metrics.json').is_file(),'new real full inference missing')
+AssertionError: False is not true : new real full inference missing
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.067s
+
+FAILED (failures=1)

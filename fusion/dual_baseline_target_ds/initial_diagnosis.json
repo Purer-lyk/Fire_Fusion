@@ -1,0 +1,410 @@
+{
+  "prior_positive_uncovered": 78,
+  "reasons": {
+    "zero_overlap": 71,
+    "no_RGB": 6,
+    "tiny_overlap": 1
+  },
+  "missing_indices": [
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    490,
+    491,
+    492,
+    493,
+    502,
+    503,
+    504,
+    817
+  ],
+  "coordinate_dimensions": {
+    "rgb": {
+      "[320, 320]": 1528
+    },
+    "thermal": {
+      "[256, 192]": 1528
+    }
+  },
+  "geometry": {
+    "status": "candidate_unvalidated: no independent scene/full-field checks",
+    "direction": "thermal pts2 -> RGB pts1 original pixel coordinates",
+    "source": "C:\\lyk\\paper\\bpa_test\\main\\homo_main.cpp",
+    "source_sha256": "e18340285163844a56f8954221d955d838e0df5c606f2e98ab6c2fec5b02d262",
+    "thermal_points": [
+      [
+        23.0,
+        193.0
+      ],
+      [
+        53.0,
+        186.0
+      ],
+      [
+        80.0,
+        193.0
+      ],
+      [
+        118.0,
+        182.0
+      ],
+      [
+        147.0,
+        191.0
+      ],
+      [
+        118.0,
+        204.0
+      ],
+      [
+        47.0,
+        206.0
+      ]
+    ],
+    "rgb_points": [
+      [
+        97.0,
+        163.0
+      ],
+      [
+        116.0,
+        160.0
+      ],
+      [
+        136.0,
+        168.0
+      ],
+      [
+        164.0,
+        154.0
+      ],
+      [
+        183.0,
+        161.0
+      ],
+      [
+        163.0,
+        175.0
+      ],
+      [
+        113.0,
+        180.0
+      ]
+    ],
+    "affine_matrix_2x3": [
+      [
+        0.7113039166517691,
+        0.0044504657857417015,
+        78.2274089470037
+      ],
+      [
+        -0.045135242080470914,
+        0.963053329624529,
+        -15.942804622066248
+      ]
+    ],
+    "estimator": "cv2.estimateAffine2D FULL affine RANSAC; seed=7; threshold=3px; maxIters=2000; confidence=0.99; refineIters=10",
+    "inlier_mask": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "inlier_count": 6,
+    "fit_errors_px": [
+      6.089897491824994,
+      1.094412164187936,
+      1.6843572549177097,
+      1.0287675426673721,
+      0.7362539311725552,
+      0.20607036899984263,
+      0.5345285982155142
+    ],
+    "fit_rmse_px": 2.479927047762139,
+    "inlier_fit_rmse_px": 0.9969466447290716,
+    "leave_one_out_errors_px": [
+      7.124361539882253,
+      2.7019837768168813,
+      2.092235175806979,
+      2.3079372559928064,
+      9.142143818601445,
+      8.64123063706294,
+      2.6805219929169497
+    ],
+    "leave_one_out_rmse_px": 5.771804926500622,
+    "leave_one_out_max_px": 9.142143818601445,
+    "leave_one_out_matrices": [
+      [
+        [
+          0.6996225342933009,
+          -0.037369139953666385,
+          87.73295762103898
+        ],
+        [
+          -0.057415073131866806,
+          0.9190912644033952,
+          -5.950277352092334
+        ]
+      ],
+      [
+        [
+          0.6996225342933009,
+          -0.037369139953666385,
+          87.73295762103898
+        ],
+        [
+          -0.057415073131866806,
+          0.9190912644033952,
+          -5.950277352092334
+        ]
+      ],
+      [
+        [
+          0.7113258394368236,
+          0.0044876295311950115,
+          78.21622130725726
+        ],
+        [
+          -0.04118086964971905,
+          0.9697568251003977,
+          -17.960800696294207
+        ]
+      ],
+      [
+        [
+          0.7036388281127983,
+          0.024095988491468313,
+          75.0103411293893
+        ],
+        [
+          -0.061717940672028127,
+          0.853240428303079,
+          7.680133167697579
+        ]
+      ],
+      [
+        [
+          0.6780957367123778,
+          0.15785231281215353,
+          50.927093349644345
+        ],
+        [
+          0.06505731813834624,
+          0.5814311521425286,
+          49.24593019187275
+        ]
+      ],
+      [
+        [
+          0.6846131760860447,
+          0.039031339031339096,
+          73.16428587203778
+        ],
+        [
+          0.08717065306212622,
+          1.0484330484330486,
+          -40.59413856313089
+        ]
+      ],
+      [
+        [
+          0.7020278333628275,
+          -0.04131943026458381,
+          88.19426861418509
+        ],
+        [
+          -0.07727910047508135,
+          0.951714515184928,
+          -9.759988293107986
+        ]
+      ]
+    ],
+    "leave_one_out_inlier_masks": [
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "note": "Seven points occupy narrow y band; fitting and LOO do not validate independent scenes, field coverage or parallax. No manual offsets or projective mapping."
+  },
+  "protected": {
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\artifact_sha256.json": "b4cb0ce6a44f7e1d914500cfc261721657d9e97140e1b4ea23ad7511b9685aef",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\cached_smoke_3pairs.json": "c5b301be98ac500ad88a1da64da571e6078143fd275375bb14bede8a20b7a13b",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\candidate_coverage_upper_bounds.json": "4d8ea0e681ca60d5601642d307f26f47ce3d695a8629164f374a00341f7ea756",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\finite_complete_trials.csv": "792a1d254a77e7fd5cb175510d6256131e2e832a50bf5cf61c212aa696160d70",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fold_0_frozen.json": "73295c0b35bf65c07efc9d581479393487f8befda72f0fd6baaf037ed39cabf2",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fold_1_frozen.json": "0b89026c2d9cab8c539fc96e429438ef6dab8ae0ea01438ed0d36440d391bd1d",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fold_2_frozen.json": "cf56fafb68c93d84ebd4c5d0b62492e0d1759356b252a8f6caaafbe354e764ca",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fold_3_frozen.json": "6e173d76d4d59655b7ba92395d0349ab8f5edb20993b77bc9cbe51096c2f1e51",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fold_4_frozen.json": "81b82bd76e0a377ff009d4d75cad4fa023767b5f6ef590417d9edddebe042d00",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fold_5_frozen.json": "bb8032a7478b45217dc6e4dc7e570e6d59e1477ffc3a31a9c5a50344c0beac05",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fold_metrics.json": "5015ca61c6dc2200c3b6f9e17ae770dbc2579035dce25e04fb550b54462d9972",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\frame_predictions.csv": "89a27b9d33bd009573107487b323c99c91d81e95e1a9236dcc311bbec518fef0",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fresh_forward.log": "c1ff095cd3d83cee773827647e1130e99df7251a2bdee2da3973f0e033d2dad9",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fresh_forward_receipt.json": "4643331e51464735b45fc9a7a8cf37d07cd7130cc355472ffcf03a737dfab405",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\fresh_smoke_3pairs.json": "2e558d917b776b08ff69bfadd17a5a5f878c91eb058ef64ff982e15a785f4454",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\full_fit_false_negative_reasons.csv": "32922a1347a21c6852f139555d3d30c58456c8b104db04e7bbac50c22cafa3ac",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\full_fit_frozen.json": "4f19d5446f29f672d19cc561f8cb4d8bdd3b2c065b67e8cfd7d16694253fa893",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\grid_predictions.npz": "3b1c553709e8694a7de87054fef20053b5de548aa5a23074c384b0de6d997c60",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\group_metrics.csv": "4a08c5061cd108612c689539fc236a8ede08073d5be2e44c0b20d256737bdf40",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\matched_evidence.json": "082d28136c99a2bdbffe781e1b72854060eda8c4584cc44331e6f87c8edde6a3",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\metrics.csv": "1141e21df44f4b25d994fcd17d419142eb9a2d472d34c2bb5ddd03cfbbb3de1c",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\metrics.json": "d16a4e6ed296757e1d50ce75b76df32f172cd33fac581e623e15657cc1b4784d",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\optimization_search.log": "e900f8350e0f2a392c6cd3c86ef0c70da6c9d6f4f33500bd6a5361d4db03959b",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\optimized_core.py": "5768fc713203d1aefebbfc8a09e5206a84ff85a5dc0af10a94e65f2b6f536e91",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\pre_search_freeze_receipt.json": "bb29a87be818741d9b6d308ca7b496f1743dfc28fcd6a41b0999259153b86c1b",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\pre_search_protocol.json": "886218d2a75e6baf44dc6372f017f4079c48446ffa95fc98bdc6d993c6b7651e",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\raw_candidate_bounds.json": "71e92ec6b208ad14278426b0e36b3880d9809dd56a78b16f70225b3af325369f",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\report_readback.txt": "4705220a038e9ee21ebbd78d068102d3bc03aae7ed60a1912656e33a008a27d7",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\report_receipt.json": "9a6acad5d095c00db7967134c1d4df987ab78d42999e6f3e0d1fed6b0d74f315",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\rgb_predictions.json": "0b2a8f7edeb9c55fd5c1ac01a7d11eeab68deaca8ebbb5ac6a112c3f53c5d9d4",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\run_optimization.py": "417d264a31aac4154ed3b8743d3653cee825f2c8d5873ab08b04db0b57ddff4c",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\search_execution.json": "b0577d482d8ac1a238cfda4a66000e3d84cb7b095df2dd7701b875f8ccda7929",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\tests_green_all.log": "cedcecf0e7ea5e20a4a24858362d82ce2efacab8cd104171da958299fe215cf7",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\tests_green_bpa.log": "4818946f2a492fccf8b835199d6e48cfae25685484842d6a7047a708be163288",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\tests_green_decision.log": "475c9eaa0d5db75c49025d612b015d59697940827dabceabedb225e10c84872a",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\tests_green_final.log": "11b8ec4388d08a234458b5bec3b5376f39f9c853345dc19ef99b83bf8abde86e",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\tests_red_bpa.log": "2a2551f146d0b00109a8ebf378dbcef2f832cb8db26e9aa2ed2dcf0bee571054",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\tests_red_decision.log": "91e8aa51e53276c24cd71e6415a06087a195b2e28dfcaa0883bc52f022b8b575",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\tests_red_runner.log": "cdd858af58a292a0db1bbfb2bd481133c2d4f7811bfe4d4dbdfaf25c506a2639",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\tests_red_verifier.log": "98abb928582675c5272617e11a1783bcd2d0142a73318618f4b9f744cee8212c",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\test_optimized.py": "6967e1c19e7907b924d153b1d9bd724828cc41456f1752046edcc0743d3a2800",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\thermal_predictions.json": "a21a75f30b3b39b8a84b742e0eb065c8c85959a6a123ac8190b7004c7064a59d",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\verification.json": "1a87fc7379cd9a10911c2a00b99e7e8f99be8473d45b12bd69729c5734852cb0",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\verification.log": "d7e7109ded7ed6c41c2cc3e329f12f217d87ef278a7daec8fbea0501026f499c",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\verification_retry.log": "eb4572405138aa7c7cf6a125974217de3b8c5d45cb86dd16da99879f2c176d4f",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\verification_retry2.log": "d4be0c1c5b2374e55ace96f2aed1da9d5955317b6dc871e9aa073e5e32ce01e0",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\verification_retry3.log": "45072a988c0553a6eee5d35cc42ede5ffa0a6256d0c2127da8fd03510ec18e09",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\verify_optimization.py": "075c55d06845bf7e827fd52432a093983b37d5f9c09a3ffc36a31074cf8a3b6b",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\__pycache__\\optimized_core.cpython-312.pyc": "03eb9d00a4bd578ccbecc51c3da08d7db9641ba1bbce2e786571fd659c9d04db",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\__pycache__\\run_optimization.cpython-312.pyc": "f2c64dd6c2c12c1eaddb91a26c802c193f876aa643c4e173a8c2790d65bd8548",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\corrected_uv_optimized_ds\\__pycache__\\verify_optimization.cpython-312.pyc": "f66594a0d2bba211b5de05473721200dc10a32e30fc463f0a183f4baf507aea0",
+    "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best.pt": "1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32",
+    "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best-2.pt": "c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6",
+    "C:\\lyk\\paper_data\\paper_data_\\paper_data\\paper_sample.txt": "7fa9997f14d65213063651f8448dc56344f797911185a2d6170147f1960bd483",
+    "C:\\lyk\\paper\\bpa_test\\main\\homo_main.cpp": "e18340285163844a56f8954221d955d838e0df5c606f2e98ab6c2fec5b02d262"
+  },
+  "source_sha256": "7fa9997f14d65213063651f8448dc56344f797911185a2d6170147f1960bd483"
+}

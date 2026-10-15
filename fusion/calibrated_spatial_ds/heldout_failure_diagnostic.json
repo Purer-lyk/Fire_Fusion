@@ -1,0 +1,9 @@
+{
+  "heldout_positive": 180,
+  "rgb_candidates_present": 0,
+  "thermal_candidates_present": 180,
+  "dual_present": 0,
+  "roi_attempts": 360,
+  "rgb_roi_real_detections": 0,
+  "diagnostic_only": "No heldout tuning; derives failure cause from frozen .1 candidate pool. Cannot claim bound for fresh .05 forward."
+}

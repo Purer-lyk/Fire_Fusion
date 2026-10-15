@@ -1,0 +1,194 @@
+上传模型多模态实际测试：UV参考标准报告
+真实测试1528对RGB与热成像。用户指定第四列UV：0无火、1有火。本报告依该标准计算全部帧级指标，同时明确UV既是融合输入又是评价标签，存在循环评价/信息泄漏，不是独立场景真值，也不是目标检测AP或IoU定位性能。不能将本结果解释为独立火灾检测准确率、泛化能力或融合必然提升。
+生成UTC：2026-10-13T03:00:02.450440+00:00
+1. 实际模型、输入与推理协议
+来源：C:/Users/Administrator/AppData/Local/hermes/attachments；best.pt严格用于RGB，best-2.pt用于thermal。原始文件只读，复制权重校验SHA256一致，未替换或重训练。训练配置bgr.yaml/thermal.yaml与该映射吻合。当前检查实际为Ultralytics YOLO26n，而不是PPYOLOv2，也不应根据C3k2/C2PSA就称YOLO11。yaml_file=yolo26n.yaml、end2end=True、reg_max=1，DetectionModel/Detect，完整结构、类别名与训练参数见model_metadata.json。
+rgb：C:\lyk\fire\qualityDetection\fusion\supplied_models_uv_reference\weights\best.pt
+SHA256：1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32
+实际类别：{"0": "fire"}；类0 fire/Fire均映射fire，无smoke类。训练imgsz=320，训练epochs=100；本次统一推理imgsz640，不修改模型。
+thermal：C:\lyk\fire\qualityDetection\fusion\supplied_models_uv_reference\weights\best-2.pt
+SHA256：c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6
+实际类别：{"0": "Fire"}；类0 fire/Fire均映射fire，无smoke类。训练imgsz=320，训练epochs=10；本次统一推理imgsz640，不修改模型。
+源paper_sample.txt：C:\lyk\paper_data\paper_data_\paper_data\paper_sample.txt；SHA256 bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade。逐行RGB/thermal文件名与ID对齐，各1528唯一图像，原图SHA256写入预测JSON。第三列Tmax输入热BPA，第四列UV同时作为用户评价标准。温度单位及标定未独立验证。
+Ultralytics 8.4.60，torch 2.13.0+cu132；GPU NVIDIA GeForce RTX 5070；device=0。真实GPU矩阵运算与两模态各3图smoke通过；失败/回退记录=[]。
+使用cv2.imread逐张解码原始BGR像素，并将真实图像数组输入YOLO.predict；Ultralytics对文件名列表会在EXIF转置后生成imageN.jpg，本次逐结果验证orig_img与对应解码数组像素完全一致后绑定原文件路径，不依赖自动生成文件名。全量显式每16张一批，末批8张。predict(conf=0.5,imgsz=640,classes=[0],half=False,rect=False,batch=16,iou=0.7,max_det=300)。实际end2end路径保留score>0.5（严格大于，而非≥），源码摘录已存。端到端头采用自身后处理，不假称标准NMS。帧置信度为保留fire框最大分数，无框为0；所有二分类方法统一conf或mF≥0.5判fire，其他判nofire；因此恰好0.5的原始框会被后处理剔除。无低阈值旧框参与几何，无smoke映射。
+2. UV参考帧级结果（完整1528帧）
+UV标签计数：{"0": 130, "1": 1398}。Accuracy=(TP+TN)/N，Precision=TP/(TP+FP)，Recall=TP/(TP+FN)，F1=2TP/(2TP+FP+FN)；零分母标未定义，不伪造0或1。
+这些是真实输出与UV标准的符合程度；UV参与融合意味着融合方法评价存在循环性。RGB/thermal不直接使用UV标签，但训练样本独立性与用户模型训练/测试重叠未审计，亦不能假称无泄漏。未预设或承诺任何性能改善，未按测试结果调阈值。
+3. 原C++主结果、BPA公式与安全边界
+权威来源C:/lyk/paper/bpa_test/main/main.cpp及src四类BPA/融合源，均只读。main使用窗口10、λ0.7、RGB可靠性0.3、T0=50、UV α0.01/β0.1；只将随机置信度/温度替换为真实模型与文本输入。
+稳定性S=exp(-std(最近10个置信度))。RGB当前(F,N,U)=(c*S*0.3,(1-c)*S,1-F-N)。热PC=1-exp(-10c)，PT=clamp(1-exp(-0.1*(Tmax-50)),0,1)，热(F,N,U)=(PC*PT*S,(1-c)*(1-PT)*S,1-F-N)。各当前BPA与previous按λ*previous+(1-λ)*current平滑后归一化。cold温度先clamp可避免指数溢出，结果与源码温度clamp等价。
+UV初始q=0.001；UV1时q←q+0.01*q*(1-q)，UV0时q←q-0.1*q*(1-q)，限制[0,1]；UV当前(q,0.8*(1-q),0.2*(1-q))。RGB/热previous=(0.5,0.3,0.2)，UV previous=(0.1,0.7,0.05)，保留原不归一化startup，第一次平滑后才归一化。UV0/1不是直接注入(0,1,0)/(1,0,0)，而是按原状态更新。
+二证据：K=aF*bN+aN*bF；F=aF*bF+aF*bU+aU*bF；N=aN*bN+aN*bU+aU*bN；U=aU*bU。经典DS先除1-K再normalize。空间分支Ksp=(1-s)K，Fsp=sF/(1-Ksp)，Nsp=N/(1-Ksp)，Usp=U/(1-Ksp)，再normalize；共同分母最终抵消，非退化输出实为(sF,N,U)/(sF+N+U)，不能声称动态K单独改善最终比例。
+原fuse3先RGB/热再UV，两次s都固定0.1，内部虽计算PCR/经典DS但return abc_sp。主要结果忠实保留固定0.1两次规则；它不是测量的空间一致性。候选几何替换s并两次重复是明确扩展，仍把无几何位置的UV应用同一s，不能当成合理UV空间模型；可选探索变体只RGB/热用空间，UV用经典DS。未启用源码未调用UV gate。
+实际同1528行真实输入运行原C++参考exe，比较每行RGB/热/UV BPA、原固定融合与经典DS共15值；最大绝对误差=2.220e-16 <1e-10，exit0。原源SHA附execution_summary.json，运行后全部不变。总/近总冲突或零支持Python回退vacuous(0,0,1)并degenerate标记，避免原normalize零除；实际发生计数见下表。这是显式安全差异，不能假称所有边界源码行为完全相同。
+4. 时序边界
+Exact file order, reset at initial/nonincreasing timestamp/gap>120s; heuristic acquisition boundaries, not independently verified scenes; adaptation from uninterrupted original loop。文件名小数按%f解析，真实时间尺度未确认；按样本平滑而非物理时长。真实重置记录=[{"pair_index": 0, "source_line": 1, "gap_seconds": null}, {"pair_index": 60, "source_line": 61, "gap_seconds": 1606.0314}, {"pair_index": 127, "source_line": 128, "gap_seconds": 848.9662}, {"pair_index": 130, "source_line": 131, "gap_seconds": 6635162.0462}, {"pair_index": 911, "source_line": 912, "gap_seconds": 505.9893}, {"pair_index": 1348, "source_line": 1349, "gap_seconds": 307.9977}]；sequence数=6。120秒仅继承已有采集间断启发式，非独立验证的场景边界；不据此消除序列/训练泄漏风险。
+5. 候选配准与实际空间一致性（未验证）
+从当前homo_main.cpp未注释七对点重新解析，thermal pts2→RGB pts1；RANSAC3像素、seed7，H=[[1.92042622438008, 0.9507123986929582, -12.066726872440976], [0.12422393753495863, 3.4192415867981505, -272.90093436339134], [0.0014076376148762877, 0.006591007646013004, 1.0]]。没有任何手工像素偏移、矩形挪动或伪造s。
+拟合RMSE=2.770962px；留一RMSE=60.852967px，留一最大=118.851806px。点集中狭窄y带、留一不稳定；仅候选/探索，未验证跨场景、全视场、镜头位姿、深度视差。H来源图与测试场景独立性未确认，不能宣称已完成可靠配准。
+每帧最高分RGB框为锚，所有实际保留score>0.5 thermal框四角经H投影成多边形；polygonIoU选最大thermal框，相同IoU优先分数高。BPA仍用各模态独立最高分，几何最佳thermal可非最高分，rank/框/分数记录geometry_pairing.json。缺一模态框s=0；不重叠s=0；非法投影标记且s=0。不做人工offset，不用投影包围矩形IoU，不做多目标一对一匹配。s=0并不证明无火。
+真实非零s帧数=169；几何状态计数={"missing_detection": 1310, "candidate_geometry": 218}。
+6. 0.95融合弃权协议（不同于统一0.5二分类）
+mF≥0.95 fire，mN≥0.95 nofire，否则uncertain。fire阈值沿原main0.95；对称nofire及弃权为显式评价扩展。覆盖率=(fire+nofire)/1528；仅覆盖子集指标另列metrics.json，不能把弃权当正确，不与全量0.5指标混比。
+7. 原图真实检测样例
+绿色是模型保留框与分数；紫色是候选H投影thermal polygon，仅可视化探索几何，不是标注真值。样例选择包括首尾、有/无UV、模型分歧与最大IoU，不是随机代表性性能抽样。
+pair_index 0
+
+pair_index 2
+
+pair_index 130
+
+pair_index 494
+
+pair_index 1527
+
+8. 交付与解释边界
+新独立目录fusion/supplied_models_uv_reference：两模态完整预测JSON、1528行CSV/JSON、metrics.json、执行/模型元数据、真实3对smoke、H与误差、真实几何配对、C++参考输入输出与误差、带框样例和校验文件。旧fusion数据及报告保持不变。
+本次按用户UV标准给出完整指标，不再因缺独立GT拒绝计算；但其含义仅是UV符合度。需要独立盲评场景标签、用户模型训练数据重叠审计、全视场多场景外部配准验证及真正时序边界，才能评估独立真实火灾检测与融合收益。不能据这份循环评价论文式宣称泛化改善。
+模态
+图像数
+唯一ID
+缺失
+保留fire框
+执行设备
+秒
+rgb
+1528
+1528
+0
+609
+0
+12.946279
+thermal
+1528
+1528
+0
+825
+0
+10.338427
+方法
+TP
+FP
+FN
+TN
+Accuracy
+Precision
+Recall
+F1
+RGB检测基线
+452
+126
+946
+4
+0.298429
+0.782007
+0.323319
+0.457490
+热成像检测基线
+732
+0
+666
+130
+0.564136
+1.000000
+0.523605
+0.687324
+原C++固定0.1两次空间融合（主要）
+0
+0
+1398
+130
+0.085079
+未定义（分母为0）
+0.000000
+0.000000
+经典D-S三证据
+58
+0
+1340
+130
+0.123037
+1.000000
+0.041488
+0.079670
+候选几何s重复空间融合（未验证）
+0
+0
+1398
+130
+0.085079
+未定义（分母为0）
+0.000000
+0.000000
+候选空间RGB/热+UV经典DS（探索变体）
+22
+0
+1376
+130
+0.099476
+1.000000
+0.015737
+0.030986
+thermal点
+RGB点
+拟合误差px
+留一误差px
+[23.0, 193.0]
+[97.0, 163.0]
+7.077386
+9.502276
+[53.0, 186.0]
+[116.0, 160.0]
+0.698775
+5.517197
+[80.0, 193.0]
+[136.0, 168.0]
+1.571888
+2.073913
+[118.0, 182.0]
+[164.0, 154.0]
+0.198538
+6.835540
+[147.0, 191.0]
+[183.0, 161.0]
+0.629710
+107.760086
+[118.0, 204.0]
+[163.0, 175.0]
+0.300507
+118.851806
+[47.0, 206.0]
+[113.0, 180.0]
+0.415758
+3.440811
+方法
+Fire
+NoFire
+弃权
+覆盖率
+退化数
+原C++固定0.1两次空间融合（主要）
+0
+472
+1056
+0.308901
+0
+经典D-S三证据
+0
+266
+1262
+0.174084
+0
+候选几何s重复空间融合（未验证）
+0
+516
+1012
+0.337696
+0
+候选空间RGB/热+UV经典DS（探索变体）
+0
+383
+1145
+0.250654
+0

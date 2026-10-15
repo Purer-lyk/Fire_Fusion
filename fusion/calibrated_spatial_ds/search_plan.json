@@ -1,0 +1,3371 @@
+{
+  "created_utc": "2026-10-14T02:43:35.466744+00:00",
+  "grid": [
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.15,
+      "tT": 0.15,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.25,
+      "tT": 0.25,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.4,
+      "tT": 0.4,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.5,
+      "tT": 0.5,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.2,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.1,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.3,
+      "tT": 0.1,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.01,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.05,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.1,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.2,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 0.5,
+      "decision_threshold": 0.6
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.3
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.4
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.5
+    },
+    {
+      "tR": 0.2,
+      "tT": 0.3,
+      "iou_gate": 0.3,
+      "rmin": 1.0,
+      "decision_threshold": 0.6
+    }
+  ],
+  "trial_count": 480,
+  "selection": "Calibration ONLY: lexicographic minimum FP, then minimum FN, then deterministic grid index. Primary WITHOUT UV. No heldout retuning.",
+  "BPA": "(r*c,0,1-r*c), r=q_A*(rmin+(1-rmin)*IoU), q_A=1 nominal; no calibrated posterior claim. K=0, DS fire-only OR reinforcement. Absence unknown but final missing dual-modality gate ->0. Max over one-to-one matched supported candidates; no cumulative correlated-box fusion.",
+  "cache": "Real .1 full frame and .1 ROI detections reused, original imgsz640; only thresholds >=.1 permitted. Original ROI trigger .25 top3 each modality; no new below-cache threshold or fabricated proposal boxes.",
+  "uv": "Secondary only mF_prime=mF*[lambda+(1-lambda)*gUV], lambda=.5; UV never forces fire, circular UV-reference metrics.",
+  "registration": "Previously fitted affine candidate; NOT independently validated geometry."
+}

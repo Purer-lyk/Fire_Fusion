@@ -1,0 +1,14 @@
+test_literal_uv_suppression (__main__.FormulaTest.test_literal_uv_suppression) ... FAIL
+
+======================================================================
+FAIL: test_literal_uv_suppression (__main__.FormulaTest.test_literal_uv_suppression)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\uv_multiplicative_gate\test_gate.py", line 8, in test_literal_uv_suppression
+    self.assertTrue(path.exists(), 'new multiplicative implementation missing')
+AssertionError: False is not true : new multiplicative implementation missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

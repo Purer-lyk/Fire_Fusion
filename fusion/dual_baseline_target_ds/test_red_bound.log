@@ -1,0 +1,14 @@
+F.....
+======================================================================
+FAIL: test_runner_stages_exist (__main__.Execution.test_runner_stages_exist)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\dual_baseline_target_ds\test_dual.py", line 22, in test_runner_stages_exist
+    for name in ['diagnose','fresh_roi','candidate_bounds','evaluate','report']:self.assertTrue(callable(getattr(m,name,None)))
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.257s
+
+FAILED (failures=1)

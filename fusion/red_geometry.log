@@ -1,0 +1,17 @@
+test_binary_rules_and_conflict (test_core.FusionTests.test_binary_rules_and_conflict) ... ok
+test_explicit_registration_and_nonspatial_uv (test_core.GeometryTests.test_explicit_registration_and_nonspatial_uv) ... FAIL
+test_temporal_source_evidence (test_core.SensorTests.test_temporal_source_evidence) ... ok
+
+======================================================================
+FAIL: test_explicit_registration_and_nonspatial_uv (test_core.GeometryTests.test_explicit_registration_and_nonspatial_uv)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\test_core.py", line 71, in test_explicit_registration_and_nonspatial_uv
+    self.assertTrue(hasattr(c,'project_box'),'Registration geometry missing')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Registration geometry missing
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.014s
+
+FAILED (failures=1)

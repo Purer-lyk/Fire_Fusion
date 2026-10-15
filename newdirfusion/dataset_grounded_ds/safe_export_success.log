@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "fireOrigin": {
+      "train": 1994,
+      "empty_train": 38,
+      "val": 467,
+      "empty_val": 13
+    },
+    "thermal": {
+      "val": 343,
+      "empty_val": 4,
+      "train": 1963,
+      "empty_train": 13
+    }
+  },
+  "excluded_bounds": 187,
+  "overlap": 0
+}
+Corrupt JPEG data: 2 extraneous bytes before marker 0xd9

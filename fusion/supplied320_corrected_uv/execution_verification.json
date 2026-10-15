@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "source_unchanged": true,
+  "all_old_artifacts_unchanged": true,
+  "old_artifacts_verified": 31,
+  "source_images_verified": 3056,
+  "all_geometry_recomputed_and_reproduced": true,
+  "all_main_visual_decisions_unchanged": true,
+  "report_crc_ok": true,
+  "report_tables": 3,
+  "report": "C:\\lyk\\fire\\qualityDetection\\reports\\320输入_修正UV标签_空间DS复验报告.docx",
+  "report_sha256": "3a9b12e5b80b5d5236cb891b957e89fbd135c7e264f5ada262038df3a0b009f2",
+  "completed_utc": "2026-10-14T09:59:47.879460+00:00",
+  "independent_validator_passed": true
+}

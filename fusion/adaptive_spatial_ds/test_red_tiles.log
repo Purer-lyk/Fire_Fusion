@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_fixed_tiles_cover_native_without_resize_or_uv (__main__.TileTest.test_fixed_tiles_cover_native_without_resize_or_uv)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\test_adaptive.py", line 8, in test_fixed_tiles_cover_native_without_resize_or_uv
+    self.assertTrue(Path(spec.origin).exists(),'fixed scene-independent tiled detector is not implemented')
+AssertionError: False is not true : fixed scene-independent tiled detector is not implemented
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

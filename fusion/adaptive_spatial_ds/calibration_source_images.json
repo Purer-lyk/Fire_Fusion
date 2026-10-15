@@ -1,0 +1,42 @@
+[
+  {
+    "path": "C:\\lyk\\paper_data_\\paper_data\\bgr\\2026_08_08_03_58_23_0870_bgr.jpg",
+    "exists": true,
+    "shape": [
+      320,
+      320,
+      3
+    ],
+    "sha256": "76737715a15750e07dcf2b1de29d365fc5f4f5200f71100fb1888073536a4484"
+  },
+  {
+    "path": "C:\\lyk\\paper_data_\\paper_data\\thermal\\2026_08_08_03_58_23_0870_thermal.jpg",
+    "exists": true,
+    "shape": [
+      256,
+      192,
+      3
+    ],
+    "sha256": "c28cd065bc305a088d77f78dfac180237d1f405d7e0ae63551927b9bf5f83725"
+  },
+  {
+    "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_08_08_03_58_23_0870_bgr.jpg",
+    "exists": true,
+    "shape": [
+      320,
+      320,
+      3
+    ],
+    "sha256": "76737715a15750e07dcf2b1de29d365fc5f4f5200f71100fb1888073536a4484"
+  },
+  {
+    "path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_08_08_03_58_23_0870_thermal.jpg",
+    "exists": true,
+    "shape": [
+      256,
+      192,
+      3
+    ],
+    "sha256": "c28cd065bc305a088d77f78dfac180237d1f405d7e0ae63551927b9bf5f83725"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\config_freeze_receipt.json": "a8c579fb8649ad2188d57974daf775162a3a1db0d52c4e1a143e3f51e0eb5f63",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\deliverable_verification.json": "83624969d69312a3f0050280262ea7024f3787ec292a5176ed24ecba5cd44bc3",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\frozen_config.json": "4dce91bbfb850ca95816d895056c3bdfd0a0ea7215ecea2ff3b6faf37f6433c5",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\fusion_results.csv": "34d397c295c038b505f02184c4d2c16d20ab493fb91b905d0f13616669348e41",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\fusion_results.json": "630c9c30f55ef2ceb61b021faf7480cb4f7036b287791cae5249035a18ccbe0a",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\metrics.csv": "69164bd71d23daed3a0c76f2be1aba397247f7777c2198abcd5c430201effcfb",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\metrics.json": "91003d2e8efbf01828d1737d5dcfa313bb3e4aef6df7c71c2297ac9a86208fbf",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\multiplicative_core.py": "4a4a31951073db1fd7a063967a1a66ce6698d6fca2e49c1c28fbff8282a8810d",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\numerical_invariant_tests.json": "cae566c45826cd869de78e0cc1aaea6f8fa5a1f863bc58d32bc2643dbe87dff3",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\protected_before_hashes.json": "0a5ede84032643d9baa90e8f0b41600fdef117391d0008e38f57f86381109cdf",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\provenance.json": "8b06b25007f228a59e2b61a408e053382ae7d39b593b258f54ada3f31506096f",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\report_readback.txt": "ef61307b04bc9f5d9f060a1564633a8963c6584949bcc67d27c1ee7f56bde8ab",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\run_experiment.py": "db762d3c1819dcae2a56d660dbde6770dcdab27441418820b10aef394d507a84",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\sensitivity_metrics.csv": "38545fa1c70555aa526407d49cced2ffc34e7fcf17401d89d9c2bfcf8b449cf6",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\test_gate.py": "60c37da7d81ac751dca2362a8db60318d58645461fbeb399595469ff9d50fbd1",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\uv_multiplicative_gate\\test_red.log": "eb11255711b2f7fa2248a855085b658421a440f1023e4c4cdd0671aa9efe9775"
+}

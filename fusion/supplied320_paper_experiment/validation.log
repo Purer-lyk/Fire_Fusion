@@ -1,0 +1,98 @@
+{
+  "success": true,
+  "independently_recomputed_metrics": {
+    "rgb_baseline": {
+      "N": 1528,
+      "TP": 1195,
+      "FP": 67,
+      "FN": 203,
+      "TN": 63,
+      "accuracy": 0.8232984293193717,
+      "precision": 0.9469096671949286,
+      "recall": 0.8547925608011445,
+      "F1": 0.8984962406015038,
+      "FPR": 0.5153846153846153,
+      "FNR": 0.1452074391988555
+    },
+    "thermal_baseline": {
+      "N": 1528,
+      "TP": 885,
+      "FP": 11,
+      "FN": 513,
+      "TN": 119,
+      "accuracy": 0.6570680628272252,
+      "precision": 0.9877232142857143,
+      "recall": 0.6330472103004292,
+      "F1": 0.7715780296425457,
+      "FPR": 0.08461538461538462,
+      "FNR": 0.3669527896995708
+    },
+    "rgb_operating": {
+      "N": 1528,
+      "TP": 1362,
+      "FP": 70,
+      "FN": 36,
+      "TN": 60,
+      "accuracy": 0.930628272251309,
+      "precision": 0.9511173184357542,
+      "recall": 0.9742489270386266,
+      "F1": 0.9625441696113074,
+      "FPR": 0.5384615384615384,
+      "FNR": 0.02575107296137339
+    },
+    "thermal_operating": {
+      "N": 1528,
+      "TP": 1392,
+      "FP": 130,
+      "FN": 6,
+      "TN": 0,
+      "accuracy": 0.9109947643979057,
+      "precision": 0.9145860709592641,
+      "recall": 0.9957081545064378,
+      "F1": 0.9534246575342465,
+      "FPR": 1.0,
+      "FNR": 0.004291845493562232
+    },
+    "main_fire": {
+      "N": 1528,
+      "TP": 1359,
+      "FP": 0,
+      "FN": 39,
+      "TN": 130,
+      "accuracy": 0.974476439790576,
+      "precision": 1.0,
+      "recall": 0.9721030042918455,
+      "F1": 0.985854189336235,
+      "FPR": 0.0,
+      "FNR": 0.027896995708154508
+    },
+    "optional_uv_fire": {
+      "N": 1528,
+      "TP": 1359,
+      "FP": 0,
+      "FN": 39,
+      "TN": 130,
+      "accuracy": 0.974476439790576,
+      "precision": 1.0,
+      "recall": 0.9721030042918455,
+      "F1": 0.985854189336235,
+      "FPR": 0.0,
+      "FNR": 0.027896995708154508
+    }
+  },
+  "unique_pair_ids_each": 1528,
+  "missing": 0,
+  "unique_image_sha256": 3056,
+  "all_geometry_and_candidate_selection_recomputed": true,
+  "actual_input_320_verified": true,
+  "old_source_hashes_unchanged": true,
+  "prior320_operating_box_difference_pair_ids": {
+    "rgb": [],
+    "thermal": []
+  },
+  "prior320_main_decision_difference_pair_ids": [],
+  "report_crc_ok": true,
+  "report_tables": 2,
+  "report_images": 3,
+  "report_sha256": "23d1180ce2fbc57968f3324381892de42b39385a5fd11b7cbaec3b8cba8ebf4c"
+}

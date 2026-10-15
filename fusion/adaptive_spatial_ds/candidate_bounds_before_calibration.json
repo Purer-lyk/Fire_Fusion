@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-15T02:39:40.815630+00:00",
+  "bounds": {
+    "nominal": {
+      "positive_covered": 1287,
+      "positive_uncovered": 1,
+      "negative_covered": 240,
+      "uncovered_positive_reasons": {
+        "zero_overlap": 1
+      },
+      "target_possible": true
+    },
+    "expected": {
+      "positive_covered": 1287,
+      "positive_uncovered": 1,
+      "negative_covered": 240,
+      "uncovered_positive_reasons": {
+        "zero_overlap": 1
+      },
+      "target_possible": true
+    },
+    "q10": {
+      "positive_covered": 1287,
+      "positive_uncovered": 1,
+      "negative_covered": 240,
+      "uncovered_positive_reasons": {
+        "zero_overlap": 1
+      },
+      "target_possible": true
+    }
+  },
+  "trial_limit": 32,
+  "exhaustive_search": false,
+  "reason": "Fixed bounded diagnostic; no threshold can exceed real paired geometry coverage"
+}

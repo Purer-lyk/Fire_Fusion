@@ -1,0 +1,496 @@
+{
+  "metrics": {
+    "rgb": {
+      "N": 1528,
+      "TP": 452,
+      "FP": 126,
+      "FN": 946,
+      "TN": 4,
+      "accuracy": 0.29842931937172773,
+      "precision": 0.7820069204152249,
+      "recall": 0.32331902718168815,
+      "F1": 0.4574898785425101
+    },
+    "thermal": {
+      "N": 1528,
+      "TP": 732,
+      "FP": 0,
+      "FN": 666,
+      "TN": 130,
+      "accuracy": 0.5641361256544503,
+      "precision": 1.0,
+      "recall": 0.5236051502145923,
+      "F1": 0.6873239436619718
+    },
+    "ordinary_ds": {
+      "N": 1528,
+      "TP": 966,
+      "FP": 126,
+      "FN": 432,
+      "TN": 4,
+      "accuracy": 0.6348167539267016,
+      "precision": 0.8846153846153846,
+      "recall": 0.6909871244635193,
+      "F1": 0.7759036144578313
+    },
+    "spatial_ds": {
+      "N": 1528,
+      "TP": 966,
+      "FP": 126,
+      "FN": 432,
+      "TN": 4,
+      "accuracy": 0.6348167539267016,
+      "precision": 0.8846153846153846,
+      "recall": 0.6909871244635193,
+      "F1": 0.7759036144578313
+    },
+    "ordinary_uv": {
+      "N": 1528,
+      "TP": 1398,
+      "FP": 0,
+      "FN": 0,
+      "TN": 130,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0
+    },
+    "spatial_uv": {
+      "N": 1528,
+      "TP": 1398,
+      "FP": 0,
+      "FN": 0,
+      "TN": 130,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0
+    },
+    "ordinary_legacy_uv": {
+      "N": 1528,
+      "TP": 145,
+      "FP": 0,
+      "FN": 1253,
+      "TN": 130,
+      "accuracy": 0.1799738219895288,
+      "precision": 1.0,
+      "recall": 0.10371959942775394,
+      "F1": 0.1879455605962411
+    },
+    "spatial_legacy_uv": {
+      "N": 1528,
+      "TP": 124,
+      "FP": 0,
+      "FN": 1274,
+      "TN": 130,
+      "accuracy": 0.1662303664921466,
+      "precision": 1.0,
+      "recall": 0.08869814020028613,
+      "F1": 0.16294349540078842
+    },
+    "legacy_thermal_spatial": {
+      "N": 1528,
+      "TP": 966,
+      "FP": 126,
+      "FN": 432,
+      "TN": 4,
+      "accuracy": 0.6348167539267016,
+      "precision": 0.8846153846153846,
+      "recall": 0.6909871244635193,
+      "F1": 0.7759036144578313
+    },
+    "legacy_thermal_uv": {
+      "N": 1528,
+      "TP": 1398,
+      "FP": 0,
+      "FN": 0,
+      "TN": 130,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0
+    },
+    "original_dynamic": {
+      "N": 1528,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1398,
+      "TN": 130,
+      "accuracy": 0.08507853403141362,
+      "precision": null,
+      "recall": 0.0,
+      "F1": 0.0
+    },
+    "original_fixed": {
+      "N": 1528,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1398,
+      "TN": 130,
+      "accuracy": 0.08507853403141362,
+      "precision": null,
+      "recall": 0.0,
+      "F1": 0.0
+    },
+    "uv_alone": {
+      "N": 1528,
+      "TP": 1398,
+      "FP": 0,
+      "FN": 0,
+      "TN": 130,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0
+    }
+  },
+  "coverage": {
+    "ordinary_ds": {
+      "08": {
+        "fire": 1,
+        "nofire": 0,
+        "uncertain": 1527,
+        "coverage": 0.0006544502617801048,
+        "covered_only_metrics": {
+          "N": 1,
+          "TP": 1,
+          "FP": 0,
+          "FN": 0,
+          "TN": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0
+        }
+      },
+      "095": {
+        "fire": 0,
+        "nofire": 0,
+        "uncertain": 1528,
+        "coverage": 0.0,
+        "covered_only_metrics": null
+      },
+      "vacuous_count": 436,
+      "tie_count": 436
+    },
+    "spatial_ds": {
+      "08": {
+        "fire": 0,
+        "nofire": 0,
+        "uncertain": 1528,
+        "coverage": 0.0,
+        "covered_only_metrics": null
+      },
+      "095": {
+        "fire": 0,
+        "nofire": 0,
+        "uncertain": 1528,
+        "coverage": 0.0,
+        "covered_only_metrics": null
+      },
+      "vacuous_count": 436,
+      "tie_count": 436
+    },
+    "ordinary_uv": {
+      "08": {
+        "fire": 1398,
+        "nofire": 129,
+        "uncertain": 1,
+        "coverage": 0.9993455497382199,
+        "covered_only_metrics": {
+          "N": 1527,
+          "TP": 1398,
+          "FP": 0,
+          "FN": 0,
+          "TN": 129,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0
+        }
+      },
+      "095": {
+        "fire": 140,
+        "nofire": 0,
+        "uncertain": 1388,
+        "coverage": 0.09162303664921466,
+        "covered_only_metrics": {
+          "N": 140,
+          "TP": 140,
+          "FP": 0,
+          "FN": 0,
+          "TN": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0
+        }
+      },
+      "vacuous_count": 0,
+      "tie_count": 0
+    },
+    "spatial_uv": {
+      "08": {
+        "fire": 1398,
+        "nofire": 130,
+        "uncertain": 0,
+        "coverage": 1.0,
+        "covered_only_metrics": {
+          "N": 1528,
+          "TP": 1398,
+          "FP": 0,
+          "FN": 0,
+          "TN": 130,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0
+        }
+      },
+      "095": {
+        "fire": 11,
+        "nofire": 0,
+        "uncertain": 1517,
+        "coverage": 0.007198952879581152,
+        "covered_only_metrics": {
+          "N": 11,
+          "TP": 11,
+          "FP": 0,
+          "FN": 0,
+          "TN": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0
+        }
+      },
+      "vacuous_count": 0,
+      "tie_count": 0
+    },
+    "ordinary_legacy_uv": {
+      "08": {
+        "fire": 13,
+        "nofire": 90,
+        "uncertain": 1425,
+        "coverage": 0.06740837696335078,
+        "covered_only_metrics": {
+          "N": 103,
+          "TP": 13,
+          "FP": 0,
+          "FN": 88,
+          "TN": 2,
+          "accuracy": 0.14563106796116504,
+          "precision": 1.0,
+          "recall": 0.12871287128712872,
+          "F1": 0.22807017543859648
+        }
+      },
+      "095": {
+        "fire": 0,
+        "nofire": 0,
+        "uncertain": 1528,
+        "coverage": 0.0,
+        "covered_only_metrics": null
+      },
+      "vacuous_count": 0,
+      "tie_count": 0
+    },
+    "spatial_legacy_uv": {
+      "08": {
+        "fire": 0,
+        "nofire": 60,
+        "uncertain": 1468,
+        "coverage": 0.03926701570680628,
+        "covered_only_metrics": {
+          "N": 60,
+          "TP": 0,
+          "FP": 0,
+          "FN": 58,
+          "TN": 2,
+          "accuracy": 0.03333333333333333,
+          "precision": null,
+          "recall": 0.0,
+          "F1": 0.0
+        }
+      },
+      "095": {
+        "fire": 0,
+        "nofire": 0,
+        "uncertain": 1528,
+        "coverage": 0.0,
+        "covered_only_metrics": null
+      },
+      "vacuous_count": 0,
+      "tie_count": 0
+    },
+    "legacy_thermal_spatial": {
+      "08": {
+        "fire": 0,
+        "nofire": 0,
+        "uncertain": 1528,
+        "coverage": 0.0,
+        "covered_only_metrics": null
+      },
+      "095": {
+        "fire": 0,
+        "nofire": 0,
+        "uncertain": 1528,
+        "coverage": 0.0,
+        "covered_only_metrics": null
+      },
+      "vacuous_count": 436,
+      "tie_count": 436
+    },
+    "legacy_thermal_uv": {
+      "08": {
+        "fire": 1398,
+        "nofire": 130,
+        "uncertain": 0,
+        "coverage": 1.0,
+        "covered_only_metrics": {
+          "N": 1528,
+          "TP": 1398,
+          "FP": 0,
+          "FN": 0,
+          "TN": 130,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0
+        }
+      },
+      "095": {
+        "fire": 65,
+        "nofire": 0,
+        "uncertain": 1463,
+        "coverage": 0.04253926701570681,
+        "covered_only_metrics": {
+          "N": 65,
+          "TP": 65,
+          "FP": 0,
+          "FN": 0,
+          "TN": 0,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0
+        }
+      },
+      "vacuous_count": 0,
+      "tie_count": 0
+    },
+    "original_dynamic": {
+      "08": {
+        "fire": 0,
+        "nofire": 1502,
+        "uncertain": 26,
+        "coverage": 0.9829842931937173,
+        "covered_only_metrics": {
+          "N": 1502,
+          "TP": 0,
+          "FP": 0,
+          "FN": 1372,
+          "TN": 130,
+          "accuracy": 0.08655126498002663,
+          "precision": null,
+          "recall": 0.0,
+          "F1": 0.0
+        }
+      },
+      "095": {
+        "fire": 0,
+        "nofire": 510,
+        "uncertain": 1018,
+        "coverage": 0.3337696335078534,
+        "covered_only_metrics": {
+          "N": 510,
+          "TP": 0,
+          "FP": 0,
+          "FN": 507,
+          "TN": 3,
+          "accuracy": 0.0058823529411764705,
+          "precision": null,
+          "recall": 0.0,
+          "F1": 0.0
+        }
+      },
+      "vacuous_count": 0,
+      "tie_count": 0
+    },
+    "original_fixed": {
+      "08": {
+        "fire": 0,
+        "nofire": 1511,
+        "uncertain": 17,
+        "coverage": 0.9888743455497382,
+        "covered_only_metrics": {
+          "N": 1511,
+          "TP": 0,
+          "FP": 0,
+          "FN": 1381,
+          "TN": 130,
+          "accuracy": 0.08603573792190602,
+          "precision": null,
+          "recall": 0.0,
+          "F1": 0.0
+        }
+      },
+      "095": {
+        "fire": 0,
+        "nofire": 472,
+        "uncertain": 1056,
+        "coverage": 0.3089005235602094,
+        "covered_only_metrics": {
+          "N": 472,
+          "TP": 0,
+          "FP": 0,
+          "FN": 469,
+          "TN": 3,
+          "accuracy": 0.006355932203389831,
+          "precision": null,
+          "recall": 0.0,
+          "F1": 0.0
+        }
+      },
+      "vacuous_count": 0,
+      "tie_count": 0
+    },
+    "uv_alone": {
+      "08": {
+        "fire": 1398,
+        "nofire": 130,
+        "uncertain": 0,
+        "coverage": 1.0,
+        "covered_only_metrics": {
+          "N": 1528,
+          "TP": 1398,
+          "FP": 0,
+          "FN": 0,
+          "TN": 130,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0
+        }
+      },
+      "095": {
+        "fire": 0,
+        "nofire": 0,
+        "uncertain": 1528,
+        "coverage": 0.0,
+        "covered_only_metrics": null
+      },
+      "vacuous_count": 0,
+      "tie_count": 0
+    }
+  },
+  "selected_status": {
+    "unmatched_rgb": 391,
+    "missing_both": 436,
+    "matched": 169,
+    "unmatched_thermal": 532
+  },
+  "both_missing": 436,
+  "report": "C:\\lyk\\fire\\qualityDetection\\reports\\spatial_reliability_DS_1528_最终对比报告.docx",
+  "verified": true
+}

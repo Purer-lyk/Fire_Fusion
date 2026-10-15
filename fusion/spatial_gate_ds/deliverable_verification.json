@@ -1,0 +1,21 @@
+{
+  "csv_rows": 1528,
+  "unique_pair_ids": 1528,
+  "current_image_hashes_verified": 3056,
+  "metrics_recomputed_from_csv": true,
+  "independent_confusion_counter": true,
+  "docx_zip_crc_ok": true,
+  "docx_readback": true,
+  "embedded_images": 4,
+  "old_files_unchanged": true,
+  "protected_files_count": 203,
+  "config_frozen_before_metrics": true,
+  "config_unchanged": true,
+  "gate_no_uv_override_verified": true,
+  "one_to_one_and_real_polygon_iou": true,
+  "any_eligible_positive_equals_max_iou_candidate_on_real_cache": true,
+  "report_path": "C:\\lyk\\fire\\qualityDetection\\reports\\spatial_gate_DS_1528_最终报告.docx",
+  "report_sha256": "8f0714b953f37eb9da55bb25721eb0d49849a202fc90c02fab375fa58afacfd3",
+  "csv_sha256": "56f526b9c3a1e3e032b31104bc173e626d4c0ccaafe4406c851fc85fd60f1ce9",
+  "metrics_sha256": "65f8c3e6a78a4eda6eaef98d7f35f3f6991f344437efc11d9bb5102365a8f6de"
+}

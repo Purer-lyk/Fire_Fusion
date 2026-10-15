@@ -1,0 +1,140 @@
+{
+  "verified_utc": "2026-10-15T02:00:28.495076+00:00",
+  "all_1528_rows_independently_recomputed": true,
+  "polygon_hungarian_BPA_recomputed": true,
+  "source_images_verified": 3056,
+  "protected_files_verified": 55,
+  "roi_forwards": 7333,
+  "maximum_roi_per_frame": 6,
+  "metrics": {
+    "full": {
+      "full": {
+        "N": 1528,
+        "TP": 1202,
+        "FP": 0,
+        "FN": 86,
+        "TN": 240,
+        "FPR": 0.0,
+        "FNR": 0.06677018633540373,
+        "precision": 1.0,
+        "recall": 0.9332298136645962,
+        "F1": 0.9654618473895582,
+        "accuracy": 0.943717277486911
+      },
+      "oof": {
+        "N": 1528,
+        "TP": 1196,
+        "FP": 6,
+        "FN": 92,
+        "TN": 234,
+        "FPR": 0.025,
+        "FNR": 0.07142857142857142,
+        "precision": 0.9950083194675541,
+        "recall": 0.9285714285714286,
+        "F1": 0.9606425702811245,
+        "accuracy": 0.9358638743455497
+      }
+    },
+    "augmented": {
+      "full": {
+        "N": 1528,
+        "TP": 1207,
+        "FP": 0,
+        "FN": 81,
+        "TN": 240,
+        "FPR": 0.0,
+        "FNR": 0.06288819875776397,
+        "precision": 1.0,
+        "recall": 0.937111801242236,
+        "F1": 0.9675350701402805,
+        "accuracy": 0.9469895287958116
+      },
+      "oof": {
+        "N": 1528,
+        "TP": 1205,
+        "FP": 6,
+        "FN": 83,
+        "TN": 234,
+        "FPR": 0.025,
+        "FNR": 0.06444099378881987,
+        "precision": 0.9950454170107349,
+        "recall": 0.9355590062111802,
+        "F1": 0.9643857543017207,
+        "accuracy": 0.9417539267015707
+      }
+    }
+  },
+  "new_coverage": [
+    {
+      "pair_index": 491,
+      "UV_reference": 1,
+      "before_iou": 0.0008422296137650469,
+      "after_iou": 0.0384638451547903
+    },
+    {
+      "pair_index": 503,
+      "UV_reference": 1,
+      "before_iou": 0.0,
+      "after_iou": 0.5551078175219171
+    },
+    {
+      "pair_index": 817,
+      "UV_reference": 1,
+      "before_iou": 0.0,
+      "after_iou": 0.4633543646508331
+    }
+  ],
+  "point_coverage": {
+    "rgb": {
+      "hull_area_px": 1382.0,
+      "image_area_px": 102400,
+      "field_fraction": 0.01349609375,
+      "candidate_centers_inside": 79,
+      "candidate_centers_total": 3193,
+      "original_dimensions": [
+        320,
+        320
+      ]
+    },
+    "thermal": {
+      "hull_area_px": 2017.0,
+      "image_area_px": 49152,
+      "field_fraction": 0.041035970052083336,
+      "candidate_centers_inside": 63,
+      "candidate_centers_total": 11941,
+      "original_dimensions": [
+        256,
+        192
+      ]
+    }
+  },
+  "zero_of_240_two_sided_95_upper": 0.015252810401278712,
+  "targets": {
+    "full": {
+      "full": {
+        "pass_stricter": false,
+        "FP": 0,
+        "FN": 86
+      },
+      "oof": {
+        "pass_stricter": false,
+        "FP": 6,
+        "FN": 92
+      }
+    },
+    "augmented": {
+      "full": {
+        "pass_stricter": false,
+        "FP": 0,
+        "FN": 81
+      },
+      "oof": {
+        "pass_stricter": false,
+        "FP": 6,
+        "FN": 83
+      }
+    }
+  },
+  "report_crc_verified": true,
+  "primary_goal_pass": false
+}

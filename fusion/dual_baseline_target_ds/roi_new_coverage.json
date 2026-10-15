@@ -1,0 +1,20 @@
+[
+  {
+    "pair_index": 491,
+    "UV_reference": 1,
+    "before_iou": 0.0008422296137650469,
+    "after_iou": 0.0384638451547903
+  },
+  {
+    "pair_index": 503,
+    "UV_reference": 1,
+    "before_iou": 0.0,
+    "after_iou": 0.5551078175219171
+  },
+  {
+    "pair_index": 817,
+    "UV_reference": 1,
+    "before_iou": 0.0,
+    "after_iou": 0.4633543646508331
+  }
+]

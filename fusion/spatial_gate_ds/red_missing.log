@@ -1,0 +1,14 @@
+test_missing_cannot_fire_even_uv_dogmatic (__main__.GateTests.test_missing_cannot_fire_even_uv_dogmatic) ... FAIL
+
+======================================================================
+FAIL: test_missing_cannot_fire_even_uv_dogmatic (__main__.GateTests.test_missing_cannot_fire_even_uv_dogmatic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\spatial_gate_ds\test_gate.py", line 16, in test_missing_cannot_fire_even_uv_dogmatic
+    self.assertEqual(gate.decide(0,False,[1,0,0])['label'],0)
+AssertionError: 1 != 0
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

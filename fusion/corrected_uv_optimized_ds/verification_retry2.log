@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\verify_optimization.py", line 81, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\verify_optimization.py", line 30, in main
+    assert target.suffix!='.docx','Previous report modified'
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Previous report modified

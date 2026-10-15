@@ -1,0 +1,18 @@
+{
+  "policy": "explicit user consensus: dual modality inconsistency = binary NoFire",
+  "nominal_tau_l": 0.1,
+  "nominal_tau_h": 0.3,
+  "threshold_source": "transparent configurable engineering defaults; user gave no numeric threshold; no UV test tuning",
+  "transition": "g=clip((polygon_iou-tau_l)/(tau_h-tau_l),0,1); transition never binary fire",
+  "sensitivity": [{"tau_l":0.03333333333333333,"tau_h":0.1},{"tau_l":0.06666666666666667,"tau_h":0.2},{"tau_l":0.1,"tau_h":0.3},{"tau_l":0.16666666666666666,"tau_h":0.5}],
+  "sensitivity_rule": "tau_l=tau_h/3, frozen before all metrics, diagnostic only; nominal remains 0.3",
+  "base_ignorance": 0.2,
+  "uv_instant_reliability": 0.9,
+  "matching_min_positive_iou": 1e-12,
+  "decision": "matched and polygon_iou>=tau_h and BetP(F)>0.5; missing/no overlap/below or equal tau_l = NoFire; tau_l<s<tau_h = Transition binary NoFire",
+  "candidate_selection": "Hungarian maximum total polygon IoU, then max IoU candidate, tie visual BetP, min confidence, deterministic candidate index; never UV-conditioned",
+  "multi_box_aggregation": "single maximum-IoU candidate, never correlated mass summation",
+  "missing_mass": [0,0,1],
+  "temperature_policy": "Tmax retained; physical unit/calibration unknown, no new temperature threshold",
+  "model_predictions": "reuse genuine cached supplied YOLO26n class fire score>0.5; no reinference or retraining"
+}

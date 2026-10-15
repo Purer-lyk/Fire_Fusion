@@ -1,0 +1,29 @@
+[
+  {
+    "pair_index": 130,
+    "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_paper_experiment\\examples\\pair_130.png",
+    "selected_rgb_index": 0,
+    "selected_thermal_index": 0,
+    "selected_iou": 0.3219363940251149,
+    "mF": 0.9363811791004224,
+    "reference": 1
+  },
+  {
+    "pair_index": 488,
+    "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_paper_experiment\\examples\\pair_488.png",
+    "selected_rgb_index": -1,
+    "selected_thermal_index": -1,
+    "selected_iou": 0.0,
+    "mF": 0.0,
+    "reference": 1
+  },
+  {
+    "pair_index": 0,
+    "path": "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_paper_experiment\\examples\\pair_0.png",
+    "selected_rgb_index": -1,
+    "selected_thermal_index": -1,
+    "selected_iou": 0.0,
+    "mF": 0.0,
+    "reference": 0
+  }
+]

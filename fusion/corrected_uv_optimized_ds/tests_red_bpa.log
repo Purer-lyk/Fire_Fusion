@@ -1,0 +1,28 @@
+F
+======================================================================
+FAIL: test_discount_mass (__main__.FusionTests.test_discount_mass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\test_optimized.py", line 4, in test_discount_mass
+    try: c=importlib.import_module('optimized_core')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lyk\defaultpy\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'optimized_core'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\test_optimized.py", line 5, in test_discount_mass
+    except ModuleNotFoundError: self.fail('optimized_core BPA reliability implementation missing')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: optimized_core BPA reliability implementation missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

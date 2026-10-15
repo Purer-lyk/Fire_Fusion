@@ -1,0 +1,56 @@
+{
+  "utc_start": "2026-10-15T02:40:08.441854+00:00",
+  "utc_end": "2026-10-15T02:40:10.304914+00:00",
+  "seconds": 1.8628103006631136,
+  "actual_detector_views": 36,
+  "original_images": 6,
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "torch": "2.13.0+cu132",
+  "input_shapes": [
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      15,
+      3,
+      320,
+      320
+    ],
+    [
+      3,
+      3,
+      640,
+      640
+    ],
+    [
+      1,
+      3,
+      320,
+      320
+    ],
+    [
+      15,
+      3,
+      320,
+      320
+    ],
+    [
+      3,
+      3,
+      640,
+      640
+    ]
+  ],
+  "all_image_hashes_verified": true,
+  "weights": {
+    "rgb": "1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32",
+    "thermal": "c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6"
+  },
+  "source_sha256": "7fa9997f14d65213063651f8448dc56344f797911185a2d6170147f1960bd483",
+  "floor": 0.005,
+  "synthetic_data": false,
+  "views_sha256": "e968873dfb1d676cfb6da45ae60cdb81c3ea96ae79b9dd271ac228abb5e4c2fd"
+}

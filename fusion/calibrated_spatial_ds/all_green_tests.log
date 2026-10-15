@@ -1,0 +1,11 @@
+test_csv_metrics_and_frozen_receipt (test_artifacts.ArtifactTest.test_csv_metrics_and_frozen_receipt) ... ok
+test_docx_readback (test_artifacts.ArtifactTest.test_docx_readback) ... ok
+test_fire_only_mass_and_missing_gate (test_calibrated.FusionTest.test_fire_only_mass_and_missing_gate) ... ok
+test_hungarian_recomputed_after_filtering (test_calibrated.FusionTest.test_hungarian_recomputed_after_filtering) ... ok
+test_target_uses_subset_baseline (test_calibrated.FusionTest.test_target_uses_subset_baseline) ... ok
+test_uv_never_forces_fire (test_calibrated.FusionTest.test_uv_never_forces_fire) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.035s
+
+OK

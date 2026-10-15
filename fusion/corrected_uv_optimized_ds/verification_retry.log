@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\verify_optimization.py", line 78, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\verify_optimization.py", line 27, in main
+    assert sha(target)==h,('Old manifest mismatch',str(target))
+           ^^^^^^^^^^^^^^
+AssertionError: ('Old manifest mismatch', 'C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_paper_experiment\\validation.log')

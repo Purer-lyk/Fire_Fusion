@@ -1,0 +1,30 @@
+.FEF
+======================================================================
+ERROR: test_one_to_one_matches (__main__.FusionTests.test_one_to_one_matches)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\test_optimized.py", line 25, in test_one_to_one_matches
+    out=c.frame(rb,tb,np.array([[.9,.2],[.3,.8]]),cfg)
+        ^^^^^^^
+AttributeError: module 'optimized_core' has no attribute 'frame'
+
+======================================================================
+FAIL: test_no_uv_override_missing_detection_and_threshold (__main__.FusionTests.test_no_uv_override_missing_detection_and_threshold)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\test_optimized.py", line 11, in test_no_uv_override_missing_detection_and_threshold
+    self.assertTrue(hasattr(c,'frame'),'frame decision implementation missing')
+AssertionError: False is not true : frame decision implementation missing
+
+======================================================================
+FAIL: test_selection_only_training_indices (__main__.FusionTests.test_selection_only_training_indices)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\test_optimized.py", line 31, in test_selection_only_training_indices
+    self.assertTrue(hasattr(c,'select'),'selection implementation missing')
+AssertionError: False is not true : selection implementation missing
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.056s
+
+FAILED (failures=2, errors=1)

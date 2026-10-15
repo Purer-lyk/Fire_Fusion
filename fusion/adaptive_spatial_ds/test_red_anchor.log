@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_anchor_retains_real_full320_rgb_and_requires_tiled_thermal_overlap (test_adaptive.AnchorTest.test_anchor_retains_real_full320_rgb_and_requires_tiled_thermal_overlap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\adaptive_spatial_ds\test_adaptive.py", line 65, in test_anchor_retains_real_full320_rgb_and_requires_tiled_thermal_overlap
+    self.assertTrue(hasattr(c,'anchor_fuse'),'asymmetric native RGB and multiview thermal fusion missing')
+AssertionError: False is not true : asymmetric native RGB and multiview thermal fusion missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.014s
+
+FAILED (failures=1)

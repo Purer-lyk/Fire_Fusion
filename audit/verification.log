@@ -1,0 +1,36 @@
+{
+  "rgb_train": {
+    "images": 2079,
+    "boxes": 3260,
+    "negatives": 42
+  },
+  "rgb_val": {
+    "images": 520,
+    "boxes": 794,
+    "negatives": 9
+  },
+  "rgb_test_existing_gt": {
+    "images": 0,
+    "boxes": 0,
+    "negatives": 0
+  },
+  "thermal_train": {
+    "images": 1848,
+    "boxes": 2341,
+    "negatives": 11
+  },
+  "thermal_val": {
+    "images": 462,
+    "boxes": 498,
+    "negatives": 6
+  },
+  "thermal_test_existing_gt": {
+    "images": 89,
+    "boxes": 162,
+    "negatives": 0
+  },
+  "all_input_image_hashes_reverified": 8104,
+  "cross_modality_source_duplicate_groups": 0,
+  "reserved_overlap_retained": 0,
+  "all_assertions_passed": true
+}

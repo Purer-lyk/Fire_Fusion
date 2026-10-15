@@ -1,0 +1,13 @@
+E
+======================================================================
+ERROR: test_real_smoke_three_unique_bindings (__main__.Runner.test_real_smoke_three_unique_bindings)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_smoke.py", line 5, in test_real_smoke_three_unique_bindings
+    import run_experiment
+ModuleNotFoundError: No module named 'run_experiment'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

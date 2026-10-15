@@ -1,0 +1,23 @@
+test_degenerate (__main__.Regression.test_degenerate) ... ok
+test_main_uv_independence (__main__.Regression.test_main_uv_independence) ... ok
+test_malformed (__main__.Regression.test_malformed) ... ok
+test_metrics_known (__main__.Regression.test_metrics_known) ... ok
+test_missing_labels (__main__.Regression.test_missing_labels) ... ok
+test_reorder_identity (__main__.Regression.test_reorder_identity) ... ok
+test_uv_gate (__main__.Regression.test_uv_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
+{
+  "success": true,
+  "regression_tests": 7,
+  "independently_recomputed_rows": 1528,
+  "geometry_and_selected_indices": true,
+  "all_six_metrics_recomputed": true,
+  "diff_rows": 250,
+  "report_crc_ok": true,
+  "report_tables": 3,
+  "report_sha256": "560a0abc8474034dea1c5e5ef5c8a312d36263ed59c89511e007f468dde43a28"
+}

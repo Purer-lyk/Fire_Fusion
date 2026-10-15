@@ -1,0 +1,15 @@
+test_missing_cannot_fire_even_uv_dogmatic (__main__.GateTests.test_missing_cannot_fire_even_uv_dogmatic) ... ok
+test_spatial_transition_never_binary_fire (__main__.GateTests.test_spatial_transition_never_binary_fire) ... FAIL
+
+======================================================================
+FAIL: test_spatial_transition_never_binary_fire (__main__.GateTests.test_spatial_transition_never_binary_fire)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\spatial_gate_ds\test_gate.py", line 21, in test_spatial_transition_never_binary_fire
+    self.assertEqual(result['label'],0)
+AssertionError: 1 != 0
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=1)

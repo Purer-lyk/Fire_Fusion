@@ -1,0 +1,347 @@
+{
+  "reference": "UV-reference agreement; UV input branches circular, not independent truth",
+  "label_counts": {
+    "0": 130,
+    "1": 1398
+  },
+  "methods": {
+    "rgb": {
+      "N": 1528,
+      "TP": 452,
+      "FP": 126,
+      "FN": 946,
+      "TN": 4,
+      "accuracy": 0.29842931937172773,
+      "precision": 0.7820069204152249,
+      "recall": 0.32331902718168815,
+      "F1": 0.4574898785425101,
+      "specificity": 0.03076923076923077,
+      "balanced_accuracy": 0.17704412897545946,
+      "false_positive_rate": 0.9692307692307692,
+      "false_negative_rate": 0.6766809728183119,
+      "predicted_fire_rate": 0.3782722513089005
+    },
+    "thermal": {
+      "N": 1528,
+      "TP": 732,
+      "FP": 0,
+      "FN": 666,
+      "TN": 130,
+      "accuracy": 0.5641361256544503,
+      "precision": 1.0,
+      "recall": 0.5236051502145923,
+      "F1": 0.6873239436619718,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.7618025751072961,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.47639484978540775,
+      "predicted_fire_rate": 0.4790575916230366
+    },
+    "prior_ordinary_ds": {
+      "N": 1528,
+      "TP": 966,
+      "FP": 126,
+      "FN": 432,
+      "TN": 4,
+      "accuracy": 0.6348167539267016,
+      "precision": 0.8846153846153846,
+      "recall": 0.6909871244635193,
+      "F1": 0.7759036144578313,
+      "specificity": 0.03076923076923077,
+      "balanced_accuracy": 0.36087817761637503,
+      "false_positive_rate": 0.9692307692307692,
+      "false_negative_rate": 0.3090128755364807,
+      "predicted_fire_rate": 0.7146596858638743
+    },
+    "ordinary_ds": {
+      "N": 1528,
+      "TP": 966,
+      "FP": 126,
+      "FN": 432,
+      "TN": 4,
+      "accuracy": 0.6348167539267016,
+      "precision": 0.8846153846153846,
+      "recall": 0.6909871244635193,
+      "F1": 0.7759036144578313,
+      "specificity": 0.03076923076923077,
+      "balanced_accuracy": 0.36087817761637503,
+      "false_positive_rate": 0.9692307692307692,
+      "false_negative_rate": 0.3090128755364807,
+      "predicted_fire_rate": 0.7146596858638743
+    },
+    "ordinary_uv": {
+      "N": 1528,
+      "TP": 1398,
+      "FP": 0,
+      "FN": 0,
+      "TN": 130,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "predicted_fire_rate": 0.9149214659685864
+    },
+    "raw_spatial_ds": {
+      "N": 1528,
+      "TP": 169,
+      "FP": 0,
+      "FN": 1229,
+      "TN": 130,
+      "accuracy": 0.1956806282722513,
+      "precision": 1.0,
+      "recall": 0.12088698140200287,
+      "F1": 0.21569878749202298,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5604434907010014,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.8791130185979972,
+      "predicted_fire_rate": 0.1106020942408377
+    },
+    "raw_spatial_uv": {
+      "N": 1528,
+      "TP": 1398,
+      "FP": 0,
+      "FN": 0,
+      "TN": 130,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "predicted_fire_rate": 0.9149214659685864
+    },
+    "gate_visual": {
+      "N": 1528,
+      "TP": 168,
+      "FP": 0,
+      "FN": 1230,
+      "TN": 130,
+      "accuracy": 0.1950261780104712,
+      "precision": 1.0,
+      "recall": 0.12017167381974249,
+      "F1": 0.21455938697318008,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5600858369098712,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.8798283261802575,
+      "predicted_fire_rate": 0.1099476439790576
+    },
+    "gate_visual_uv": {
+      "N": 1528,
+      "TP": 168,
+      "FP": 0,
+      "FN": 1230,
+      "TN": 130,
+      "accuracy": 0.1950261780104712,
+      "precision": 1.0,
+      "recall": 0.12017167381974249,
+      "F1": 0.21455938697318008,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.5600858369098712,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.8798283261802575,
+      "predicted_fire_rate": 0.1099476439790576
+    },
+    "uv_alone": {
+      "N": 1528,
+      "TP": 1398,
+      "FP": 0,
+      "FN": 0,
+      "TN": 130,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "F1": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "predicted_fire_rate": 0.9149214659685864
+    }
+  },
+  "thresholds": {
+    "tau_l": 0.1,
+    "tau_h": 0.3,
+    "betp_threshold": 0.5
+  },
+  "config_sha256": "00c08632cb2f75c89380877ab206e6d6c67fcd7bb9a66309733bdc06935194d7",
+  "sensitivity": [
+    {
+      "tau_l": 0.03333333333333333,
+      "tau_h": 0.1,
+      "methods": {
+        "gate_visual": {
+          "N": 1528,
+          "TP": 169,
+          "FP": 0,
+          "FN": 1229,
+          "TN": 130,
+          "accuracy": 0.1956806282722513,
+          "precision": 1.0,
+          "recall": 0.12088698140200287,
+          "F1": 0.21569878749202298,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5604434907010014,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.8791130185979972,
+          "predicted_fire_rate": 0.1106020942408377
+        },
+        "gate_visual_uv": {
+          "N": 1528,
+          "TP": 169,
+          "FP": 0,
+          "FN": 1229,
+          "TN": 130,
+          "accuracy": 0.1956806282722513,
+          "precision": 1.0,
+          "recall": 0.12088698140200287,
+          "F1": 0.21569878749202298,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5604434907010014,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.8791130185979972,
+          "predicted_fire_rate": 0.1106020942408377
+        }
+      },
+      "state_counts": {
+        "NoFire": 1359,
+        "FireCandidate": 169
+      }
+    },
+    {
+      "tau_l": 0.06666666666666667,
+      "tau_h": 0.2,
+      "methods": {
+        "gate_visual": {
+          "N": 1528,
+          "TP": 169,
+          "FP": 0,
+          "FN": 1229,
+          "TN": 130,
+          "accuracy": 0.1956806282722513,
+          "precision": 1.0,
+          "recall": 0.12088698140200287,
+          "F1": 0.21569878749202298,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5604434907010014,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.8791130185979972,
+          "predicted_fire_rate": 0.1106020942408377
+        },
+        "gate_visual_uv": {
+          "N": 1528,
+          "TP": 169,
+          "FP": 0,
+          "FN": 1229,
+          "TN": 130,
+          "accuracy": 0.1956806282722513,
+          "precision": 1.0,
+          "recall": 0.12088698140200287,
+          "F1": 0.21569878749202298,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5604434907010014,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.8791130185979972,
+          "predicted_fire_rate": 0.1106020942408377
+        }
+      },
+      "state_counts": {
+        "NoFire": 1359,
+        "FireCandidate": 169
+      }
+    },
+    {
+      "tau_l": 0.1,
+      "tau_h": 0.3,
+      "methods": {
+        "gate_visual": {
+          "N": 1528,
+          "TP": 168,
+          "FP": 0,
+          "FN": 1230,
+          "TN": 130,
+          "accuracy": 0.1950261780104712,
+          "precision": 1.0,
+          "recall": 0.12017167381974249,
+          "F1": 0.21455938697318008,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5600858369098712,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.8798283261802575,
+          "predicted_fire_rate": 0.1099476439790576
+        },
+        "gate_visual_uv": {
+          "N": 1528,
+          "TP": 168,
+          "FP": 0,
+          "FN": 1230,
+          "TN": 130,
+          "accuracy": 0.1950261780104712,
+          "precision": 1.0,
+          "recall": 0.12017167381974249,
+          "F1": 0.21455938697318008,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5600858369098712,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.8798283261802575,
+          "predicted_fire_rate": 0.1099476439790576
+        }
+      },
+      "state_counts": {
+        "NoFire": 1359,
+        "FireCandidate": 168,
+        "Transition": 1
+      }
+    },
+    {
+      "tau_l": 0.16666666666666666,
+      "tau_h": 0.5,
+      "methods": {
+        "gate_visual": {
+          "N": 1528,
+          "TP": 32,
+          "FP": 0,
+          "FN": 1366,
+          "TN": 130,
+          "accuracy": 0.10602094240837696,
+          "precision": 1.0,
+          "recall": 0.022889842632331903,
+          "F1": 0.044755244755244755,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5114449213161659,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.977110157367668,
+          "predicted_fire_rate": 0.020942408376963352
+        },
+        "gate_visual_uv": {
+          "N": 1528,
+          "TP": 32,
+          "FP": 0,
+          "FN": 1366,
+          "TN": 130,
+          "accuracy": 0.10602094240837696,
+          "precision": 1.0,
+          "recall": 0.022889842632331903,
+          "F1": 0.044755244755244755,
+          "specificity": 1.0,
+          "balanced_accuracy": 0.5114449213161659,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.977110157367668,
+          "predicted_fire_rate": 0.020942408376963352
+        }
+      },
+      "state_counts": {
+        "NoFire": 1359,
+        "Transition": 137,
+        "FireCandidate": 32
+      }
+    }
+  ]
+}

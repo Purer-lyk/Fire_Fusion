@@ -1,0 +1,449 @@
+[
+  {
+    "pair_index": 0,
+    "source_line": 1,
+    "rgb_name": "2026_05_23_07_47_22_0604_bgr.jpg",
+    "thermal_name": "2026_05_23_07_47_22_0604_thermal.jpg",
+    "rgb_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_22_0604_bgr.jpg",
+    "thermal_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_05_23_07_47_22_0604_thermal.jpg",
+    "temperature_raw": "394.038",
+    "uv_reference": 0,
+    "rgb_detections": [
+      {
+        "bbox": [
+          135.2167205810547,
+          187.32749938964844,
+          142.39410400390625,
+          193.47491455078125
+        ],
+        "score": 0.6424232721328735,
+        "class_id": 0,
+        "provenance": "full_frame"
+      },
+      {
+        "bbox": [
+          146.98638916015625,
+          177.8495635986328,
+          155.736328125,
+          185.5507049560547
+        ],
+        "score": 0.3540028929710388,
+        "class_id": 0,
+        "provenance": "full_frame"
+      }
+    ],
+    "thermal_detections": [
+      {
+        "bbox": [
+          79.1727294921875,
+          121.03749084472656,
+          89.4588623046875,
+          126.73384094238281
+        ],
+        "score": 0.4592787027359009,
+        "class_id": 0,
+        "provenance": "full_frame"
+      },
+      {
+        "bbox": [
+          62.598121643066406,
+          119.6876449584961,
+          70.5657958984375,
+          125.96516418457031
+        ],
+        "score": 0.28154388070106506,
+        "class_id": 0,
+        "provenance": "full_frame"
+      }
+    ],
+    "roi_attempts": [
+      {
+        "trigger_modality": "rgb",
+        "trigger_index": 0,
+        "trigger_bbox": [
+          135.2167205810547,
+          187.32749938964844,
+          142.39410400390625,
+          193.47491455078125
+        ],
+        "trigger_score": 0.6424232721328735,
+        "review_modality": "thermal",
+        "crop_xyxy_original": [
+          66,
+          203,
+          102,
+          234
+        ],
+        "detections": [],
+        "status": "inferred"
+      },
+      {
+        "trigger_modality": "rgb",
+        "trigger_index": 1,
+        "trigger_bbox": [
+          146.98638916015625,
+          177.8495635986328,
+          155.736328125,
+          185.5507049560547
+        ],
+        "trigger_score": 0.3540028929710388,
+        "review_modality": "thermal",
+        "crop_xyxy_original": [
+          82,
+          193,
+          121,
+          227
+        ],
+        "detections": [],
+        "status": "inferred"
+      },
+      {
+        "trigger_modality": "thermal",
+        "trigger_index": 0,
+        "trigger_bbox": [
+          79.1727294921875,
+          121.03749084472656,
+          89.4588623046875,
+          126.73384094238281
+        ],
+        "trigger_score": 0.4592787027359009,
+        "review_modality": "rgb",
+        "crop_xyxy_original": [
+          123,
+          85,
+          155,
+          115
+        ],
+        "detections": [],
+        "status": "inferred"
+      },
+      {
+        "trigger_modality": "thermal",
+        "trigger_index": 1,
+        "trigger_bbox": [
+          62.598121643066406,
+          119.6876449584961,
+          70.5657958984375,
+          125.96516418457031
+        ],
+        "trigger_score": 0.28154388070106506,
+        "review_modality": "rgb",
+        "crop_xyxy_original": [
+          111,
+          84,
+          141,
+          115
+        ],
+        "detections": [],
+        "status": "inferred"
+      }
+    ],
+    "matched_pairs": [],
+    "pair_evidence": [],
+    "best": null,
+    "mf": 0.0,
+    "uv_gated_mf": 0.0,
+    "visual_fire": false,
+    "uv_fire": false,
+    "pre_roi_visual_fire": false,
+    "reason": "iou_failed"
+  },
+  {
+    "pair_index": 1,
+    "source_line": 2,
+    "rgb_name": "2026_05_23_07_47_22_0862_bgr.jpg",
+    "thermal_name": "2026_05_23_07_47_22_0862_thermal.jpg",
+    "rgb_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_22_0862_bgr.jpg",
+    "thermal_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_05_23_07_47_22_0862_thermal.jpg",
+    "temperature_raw": "393.85",
+    "uv_reference": 0,
+    "rgb_detections": [
+      {
+        "bbox": [
+          135.35279846191406,
+          187.4254150390625,
+          142.56524658203125,
+          193.53524780273438
+        ],
+        "score": 0.6202555894851685,
+        "class_id": 0,
+        "provenance": "full_frame"
+      },
+      {
+        "bbox": [
+          147.7937469482422,
+          178.1414794921875,
+          155.61917114257812,
+          185.34454345703125
+        ],
+        "score": 0.30403825640678406,
+        "class_id": 0,
+        "provenance": "full_frame"
+      }
+    ],
+    "thermal_detections": [
+      {
+        "bbox": [
+          79.10906982421875,
+          121.0350112915039,
+          89.51506805419922,
+          126.7660140991211
+        ],
+        "score": 0.4418947696685791,
+        "class_id": 0,
+        "provenance": "full_frame"
+      },
+      {
+        "bbox": [
+          62.5179443359375,
+          119.65553283691406,
+          70.63823699951172,
+          126.0124282836914
+        ],
+        "score": 0.2991567850112915,
+        "class_id": 0,
+        "provenance": "full_frame"
+      }
+    ],
+    "roi_attempts": [
+      {
+        "trigger_modality": "rgb",
+        "trigger_index": 0,
+        "trigger_bbox": [
+          135.35279846191406,
+          187.4254150390625,
+          142.56524658203125,
+          193.53524780273438
+        ],
+        "trigger_score": 0.6202555894851685,
+        "review_modality": "thermal",
+        "crop_xyxy_original": [
+          66,
+          203,
+          102,
+          234
+        ],
+        "detections": [],
+        "status": "inferred"
+      },
+      {
+        "trigger_modality": "rgb",
+        "trigger_index": 1,
+        "trigger_bbox": [
+          147.7937469482422,
+          178.1414794921875,
+          155.61917114257812,
+          185.34454345703125
+        ],
+        "trigger_score": 0.30403825640678406,
+        "review_modality": "thermal",
+        "crop_xyxy_original": [
+          83,
+          194,
+          121,
+          227
+        ],
+        "detections": [],
+        "status": "inferred"
+      },
+      {
+        "trigger_modality": "thermal",
+        "trigger_index": 0,
+        "trigger_bbox": [
+          79.10906982421875,
+          121.0350112915039,
+          89.51506805419922,
+          126.7660140991211
+        ],
+        "trigger_score": 0.4418947696685791,
+        "review_modality": "rgb",
+        "crop_xyxy_original": [
+          123,
+          85,
+          155,
+          115
+        ],
+        "detections": [],
+        "status": "inferred"
+      },
+      {
+        "trigger_modality": "thermal",
+        "trigger_index": 1,
+        "trigger_bbox": [
+          62.5179443359375,
+          119.65553283691406,
+          70.63823699951172,
+          126.0124282836914
+        ],
+        "trigger_score": 0.2991567850112915,
+        "review_modality": "rgb",
+        "crop_xyxy_original": [
+          111,
+          84,
+          141,
+          115
+        ],
+        "detections": [],
+        "status": "inferred"
+      }
+    ],
+    "matched_pairs": [],
+    "pair_evidence": [],
+    "best": null,
+    "mf": 0.0,
+    "uv_gated_mf": 0.0,
+    "visual_fire": false,
+    "uv_fire": false,
+    "pre_roi_visual_fire": false,
+    "reason": "iou_failed"
+  },
+  {
+    "pair_index": 2,
+    "source_line": 3,
+    "rgb_name": "2026_05_23_07_47_23_0143_bgr.jpg",
+    "thermal_name": "2026_05_23_07_47_23_0143_thermal.jpg",
+    "rgb_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\bgr\\2026_05_23_07_47_23_0143_bgr.jpg",
+    "thermal_path": "C:\\lyk\\paper_data\\paper_data_\\paper_data\\thermal\\2026_05_23_07_47_23_0143_thermal.jpg",
+    "temperature_raw": "393.85",
+    "uv_reference": 0,
+    "rgb_detections": [
+      {
+        "bbox": [
+          135.30642700195312,
+          187.30410766601562,
+          142.68771362304688,
+          193.53097534179688
+        ],
+        "score": 0.7190321683883667,
+        "class_id": 0,
+        "provenance": "full_frame"
+      },
+      {
+        "bbox": [
+          147.02828979492188,
+          177.8773193359375,
+          155.76882934570312,
+          185.17063903808594
+        ],
+        "score": 0.40880250930786133,
+        "class_id": 0,
+        "provenance": "full_frame"
+      }
+    ],
+    "thermal_detections": [
+      {
+        "bbox": [
+          79.06832122802734,
+          121.01332092285156,
+          89.41454315185547,
+          126.74126434326172
+        ],
+        "score": 0.4395173192024231,
+        "class_id": 0,
+        "provenance": "full_frame"
+      },
+      {
+        "bbox": [
+          62.54117965698242,
+          119.65254211425781,
+          70.6111068725586,
+          125.92574310302734
+        ],
+        "score": 0.27288979291915894,
+        "class_id": 0,
+        "provenance": "full_frame"
+      }
+    ],
+    "roi_attempts": [
+      {
+        "trigger_modality": "rgb",
+        "trigger_index": 0,
+        "trigger_bbox": [
+          135.30642700195312,
+          187.30410766601562,
+          142.68771362304688,
+          193.53097534179688
+        ],
+        "trigger_score": 0.7190321683883667,
+        "review_modality": "thermal",
+        "crop_xyxy_original": [
+          66,
+          203,
+          102,
+          234
+        ],
+        "detections": [],
+        "status": "inferred"
+      },
+      {
+        "trigger_modality": "rgb",
+        "trigger_index": 1,
+        "trigger_bbox": [
+          147.02828979492188,
+          177.8773193359375,
+          155.76882934570312,
+          185.17063903808594
+        ],
+        "trigger_score": 0.40880250930786133,
+        "review_modality": "thermal",
+        "crop_xyxy_original": [
+          82,
+          193,
+          121,
+          226
+        ],
+        "detections": [],
+        "status": "inferred"
+      },
+      {
+        "trigger_modality": "thermal",
+        "trigger_index": 0,
+        "trigger_bbox": [
+          79.06832122802734,
+          121.01332092285156,
+          89.41454315185547,
+          126.74126434326172
+        ],
+        "trigger_score": 0.4395173192024231,
+        "review_modality": "rgb",
+        "crop_xyxy_original": [
+          123,
+          85,
+          155,
+          115
+        ],
+        "detections": [],
+        "status": "inferred"
+      },
+      {
+        "trigger_modality": "thermal",
+        "trigger_index": 1,
+        "trigger_bbox": [
+          62.54117965698242,
+          119.65254211425781,
+          70.6111068725586,
+          125.92574310302734
+        ],
+        "trigger_score": 0.27288979291915894,
+        "review_modality": "rgb",
+        "crop_xyxy_original": [
+          111,
+          84,
+          141,
+          115
+        ],
+        "detections": [],
+        "status": "inferred"
+      }
+    ],
+    "matched_pairs": [],
+    "pair_evidence": [],
+    "best": null,
+    "mf": 0.0,
+    "uv_gated_mf": 0.0,
+    "visual_fire": false,
+    "uv_fire": false,
+    "pre_roi_visual_fire": false,
+    "reason": "iou_failed"
+  }
+]

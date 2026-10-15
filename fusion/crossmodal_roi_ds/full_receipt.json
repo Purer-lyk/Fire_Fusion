@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-10-14T02:27:01.555319+00:00",
+  "config_sha256": "b20ec33655ec9b7886d97f6d1e31255004b00a24b79771a096fee45f9a097021",
+  "protected_hashes": {
+    "C:\\lyk\\paper_data\\paper_data_\\paper_data\\paper_sample.txt": "bed4546079cb21ca0a2ce62f0c69bc407e7182cb2e6bfaa2fec2385fa1b85ade",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_affine_iou\\candidate_affine_calibration.json": "5cc0f19d21a1db8fb26759c7107d32db3e6c4087deaee5fd8b957a4f6484f362",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\rgb_predictions.json": "d63a199e1f309243da733e58173dd7e165b7715e3d6c928ae3170fe81f93dad8",
+    "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied_models_uv_reference\\thermal_predictions.json": "efb3dd0f8981a8fce079eb23c9d492d4295d2ed64d9434f0ec243804b8192fe8",
+    "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best.pt": "1068cfddcca133ac2f6c66522d7a43f4988daa91023c1c8898bb6fbf4a894e32",
+    "C:\\Users\\Administrator\\AppData\\Local\\hermes\\attachments\\best-2.pt": "c068422549d5de50d532431892a940a44ce2300b1cb0fae2e12887749adc12e6"
+  }
+}

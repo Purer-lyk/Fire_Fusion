@@ -1,0 +1,15 @@
+{
+  "modality": "thermal",
+  "processed_images": 1528,
+  "expected_images": 1528,
+  "missing_images": [],
+  "duplicate_images": 0,
+  "retained_boxes": 78,
+  "images_with_detections": 78,
+  "images_without_detections": 1450,
+  "elapsed_predict_seconds": 53.6390939000994,
+  "batches_returned": 1528,
+  "prediction_json": "C:\\lyk\\fire\\qualityDetection\\fusion\\threshold_050\\thermal_predictions.json",
+  "checkpoint_sha256": "662f9a630a11dc399a5896eebeaba25b714520478f5da0747c2302c9616cf7f6",
+  "complete": true
+}

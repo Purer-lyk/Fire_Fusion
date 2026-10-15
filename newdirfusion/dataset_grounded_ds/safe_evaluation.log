@@ -1,0 +1,94 @@
+SAFE_FORWARD rgb 32
+SAFE_FORWARD rgb 352
+SAFE_FORWARD rgb 672
+SAFE_FORWARD rgb 992
+SAFE_FORWARD rgb 1312
+SAFE_FORWARD thermal 32
+SAFE_FORWARD thermal 352
+SAFE_FORWARD thermal 672
+SAFE_FORWARD thermal 992
+SAFE_FORWARD thermal 1312
+{
+  "results": {
+    "full": {
+      "fusion": {
+        "N": 1528,
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "FPR": 0.0,
+        "FNR": 1.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "rgb_baseline": {
+        "N": 1528,
+        "TP": 0,
+        "FP": 0,
+        "FN": 1398,
+        "TN": 130,
+        "FPR": 0.0,
+        "FNR": 1.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "thermal_baseline": {
+        "N": 1528,
+        "TP": 24,
+        "FP": 0,
+        "FN": 1374,
+        "TN": 130,
+        "FPR": 0.0,
+        "FNR": 0.9828326180257511,
+        "precision": 1.0,
+        "recall": 0.017167381974248927,
+        "F1": 0.03375527426160337
+      },
+      "target_met_same_models": false,
+      "target_met_vs_historical_thermal": false
+    },
+    "prior202_diagnostic": {
+      "fusion": {
+        "N": 202,
+        "TP": 0,
+        "FP": 0,
+        "FN": 180,
+        "TN": 22,
+        "FPR": 0.0,
+        "FNR": 1.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "rgb_baseline": {
+        "N": 202,
+        "TP": 0,
+        "FP": 0,
+        "FN": 180,
+        "TN": 22,
+        "FPR": 0.0,
+        "FNR": 1.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "thermal_baseline": {
+        "N": 202,
+        "TP": 0,
+        "FP": 0,
+        "FN": 180,
+        "TN": 22,
+        "FPR": 0.0,
+        "FNR": 1.0,
+        "precision": null,
+        "recall": 0.0,
+        "F1": 0.0
+      },
+      "target_met_same_models": false
+    }
+  },
+  "target": false
+}

@@ -1,0 +1,93 @@
+{
+  "sources": {
+    "rgb": {
+      "source": "C:/lyk/fire/_paddleDetection/paddleDetection/dataset/fire/fireOrigin",
+      "images": 2599,
+      "xml_files": 2599,
+      "orphan_xml": [],
+      "observed_classes": {
+        "fire": 4054
+      },
+      "valid_images": 2599,
+      "negative_images": 51,
+      "issues": {},
+      "group_methods": {
+        "singleton_unknown_provenance": 2599
+      },
+      "train_images": 2079,
+      "val_images": 520,
+      "excluded_images": 0,
+      "train_negative": 42,
+      "val_negative": 9,
+      "exclusion_reasons": {},
+      "retained_groups": 2529,
+      "train_boxes": 3260,
+      "val_boxes": 794,
+      "val_fraction": 0.2000769526741054
+    },
+    "thermal": {
+      "source": "C:/lyk/fire/TorchDetection/datasets/thermal/totals",
+      "images": 2449,
+      "xml_files": 2449,
+      "orphan_xml": [],
+      "observed_classes": {
+        "Fire": 3129
+      },
+      "valid_images": 2399,
+      "negative_images": 17,
+      "issues": {
+        "invalid_box": 50,
+        "invalid_yolo_box": 50
+      },
+      "group_methods": {
+        "timestamp_gap_120s": 89,
+        "augmentation_origin": 2360
+      },
+      "txt_files": 2449,
+      "orphan_txt": [],
+      "txt_xml_agree_images": 2399,
+      "txt_xml_coordinate_agreement_images": 2449,
+      "yolo_class_ids": {
+        "0": 3129
+      },
+      "train_images": 1848,
+      "val_images": 462,
+      "excluded_images": 139,
+      "train_negative": 11,
+      "val_negative": 6,
+      "exclusion_reasons": {
+        "reserved_test_hash": 89,
+        "invalid_annotation": 50
+      },
+      "retained_groups": 123,
+      "train_boxes": 2341,
+      "val_boxes": 498,
+      "val_fraction": 0.2
+    }
+  },
+  "test": {
+    "rgb": {
+      "images": 1528,
+      "gt_covered": 0,
+      "gt_uncovered": 1528,
+      "gt_negative": 0,
+      "gt_boxes": 0,
+      "invalid_images": 0,
+      "distinct_hashes": 1528,
+      "coverage_definition": "valid source annotation AND identical SHA256 AND same modality; uncovered images never treated as negative"
+    },
+    "thermal": {
+      "images": 1528,
+      "gt_covered": 89,
+      "gt_uncovered": 1439,
+      "gt_negative": 0,
+      "gt_boxes": 162,
+      "invalid_images": 0,
+      "distinct_hashes": 1528,
+      "coverage_definition": "valid source annotation AND identical SHA256 AND same modality; uncovered images never treated as negative"
+    }
+  },
+  "exact_matches": 89,
+  "basename_conflicts": 0,
+  "duplicate_hash_groups": 73
+}

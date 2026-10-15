@@ -1,0 +1,15 @@
+test_yolo_boundary_rounding_is_not_real_out_of_bounds (test_audit.AuditTests.test_yolo_boundary_rounding_is_not_real_out_of_bounds) ... FAIL
+
+======================================================================
+FAIL: test_yolo_boundary_rounding_is_not_real_out_of_bounds (test_audit.AuditTests.test_yolo_boundary_rounding_is_not_real_out_of_bounds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\audit\test_audit.py", line 62, in test_yolo_boundary_rounding_is_not_real_out_of_bounds
+    self.assertTrue(a.yolo_agreement(p,(640,640),[[243,470,389,640]])['agrees'])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (failures=1)

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\crossmodal_roi_ds\test_core.py", line 3, in <module>
+    import core
+ModuleNotFoundError: No module named 'core'

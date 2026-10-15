@@ -1,0 +1,225 @@
+{
+  "reference": "Current fourth-column UV reference; not independent scene ground truth",
+  "results": {
+    "rgb_baseline": {
+      "N": 1528,
+      "TP": 1262,
+      "FP": 0,
+      "FN": 26,
+      "TN": 240,
+      "accuracy": 0.9829842931937173,
+      "precision": 1.0,
+      "recall": 0.9798136645962733,
+      "F1": 0.9898039215686274,
+      "FPR": 0.0,
+      "FNR": 0.020186335403726708,
+      "balanced_accuracy": 0.9899068322981366
+    },
+    "thermal_baseline": {
+      "N": 1528,
+      "TP": 716,
+      "FP": 180,
+      "FN": 572,
+      "TN": 60,
+      "accuracy": 0.5078534031413613,
+      "precision": 0.7991071428571429,
+      "recall": 0.5559006211180124,
+      "F1": 0.6556776556776557,
+      "FPR": 0.75,
+      "FNR": 0.4440993788819876,
+      "balanced_accuracy": 0.4029503105590062
+    },
+    "rgb_operating": {
+      "N": 1528,
+      "TP": 1279,
+      "FP": 153,
+      "FN": 9,
+      "TN": 87,
+      "accuracy": 0.893979057591623,
+      "precision": 0.8931564245810056,
+      "recall": 0.9930124223602484,
+      "F1": 0.9404411764705882,
+      "FPR": 0.6375,
+      "FNR": 0.006987577639751553,
+      "balanced_accuracy": 0.6777562111801242
+    },
+    "thermal_operating": {
+      "N": 1528,
+      "TP": 1282,
+      "FP": 240,
+      "FN": 6,
+      "TN": 0,
+      "accuracy": 0.8390052356020943,
+      "precision": 0.8423127463863338,
+      "recall": 0.9953416149068323,
+      "F1": 0.9124555160142349,
+      "FPR": 1.0,
+      "FNR": 0.004658385093167702,
+      "balanced_accuracy": 0.49767080745341613
+    },
+    "main_fire": {
+      "N": 1528,
+      "TP": 1206,
+      "FP": 153,
+      "FN": 82,
+      "TN": 87,
+      "accuracy": 0.8462041884816754,
+      "precision": 0.8874172185430463,
+      "recall": 0.9363354037267081,
+      "F1": 0.9112202493388742,
+      "FPR": 0.6375,
+      "FNR": 0.06366459627329192,
+      "balanced_accuracy": 0.649417701863354
+    },
+    "optional_uv_fire": {
+      "N": 1528,
+      "TP": 1206,
+      "FP": 153,
+      "FN": 82,
+      "TN": 87,
+      "accuracy": 0.8462041884816754,
+      "precision": 0.8874172185430463,
+      "recall": 0.9363354037267081,
+      "F1": 0.9112202493388742,
+      "FPR": 0.6375,
+      "FNR": 0.06366459627329192,
+      "balanced_accuracy": 0.649417701863354
+    }
+  },
+  "old_results_obsolete_for_current_reference": {
+    "rgb_baseline": {
+      "N": 1528,
+      "TP": 1195,
+      "FP": 67,
+      "FN": 203,
+      "TN": 63,
+      "accuracy": 0.8232984293193717,
+      "precision": 0.9469096671949286,
+      "recall": 0.8547925608011445,
+      "F1": 0.8984962406015038,
+      "FPR": 0.5153846153846153,
+      "FNR": 0.1452074391988555,
+      "balanced_accuracy": 0.6697039727082645
+    },
+    "thermal_baseline": {
+      "N": 1528,
+      "TP": 885,
+      "FP": 11,
+      "FN": 513,
+      "TN": 119,
+      "accuracy": 0.6570680628272252,
+      "precision": 0.9877232142857143,
+      "recall": 0.6330472103004292,
+      "F1": 0.7715780296425457,
+      "FPR": 0.08461538461538462,
+      "FNR": 0.3669527896995708,
+      "balanced_accuracy": 0.7742159128425223
+    },
+    "rgb_operating": {
+      "N": 1528,
+      "TP": 1362,
+      "FP": 70,
+      "FN": 36,
+      "TN": 60,
+      "accuracy": 0.930628272251309,
+      "precision": 0.9511173184357542,
+      "recall": 0.9742489270386266,
+      "F1": 0.9625441696113074,
+      "FPR": 0.5384615384615384,
+      "FNR": 0.02575107296137339,
+      "balanced_accuracy": 0.7178936942885441
+    },
+    "thermal_operating": {
+      "N": 1528,
+      "TP": 1392,
+      "FP": 130,
+      "FN": 6,
+      "TN": 0,
+      "accuracy": 0.9109947643979057,
+      "precision": 0.9145860709592641,
+      "recall": 0.9957081545064378,
+      "F1": 0.9534246575342465,
+      "FPR": 1.0,
+      "FNR": 0.004291845493562232,
+      "balanced_accuracy": 0.4978540772532189
+    },
+    "main_fire": {
+      "N": 1528,
+      "TP": 1359,
+      "FP": 0,
+      "FN": 39,
+      "TN": 130,
+      "accuracy": 0.974476439790576,
+      "precision": 1.0,
+      "recall": 0.9721030042918455,
+      "F1": 0.985854189336235,
+      "FPR": 0.0,
+      "FNR": 0.027896995708154508,
+      "balanced_accuracy": 0.9860515021459227
+    },
+    "optional_uv_fire": {
+      "N": 1528,
+      "TP": 1359,
+      "FP": 0,
+      "FN": 39,
+      "TN": 130,
+      "accuracy": 0.974476439790576,
+      "precision": 1.0,
+      "recall": 0.9721030042918455,
+      "F1": 0.985854189336235,
+      "FPR": 0.0,
+      "FNR": 0.027896995708154508,
+      "balanced_accuracy": 0.9860515021459227
+    }
+  },
+  "targets": {
+    "main_fire": {
+      "rgb_operating": {
+        "FPR_strictly_lower": false,
+        "FNR_strictly_lower": false,
+        "both_strictly_lower": false
+      },
+      "thermal_operating": {
+        "FPR_strictly_lower": true,
+        "FNR_strictly_lower": false,
+        "both_strictly_lower": false
+      },
+      "rgb_baseline": {
+        "FPR_strictly_lower": false,
+        "FNR_strictly_lower": false,
+        "both_strictly_lower": false
+      },
+      "thermal_baseline": {
+        "FPR_strictly_lower": true,
+        "FNR_strictly_lower": true,
+        "both_strictly_lower": true
+      },
+      "fair_both_modalities": false,
+      "standard_both_modalities": false
+    },
+    "optional_uv_fire": {
+      "rgb_operating": {
+        "FPR_strictly_lower": false,
+        "FNR_strictly_lower": false,
+        "both_strictly_lower": false
+      },
+      "thermal_operating": {
+        "FPR_strictly_lower": true,
+        "FNR_strictly_lower": false,
+        "both_strictly_lower": false
+      },
+      "rgb_baseline": {
+        "FPR_strictly_lower": false,
+        "FNR_strictly_lower": false,
+        "both_strictly_lower": false
+      },
+      "thermal_baseline": {
+        "FPR_strictly_lower": true,
+        "FNR_strictly_lower": true,
+        "both_strictly_lower": true
+      },
+      "fair_both_modalities": false,
+      "standard_both_modalities": false
+    }
+  }
+}

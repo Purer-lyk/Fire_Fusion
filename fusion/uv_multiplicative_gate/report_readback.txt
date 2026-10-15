@@ -1,0 +1,298 @@
+UV乘性门控D-S融合：1528对真实重算统计
+实际全量执行1528对、逐对唯一索引，UV标签1398有火／130无火。复用用户best.pt可见光、best-2.pt热成像的Ultralytics YOLO26n真实预测（不是PPYOLOv2），检测分数>0.5；无训练、无推理、无新标定。全部3056图像SHA256重新核验。旧文件和报告只读保留。
+1. 结论与全量混淆矩阵
+主方案保留最新双模态空间一致性必要条件，UV改为乘性门控而不是第三个D-S证据。以下m(F)严格是仅可见光和热成像所得的质量，不使用旧UV融合质量，不静默改成BetP。结果真实报告，不根据测试集调参弥补负面结果。
+普通视觉DS（无空间硬门）：UV乘性相对完全相同视觉mF门限的Accuracy变化=+6.9372个百分点；Recall变化=+0.0000个百分点。视觉mF范围=[0.0, 0.8147522378967721]；转移={"kept_fire": 455, "suppressed_fire": 106, "resurrected_fire": 0, "kept_nofire": 967, "reason_counts": {"UV_suppressed": 106, "visual_mF_not_strictly_above_threshold": 967, "fire": 455}}。
+原IoU可靠性DS（无硬门）：UV乘性相对完全相同视觉mF门限的Accuracy变化=+0.0000个百分点；Recall变化=+0.0000个百分点。视觉mF范围=[0.0, 0.6353145517129252]；转移={"kept_fire": 95, "suppressed_fire": 0, "resurrected_fire": 0, "kept_nofire": 1433, "reason_counts": {"visual_mF_not_strictly_above_threshold": 1433, "fire": 95}}。
+严格空间门控DS（主方案）：UV乘性相对完全相同视觉mF门限的Accuracy变化=+0.0000个百分点；Recall变化=+0.0000个百分点。视觉mF范围=[0.0, 0.8147522378967721]；转移={"kept_fire": 163, "suppressed_fire": 0, "resurrected_fire": 0, "kept_nofire": 1365, "reason_counts": {"spatial_gate_blocked": 1360, "fire": 163, "visual_mF_not_strictly_above_threshold": 5}}。
+2. 用户字面公式、冻结默认和质量守恒
+用户公式：m′(F)=m(F)(λ+(1−λ)g_uv)。g_uv为paper_sample.txt第四列原始二值0/1；q=λ+(1−λ)g_uv。预先固定λ=0.5、τF=0.5，判火用m′(F)>τF（严格大于，不含等号）。这两个数值是可配置工程默认，不是用户指定数值，也不是验证最优值；λ不是历史时序平滑λ=0.7，本次不使用时序UV。
+UV1：q=1，保持视觉mF；UV0：q=λ，只抑制视觉mF。q∈[λ,1]，所以m′F≤mF，绝不增加有火质量；同一固定阈值下不可能把视觉无火恢复成有火，也不能提高相对同一视觉基线的召回率。UV仍可减少UV0对应误报，但不保证总体提升。
+为保持BPA：m′N=mN，m′U=mU+(1−q)mF，总和为1。抑制的F质量只转移到未知Θ，不转移到无火。不重新归一化、不放大用户字面m′F。不把UV作为第三D-S源，也不使用旧经典UV质量作为本次基础。m(F)是D-S证据质量，并非已校准的概率或统计置信度。BetP(F)=mF+0.5mU只是旧判决量，此次不用。
+冻结配置SHA256=4dce91bbfb850ca95816d895056c3bdfd0a0ea7215ecea2ff3b6faf37f6433c5；配置与回执在指标计算前保存，固定敏感性λ={0,0.25,0.5,0.75,1}，τF=0.5不变，只诊断不挑选最优。
+3. 三分支及空间/视觉证据链
+基础在场检测BPA=(0.8c,0.8(1−c),0.2)；缺失为(0,0,1)，不是c=0无火证据。两视觉质量D-S：K=aF bN+aN bF；mF=(aF bF+aF bU+aU bF)/(1−K)，mN对应互换F/N，mU=aU bU/(1−K)。实现沿用旧支持总和归一化与全冲突退回未知规则。仅在视觉阶段使用DS；UV乘法不再进行DS。
+A：普通视觉DS无空间硬门，沿用原spatial_reliability_ds候选（最大普通mF，平手在场最小分数，再顺序）；回应前表普通分支。B：同A候选，但用原可靠性r=0.5+0.5s（matched）、未匹配r=0.5，无硬门；折扣(r mF,r mN,1−r+r mU)。A/B匹配最小IoU=0.01。
+C主方案：沿用最新spatial_gate_ds候选和几何；Hungarian一对一多边形IoU匹配，正IoU匹配底限1e−12，优先最大IoU，平手视觉BetP、最小分数、候选索引。BetP仅用于原有候选选取，不用于最终判火。g=clip((s−0.1)/(0.3−0.1),0,1)，matched才折扣两视觉BPA，未匹配g=0。τL=0.1、τH=0.3保持原冻结默认。最终Fire=matched且s≥0.3且m′F>0.5；不一致、Transition、缺任一框或全缺框均二分类无火，UV1也不得绕过。
+几何NoFire：未匹配或s≤0.1；Transition：0.1<s<0.3；FireCandidate：matched且s≥0.3。硬无火是用户指定工程决策，不代表D-S本身证实物理无火。A/B不是严格门控的替代；候选政策不同，跨A/C差异不能全部归因于空间模块。每一分支内部无UV与乘性UV用完全相同候选和视觉质量，才能隔离UV作用。
+每帧单一代表候选，不把相关多框D-S累加；来源selected_candidate、两侧索引、检测分数、IoU、可靠性、几何状态、原质量／乘性后质量、q、判决和原因全部输出CSV/JSON。Tmax保留原值，单位与物理温度可靠性未知，本次不新加温度门限。
+4. 覆盖率、状态与旧BetP方法区别
+全部1528帧纳入二分类，decision coverage=100%，无弃权；未知质量不是从统计中删掉帧。空间候选覆盖率只代表工程eligible，不是二分类评价覆盖率。
+普通视觉DS（无空间硬门）：{"geometry_states": {"NoFire": 1359, "FireCandidate": 168, "Transition": 1}, "matching_status": {"unmatched_rgb": 391, "missing_both": 436, "matched": 169, "unmatched_thermal": 532}, "eligible_count": 1528, "hard_gate_eligibility_fraction": 1.0, "binary_decision_coverage": 1.0, "abstentions": 0, "visual_mF_range": [0.0, 0.8147522378967721], "UV_mprimeF_range": [0.0, 0.8147522378967721], "vacuous_count": 436}
+原IoU可靠性DS（无硬门）：{"geometry_states": {"NoFire": 1359, "FireCandidate": 168, "Transition": 1}, "matching_status": {"unmatched_rgb": 391, "missing_both": 436, "matched": 169, "unmatched_thermal": 532}, "eligible_count": 1528, "hard_gate_eligibility_fraction": 1.0, "binary_decision_coverage": 1.0, "abstentions": 0, "visual_mF_range": [0.0, 0.6353145517129252], "UV_mprimeF_range": [0.0, 0.6353145517129252], "vacuous_count": 436}
+严格空间门控DS（主方案）：{"geometry_states": {"NoFire": 1359, "FireCandidate": 168, "Transition": 1}, "matching_status": {"unmatched_rgb": 391, "missing_both": 436, "matched": 169, "unmatched_thermal": 532}, "eligible_count": 168, "hard_gate_eligibility_fraction": 0.1099476439790576, "binary_decision_coverage": 1.0, "abstentions": 0, "visual_mF_range": [0.0, 0.8147522378967721], "UV_mprimeF_range": [0.0, 0.8147522378967721], "vacuous_count": 1359}
+下表为已有公布方法的原输出重新统计，明确不是本次mF判决，也不是本次UV乘法。经典UV DS历史分支仅作为有标签泄漏风险的对照，主方法彻底移除。判决量变化与UV变化不得混为同一增益。
+5. 预固定敏感性（不选最佳参数）
+6. 局限、来源与复核
+评价参考是用户指定第四列UV，同时UV参与门控，因此是循环评价／UV符合度，不是独立场景真值准确率，不能得到定位AP。正例占1398/1528，Accuracy与Precision不能替代Recall和Balanced Accuracy；零预测正例Precision标未定义而不伪造100%。UV单独按定义等于标签100%，不算独立性能。
+沿用七点候选FULL affine（热→RGB），未做新标定：fit RMSE=2.4799px，留一LOO RMSE=5.7718px，max=9.1421px；候选未独立验证。七点窄带、全视场／跨场景／视差有效性未知，LOO 5.7718px不能证明独立可靠。矩阵：[[0.7113039166517691, 0.0044504657857417015, 78.2274089470037], [-0.045135242080470914, 0.963053329624529, -15.942804622066248]]
+源输入CSV与JSON逐字段一致，1528顺序与paper_sample第四列一致、两模态各1528唯一图名。重新核验3056图像和权重哈希，从选中真实检测分数重新计算视觉BPA／DS验证缓存质量；数值不变量400组覆盖λ端点、UV端点、严格mF边界、空间0.3等号、质量守恒、只减不增、全缺失与UV不得越门。CSV独立重算指标和全部输出公式；DOCX ZIP CRC／读回／SHA256验证；旧文件逐文件哈希保留。
+产物目录：C:\lyk\fire\qualityDetection\fusion\uv_multiplicative_gate；fusion_results.csv/json、metrics.json/csv、sensitivity_metrics.csv、frozen_config.json、config_freeze_receipt.json、provenance.json、numerical_invariant_tests.json、deliverable_verification.json、artifact_manifest.json。
+方法
+TP
+FP
+FN
+TN
+Acc
+P
+R
+F1
+RGB检测
+452
+126
+946
+4
+29.8429%
+78.2007%
+32.3319%
+45.7490%
+热成像检测
+732
+0
+666
+130
+56.4136%
+100.0000%
+52.3605%
+68.7324%
+普通视觉DS（无空间硬门）：无UV mF>0.5
+455
+106
+943
+24
+31.3482%
+81.1052%
+32.5465%
+46.4523%
+普通视觉DS（无空间硬门）：UV乘性 m′F>0.5
+455
+0
+943
+130
+38.2853%
+100.0000%
+32.5465%
+49.1096%
+原IoU可靠性DS（无硬门）：无UV mF>0.5
+95
+0
+1303
+130
+14.7251%
+100.0000%
+6.7954%
+12.7261%
+原IoU可靠性DS（无硬门）：UV乘性 m′F>0.5
+95
+0
+1303
+130
+14.7251%
+100.0000%
+6.7954%
+12.7261%
+严格空间门控DS（主方案）：无UV mF>0.5
+163
+0
+1235
+130
+19.1754%
+100.0000%
+11.6595%
+20.8840%
+严格空间门控DS（主方案）：UV乘性 m′F>0.5
+163
+0
+1235
+130
+19.1754%
+100.0000%
+11.6595%
+20.8840%
+方法
+Balanced Acc
+Specificity
+FPR
+FNR
+RGB检测
+17.7044%
+3.0769%
+96.9231%
+67.6681%
+热成像检测
+76.1803%
+100.0000%
+0.0000%
+47.6395%
+普通视觉DS（无空间硬门）：无UV mF>0.5
+25.5040%
+18.4615%
+81.5385%
+67.4535%
+普通视觉DS（无空间硬门）：UV乘性 m′F>0.5
+66.2732%
+100.0000%
+0.0000%
+67.4535%
+原IoU可靠性DS（无硬门）：无UV mF>0.5
+53.3977%
+100.0000%
+0.0000%
+93.2046%
+原IoU可靠性DS（无硬门）：UV乘性 m′F>0.5
+53.3977%
+100.0000%
+0.0000%
+93.2046%
+严格空间门控DS（主方案）：无UV mF>0.5
+55.8298%
+100.0000%
+0.0000%
+88.3405%
+严格空间门控DS（主方案）：UV乘性 m′F>0.5
+55.8298%
+100.0000%
+0.0000%
+88.3405%
+历史方法（BetP）
+TP
+FP
+FN
+TN
+Acc
+prior_ordinary_BetP
+966
+126
+432
+4
+63.4817%
+prior_reliability_BetP
+966
+126
+432
+4
+63.4817%
+prior_strict_BetP_visual
+168
+0
+1230
+130
+19.5026%
+prior_strict_BetP_classicUV
+168
+0
+1230
+130
+19.5026%
+分支
+λ
+TP
+FP
+FN
+TN
+Acc
+A
+0
+455
+0
+943
+130
+38.2853%
+B
+0
+95
+0
+1303
+130
+14.7251%
+C
+0
+163
+0
+1235
+130
+19.1754%
+A
+0.25
+455
+0
+943
+130
+38.2853%
+B
+0.25
+95
+0
+1303
+130
+14.7251%
+C
+0.25
+163
+0
+1235
+130
+19.1754%
+A
+0.5
+455
+0
+943
+130
+38.2853%
+B
+0.5
+95
+0
+1303
+130
+14.7251%
+C
+0.5
+163
+0
+1235
+130
+19.1754%
+A
+0.75
+455
+0
+943
+130
+38.2853%
+B
+0.75
+95
+0
+1303
+130
+14.7251%
+C
+0.75
+163
+0
+1235
+130
+19.1754%
+A
+1
+455
+106
+943
+24
+31.3482%
+B
+1
+95
+0
+1303
+130
+14.7251%
+C
+1
+163
+0
+1235
+130
+19.1754%

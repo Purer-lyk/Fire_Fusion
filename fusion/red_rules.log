@@ -1,0 +1,15 @@
+test_binary_rules_and_conflict (test_core.FusionTests.test_binary_rules_and_conflict) ... FAIL
+
+======================================================================
+FAIL: test_binary_rules_and_conflict (test_core.FusionTests.test_binary_rules_and_conflict)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\test_core.py", line 8, in test_binary_rules_and_conflict
+    self.assertIsNotNone(importlib.util.find_spec('core'), 'Pure fusion module missing')
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unexpectedly None : Pure fusion module missing
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

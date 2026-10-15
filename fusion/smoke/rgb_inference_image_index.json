@@ -1,0 +1,29 @@
+{
+  "images": [
+    {
+      "id": 0,
+      "file_name": "C:/lyk/paper_data/paper_data_/paper_data/bgr/2026_05_23_07_47_22_0604_bgr.jpg",
+      "width": 320,
+      "height": 320
+    },
+    {
+      "id": 1,
+      "file_name": "C:/lyk/paper_data/paper_data_/paper_data/bgr/2026_05_23_07_47_22_0862_bgr.jpg",
+      "width": 320,
+      "height": 320
+    },
+    {
+      "id": 2,
+      "file_name": "C:/lyk/paper_data/paper_data_/paper_data/bgr/2026_05_23_07_47_23_0143_bgr.jpg",
+      "width": 320,
+      "height": 320
+    }
+  ],
+  "annotations": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "fire"
+    }
+  ]
+}

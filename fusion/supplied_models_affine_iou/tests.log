@@ -1,0 +1,14 @@
+test_full_affine (__main__.Tests.test_full_affine) ... ok
+test_matching_confidence (__main__.Tests.test_matching_confidence) ... ok
+test_metrics (__main__.Tests.test_metrics) ... ok
+test_missing_and_no_overlap (__main__.Tests.test_missing_and_no_overlap) ... ok
+test_no_projective_or_fixed_spatial_primary (__main__.Tests.test_no_projective_or_fixed_spatial_primary) ... ok
+test_reject_projective (__main__.Tests.test_reject_projective) ... ok
+test_rotation_polygon_not_aabb (__main__.Tests.test_rotation_polygon_not_aabb) ... ok
+test_ties (__main__.Tests.test_ties) ... ok
+test_translation (__main__.Tests.test_translation) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.046s
+
+OK

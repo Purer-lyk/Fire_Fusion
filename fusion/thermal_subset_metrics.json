@@ -1,0 +1,819 @@
+{
+  "scope": "ONLY exact-hash and current source-XML verified thermal subset; target-level, not full fusion or scene-level",
+  "images": 89,
+  "gt_boxes": 162,
+  "score_threshold": 0.5,
+  "iou_threshold": 0.5,
+  "matching": "descending score, one-to-one greedy best unmatched GT IoU",
+  "TP": 0,
+  "FP": 0,
+  "FN": 162,
+  "precision": null,
+  "recall": 0.0,
+  "F1": 0.0,
+  "accuracy": null,
+  "accuracy_reason": "Object detection has no well-defined TN universe",
+  "details": [
+    {
+      "image_name": "2026_05_23_08_14_42_0915_thermal.jpg",
+      "image_sha256": "a0e747449d2d027ab8311d60d1c157119c9651dacd78a8b2fc9cfa1e9fc0431d",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_43_0355_thermal.jpg",
+      "image_sha256": "b2a7b2bcc063c38e090cc9358e156f81f0f4051a035f15a824af1a12dcb62aeb",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_43_0594_thermal.jpg",
+      "image_sha256": "2de85f1c4e1d030105870c17fcf80ac3664d54e6092f28faa420c568bcb6f2c9",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_44_0075_thermal.jpg",
+      "image_sha256": "19cb598e51b131b516a7fbbc99c7709629edc1a48c6871d0b612320be22906b5",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_44_0314_thermal.jpg",
+      "image_sha256": "e51648987255df06e8f7ef4bee04a0f9d1f60d5fd4d02f954abbb70da1785b73",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_46_0034_thermal.jpg",
+      "image_sha256": "b23f74300fa4f8189ff5ddd4adf639e03af43e649766edbe37b189f6799d24bf",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_46_0395_thermal.jpg",
+      "image_sha256": "d71fe39f1c9e3bdeb22ae644d5a336c3532b6d084ebf8b651a36a8dd807dbd82",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_46_0675_thermal.jpg",
+      "image_sha256": "f0d861adfba9dd5ff702d67d0d6602357792bc0836a1b17253047067f43fa602",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_47_0035_thermal.jpg",
+      "image_sha256": "60e1efc7e9dd50f7a15a170d728c527c33cb307eceaec7a5e4ba5ee638d81581",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_47_0314_thermal.jpg",
+      "image_sha256": "a33852aeaf6dcebc1857e32e15e613a3d22ac635bf6bba35ef5677ee6e99ea94",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_48_0155_thermal.jpg",
+      "image_sha256": "4e4736f3e4f7cb886987683b25498ab5b3bf7d4718f0f5c29d6a8c50f0e0562c",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_48_0555_thermal.jpg",
+      "image_sha256": "893f877270c671c5adf32967060fbfc1e7d77ff62be1056936ee901005dd4b7c",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_48_0835_thermal.jpg",
+      "image_sha256": "9908851c286cf578bc27e70eb9d04b60fda31a0c6b10fe64002f51db5cb6f277",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_52_0714_thermal.jpg",
+      "image_sha256": "f26324ce01db0f3dade07a12676c1e318488ce8d3311941e29a23d70c2e2fffe",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_53_0035_thermal.jpg",
+      "image_sha256": "4c7d73145603611cd9a8870232d01070940f24163106aff472f71a1de2954a51",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_53_0314_thermal.jpg",
+      "image_sha256": "31ac0e98d7d758b4efef1949d9c315b4f6a5adabbc47c3fb6cc2a14126853e9f",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_53_0594_thermal.jpg",
+      "image_sha256": "edbc48337ded140a5abae290a14d57e46d1a3f9713191c5577ba7fd6c2b5cdd7",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_53_0955_thermal.jpg",
+      "image_sha256": "cb884013fc4b3470735d2a4345112e286a753e99e27b28d11168612716f329ac",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_54_0234_thermal.jpg",
+      "image_sha256": "8c23c853b77d5da519880ec299c33dc91e3ad31af56ac8cadf3fb00085ccb70d",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_54_0514_thermal.jpg",
+      "image_sha256": "ca5834892411fdfa21d7165c2f3a73111b0b5f40aa727ef3f4482e512e6a42d7",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_14_54_0714_thermal.jpg",
+      "image_sha256": "85d16effbd874031f0c825a5faddf8909eb5d0c5a603d221501d59fca68604e5",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_10_0774_thermal.jpg",
+      "image_sha256": "7da70627c48ce568993afb5c6ecf0622a4009a95594eb72c426d9690c3a34759",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_11_0094_thermal.jpg",
+      "image_sha256": "f4ba0ddcacc0b89def910b94d6106083936d63e4ba88cec2f0906f230ca40ab7",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_11_0374_thermal.jpg",
+      "image_sha256": "aa0e8b249fa7a462a4ce958cc8e102c46edbd9bf243dc3124cd5db5d683ce25a",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_11_0614_thermal.jpg",
+      "image_sha256": "112e38ab39bde10a90becc688878d55e5e98582aec1f5abdfdc28d75e74248b8",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_11_0894_thermal.jpg",
+      "image_sha256": "937cd5976b2679519f36cfadf980e61bd08679a6cbc6a7e3acecb64eec32dbde",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_12_0175_thermal.jpg",
+      "image_sha256": "31e7d04d89d9a1164409c8d9531ace774c7b7e38dc766b2d97ea089dc568763d",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_12_0454_thermal.jpg",
+      "image_sha256": "4aefe597443c693ef0a9b1c277e8e09e03c8742b0c8861d8271a4c63635a6042",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_12_0694_thermal.jpg",
+      "image_sha256": "616105f531fb33fc7658be26ffefc4e65a20af4304e26a9c33577222f2b18760",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_23_0054_thermal.jpg",
+      "image_sha256": "4f66fe8b0d0c79e905ba8ae91b9200342c43f6b9605728cf6c315c8217d64e86",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_23_0334_thermal.jpg",
+      "image_sha256": "684c6a4681eb47992af0bbe25fb4b95b4521b94b07448a26b6783e7380aa1c5d",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_23_0614_thermal.jpg",
+      "image_sha256": "ce96dca56ed7804efcc6264ace005f9c41f2b3d3825dcb6735b265b64317d4b6",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_23_0893_thermal.jpg",
+      "image_sha256": "65e2cededb3d6adda3ec2f2565fa2e0692650f7bdf8b0b4d5c304f51311d15d4",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_24_0174_thermal.jpg",
+      "image_sha256": "69bd0835694b2a5e2130bdfac0c43180a7e56a2f2463a6c9ca93812b6818e44b",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_24_0434_thermal.jpg",
+      "image_sha256": "15b965a1086d5d71ab530fec7b64d678507c35ad4195396414fcedbf6f036102",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_24_0674_thermal.jpg",
+      "image_sha256": "c3c63489f6b1d674d2a774e366a636545b495bf2638fa675bfe15229fb362bf2",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_24_0914_thermal.jpg",
+      "image_sha256": "05f0676ad1c7e4ead5a4545a222c8f52cbc3e3b7b78cca55be92a336934889dd",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_44_0154_thermal.jpg",
+      "image_sha256": "5433cba19831ff7be910d0f05e35f3701d595fb2976a40b880802095e99c703a",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_44_0393_thermal.jpg",
+      "image_sha256": "a5c831b47a0d24915843ccd227c36c03c0ecd0c472e5702855cee4a709f0d4cf",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_44_0674_thermal.jpg",
+      "image_sha256": "a30b55586ca442a04fd6a721a71be90d46f3208650037a2543d8a2f48830b77b",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_47_0154_thermal.jpg",
+      "image_sha256": "c882c9a6aa561fca286f3b28fa7c1e8ff3880b3cf10ff993d29f605eaeeec3a4",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_47_0434_thermal.jpg",
+      "image_sha256": "6c7ba2ceb13cd22869379e752629174fd8fa151fe505e9c4c5dcc91aa2982a1d",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_47_0714_thermal.jpg",
+      "image_sha256": "1eb4a5d87cc532126f4afbe8b3e8147df48ad2bb7b13b940178b5e4426c32886",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_47_0954_thermal.jpg",
+      "image_sha256": "f1275ec6c962bbf25161bb02de1e12dd544c909a994137b32f5405cf085163cd",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_48_0234_thermal.jpg",
+      "image_sha256": "01e6f8f70c5e1eb3852bc6d43ff471aa2d6af3d3c6808e14057a130b4d86eaf6",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_48_0514_thermal.jpg",
+      "image_sha256": "64fc1a15907afc13e55104f26d4fc3a2e851f196d6ab486b5eea49ffe0c0c7c2",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_48_0714_thermal.jpg",
+      "image_sha256": "278fd47b9dfdca18708f9acd1e18a366b374a94c177d676f35fa7f5bb3aac8cc",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_15_48_0914_thermal.jpg",
+      "image_sha256": "638804c0f74103efc6414281c773970ade28fb9e0883922f066799a76b8d7816",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_13_0254_thermal.jpg",
+      "image_sha256": "6529129bf94bb9fecba99885b6a75f0c6fbbd40200aa8d7fb70cfa10bfaa9909",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_13_0457_thermal.jpg",
+      "image_sha256": "06868d732a38123ab4cfbf5c1cbbf4fd689f7c1e4299e13612d4b214f9965c0a",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_13_0694_thermal.jpg",
+      "image_sha256": "ceb221faa88201d8ba8e6d139e4db7c1dec9905d33d15581c48f7e18b22177b9",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_13_0934_thermal.jpg",
+      "image_sha256": "611aece426e5053ebb28cd4bba3e4e5fa1b59eafcd1831311c9ced65243546d3",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_14_0376_thermal.jpg",
+      "image_sha256": "204e1a85cc7eeca7260753f45d241e9192d94b16da33d1e0bd0bd650f777493c",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_14_0614_thermal.jpg",
+      "image_sha256": "a4471121db7ed94092a6457bce38d6e9a120306b2a6afaa2021ddfc873c23eb6",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_14_0814_thermal.jpg",
+      "image_sha256": "4dc2d7fe42e9522875aede9efab5c0f674ee65c70f449de16871e9876e13c2fd",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_15_0014_thermal.jpg",
+      "image_sha256": "e5c5fb32b0998f40eb2dda40f987e9d4e0fb0f680483d19f31f3088304ea3c7e",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_16_0094_thermal.jpg",
+      "image_sha256": "14a97bb100f81d694487e66495a1096cf548a2ac177c0500784d7ac96c521aaa",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_16_0294_thermal.jpg",
+      "image_sha256": "a7db12ff2523fb57069b3b4f25b846608b7fed6948d317220e2a978a15578356",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_49_0317_thermal.jpg",
+      "image_sha256": "96ceb70b06654f7fd9d0ab352c968793dae5eed2a9e188d055feb1f404a108fb",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_49_0817_thermal.jpg",
+      "image_sha256": "7d6c1cd8f41d7317e5e32831245a00501fae1d79e5375dd57b6345c031964371",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_49_0856_thermal.jpg",
+      "image_sha256": "94512617e661f185f8bbb0f5322005935dd1901ddaa93f9e01a1bdff26870f72",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_49_0936_thermal.jpg",
+      "image_sha256": "3302b526465db98a0dbe8ab6759405b09f5311b68acbb5c7c9e742eb1d332ed6",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_50_0574_thermal.jpg",
+      "image_sha256": "6a697bce35d32b77cca0342c767f8f38dba6025d73cc896ed8df52f51a440d2e",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_50_0816_thermal.jpg",
+      "image_sha256": "9ec7308c1989e2ff448da0d4fc98d1336db412052df7c25ed8f5f9edd9f33f0a",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_51_0015_thermal.jpg",
+      "image_sha256": "286ccd436e67634ab51952e60212799c2e24fafe6c7d2dc89ccb4b312b53fdcd",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_51_0255_thermal.jpg",
+      "image_sha256": "fa5ddf188db6ad676dce8c1073d1d9feff8f6b4641a00fd7ad04f4465b406095",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_16_51_0494_thermal.jpg",
+      "image_sha256": "d3367a4d843f5ab4637e12b5d7147856c5a538801aa19f42699535ffb441fe11",
+      "ground_truth_boxes": 2,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 2
+    },
+    {
+      "image_name": "2026_05_23_08_31_00_0156_thermal.jpg",
+      "image_sha256": "ee7d1d31a7188638c69b486cab228b11f450a422c1ff4fd2c0585dd18cd81704",
+      "ground_truth_boxes": 3,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 3
+    },
+    {
+      "image_name": "2026_05_23_08_31_00_0731_thermal.jpg",
+      "image_sha256": "88d9f78ba0f9d4449af236ba3b93ca1114bf3da1d529515fb2b3c2940277a737",
+      "ground_truth_boxes": 3,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 3
+    },
+    {
+      "image_name": "2026_05_23_08_31_01_0255_thermal.jpg",
+      "image_sha256": "7d5e28984fba3657fc24491e1dba9aa44889ce127df49b305bfd35f04fb0e5d8",
+      "ground_truth_boxes": 3,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 3
+    },
+    {
+      "image_name": "2026_08_08_03_37_07_0154_thermal.jpg",
+      "image_sha256": "032b11c42c74fd9ed1f8933394c01584e544ab003e724edfa49290a9d4a6763f",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_07_0355_thermal.jpg",
+      "image_sha256": "2f047ac8bb99ba2b225edbf07e1fc0308be5d573291b0653cbe53e1a8994bc55",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_07_0654_thermal.jpg",
+      "image_sha256": "c336d7d0ccb8739d10928851af7f265aa2b8ceaa95305cc0ee6090df72415ddf",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_07_0954_thermal.jpg",
+      "image_sha256": "f9623f07302e698141365c33b81247547bc01a7cac31161db1d86b65e3913de3",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_08_0460_thermal.jpg",
+      "image_sha256": "383b6d7b2ba82baa844ae9489439247a07ea181276169c878cb2b1447906753f",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_08_0659_thermal.jpg",
+      "image_sha256": "26ebb38c33f9ffdf96985a83913b3ed2fa461f84c88c62dfe5b0b2a229dd784a",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_08_0956_thermal.jpg",
+      "image_sha256": "5a438df12f1843be9bd226da6fb7c5ae685530c4e0ee26fabde441a4f67db047",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_09_0357_thermal.jpg",
+      "image_sha256": "acf7cb21d8f08fe9475ee9d51c6269dacf322853b97d6d1bcc36f334e1a02720",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_09_0556_thermal.jpg",
+      "image_sha256": "551b97ab2db282b9c6ccb03d7ff33dd95b59cb32927bdcff69730889c717880e",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_09_0755_thermal.jpg",
+      "image_sha256": "f5db4f6ebb76aa628d921435d87a7f53e36c2f1911d34752f6cae120732692a7",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_09_0958_thermal.jpg",
+      "image_sha256": "d88ddd0a4b16c0ab013d4c3b78422d3d419793a8c3158b59ccbc7431db7e398e",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_10_0561_thermal.jpg",
+      "image_sha256": "6aedae2b847a6adb8c3e48be4b0807e5aa9da8dbc70b79e5a4c44e8f7323818a",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_11_0061_thermal.jpg",
+      "image_sha256": "71b308e1269e0619cf35d10651967af781bf44a534566ca8b72df6eab3e635ed",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_11_0253_thermal.jpg",
+      "image_sha256": "3a367dc248454dcec5042d3e0860927b1f59a2e53c06b1cf835a56cc11e7ff61",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_11_0459_thermal.jpg",
+      "image_sha256": "cfff9ab720724547b0964b61c96d13bfd716519209542afd58ce7341e44ea588",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_11_0659_thermal.jpg",
+      "image_sha256": "be7e342d534d5bcc9a3e037bcd540bf9428b95dcb3aaee67abc79ad257f9ab37",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_12_0267_thermal.jpg",
+      "image_sha256": "fedd95c8d9a71cb58351f91c011e8f0534e8b2f201e741b4461d0c78a1f53a47",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_12_0591_thermal.jpg",
+      "image_sha256": "b5ad85394bd50ffc3c33d925c9fb089210f55c43601dabe64b49412e5362ab8f",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    },
+    {
+      "image_name": "2026_08_08_03_37_24_0059_thermal.jpg",
+      "image_sha256": "e2940cc04a01788dcd81564c6215321fe1acc4c743e61ae81d61b956c73a6ceb",
+      "ground_truth_boxes": 1,
+      "predicted_boxes_score_05": 0,
+      "TP": 0,
+      "FP": 0,
+      "FN": 1
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-15T03:36:13.653362+00:00",
+  "protocol_sha256": "54bfe2546d5e272a34b805e4958d5eb3300642fa332a0482e01d5876b42ec2d8",
+  "protected_sha256": "24d19632ceb634a5908f551917bfa3e15a33a0763036451a24bb8fe09e0c859e",
+  "before_metrics": true,
+  "prior_exposed_data": true
+}

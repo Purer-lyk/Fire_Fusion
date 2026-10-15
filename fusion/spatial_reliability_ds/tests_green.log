@@ -1,0 +1,8 @@
+test_discount_missing_and_ds_identity (test_spatial.EvidenceTests.test_discount_missing_and_ds_identity) ... ok
+test_polygon_matching_translation_rotation_one_to_one (test_spatial.GeometryTests.test_polygon_matching_translation_rotation_one_to_one) ... ok
+test_fixed_candidate_ablation_and_confusion (test_spatial.PipelineTests.test_fixed_candidate_ablation_and_confusion) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.288s
+
+OK

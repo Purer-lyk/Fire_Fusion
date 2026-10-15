@@ -1,0 +1,17 @@
+{
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\execution_verification.json": "4a0e2570672696450a5b0194513ef9b5e506c50620b4c92cd2ebc053bc875e10",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\frame_predictions.csv": "3c6ddb6559192dc267b0409b7b3672f4201dcc531eb4ff761266c2dbab45f2c1",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\frozen_protocol_reused.json": "c0dcff426c1498429141fea7733c276d55507725c07e3670eb2759ca3075a062",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\matched_evidence.json": "0a8adcb8515e92dce86e7b12c2c880aec683f69e1e4f8663e0fd20536aea5a6b",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\metrics.csv": "4ef1d81d0130b3a0b681ad070eb88ebd96ee4ae2cce44e77b5fda0757fb994ca",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\metrics.json": "b8fe398532365302891ec6115ac2fe28a157eba746f1057fd0bccd3283e42aa2",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\old_new_label_diff.csv": "f304a55347f663008f1c5527263192c3ba74b9ceac36c57344cdc762cf598819",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\report_readback.txt": "513a23cf656917d94eab2803c42b70566fd5f700102afbc1f6975a808118bf33",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\rerun_corrected_uv.py": "3fa61e7ff4625e010222676bb0fff8baefcc9feed8b041cb44df829ca474cb6a",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\row_mapping.csv": "db745b05c10c6733b11a7d0d2ee275416f95bbce0da83dc5e24b505ed8f35c1b",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\source_audit.json": "712de623ff16d66597690214ca56aac537d517a0214f4c3bda8312486d79d747",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\validate_corrected_uv.py": "41cf8a637591e954cbfa71f61e1e437f547118de8b1527eb564807deada6c918",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\validation.json": "1da8efc2d1f52d58e7f9e072c725f32567c98772f6056398865562785b639d97",
+  "C:\\lyk\\fire\\qualityDetection\\fusion\\supplied320_corrected_uv\\validation.log": "686662594df3325ea97b4945eabca5611fa42c4411e1e773e8685ba397815cc6",
+  "C:\\lyk\\fire\\qualityDetection\\reports\\320输入_修正UV标签_空间DS复验报告.docx": "560a0abc8474034dea1c5e5ef5c8a312d36263ed59c89511e007f468dde43a28"
+}

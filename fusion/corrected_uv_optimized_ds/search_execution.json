@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-14T11:50:12.458970+00:00",
+  "trials": 3456,
+  "all_trials_finite": true,
+  "calibration_scopes": 6,
+  "full_scope": 1,
+  "trials_csv_rows": 24192,
+  "N": 1528,
+  "all_fold_params_frozen_before_test_metrics": true,
+  "primary_UV_runtime": false,
+  "fresh_baselines_match_corrected_cache": true,
+  "full_fit_descriptive_only": true
+}

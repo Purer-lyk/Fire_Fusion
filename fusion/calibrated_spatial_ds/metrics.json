@@ -1,0 +1,244 @@
+{
+  "reference": "UV-reference agreement; secondary UV input/reference circular; all 1528 previously seen; internal retained exploration, NOT independent validation",
+  "results": {
+    "train": {
+      "N": 920,
+      "positive": 839,
+      "negative": 81,
+      "methods": {
+        "primary_vision": {
+          "TP": 653,
+          "FP": 0,
+          "FN": 186,
+          "TN": 81,
+          "FPR": 0.0,
+          "FNR": 0.22169249106078665,
+          "precision": 1.0,
+          "recall": 0.7783075089392133,
+          "F1": 0.8753351206434316,
+          "balanced_accuracy": 0.8891537544696066,
+          "meets_target_same_subset": true
+        },
+        "secondary_uv": {
+          "TP": 653,
+          "FP": 0,
+          "FN": 186,
+          "TN": 81,
+          "FPR": 0.0,
+          "FNR": 0.22169249106078665,
+          "precision": 1.0,
+          "recall": 0.7783075089392133,
+          "F1": 0.8753351206434316,
+          "balanced_accuracy": 0.8891537544696066,
+          "meets_target_same_subset": true
+        },
+        "rgb_baseline": {
+          "TP": 229,
+          "FP": 79,
+          "FN": 610,
+          "TN": 2,
+          "FPR": 0.9753086419753086,
+          "FNR": 0.7270560190703218,
+          "precision": 0.7435064935064936,
+          "recall": 0.2729439809296782,
+          "F1": 0.39930252833478647,
+          "balanced_accuracy": 0.14881766947718472
+        },
+        "thermal_baseline": {
+          "TP": 409,
+          "FP": 0,
+          "FN": 430,
+          "TN": 81,
+          "FPR": 0.0,
+          "FNR": 0.5125148986889154,
+          "precision": 1.0,
+          "recall": 0.48748510131108463,
+          "F1": 0.655448717948718,
+          "balanced_accuracy": 0.7437425506555423
+        }
+      }
+    },
+    "calibration": {
+      "N": 406,
+      "positive": 379,
+      "negative": 27,
+      "methods": {
+        "primary_vision": {
+          "TP": 379,
+          "FP": 0,
+          "FN": 0,
+          "TN": 27,
+          "FPR": 0.0,
+          "FNR": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0,
+          "balanced_accuracy": 1.0,
+          "meets_target_same_subset": true
+        },
+        "secondary_uv": {
+          "TP": 379,
+          "FP": 0,
+          "FN": 0,
+          "TN": 27,
+          "FPR": 0.0,
+          "FNR": 0.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "F1": 1.0,
+          "balanced_accuracy": 1.0,
+          "meets_target_same_subset": true
+        },
+        "rgb_baseline": {
+          "TP": 223,
+          "FP": 25,
+          "FN": 156,
+          "TN": 2,
+          "FPR": 0.9259259259259259,
+          "FNR": 0.41160949868073876,
+          "precision": 0.8991935483870968,
+          "recall": 0.5883905013192612,
+          "F1": 0.7113237639553429,
+          "balanced_accuracy": 0.3312322876966676
+        },
+        "thermal_baseline": {
+          "TP": 147,
+          "FP": 0,
+          "FN": 232,
+          "TN": 27,
+          "FPR": 0.0,
+          "FNR": 0.6121372031662269,
+          "precision": 1.0,
+          "recall": 0.38786279683377306,
+          "F1": 0.55893536121673,
+          "balanced_accuracy": 0.6939313984168866
+        }
+      }
+    },
+    "heldout": {
+      "N": 202,
+      "positive": 180,
+      "negative": 22,
+      "methods": {
+        "primary_vision": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 180,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "F1": 0.0,
+          "balanced_accuracy": 0.5,
+          "meets_target_same_subset": false
+        },
+        "secondary_uv": {
+          "TP": 0,
+          "FP": 0,
+          "FN": 180,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "F1": 0.0,
+          "balanced_accuracy": 0.5,
+          "meets_target_same_subset": false
+        },
+        "rgb_baseline": {
+          "TP": 0,
+          "FP": 22,
+          "FN": 180,
+          "TN": 0,
+          "FPR": 1.0,
+          "FNR": 1.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "F1": 0.0,
+          "balanced_accuracy": 0.0
+        },
+        "thermal_baseline": {
+          "TP": 176,
+          "FP": 0,
+          "FN": 4,
+          "TN": 22,
+          "FPR": 0.0,
+          "FNR": 0.022222222222222223,
+          "precision": 1.0,
+          "recall": 0.9777777777777777,
+          "F1": 0.9887640449438202,
+          "balanced_accuracy": 0.9888888888888889
+        }
+      }
+    },
+    "full": {
+      "N": 1528,
+      "positive": 1398,
+      "negative": 130,
+      "methods": {
+        "primary_vision": {
+          "TP": 1032,
+          "FP": 0,
+          "FN": 366,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.26180257510729615,
+          "precision": 1.0,
+          "recall": 0.7381974248927039,
+          "F1": 0.8493827160493828,
+          "balanced_accuracy": 0.869098712446352,
+          "meets_target_same_subset": true
+        },
+        "secondary_uv": {
+          "TP": 1032,
+          "FP": 0,
+          "FN": 366,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.26180257510729615,
+          "precision": 1.0,
+          "recall": 0.7381974248927039,
+          "F1": 0.8493827160493828,
+          "balanced_accuracy": 0.869098712446352,
+          "meets_target_same_subset": true
+        },
+        "rgb_baseline": {
+          "TP": 452,
+          "FP": 126,
+          "FN": 946,
+          "TN": 4,
+          "FPR": 0.9692307692307692,
+          "FNR": 0.6766809728183119,
+          "precision": 0.7820069204152249,
+          "recall": 0.32331902718168815,
+          "F1": 0.4574898785425101,
+          "balanced_accuracy": 0.17704412897545946
+        },
+        "thermal_baseline": {
+          "TP": 732,
+          "FP": 0,
+          "FN": 666,
+          "TN": 130,
+          "FPR": 0.0,
+          "FNR": 0.47639484978540775,
+          "precision": 1.0,
+          "recall": 0.5236051502145923,
+          "F1": 0.6873239436619719,
+          "balanced_accuracy": 0.7618025751072961
+        }
+      }
+    }
+  },
+  "selected_parameters": {
+    "tR": 0.2,
+    "tT": 0.1,
+    "iou_gate": 0.01,
+    "rmin": 1.0,
+    "decision_threshold": 0.3
+  },
+  "freeze_sha256": "8413ec6bd77a1a6ca45f57cad566b366ba8c75c6c44c568bd1bd9d69aab96399",
+  "heldout_evaluations": 1,
+  "target_full_and_heldout_primary": false,
+  "calibration_score_model": "NONE; nominal confidence supports and quality. Calibration is threshold search only."
+}

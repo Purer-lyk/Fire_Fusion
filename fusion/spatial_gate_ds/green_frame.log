@@ -1,0 +1,8 @@
+test_frame_discount_matching_and_uv_cannot_override (__main__.GateTests.test_frame_discount_matching_and_uv_cannot_override) ... ok
+test_missing_cannot_fire_even_uv_dogmatic (__main__.GateTests.test_missing_cannot_fire_even_uv_dogmatic) ... ok
+test_spatial_transition_never_binary_fire (__main__.GateTests.test_spatial_transition_never_binary_fire) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.433s
+
+OK

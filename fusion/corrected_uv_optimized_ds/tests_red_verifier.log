@@ -1,0 +1,13 @@
+......F
+======================================================================
+FAIL: test_verifier_independent_confusion_and_geometry (__main__.FusionTests.test_verifier_independent_confusion_and_geometry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\lyk\fire\qualityDetection\fusion\corrected_uv_optimized_ds\test_optimized.py", line 55, in test_verifier_independent_confusion_and_geometry
+    self.assertTrue(p.exists(),'independent readback validator missing')
+AssertionError: False is not true : independent readback validator missing
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.227s
+
+FAILED (failures=1)
